@@ -1,0 +1,9 @@
+/node_modules
+/.next
+/.toolchain
+/out
+.DS_Store
+*.log
+.vercel
+next-env.d.ts
+.claude/settings.local.json

@@ -1,0 +1,53 @@
+name: Fetch X tweets
+
+on:
+  schedule:
+    # 每小时整点抓一次（UTC）。想改频率改这里的 cron。
+    - cron: "0 * * * *"
+  workflow_dispatch: # 也可在 Actions 页面手动点 Run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-x
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest tweets
+        env:
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          # 如需换服务商/端点，在仓库 Variables 里设这几个即可（可留空用默认）
+          TWITTER_API_BASE: ${{ vars.TWITTER_API_BASE }}
+          TWITTER_API_PATH: ${{ vars.TWITTER_API_PATH }}
+          TWITTER_API_KEY_HEADER: ${{ vars.TWITTER_API_KEY_HEADER }}
+        run: |
+          if [ -z "$TWITTER_API_KEY" ]; then
+            echo "::warning::未配置 TWITTER_API_KEY，跳过抓取（先到 Settings → Secrets 添加 key）。"
+            exit 0
+          fi
+          node scripts/fetch-x.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/live)" ]; then
+            git add data/live
+            git commit -m "chore: 自动更新博主推文 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+            echo "已提交更新，将触发部署。"
+          else
+            echo "无变化，跳过。"
+          fi

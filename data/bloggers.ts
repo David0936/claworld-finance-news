@@ -1,4 +1,5 @@
 import type { BloggerData } from "./types";
+import { applyLive } from "./live";
 
 /**
  * 真实数据来自原站 @aleabitoreddit 的 2026-05-29 快照。
@@ -784,12 +785,12 @@ const playbooktrades: BloggerData = {
   ],
 };
 
-export const bloggers: BloggerData[] = [
+export const bloggers: BloggerData[] = applyLive([
   aleabit,
   quantflow,
   chiplens,
   playbooktrades,
-];
+]);
 
 export function getBlogger(id: string): BloggerData {
   return bloggers.find((b) => b.id === id) ?? bloggers[0];

@@ -7,3 +7,5 @@
 .vercel
 next-env.d.ts
 .claude/settings.local.json
+scripts/captures/
+tsconfig.tsbuildinfo

@@ -32,12 +32,29 @@ jobs:
           TWITTER_API_BASE: ${{ vars.TWITTER_API_BASE }}
           TWITTER_API_PATH: ${{ vars.TWITTER_API_PATH }}
           TWITTER_API_KEY_HEADER: ${{ vars.TWITTER_API_KEY_HEADER }}
+          TWITTER_API_METHOD: ${{ vars.TWITTER_API_METHOD }}
+          TWITTER_API_USER_PARAM: ${{ vars.TWITTER_API_USER_PARAM }}
+          TWITTER_API_TOKEN_QUERY: ${{ vars.TWITTER_API_TOKEN_QUERY }}
+          TWITTER_API_BODY: ${{ vars.TWITTER_API_BODY }}
+          MAX_TWEETS: ${{ vars.MAX_TWEETS }}
         run: |
           if [ -z "$TWITTER_API_KEY" ]; then
             echo "::warning::未配置 TWITTER_API_KEY，跳过抓取（先到 Settings → Secrets 添加 key）。"
             exit 0
           fi
           node scripts/fetch-x.mjs
+
+      - name: Push digest to IM (Feishu / Telegram)
+        # 把新推文整理成卡片推到飞书/Telegram。下面任一渠道留空即自动跳过，不会报错。
+        # 到 Settings → Secrets and variables → Actions 里按需添加这些 Secret。
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # 完整看板地址（= 主站 FFC_LINKS.tweetsBoard），可放 Secret 或 Variable
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: node scripts/push-im.mjs
 
       - name: Commit & push if changed
         run: |

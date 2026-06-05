@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/validate-data.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-data.mjs",
+    "check": "npm run typecheck && npm run validate:data && npm run build",
+    "lint": "npm run typecheck"
   },
   "dependencies": {
     "next": "15.1.6",

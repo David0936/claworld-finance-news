@@ -70,11 +70,10 @@ const SECTION_TITLES: Record<
 };
 
 export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
-  const [activeId, setActiveId] = useState(bloggers[0].id);
   const [activeNav, setActiveNav] = useState("总览");
   const [stockQuery, setStockQuery] = useState("");
   const [stockQueue, setStockQueue] = useState("全部队列");
-  const data = bloggers.find((b) => b.id === activeId) ?? bloggers[0];
+  const data = bloggers[0];
   const section = SECTION_TITLES[activeNav] ?? SECTION_TITLES["总览"];
 
   const goToStock = (ticker: string) => {
@@ -103,7 +102,7 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
               </span>
             </div>
           </div>
-          <nav className="hidden items-center gap-1 xl:flex">
+          <nav className="hidden items-center gap-1 lg:flex">
             {NAV.map((item) => (
               <button
                 key={item}
@@ -118,96 +117,20 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
               </button>
             ))}
           </nav>
-          <button className="rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50">
-            通知
+          <button
+            onClick={() => setActiveNav("多源")}
+            className="rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
+          >
+            数据源
           </button>
         </div>
       </header>
 
       <div className="mx-auto flex w-full max-w-shell flex-1 gap-4 px-3 py-4 sm:px-4 md:py-5 lg:px-6">
-        {/* Sidebar blogger switcher */}
-        <aside className="hidden w-60 shrink-0 lg:block">
-          <div className="sticky top-20 rounded-2xl border border-slate-200 bg-white p-3">
-            <div className="px-1 pb-2 text-xs font-medium uppercase tracking-wide text-slate-400">
-              博主列表
-            </div>
-            <div className="scroll-thin flex max-h-[70vh] flex-col gap-1 overflow-y-auto">
-              {bloggers.map((b) => {
-                const active = b.id === activeId;
-                return (
-                  <button
-                    key={b.id}
-                    onClick={() => setActiveId(b.id)}
-                    className={`flex items-start gap-3 rounded-xl border p-2.5 text-left transition ${
-                      active
-                        ? "border-slate-900 bg-slate-50"
-                        : "border-transparent hover:bg-slate-50"
-                    }`}
-                  >
-                    <div
-                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-xs font-bold ${b.avatarClass}`}
-                    >
-                      {b.initials}
-                    </div>
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <span className="truncate text-sm font-semibold text-slate-900">
-                          {b.name}
-                        </span>
-                        {active && (
-                          <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
-                        )}
-                      </div>
-                      <div className="truncate text-xs text-slate-400">
-                        {b.handle}
-                      </div>
-                      <div className="mt-1 flex flex-wrap gap-1">
-                        {b.focusTags.slice(0, 2).map((t) => (
-                          <span
-                            key={t}
-                            className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] text-slate-500"
-                          >
-                            {t}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-            <p className="mt-3 px-1 text-[11px] leading-relaxed text-slate-400">
-              点击切换博主，整个看板数据随之刷新。新增博主只需在 data/bloggers.ts
-              里追加一项。
-            </p>
-          </div>
-        </aside>
-
         {/* Main content */}
         <main className="min-w-0 flex-1 pb-24 xl:pb-6">
-          {/* Mobile blogger switcher */}
-          <div className="scroll-thin mb-3 flex gap-2 overflow-x-auto lg:hidden">
-            {bloggers.map((b) => {
-              const active = b.id === activeId;
-              return (
-                <button
-                  key={b.id}
-                  onClick={() => setActiveId(b.id)}
-                  className={`flex shrink-0 items-center gap-2 rounded-full border px-3 py-1.5 text-sm ${
-                    active
-                      ? "border-slate-900 bg-slate-900 text-white"
-                      : "border-slate-200 bg-white text-slate-600"
-                  }`}
-                >
-                  <span className="text-xs font-bold">{b.initials}</span>
-                  {b.name}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Mobile section tabs (nav is hidden < xl) */}
-          <div className="scroll-thin mb-4 flex gap-2 overflow-x-auto xl:hidden">
+          {/* Mobile section tabs */}
+          <div className="scroll-thin mb-4 flex gap-2 overflow-x-auto lg:hidden">
             {NAV.map((item) => (
               <button
                 key={item}
@@ -323,13 +246,19 @@ function SectionContent({
     case "行业":
       return <IndustryView data={data} />;
     default:
-      return <OverviewView data={data} />;
+      return <OverviewView data={data} goToStock={goToStock} />;
   }
 }
 
 /* ---------- Views ---------- */
 
-function OverviewView({ data }: { data: BloggerData }) {
+function OverviewView({
+  data,
+  goToStock,
+}: {
+  data: BloggerData;
+  goToStock: (ticker: string) => void;
+}) {
   return (
     <>
       <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
@@ -353,9 +282,222 @@ function OverviewView({ data }: { data: BloggerData }) {
           </div>
         ))}
       </section>
+      <OverviewInsightGrid data={data} goToStock={goToStock} />
       <PriorityQueue data={data} />
+      <OverviewResearchGrid data={data} />
       <FeedTimeline items={data.feed} title="最新信息流" />
     </>
+  );
+}
+
+function OverviewInsightGrid({
+  data,
+  goToStock,
+}: {
+  data: BloggerData;
+  goToStock: (ticker: string) => void;
+}) {
+  const pool = resolveStockPool(data);
+  const queueCounts = pool.reduce<Record<string, number>>((acc, s) => {
+    acc[s.queue] = (acc[s.queue] ?? 0) + 1;
+    return acc;
+  }, {});
+  const queueRows = Object.entries(queueCounts).sort((a, b) => b[1] - a[1]);
+  const queueMax = Math.max(1, ...queueRows.map(([, n]) => n));
+  const hotStocks = [...data.priorityQueue]
+    .sort((a, b) => b.mentions24h * 10 + b.mentions7d - (a.mentions24h * 10 + a.mentions7d))
+    .slice(0, 6);
+  const latest = data.feed[0];
+  const restricted = resolveSources(data).filter((s) => s.status === "restricted");
+  const publicTweets = data.feed.filter((f) => f.type === "推文").length;
+
+  return (
+    <div className="mt-4 grid gap-4 xl:grid-cols-3">
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              Queue
+            </div>
+            <h2 className="mt-1 text-base font-semibold text-slate-900">
+              队列分布
+            </h2>
+          </div>
+          <span className="text-xs text-slate-400">{pool.length} 标的</span>
+        </div>
+        <div className="mt-4 grid gap-3">
+          {queueRows.slice(0, 5).map(([queue, count]) => (
+            <div key={queue}>
+              <div className="mb-1 flex items-center justify-between gap-3 text-xs">
+                <span className="truncate text-slate-600">{queue}</span>
+                <span className="font-semibold text-slate-900">{count}</span>
+              </div>
+              <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+                <div
+                  className="h-full rounded-full bg-slate-900"
+                  style={{ width: `${(count / queueMax) * 100}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          Heat
+        </div>
+        <h2 className="mt-1 text-base font-semibold text-slate-900">热点股票</h2>
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          {hotStocks.map((s) => (
+            <button
+              key={s.ticker}
+              className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-left hover:border-slate-300 hover:bg-white"
+              onClick={() => goToStock(s.ticker)}
+              type="button"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-mono text-sm font-bold text-slate-900">
+                  ${s.ticker}
+                </span>
+                <span className="text-[11px] text-rose-600">{s.mentions24h}H</span>
+              </div>
+              <div className="mt-1 text-[11px] text-slate-400">
+                7D {s.mentions7d} · {s.source}
+              </div>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          Freshness
+        </div>
+        <h2 className="mt-1 text-base font-semibold text-slate-900">数据新鲜度</h2>
+        <dl className="mt-4 grid gap-3 text-sm">
+          <div className="flex items-center justify-between gap-3 rounded-lg bg-blue-50 px-3 py-2">
+            <dt className="text-slate-500">公开推文</dt>
+            <dd className="font-semibold text-slate-900">{publicTweets}</dd>
+          </div>
+          <div className="flex items-center justify-between gap-3 rounded-lg bg-emerald-50 px-3 py-2">
+            <dt className="text-slate-500">最新时间</dt>
+            <dd className="font-mono text-xs font-semibold text-slate-900">
+              {latest?.datetime ?? "—"}
+            </dd>
+          </div>
+          <div className="flex items-center justify-between gap-3 rounded-lg bg-violet-50 px-3 py-2">
+            <dt className="text-slate-500">受限源</dt>
+            <dd className="font-semibold text-violet-700">{restricted.length}</dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  );
+}
+
+function OverviewResearchGrid({ data }: { data: BloggerData }) {
+  const feedTypeCounts = data.feed.reduce<Record<string, number>>((acc, f) => {
+    acc[f.type] = (acc[f.type] ?? 0) + 1;
+    return acc;
+  }, {});
+  const sc: SupplyChainData =
+    data.supplyChain ??
+    deriveSupplyChain(mentionedTickers(data.priorityQueue, data.feed));
+  const catalysts = sc.catalysts.slice(0, 5);
+  const workflow = [
+    { label: "公开推文", value: data.feed.filter((f) => f.type === "推文").length, hint: data.handle },
+    { label: "会员频道", value: data.memberUrl ? "待导入" : "未配置", hint: data.memberUrl ? "restricted" : "none" },
+    { label: "Ticker 解析", value: mentionedTickers(data.priorityQueue, data.feed).length, hint: "unique symbols" },
+    { label: "IM 推送", value: "已接入", hint: "Feishu / Telegram" },
+  ];
+
+  return (
+    <div className="mt-4 grid gap-4 xl:grid-cols-5">
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-3">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              Pipeline
+            </div>
+            <h2 className="mt-1 text-base font-semibold text-slate-900">
+              解析工作流
+            </h2>
+          </div>
+          <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
+            {data.handle}
+          </span>
+        </div>
+        <div className="mt-4 grid gap-3 sm:grid-cols-4">
+          {workflow.map((step) => (
+            <div key={step.label} className="rounded-xl border border-slate-200 p-3">
+              <div className="text-[11px] text-slate-400">{step.label}</div>
+              <div className="mt-1 text-sm font-semibold text-slate-900">
+                {step.value}
+              </div>
+              <div className="mt-1 truncate text-[11px] text-slate-400">
+                {step.hint}
+              </div>
+            </div>
+          ))}
+        </div>
+        {data.memberUrl && (
+          <div className="mt-3 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 text-xs leading-relaxed text-violet-700">
+            会员频道只展示入口和导入状态。已授权内容可通过导出/粘贴进入同一解析管线，避免把登录态抓取或付费内容固化在仓库里。
+          </div>
+        )}
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-2">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          Signal Mix
+        </div>
+        <h2 className="mt-1 text-base font-semibold text-slate-900">信号构成</h2>
+        <div className="mt-4 grid gap-2">
+          {Object.entries(feedTypeCounts).map(([type, count]) => (
+            <div key={type} className="flex items-center justify-between gap-3 text-sm">
+              <span className={`rounded px-2 py-1 text-xs ${feedTypeClass(type as FeedItem["type"])}`}>
+                {type}
+              </span>
+              <span className="font-semibold text-slate-900">{count}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          Catalysts
+        </div>
+        <h2 className="mt-1 text-base font-semibold text-slate-900">
+          下一批复核清单
+        </h2>
+        {catalysts.length === 0 ? (
+          <p className="mt-3 text-sm text-slate-400">当前没有供应链传导提示。</p>
+        ) : (
+          <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+            {catalysts.map((c) => (
+              <article key={`${c.target}-${c.path}`} className="rounded-xl border border-slate-200 p-3">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-mono text-sm font-bold text-slate-900">
+                    {c.target}
+                  </span>
+                  <span className="text-xs font-semibold text-slate-500">
+                    {c.score}
+                  </span>
+                </div>
+                <div className="mt-1 font-mono text-[11px] text-slate-400">
+                  {c.path}
+                </div>
+                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
+                  {c.note}
+                </p>
+              </article>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
   );
 }
 
@@ -1213,6 +1355,8 @@ function sourceStatusClass(status: string): string {
     return "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200";
   if (status === "enabled")
     return "bg-blue-50 text-blue-700 ring-1 ring-blue-200";
+  if (status === "restricted")
+    return "bg-violet-50 text-violet-700 ring-1 ring-violet-200";
   return "bg-slate-100 text-slate-500";
 }
 
@@ -1358,14 +1502,26 @@ function FollowView({ data }: { data: BloggerData }) {
           </span>
         ))}
       </div>
-      <a
-        href={url}
-        target="_blank"
-        rel="noreferrer"
-        className="mt-5 inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
-      >
-        在 X 上关注 ↗
-      </a>
+      <div className="mt-5 flex flex-wrap gap-2">
+        <a
+          href={url}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
+        >
+          在 X 上关注 ↗
+        </a>
+        {data.memberUrl && (
+          <a
+            href={data.memberUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
+          >
+            打开会员频道 ↗
+          </a>
+        )}
+      </div>
     </section>
   );
 }

@@ -2,12 +2,25 @@
 /**
  * 抓取每个博主的最新推文，生成 data/live/<id>.json，供网站静态构建读取。
  *
- * 数据源：第三方抓取 API（默认按 twitterapi.io 形态：X-API-Key 头 + REST）。
- * 通过环境变量配置，方便以后换服务商：
- *   TWITTER_API_KEY   必填（没有则 dry-run 用 fixture，不会真请求）
- *   TWITTER_API_BASE  默认 https://api.twitterapi.io
- *   TWITTER_API_PATH  默认 /twitter/user/last_tweets   （?userName=<handle> 会自动拼）
- *   TWITTER_API_KEY_HEADER 默认 X-API-Key
+ * 数据源：第三方抓取 API。换服务商只改环境变量，不用动代码。
+ *   TWITTER_API_KEY    必填（没有则 dry-run 用 fixture，不会真请求）
+ *   TWITTER_API_BASE   默认 https://api.twitterapi.io
+ *   TWITTER_API_PATH   默认 /twitter/user/last_tweets
+ *   TWITTER_API_KEY_HEADER 默认 X-API-Key（key 放请求头时用）
+ *   TWITTER_API_METHOD GET（默认）| POST
+ *   TWITTER_API_USER_PARAM  GET 时拼的用户名参数名，默认 userName（→ ?userName=<handle>）
+ *   TWITTER_API_TOKEN_QUERY 若设了，key 改放 URL query（如 Apify 用 token）而非请求头
+ *   TWITTER_API_BODY   POST 时的请求体模板，占位符 {{handle}} {{max}}；不填则用 Apify 默认体
+ *
+ * ── 两种现成配法 ──
+ * A) twitterapi.io（默认，GET+header）：只配 TWITTER_API_KEY 即可。
+ * B) Apify「最便宜抓取器」（POST，按你的量基本免费）：
+ *      TWITTER_API_KEY        = <你的 Apify token>
+ *      TWITTER_API_BASE       = https://api.apify.com
+ *      TWITTER_API_PATH       = /v2/acts/kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest/run-sync-get-dataset-items
+ *      TWITTER_API_METHOD     = POST
+ *      TWITTER_API_TOKEN_QUERY= token
+ *    （请求体默认就是 {"searchTerms":["from:<handle>"],"sort":"Latest","maxItems":<MAX_TWEETS>}）
  *
  * 用法：
  *   node scripts/fetch-x.mjs            正常抓取（需要 key）
@@ -28,6 +41,10 @@ const API_BASE = process.env.TWITTER_API_BASE || "https://api.twitterapi.io";
 const API_PATH = process.env.TWITTER_API_PATH || "/twitter/user/last_tweets";
 const KEY_HEADER = process.env.TWITTER_API_KEY_HEADER || "X-API-Key";
 const API_KEY = process.env.TWITTER_API_KEY || "";
+const METHOD = (process.env.TWITTER_API_METHOD || "GET").toUpperCase();
+const USER_PARAM = process.env.TWITTER_API_USER_PARAM || "userName";
+const TOKEN_QUERY = process.env.TWITTER_API_TOKEN_QUERY || ""; // 设了则 key 放 query（Apify=token）
+const BODY_TMPL = process.env.TWITTER_API_BODY || "";
 
 const DRY_RUN = process.argv.includes("--dry-run") || !API_KEY;
 const MAX_TWEETS = Number(process.env.MAX_TWEETS || 20);
@@ -75,6 +92,30 @@ function tweetDate(t) {
   const d = new Date(raw);
   return isNaN(d.getTime()) ? new Date(0) : d;
 }
+function tweetUrl(t, handle) {
+  // 优先用 API 直接给的链接；否则用 id 拼 X 永久链接；再不行退到主页
+  const direct = t.url || t.tweetUrl || t.twitterUrl || t.permalink || t.link;
+  if (direct) return direct;
+  const id = t.id || t.id_str || t.tweet_id || t.rest_id;
+  return id ? `https://x.com/${handle}/status/${id}` : `https://x.com/${handle}`;
+}
+
+function buildUrl(handle) {
+  const params = new URLSearchParams();
+  if (METHOD === "GET") params.set(USER_PARAM, handle); // GET：用户名拼 query；POST：放 body
+  if (TOKEN_QUERY) params.set(TOKEN_QUERY, API_KEY);    // key 放 query（如 Apify token）
+  const qs = params.toString();
+  return `${API_BASE}${API_PATH}${qs ? `?${qs}` : ""}`;
+}
+
+function buildBody(handle) {
+  if (METHOD !== "POST") return undefined;
+  if (BODY_TMPL) {
+    return BODY_TMPL.split("{{handle}}").join(handle).split("{{max}}").join(String(MAX_TWEETS));
+  }
+  // 默认按 Apify kaitoeasyapi「最便宜抓取器」：取某人最新 N 条推文
+  return JSON.stringify({ searchTerms: [`from:${handle}`], sort: "Latest", maxItems: MAX_TWEETS });
+}
 
 async function fetchTweets(handle) {
   if (DRY_RUN) {
@@ -85,10 +126,17 @@ async function fetchTweets(handle) {
     }
     return pickTweets(JSON.parse(await readFile(fx, "utf8")));
   }
-  const url = `${API_BASE}${API_PATH}?userName=${encodeURIComponent(handle)}`;
-  const res = await fetch(url, { headers: { [KEY_HEADER]: API_KEY } });
+  const url = buildUrl(handle);
+  const headers = {};
+  if (!TOKEN_QUERY && API_KEY) headers[KEY_HEADER] = API_KEY; // key 放请求头（默认）
+  const init = { method: METHOD, headers };
+  if (METHOD === "POST") {
+    headers["Content-Type"] = "application/json";
+    init.body = buildBody(handle);
+  }
+  const res = await fetch(url, init);
   if (!res.ok) {
-    throw new Error(`HTTP ${res.status} ${res.statusText} — ${url}`);
+    throw new Error(`HTTP ${res.status} ${res.statusText} — ${API_BASE}${API_PATH}`);
   }
   return pickTweets(await res.json());
 }
@@ -124,6 +172,7 @@ function buildLive(id, handle, rawTweets) {
       body: text,
       author: `@${handle}`,
       datetime: fmtDateTime(d),
+      url: tweetUrl(raw, handle),
     });
   }
 

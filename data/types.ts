@@ -36,6 +36,8 @@ export interface FeedItem {
   body: string;
   author: string; // "@aleabitoreddit" or "规则观点变化"
   datetime: string; // "2026-05-29 16:13"
+  /** 原始推文 / 新闻链接，实时抓取时会写入 */
+  url?: string;
 }
 
 export interface StockPoolItem {
@@ -62,7 +64,7 @@ export interface StockPoolItem {
 export interface SignalSource {
   name: string;
   handle: string;
-  status: "primary" | "enabled" | "disabled";
+  status: "primary" | "enabled" | "disabled" | "restricted";
 }
 
 export interface StatCard {
@@ -145,6 +147,8 @@ export interface BloggerData {
   id: string;
   name: string;
   handle: string; // "@aleabitoreddit"
+  /** X 会员频道 / Super Follow 入口；仅作为已授权内容导入入口展示 */
+  memberUrl?: string;
   /** short initials shown in the avatar */
   initials: string;
   /** tailwind gradient classes for the avatar background */

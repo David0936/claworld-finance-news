@@ -75,6 +75,7 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
   const [stockQueue, setStockQueue] = useState("全部队列");
   const data = bloggers[0];
   const section = SECTION_TITLES[activeNav] ?? SECTION_TITLES["总览"];
+  const live = liveSnapshot(data);
 
   const goToStock = (ticker: string) => {
     setStockQuery(ticker);
@@ -162,12 +163,15 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
                   {section.subtitle}
                 </p>
               </div>
-              <div className="rounded-xl bg-slate-50 px-3 py-2 text-right">
+              <div className={`rounded-xl px-3 py-2 text-right ${live.isLive ? "bg-emerald-50" : "bg-amber-50"}`}>
                 <div className="text-[11px] uppercase tracking-wide text-slate-400">
-                  当前快照
+                  {live.label}
                 </div>
-                <div className="text-sm font-semibold text-slate-900">
-                  {data.snapshotDate} {data.snapshotTime}
+                <div className={`text-sm font-semibold ${live.isLive ? "text-emerald-900" : "text-amber-900"}`}>
+                  {live.value}
+                </div>
+                <div className={`mt-0.5 text-[10px] ${live.isLive ? "text-emerald-600" : "text-amber-600"}`}>
+                  {live.hint}
                 </div>
               </div>
             </div>
@@ -1360,14 +1364,33 @@ function sourceStatusClass(status: string): string {
   return "bg-slate-100 text-slate-500";
 }
 
+function liveSnapshot(data: BloggerData) {
+  const status = data.liveStatus;
+  if (status?.mode === "live") {
+    return {
+      isLive: true,
+      label: "实时快照",
+      value: status.fetchedAt ?? `${data.snapshotDate} ${data.snapshotTime}`,
+      hint: status.source,
+    };
+  }
+  return {
+    isLive: false,
+    label: "实时状态",
+    value: "等待真实抓取",
+    hint: "未写入 live",
+  };
+}
+
 function MultiSourceView({ data }: { data: BloggerData }) {
   const sources = resolveSources(data);
   const coverage = resolveCoverage(data);
   const extra = sources.filter((s) => s.status !== "primary").length;
   const enabled = sources.filter((s) => s.status === "enabled").length;
+  const live = liveSnapshot(data);
 
   const stats = [
-    { label: "覆盖股票", value: coverage, hint: `${data.snapshotDate} ${data.snapshotTime}`, tone: "border-blue-200 bg-blue-50" },
+    { label: "覆盖股票", value: coverage, hint: live.isLive ? live.value : "等待 live", tone: "border-blue-200 bg-blue-50" },
     { label: "配置源", value: extra, hint: "extra X sources", tone: "border-emerald-200 bg-emerald-50" },
     { label: "启用源", value: enabled, hint: "cost gated", tone: "border-amber-200 bg-amber-50" },
   ];

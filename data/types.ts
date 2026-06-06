@@ -157,6 +157,11 @@ export interface BloggerData {
   focusTags: string[];
   snapshotDate: string; // "2026-05-29"
   snapshotTime: string; // "09:00"
+  liveStatus?: {
+    mode: "live" | "static";
+    source: string;
+    fetchedAt?: string;
+  };
   priorityHeader: {
     riskLabel: string; // "高风险"
     riskCount: number; // 345

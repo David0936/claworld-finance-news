@@ -5,6 +5,7 @@ import { basename, join } from "node:path";
 interface LiveData {
   id: string;
   handle: string;
+  source?: string;
   fetchedAt: string | null;
   feed: FeedItem[];
   mentions: Record<string, { h24: number; d7: number }>;
@@ -49,6 +50,7 @@ function mergeLive(a: LiveData | undefined, b: LiveData): LiveData {
   return {
     id: a.id,
     handle: a.handle || b.handle,
+    source: b.fetchedAt && (!a.fetchedAt || b.fetchedAt >= a.fetchedAt) ? b.source : a.source,
     fetchedAt:
       (a.fetchedAt ?? "") > (b.fetchedAt ?? "") ? a.fetchedAt : b.fetchedAt,
     feed,
@@ -70,6 +72,7 @@ function loadLive(): Record<string, LiveData> {
         ...parsed,
         id,
         handle: cleanHandle(parsed.handle || id),
+        source: parsed.source,
         feed: parsed.feed ?? [],
         mentions: parsed.mentions ?? {},
       };
@@ -210,15 +213,27 @@ function updateMetrics(b: BloggerData, live: LiveData): BloggerData["metrics"] {
 export function applyLive(list: BloggerData[]): BloggerData[] {
   return list.map((b) => {
     const live = LIVE[b.id];
-    if (!live || !live.feed || live.feed.length === 0) return b;
-
-    const authoredNonTweets = b.feed.filter((f) => f.type !== "推文");
-    const merged: BloggerData = {
+    const base: BloggerData = {
       ...b,
+      liveStatus: b.liveStatus ?? {
+        mode: "static",
+        source: "manual-snapshot",
+      },
+    };
+    if (!live || !live.feed || live.feed.length === 0) return base;
+
+    const authoredNonTweets = base.feed.filter((f) => f.type !== "推文");
+    const merged: BloggerData = {
+      ...base,
       feed: [...(live.feed as FeedItem[]), ...authoredNonTweets],
-      metrics: updateMetrics(b, live),
-      priorityQueue: updateQueue(b, live),
-      stockPool: updateStockPool(b, live),
+      liveStatus: {
+        mode: "live",
+        source: live.source || live.handle || "live",
+        fetchedAt: live.fetchedAt ?? undefined,
+      },
+      metrics: updateMetrics(base, live),
+      priorityQueue: updateQueue(base, live),
+      stockPool: updateStockPool(base, live),
     };
     if (live.fetchedAt) {
       merged.snapshotDate = live.fetchedAt.slice(0, 10);

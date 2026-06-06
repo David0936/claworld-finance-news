@@ -9,6 +9,16 @@
   "fetchedAt": "2026-06-06 09:00",
   "feed": [
     {
+      "time": "06-06 12:40",
+      "type": "推文",
+      "ticker": "RDDT",
+      "title": "推文线索 · RDDT",
+      "body": "How are all you regards on $RDDT down -99% after 2 red days? \nIs it that hard just to hold indiviudal stocks like $AAOI or $MRVL that are already high-beta?\nYou can be right directionally, but wrong on short-term timing. \nOne extra week or month makes a huge difference.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-06 12:40",
+      "url": "https://x.com/aleabitoreddit/status/2063118835105014006"
+    },
+    {
       "time": "06-06 09:55",
       "type": "推文",
       "ticker": "",
@@ -47,22 +57,16 @@
       "author": "@aleabitoreddit",
       "datetime": "2026-06-05 23:15",
       "url": "https://x.com/aleabitoreddit/status/2062916125235831046"
-    },
-    {
-      "time": "06-05 22:25",
-      "type": "推文",
-      "ticker": "SIVE",
-      "title": "推文线索 · SIVE",
-      "body": "$SIVE is my favorite CPO / photonics stock after AAOI. \nPartly because it's Swedish and you have entertainment from comedians over there. \nToday a new non-technical hedge fund called Protean Funds (likely shorting), went on air. \nTo said $SIVE CPO applications are imaginary. \nRight after $GFS just made $SIVE their reference laser. \n(Just for some context to newer readers: Lot of people in Sweden can only look at past 12 month revenue, and don't understand concepts of forward growth)\nAlso because they don't understand that no CPO application has scaled up yet at all.\nSo Swedish hedge funds keep going short (with many of their hedge funds like Colosseum / Origo heavily underwater). \nBut... for the technical readers... from H2 2026 to 2028, it goes from near $0 to $91B TAM in 1 1/2 years. (we're entering H2 now). \nOverall TAM hits $141B (which is also 10x+ or so in 1 1/2 years)... and $SIVE has scaled into pluggable market with $JBL + other unnamed pluggable players with that too. \nProbably not going to end well for the local Swedish firms, shorting right before the largest inflection points ever hits for $SIVE. \nJust a matter of time before volume ramps.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-05 22:25",
-      "url": "https://x.com/aleabitoreddit/status/2062903639300309302"
     }
   ],
   "mentions": {
+    "RDDT": {
+      "h24": 1,
+      "d7": 1
+    },
     "SIVE": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "NVDA": {
       "h24": 1,

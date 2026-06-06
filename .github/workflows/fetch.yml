@@ -10,6 +10,7 @@ on:
     paths:
       - ".github/workflows/fetch.yml"
       - "scripts/fetch-x.mjs"
+      - "scripts/sync-analysissite.py"
       - "scripts/handles.json"
 
 permissions:
@@ -31,7 +32,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Fetch latest tweets
+      - name: Fetch latest tweets from X API (optional)
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           # 如需换服务商/端点，在仓库 Variables 里设这几个即可（可留空用默认）
@@ -46,7 +47,15 @@ jobs:
           TWITTER_PUBLIC_SOURCE: ${{ vars.TWITTER_PUBLIC_SOURCE }}
           SOTWE_BASE: ${{ vars.SOTWE_BASE }}
           MAX_TWEETS: ${{ vars.MAX_TWEETS }}
-        run: node scripts/fetch-x.mjs
+        run: |
+          if [ -z "$TWITTER_API_KEY" ]; then
+            echo "::notice::未配置 TWITTER_API_KEY，跳过直接 X API 抓取。"
+            exit 0
+          fi
+          node scripts/fetch-x.mjs
+
+      - name: Sync analysissite dynamic snapshot
+        run: python3 scripts/sync-analysissite.py
 
       - name: Push digest to IM (Feishu / Telegram)
         # 把新推文整理成卡片推到飞书/Telegram。下面任一渠道留空即自动跳过，不会报错。

@@ -3,9 +3,30 @@
 每小时由 GitHub Actions（`.github/workflows/fetch.yml`）自动抓取，写入 `data/live/<id>.json`，
 提交后触发部署，网站推文随之更新。**只有显式 `--dry-run` 才会使用 fixture；正式抓取不会再用假数据。**
 
+## 已研究出的原站机制
+
+`https://analysissite.vercel.app` 是 Next/Vercel App Router 站点。它没有暴露公开业务 JSON API；
+动态数据在服务端/构建阶段已经算好，并被预渲染进各个路由的 HTML/RSC payload：
+
+- `/tweets`：最新 5 条推文、相关公司、推文链接与互动数
+- `/stocks`：股票层事实表（约 706 条），字段包括 `current_view`、`author_stance`、`recent_mentions_24h`、`recent_stock_news_7d`、`revenue_yoy_pct`
+- `/mentions`：AI 提及后收益表（约 225 条），含基准价、1W/1M/6M/1Y/至今收益、链条分类
+- `/performance`：战绩热力图与校准表（目前仍保留本地静态快照，后续可继续抽取）
+
+因此新增了 `scripts/sync-analysissite.py`：抓取这些公开页面，解析 `self.__next_f.push(...)`
+里的 RSC 数据，归一化后写入 `data/live/aleabitoreddit.json`。这条链路是当前默认真数据源。
+
+本地手动同步：
+
+```bash
+python3 scripts/sync-analysissite.py
+node scripts/validate-data.mjs
+```
+
 ## 一次性设置（你只需做这一步）
 
-1. 准备一个抓取 API 的 key。**省钱首选 Apify「最便宜抓取器」（约 1000 条/天免费）**，配法见下方「选数据源 · 方案 B」；图省事也可用 twitterapi.io（方案 A）。如果暂时没有 key，脚本会尝试公开镜像源（方案 C）。
+1. 默认先同步 analysissite 公开动态快照，不需要 key。
+2. 如果要绕开原站、直接抓 X，再准备一个抓取 API 的 key。**省钱首选 Apify「最便宜抓取器」（约 1000 条/天免费）**，配法见下方「选数据源 · 方案 B」；图省事也可用 twitterapi.io（方案 A）。
 2. 仓库 → **Settings → Secrets and variables → Actions → New repository secret**
    - Name: `TWITTER_API_KEY`
    - Value: 你的 key（Apify 则填 Apify token，并按方案 B 再设几个 Variable）

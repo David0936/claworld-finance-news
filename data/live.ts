@@ -1,4 +1,11 @@
-import type { BloggerData, FeedItem, PriorityStock, StockPoolItem } from "./types";
+import type {
+  BloggerData,
+  FeedItem,
+  MentionPerformance,
+  PriorityStock,
+  StockPoolItem,
+  TrackRecord,
+} from "./types";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { basename, join } from "node:path";
 
@@ -6,9 +13,18 @@ interface LiveData {
   id: string;
   handle: string;
   source?: string;
+  snapshotDate?: string;
+  snapshotTime?: string;
   fetchedAt: string | null;
   feed: FeedItem[];
   mentions: Record<string, { h24: number; d7: number }>;
+  metrics?: BloggerData["metrics"];
+  priorityHeader?: BloggerData["priorityHeader"];
+  priorityQueue?: PriorityStock[];
+  stockPool?: StockPoolItem[];
+  coverage?: number;
+  mentionPerformance?: MentionPerformance;
+  trackRecord?: TrackRecord;
 }
 
 const LIVE_DIR = join(process.cwd(), "data", "live");
@@ -38,6 +54,7 @@ function recomputeMentions(feed: FeedItem[]): LiveData["mentions"] {
 
 function mergeLive(a: LiveData | undefined, b: LiveData): LiveData {
   if (!a) return b;
+  const preferred = (b.fetchedAt ?? "") >= (a.fetchedAt ?? "") ? b : a;
   const seen = new Set<string>();
   const feed = [...a.feed, ...b.feed]
     .filter((item) => {
@@ -48,6 +65,7 @@ function mergeLive(a: LiveData | undefined, b: LiveData): LiveData {
     })
     .sort((x, y) => parseDT(y.datetime) - parseDT(x.datetime));
   return {
+    ...preferred,
     id: a.id,
     handle: a.handle || b.handle,
     source: b.fetchedAt && (!a.fetchedAt || b.fetchedAt >= a.fetchedAt) ? b.source : a.source,
@@ -223,19 +241,27 @@ export function applyLive(list: BloggerData[]): BloggerData[] {
     if (!live || !live.feed || live.feed.length === 0) return base;
 
     const authoredNonTweets = base.feed.filter((f) => f.type !== "推文");
+    const liveHasFullFeed = live.feed.some((item) => item.type !== "推文");
     const merged: BloggerData = {
       ...base,
-      feed: [...(live.feed as FeedItem[]), ...authoredNonTweets],
+      priorityHeader: live.priorityHeader ?? base.priorityHeader,
+      feed: liveHasFullFeed ? (live.feed as FeedItem[]) : [...(live.feed as FeedItem[]), ...authoredNonTweets],
       liveStatus: {
         mode: "live",
         source: live.source || live.handle || "live",
         fetchedAt: live.fetchedAt ?? undefined,
       },
-      metrics: updateMetrics(base, live),
-      priorityQueue: updateQueue(base, live),
-      stockPool: updateStockPool(base, live),
+      metrics: live.metrics ?? updateMetrics(base, live),
+      priorityQueue: live.priorityQueue ?? updateQueue(base, live),
+      stockPool: live.stockPool ?? updateStockPool(base, live),
+      coverage: live.coverage ?? base.coverage,
+      mentionPerformance: live.mentionPerformance ?? base.mentionPerformance,
+      trackRecord: live.trackRecord ?? base.trackRecord,
     };
-    if (live.fetchedAt) {
+    if (live.snapshotDate && live.snapshotTime) {
+      merged.snapshotDate = live.snapshotDate;
+      merged.snapshotTime = live.snapshotTime;
+    } else if (live.fetchedAt) {
       merged.snapshotDate = live.fetchedAt.slice(0, 10);
       merged.snapshotTime = live.fetchedAt.slice(11);
     }

@@ -32,12 +32,19 @@ export interface FeedItem {
   time: string; // "05-29 16:13"
   type: FeedType;
   ticker: string;
+  tickers?: string[];
   title: string; // "推文线索 · SIVE"
   body: string;
   author: string; // "@aleabitoreddit" or "规则观点变化"
   datetime: string; // "2026-05-29 16:13"
   /** 原始推文 / 新闻链接，实时抓取时会写入 */
   url?: string;
+  stats?: {
+    views?: string;
+    likes?: string;
+    reposts?: string;
+    bookmarks?: string;
+  };
 }
 
 export interface StockPoolItem {
@@ -111,11 +118,46 @@ export interface CalibrationRow {
   medianExcess: number; // 4.1
 }
 
+export interface PerformanceGroupTable {
+  key: string;
+  title: string;
+  horizon: string;
+  note: string;
+  rows: CalibrationRow[];
+}
+
+export interface RecentDecayRow {
+  group: string;
+  recent: string;
+  history: string;
+  delta: string;
+}
+
+export interface PortfolioProxyRow {
+  month: string;
+  holdings: string;
+  proxy: string;
+  spy: string;
+  soxx: string;
+}
+
 export interface TrackRecord {
   stats: StatCard[];
   horizons: string[]; // ["1D","5D","1W","1M","3M","6M"]
   heatmap: TrackHeatRow[];
   calibration: CalibrationRow[];
+  groupTables?: PerformanceGroupTable[];
+  recentDecay?: {
+    title: string;
+    note: string;
+    rows: RecentDecayRow[];
+  };
+  equalWeight?: {
+    title: string;
+    note: string;
+    stats: StatCard[];
+    rows: PortfolioProxyRow[];
+  };
 }
 
 export interface SupplyChainRole {

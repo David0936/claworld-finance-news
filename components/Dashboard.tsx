@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { BloggerData, FeedItem, SupplyChainData } from "@/data/types";
 import {
   sentimentClass,
@@ -16,18 +16,29 @@ import {
   findStock,
 } from "@/data/derive";
 
-const NAV = [
-  "总览",
-  "推文",
-  "股票",
-  "提及表现",
-  "战绩",
-  "供应链",
-  "多源",
-  "行业",
-  "AI分析",
-  "关注我",
+const NAV_ITEMS = [
+  { label: "总览", path: "/" },
+  { label: "推文", path: "/tweets/" },
+  { label: "股票", path: "/stocks/" },
+  { label: "提及表现", path: "/mentions/" },
+  { label: "战绩", path: "/performance/" },
+  { label: "供应链", path: "/supply-chain/" },
+  { label: "多源", path: "/sources/" },
+  { label: "行业", path: "/industries/" },
+  { label: "AI分析", path: "/llm/" },
+  { label: "关注我", path: "/follow/" },
 ];
+
+const NAV = NAV_ITEMS.map((item) => item.label);
+
+function pathForNav(label: string) {
+  return NAV_ITEMS.find((item) => item.label === label)?.path ?? "/";
+}
+
+function navFromPath(pathname: string) {
+  const normalized = pathname.endsWith("/") ? pathname : `${pathname}/`;
+  return NAV_ITEMS.find((item) => item.path === normalized)?.label ?? "总览";
+}
 
 const SECTION_TITLES: Record<
   string,
@@ -69,18 +80,40 @@ const SECTION_TITLES: Record<
   关注我: { title: "关注作者", subtitle: "博主主页与关注入口。" },
 };
 
-export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
-  const [activeNav, setActiveNav] = useState("总览");
+export default function Dashboard({
+  bloggers,
+  initialNav = "总览",
+}: {
+  bloggers: BloggerData[];
+  initialNav?: string;
+}) {
+  const [activeNav, setActiveNav] = useState(initialNav);
   const [stockQuery, setStockQuery] = useState("");
   const [stockQueue, setStockQueue] = useState("全部队列");
   const data = bloggers[0];
   const section = SECTION_TITLES[activeNav] ?? SECTION_TITLES["总览"];
   const live = liveSnapshot(data);
 
+  const selectNav = (item: string) => {
+    setActiveNav(item);
+    if (typeof window !== "undefined") {
+      const nextPath = pathForNav(item);
+      if (window.location.pathname !== nextPath) {
+        window.history.pushState({ nav: item }, "", nextPath);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const onPopState = () => setActiveNav(navFromPath(window.location.pathname));
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
   const goToStock = (ticker: string) => {
     setStockQuery(ticker);
     setStockQueue("全部队列");
-    setActiveNav("股票");
+    selectNav("股票");
   };
 
   return (
@@ -107,7 +140,7 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
             {NAV.map((item) => (
               <button
                 key={item}
-                onClick={() => setActiveNav(item)}
+                onClick={() => selectNav(item)}
                 className={`rounded-full px-3 py-1.5 text-sm transition ${
                   activeNav === item
                     ? "bg-slate-900 text-white"
@@ -119,7 +152,7 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
             ))}
           </nav>
           <button
-            onClick={() => setActiveNav("多源")}
+            onClick={() => selectNav("多源")}
             className="rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
           >
             数据源
@@ -135,7 +168,7 @@ export default function Dashboard({ bloggers }: { bloggers: BloggerData[] }) {
             {NAV.map((item) => (
               <button
                 key={item}
-                onClick={() => setActiveNav(item)}
+                onClick={() => selectNav(item)}
                 className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
                   activeNav === item
                     ? "border-slate-900 bg-slate-900 text-white"
@@ -676,7 +709,9 @@ function TweetsView({
 }) {
   const tweets = data.feed.filter((f) => f.type === "推文");
   const pool = resolveStockPool(data);
-  const relatedTickers = [...new Set(tweets.map((t) => t.ticker))];
+  const relatedTickers = [
+    ...new Set(tweets.flatMap((t) => t.tickers ?? (t.ticker ? [t.ticker] : []))),
+  ];
 
   if (tweets.length === 0) {
     return <EmptyState title="暂无推文" note="当前博主在本快照下没有推文线索。" />;
@@ -714,7 +749,13 @@ function TweetsView({
           <h2 className="mt-1 text-base font-semibold text-slate-900">时间线</h2>
           <div className="mt-4 grid gap-3">
             {tweets.map((t, i) => {
-              const stock = findStock(pool, t.ticker);
+              const tweetTickers = t.tickers ?? (t.ticker ? [t.ticker] : []);
+              const tweetStocks = tweetTickers
+                .map((ticker) => findStock(pool, ticker))
+                .filter(
+                  (stock): stock is NonNullable<ReturnType<typeof findStock>> =>
+                    Boolean(stock)
+                );
               return (
                 <article
                   key={i}
@@ -726,7 +767,7 @@ function TweetsView({
                     </span>
                     <span className="text-xs text-slate-400">{t.author}</span>
                     <a
-                      href={profileUrl}
+                      href={t.url ?? profileUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="ml-auto rounded-md border border-slate-200 px-2 py-1 text-[11px] text-slate-500 hover:bg-slate-50"
@@ -738,43 +779,47 @@ function TweetsView({
                     {t.body}
                   </p>
                   <div className="mt-2 flex items-center gap-3 text-[11px] text-slate-400">
-                    <span>浏览 0</span>
-                    <span>赞 0</span>
-                    <span>转发 0</span>
-                    <span>收藏 0</span>
+                    <span>浏览 {t.stats?.views ?? "0"}</span>
+                    <span>赞 {t.stats?.likes ?? "0"}</span>
+                    <span>转发 {t.stats?.reposts ?? "0"}</span>
+                    <span>收藏 {t.stats?.bookmarks ?? "0"}</span>
                   </div>
-                  {stock && (
-                    <div className="mt-3 rounded-lg bg-slate-50 p-3">
-                      <div className="flex items-center gap-2">
-                        <span className="font-bold text-slate-900">
-                          ${stock.ticker}
-                        </span>
-                        <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700 ring-1 ring-amber-200">
-                          {stock.queue}
-                        </span>
-                        <button
-                          onClick={() => goToStock(stock.ticker)}
-                          className="ml-auto text-[11px] font-medium text-blue-600 hover:underline"
-                        >
-                          打开股票页
-                        </button>
-                      </div>
-                      <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
-                        提及: 24h {stock.mentions24h} / 7D {stock.mentions7d};
-                        新闻: {stock.news}; 披露: {stock.disclosures}. 作者立场:{" "}
-                        {stock.stance}
-                        {stock.confidence ? `; 置信度: ${stock.confidence}` : ""}
-                        {stock.industry ? `. 行业: ${stock.industry}` : ""}
-                        {stock.valuationRisk
-                          ? `; 估值风险: ${stock.valuationRisk}`
-                          : ""}
-                        {stock.sentimentRisk
-                          ? `; 情绪风险: ${stock.sentimentRisk}`
-                          : ""}
-                        {stock.fundamentals
-                          ? `. 基本面: ${stock.fundamentals}.`
-                          : ""}
-                      </p>
+                  {tweetStocks.length > 0 && (
+                    <div className="mt-3 grid gap-2">
+                      {tweetStocks.map((stock) => (
+                        <div key={stock.ticker} className="rounded-lg bg-slate-50 p-3">
+                          <div className="flex items-center gap-2">
+                            <span className="font-bold text-slate-900">
+                              ${stock.ticker}
+                            </span>
+                            <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700 ring-1 ring-amber-200">
+                              {stock.queue}
+                            </span>
+                            <button
+                              onClick={() => goToStock(stock.ticker)}
+                              className="ml-auto text-[11px] font-medium text-blue-600 hover:underline"
+                            >
+                              打开股票页
+                            </button>
+                          </div>
+                          <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+                            提及: 24h {stock.mentions24h} / 7D {stock.mentions7d};
+                            新闻: {stock.news}; 披露: {stock.disclosures}. 作者立场:{" "}
+                            {stock.stance}
+                            {stock.confidence ? `; 置信度: ${stock.confidence}` : ""}
+                            {stock.industry ? `. 行业: ${stock.industry}` : ""}
+                            {stock.valuationRisk
+                              ? `; 估值风险: ${stock.valuationRisk}`
+                              : ""}
+                            {stock.sentimentRisk
+                              ? `; 情绪风险: ${stock.sentimentRisk}`
+                              : ""}
+                            {stock.fundamentals
+                              ? `. 基本面: ${stock.fundamentals}.`
+                              : ""}
+                          </p>
+                        </div>
+                      ))}
                     </div>
                   )}
                 </article>
@@ -904,21 +949,78 @@ function StocksView({
   setQueue: (v: string) => void;
 }) {
   const pool = resolveStockPool(data);
+  const [chain, setChain] = useState("全部链条");
+  const [stance, setStance] = useState("全部观点");
+  const [activity, setActivity] = useState("全部时间");
+  const [returnFilter, setReturnFilter] = useState("全部收益");
+  const [sortMode, setSortMode] = useState("分数");
+  const performanceByTicker = useMemo(() => {
+    const map = new Map<string, NonNullable<BloggerData["mentionPerformance"]>["rows"][number]>();
+    data.mentionPerformance?.rows.forEach((row) => map.set(row.ticker, row));
+    return map;
+  }, [data.mentionPerformance]);
   const queues = useMemo(
     () => ["全部队列", ...new Set(pool.map((s) => s.queue))],
     [pool]
+  );
+  const chains = useMemo(
+    () => [
+      "全部链条",
+      ...new Set(
+        pool
+          .map((s) => performanceByTicker.get(s.ticker)?.chain ?? s.industry)
+          .filter(Boolean) as string[]
+      ),
+    ],
+    [pool, performanceByTicker]
   );
 
   const q = query.trim().toLowerCase();
   const rows = pool
     .filter((s) => queue === "全部队列" || s.queue === queue)
+    .filter((s) => stance === "全部观点" || s.stance === stance)
+    .filter((s) => {
+      if (chain === "全部链条") return true;
+      const row = performanceByTicker.get(s.ticker);
+      return row?.chain === chain || s.industry === chain;
+    })
+    .filter((s) => {
+      if (activity === "24h有提及") return s.mentions24h > 0;
+      if (activity === "7天有提及") return s.mentions7d > 0;
+      if (activity === "30天有提及") return s.mentions30d > 0;
+      if (activity === "有新闻") return s.news > 0;
+      if (activity === "有披露") return s.disclosures > 0;
+      return true;
+    })
+    .filter((s) => {
+      if (returnFilter === "全部收益") return true;
+      const value = parsePercent(performanceByTicker.get(s.ticker)?.toDate);
+      if (returnFilter === "至今为正") return value !== null && value > 0;
+      if (returnFilter === "至今为负") return value !== null && value < 0;
+      if (returnFilter === "未到期/无价") return value === null;
+      return true;
+    })
     .filter(
       (s) =>
         !q ||
         s.ticker.toLowerCase().includes(q) ||
-        (s.industry ?? "").toLowerCase().includes(q)
+        (s.industry ?? "").toLowerCase().includes(q) ||
+        (performanceByTicker.get(s.ticker)?.chain ?? "").toLowerCase().includes(q)
     )
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => {
+      if (sortMode === "24H") return b.mentions24h - a.mentions24h;
+      if (sortMode === "7D") return b.mentions7d - a.mentions7d;
+      if (sortMode === "30D") return b.mentions30d - a.mentions30d;
+      if (sortMode === "新闻") return b.news - a.news;
+      if (sortMode === "收入") return (parsePercent(b.revenue) ?? -99999) - (parsePercent(a.revenue) ?? -99999);
+      if (sortMode === "至今收益") {
+        return (
+          (parsePercent(performanceByTicker.get(b.ticker)?.toDate) ?? -99999) -
+          (parsePercent(performanceByTicker.get(a.ticker)?.toDate) ?? -99999)
+        );
+      }
+      return b.score - a.score;
+    });
 
   if (pool.length === 0) {
     return <EmptyState title="暂无覆盖标的" note="当前博主没有覆盖的股票。" />;
@@ -926,32 +1028,69 @@ function StocksView({
 
   return (
     <section className="rounded-2xl border border-slate-200 bg-white">
-      <div className="flex flex-wrap items-center gap-3 border-b border-slate-200 p-4">
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="搜索股票 / 行业"
-          className="h-9 flex-1 min-w-[180px] rounded-lg border border-slate-200 px-3 text-sm outline-none focus:border-slate-400"
-        />
-        <select
-          value={queue}
-          onChange={(e) => setQueue(e.target.value)}
-          className="h-9 rounded-lg border border-slate-200 px-3 text-sm outline-none focus:border-slate-400"
-        >
-          {queues.map((qx) => (
-            <option key={qx} value={qx}>
-              {qx}
-            </option>
+      <div className="grid gap-3 border-b border-slate-200 bg-slate-50/70 p-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <input
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="搜索股票 / 行业 / 链条"
+            className="h-9 min-w-[220px] flex-1 rounded-lg border border-slate-200 bg-white px-3 text-sm outline-none focus:border-slate-400"
+          />
+          <button
+            type="button"
+            onClick={() => {
+              setQuery("");
+              setQueue("全部队列");
+              setChain("全部链条");
+              setStance("全部观点");
+              setActivity("全部时间");
+              setReturnFilter("全部收益");
+              setSortMode("分数");
+            }}
+            className="h-9 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-600 hover:bg-slate-100"
+          >
+            重置
+          </button>
+          <span className="ml-auto text-xs text-slate-400">
+            显示 {rows.length} / {pool.length}
+          </span>
+        </div>
+
+        <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-6">
+          {[
+            ["队列", queue, setQueue, queues],
+            ["链条", chain, setChain, chains],
+            ["观点", stance, setStance, ["全部观点", "看多", "中性", "看空"]],
+            ["时间", activity, setActivity, ["全部时间", "24h有提及", "7天有提及", "30天有提及", "有新闻", "有披露"]],
+            ["收益", returnFilter, setReturnFilter, ["全部收益", "至今为正", "至今为负", "未到期/无价"]],
+            ["排序", sortMode, setSortMode, ["分数", "24H", "7D", "30D", "新闻", "收入", "至今收益"]],
+          ].map(([label, value, setter, options]) => (
+            <label key={label as string} className="grid gap-1">
+              <span className="text-[11px] font-medium text-slate-400">
+                {label as string}
+              </span>
+              <select
+                value={value as string}
+                onChange={(e) => (setter as (v: string) => void)(e.target.value)}
+                className="h-9 min-w-0 rounded-lg border border-slate-200 bg-white px-3 text-sm outline-none focus:border-slate-400"
+              >
+                {(options as string[]).map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+            </label>
           ))}
-        </select>
-        <span className="text-xs text-slate-400">{rows.length} 条</span>
+        </div>
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[760px] text-sm">
+        <table className="w-full min-w-[980px] text-sm">
           <thead className="border-b border-slate-200 bg-slate-50 text-left text-xs text-slate-500">
             <tr>
               <th className="px-4 py-3 font-medium">股票</th>
+              <th className="px-4 py-3 font-medium">链条</th>
               <th className="px-4 py-3 font-medium">队列</th>
               <th className="px-4 py-3 font-medium">SERENITY</th>
               <th className="px-4 py-3 font-medium">更新时间</th>
@@ -961,61 +1100,76 @@ function StocksView({
               <th className="px-3 py-3 text-right font-medium">新闻</th>
               <th className="px-3 py-3 text-right font-medium">披露</th>
               <th className="px-3 py-3 text-right font-medium">收入</th>
+              <th className="px-3 py-3 text-right font-medium">至今</th>
               <th className="px-4 py-3 text-right font-medium">分数</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
-            {rows.map((s) => (
-              <tr key={s.ticker} className="hover:bg-slate-50/60">
-                <td className="px-4 py-3 font-bold text-slate-900">
-                  {s.ticker}
-                </td>
-                <td className="px-4 py-3">
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${queueBadgeClass(
-                      s.queue
+            {rows.map((s) => {
+              const perf = performanceByTicker.get(s.ticker);
+              const chainLabel = perf?.chain ?? s.industry ?? "—";
+              return (
+                <tr key={s.ticker} className="hover:bg-slate-50/60">
+                  <td className="px-4 py-3 font-bold text-slate-900">
+                    {s.ticker}
+                  </td>
+                  <td className="px-4 py-3 text-xs text-slate-500">
+                    {chainLabel}
+                  </td>
+                  <td className="px-4 py-3">
+                    <span
+                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${queueBadgeClass(
+                        s.queue
+                      )}`}
+                    >
+                      {s.queue}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span
+                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${sentimentClass(
+                        s.stance
+                      )}`}
+                    >
+                      {s.stance}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 font-mono text-xs text-slate-400">
+                    {s.updatedAt}
+                  </td>
+                  <td className="px-3 py-3 text-right font-semibold text-rose-600">
+                    {s.mentions24h}
+                  </td>
+                  <td className="px-3 py-3 text-right text-slate-700">
+                    {s.mentions7d}
+                  </td>
+                  <td className="px-3 py-3 text-right text-slate-700">
+                    {s.mentions30d}
+                  </td>
+                  <td className="px-3 py-3 text-right text-slate-700">{s.news}</td>
+                  <td className="px-3 py-3 text-right text-slate-700">
+                    {s.disclosures}
+                  </td>
+                  <td
+                    className={`px-3 py-3 text-right font-medium ${revenueClass(
+                      s.revenue
                     )}`}
                   >
-                    {s.queue}
-                  </span>
-                </td>
-                <td className="px-4 py-3">
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${sentimentClass(
-                      s.stance
+                    {s.revenue}
+                  </td>
+                  <td
+                    className={`px-3 py-3 text-right font-medium ${returnClass(
+                      perf?.toDate ?? "—"
                     )}`}
                   >
-                    {s.stance}
-                  </span>
-                </td>
-                <td className="px-4 py-3 font-mono text-xs text-slate-400">
-                  {s.updatedAt}
-                </td>
-                <td className="px-3 py-3 text-right font-semibold text-rose-600">
-                  {s.mentions24h}
-                </td>
-                <td className="px-3 py-3 text-right text-slate-700">
-                  {s.mentions7d}
-                </td>
-                <td className="px-3 py-3 text-right text-slate-700">
-                  {s.mentions30d}
-                </td>
-                <td className="px-3 py-3 text-right text-slate-700">{s.news}</td>
-                <td className="px-3 py-3 text-right text-slate-700">
-                  {s.disclosures}
-                </td>
-                <td
-                  className={`px-3 py-3 text-right font-medium ${revenueClass(
-                    s.revenue
-                  )}`}
-                >
-                  {s.revenue}
-                </td>
-                <td className="px-4 py-3 text-right font-bold text-slate-900">
-                  {s.score}
-                </td>
-              </tr>
-            ))}
+                    {perf?.toDate ?? "—"}
+                  </td>
+                  <td className="px-4 py-3 text-right font-bold text-slate-900">
+                    {s.score}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -1027,6 +1181,12 @@ function returnClass(v: string): string {
   if (v === "未到期" || v === "—") return "text-slate-300";
   if (v.startsWith("-")) return "text-red-600";
   return "text-emerald-600";
+}
+
+function parsePercent(value?: string): number | null {
+  if (!value || value === "–" || value === "—" || value === "未到期") return null;
+  const parsed = Number.parseFloat(value.replace(/[%+,]/g, ""));
+  return Number.isFinite(parsed) ? parsed : null;
 }
 
 function MentionsView({ data }: { data: BloggerData }) {
@@ -1225,6 +1385,12 @@ function excessClass(v: number): string {
   return "text-slate-400";
 }
 
+function signedTextClass(v: string): string {
+  if (v.trim().startsWith("-")) return "text-red-600";
+  if (v.trim() === "-" || v.trim() === "—") return "text-slate-300";
+  return "text-emerald-600";
+}
+
 function TrackRecordView({ data }: { data: BloggerData }) {
   const tr = data.trackRecord;
   if (!tr) {
@@ -1349,6 +1515,191 @@ function TrackRecordView({ data }: { data: BloggerData }) {
             </table>
           </div>
         </section>
+      </div>
+
+      {tr.groupTables && tr.groupTables.length > 0 && (
+        <section className="mt-4 grid gap-4 xl:grid-cols-2">
+          {tr.groupTables.map((table) => (
+            <div
+              key={table.key}
+              className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5"
+            >
+              <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+                {table.horizon}
+              </div>
+              <h2 className="mt-1 text-base font-semibold text-slate-900">
+                {table.title}
+              </h2>
+              <p className="mt-1 text-xs text-slate-400">{table.note}</p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="w-full min-w-[460px] text-sm">
+                  <thead className="text-left text-[11px] uppercase text-slate-400">
+                    <tr>
+                      <th className="py-2 font-medium">分组</th>
+                      <th className="py-2 text-right font-medium">N</th>
+                      <th className="py-2 text-right font-medium">胜率</th>
+                      <th className="py-2 text-right font-medium">均值超额</th>
+                      <th className="py-2 text-right font-medium">中位超额</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row) => (
+                      <tr key={row.group} className="border-t border-slate-100">
+                        <td className="py-2 pr-2 font-mono text-xs text-slate-600">
+                          {row.group}
+                        </td>
+                        <td className="py-2 text-right text-slate-500">{row.n}</td>
+                        <td className="py-2 text-right font-semibold text-slate-900">
+                          {row.winRate.toFixed(1)}%
+                        </td>
+                        <td
+                          className={`py-2 text-right ${excessClass(
+                            row.meanExcess
+                          )}`}
+                        >
+                          {row.meanExcess}
+                        </td>
+                        <td
+                          className={`py-2 text-right ${excessClass(
+                            row.medianExcess
+                          )}`}
+                        >
+                          {row.medianExcess}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <div className="mt-4 grid gap-4 xl:grid-cols-2">
+        {tr.recentDecay && tr.recentDecay.rows.length > 0 && (
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              recent_30d_vs_history
+            </div>
+            <h2 className="mt-1 text-base font-semibold text-slate-900">
+              {tr.recentDecay.title}
+            </h2>
+            <p className="mt-1 text-xs text-slate-400">{tr.recentDecay.note}</p>
+            <div className="mt-4 overflow-x-auto">
+              <table className="w-full min-w-[520px] text-sm">
+                <thead className="text-left text-[11px] uppercase text-slate-400">
+                  <tr>
+                    <th className="py-2 font-medium">分组</th>
+                    <th className="py-2 text-right font-medium">Recent</th>
+                    <th className="py-2 text-right font-medium">History</th>
+                    <th className="py-2 text-right font-medium">差值</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {tr.recentDecay.rows.map((row) => (
+                    <tr key={row.group} className="border-t border-slate-100">
+                      <td className="py-2 pr-2 font-mono text-xs text-slate-600">
+                        {row.group}
+                      </td>
+                      <td className="py-2 text-right font-mono text-xs text-slate-500">
+                        {row.recent}
+                      </td>
+                      <td className="py-2 text-right font-mono text-xs text-slate-500">
+                        {row.history}
+                      </td>
+                      <td
+                        className={`py-2 text-right font-semibold ${signedTextClass(
+                          row.delta
+                        )}`}
+                      >
+                        {row.delta}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+        {tr.equalWeight && (
+          <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              equal-weight
+            </div>
+            <h2 className="mt-1 text-base font-semibold text-slate-900">
+              {tr.equalWeight.title}
+            </h2>
+            <p className="mt-1 text-xs text-slate-400">{tr.equalWeight.note}</p>
+            {tr.equalWeight.stats.length > 0 && (
+              <div className="mt-4 grid gap-2 sm:grid-cols-3">
+                {tr.equalWeight.stats.map((s) => (
+                  <div
+                    key={s.label}
+                    className={`rounded-xl border p-3 ${s.tone ?? "border-slate-200 bg-slate-50"}`}
+                  >
+                    <div className="text-[11px] text-slate-500">{s.label}</div>
+                    <div
+                      className={`mt-1 text-lg font-bold ${signedTextClass(
+                        s.value
+                      )}`}
+                    >
+                      {s.value}
+                    </div>
+                    <div className="mt-1 text-[10px] text-slate-400">{s.hint}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+            {tr.equalWeight.rows.length > 0 && (
+              <div className="mt-4 overflow-x-auto">
+                <table className="w-full min-w-[460px] text-sm">
+                  <thead className="text-left text-[11px] uppercase text-slate-400">
+                    <tr>
+                      <th className="py-2 font-medium">月份</th>
+                      <th className="py-2 text-right font-medium">持仓</th>
+                      <th className="py-2 text-right font-medium">Proxy</th>
+                      <th className="py-2 text-right font-medium">SPY</th>
+                      <th className="py-2 text-right font-medium">SOXX</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tr.equalWeight.rows.map((row) => (
+                      <tr key={row.month} className="border-t border-slate-100">
+                        <td className="py-2 font-mono text-xs text-slate-600">
+                          {row.month}
+                        </td>
+                        <td className="py-2 text-right text-slate-500">
+                          {row.holdings}
+                        </td>
+                        <td
+                          className={`py-2 text-right font-semibold ${signedTextClass(
+                            row.proxy
+                          )}`}
+                        >
+                          {row.proxy}
+                        </td>
+                        <td
+                          className={`py-2 text-right ${signedTextClass(row.spy)}`}
+                        >
+                          {row.spy}
+                        </td>
+                        <td
+                          className={`py-2 text-right ${signedTextClass(
+                            row.soxx
+                          )}`}
+                        >
+                          {row.soxx}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </section>
+        )}
       </div>
     </>
   );

@@ -11,10 +11,14 @@
 - `/tweets`：最新 5 条推文、相关公司、推文链接与互动数
 - `/stocks`：股票层事实表（约 706 条），字段包括 `current_view`、`author_stance`、`recent_mentions_24h`、`recent_stock_news_7d`、`revenue_yoy_pct`
 - `/mentions`：AI 提及后收益表（约 225 条），含基准价、1W/1M/6M/1Y/至今收益、链条分类
-- `/performance`：战绩热力图与校准表（目前仍保留本地静态快照，后续可继续抽取）
+- `/performance`：战绩热力图、1M 校准表、Signal kind、Freshness、反身性窗口、Stance、最近 30 天衰减、隐含组合 proxy
 
 因此新增了 `scripts/sync-analysissite.py`：抓取这些公开页面，解析 `self.__next_f.push(...)`
 里的 RSC 数据，归一化后写入 `data/live/aleabitoreddit.json`。这条链路是当前默认真数据源。
+脚本对上游页面读取做了 3 次重试；`/stocks`、`/mentions` 页面较大，偶发超时会自动重拉。
+
+前端也提供与原站对齐的静态路由：`/tweets/`、`/stocks/`、`/mentions/`、`/performance/`、
+`/supply-chain/`、`/sources/`、`/industries/`、`/llm/`、`/follow/`。
 
 本地手动同步：
 

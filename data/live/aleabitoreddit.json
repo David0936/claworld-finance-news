@@ -3,60 +3,108 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-06-06T09-00-03-08-00",
+  "upstreamSnapshotId": "2026-06-06T21-00-03-08-00",
   "snapshotDate": "2026-06-06",
-  "snapshotTime": "09:00",
-  "fetchedAt": "2026-06-06 09:00",
+  "snapshotTime": "21:00",
+  "fetchedAt": "2026-06-06 21:00",
   "feed": [
     {
       "time": "06-06 20:22",
       "type": "推文",
       "ticker": "SIVE",
+      "tickers": [
+        "SIVE",
+        "AAOI"
+      ],
       "title": "推文线索 · SIVE",
       "body": "If you’re curious:\n$4649 for 107,894,491 (100M+) impressions!\nAll of this is going to dog rescues, will be doing large donations later!\nIt’s ~$600 / dog rescued, so it scales proportionally with Serenity fan count!\nI also believe in making all my profits off $SIVE to $AAOI with stocks in the market, not off followers.\nEspecially if I’m a good enough investor.\nSo never felt the need to have high paywalls or do paid ads. (I’d do this anyway even if it weren’t monetized).\nI’m glad I can help things I care about just by posting ideas throughout the day for fun. \nAnd I’ve seen a lot of followers recently donate to their local shelters in my name.\nSo genuinely thank you all for that, makes me happy.",
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 20:22",
-      "url": "https://x.com/aleabitoreddit/status/2063235166336856251"
+      "url": "https://x.com/aleabitoreddit/status/2063235166336856251",
+      "stats": {
+        "views": "0",
+        "likes": "3",
+        "reposts": "1",
+        "bookmarks": "0"
+      }
     },
     {
       "time": "06-06 18:46",
       "type": "推文",
       "ticker": "",
+      "tickers": [],
       "title": "推文 · @aleabitoreddit",
       "body": "Apparently I’m all over Chinese news now?\nI just published some research on LeaderDrive (688017) and their role in humanoid supply chains.\nLooks like China’s robotics stock sector went up and 688017 hit 20% limit up?\nI appreciate they called me “Overseas God”.",
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 18:46",
-      "url": "https://x.com/aleabitoreddit/status/2063211040989733012"
+      "url": "https://x.com/aleabitoreddit/status/2063211040989733012",
+      "stats": {
+        "views": "224",
+        "likes": "12",
+        "reposts": "1",
+        "bookmarks": "1"
+      }
     },
     {
       "time": "06-06 16:37",
       "type": "推文",
       "ticker": "XFAB",
+      "tickers": [
+        "XFAB",
+        "TSEM",
+        "ASX",
+        "NVDA",
+        "NOK"
+      ],
       "title": "推文线索 · XFAB",
       "body": "Okay... just some more weekend shower thoughts about $XFAB.\nI still feel like it could be the next $TSEM, just early stage at a $1.4B MC?\nThey kinda leapfrogged current gens (which $TSEM are getting volume from) to compete for H2 2027 CPO scale up inflection point ($ASX docs cite Xfab (aka. photonixFAB) as focusing on CPO)\nBy building out some black magic MTP (transfer printing) architecture for lasers w/ other stuff like TFLN.\nBasically next-gen integration IP, they're still behind on yields, sure.\nBut $NVDA evaluating it for transceivers/switches to see if it can volume ramp. That $NOK sets the specifications/assembly for. (nvidia invested in nokia for this these switches/networking too btw). \nAnd if their MTP supply chain works... (eg. with Smartphotonics providing lasers, EU players doing assembly).\nIt basically volume ramps with $NVDA just like why Nvidia signed long term agreements with $TSEM?\nDownside risk?\nAlready below replacement book value, can always go lower yeah, but typically to a certain point. \nMaybe more CHIPS act subsidies next few months from chips act 2. If it doesn't go well there's SiC (152% Y/Y Growth, 195% Y/Y SiC wafer shipment growth)/GaN power semi upside.\nEuropeans /LLMs will say \"oh evaluations doesn't mean it's a future contract!\".\nThis is kinda different since the European Union is behind this effort and $XFAB for soverign photonic supply chains.\nNot your typical company + hyperscaler evaluation, since $NVDA wants to be nice to Europe's regulators. They'd prob be pissed if nvidia just stayed in US/Taiwan/China.\nSo if they can make this MTP black magic work with mass production, feels almost for sure nvidia/nokia volume ramp on some tiny $1.4B silicon photonics foundry or at least throw them a bone with smaller contracts. \nIn terms of timelines, maybe just a months early since it volume ramps H2 2027/H1 2028 (which happens to be in line with CPO scale up timelines)...\nOr just unknown because they named their project something stupid like photonixfab?\nLike XFAB Photonics would have been better? so institutions/screeners can connect the dots when looking at CPO silicon photonic foundry players?\nAutomotive should also coming out of a slump medium term, sped up by self-driving (TSM Chairmain comments yesterday said ai automotive was TSM's growth vector alongside robotics). So their core business also should pick up speed too medium term. \nObviously markets/europeans want a \"Nvidia signs $2B+ contract, XFab volume ramping 2027!\" \nBut by then it will be a $9B+ company and you miss out on all the upside. And especially since everyone analyst/institution is blind to volume expectations for these.... \nNormally don't invest in companies in evaluation stages, but this just seems very de-risked by EU sovereignty + Gov backing, and you have Nvidia + Nokia there for volumes if they can make the IP work. \nI think markets are probably missing something here... there's almost 0 value being assigned to being CPO exposure in Europe as their long term upside.",
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 16:37",
-      "url": "https://x.com/aleabitoreddit/status/2063178421497221604"
+      "url": "https://x.com/aleabitoreddit/status/2063178421497221604",
+      "stats": {
+        "views": "3,085",
+        "likes": "34",
+        "reposts": "9",
+        "bookmarks": "18"
+      }
     },
     {
       "time": "06-06 12:40",
       "type": "推文",
       "ticker": "RDDT",
+      "tickers": [
+        "RDDT",
+        "AAOI",
+        "MRVL"
+      ],
       "title": "推文线索 · RDDT",
       "body": "How are all you regards on $RDDT down -99% after 2 red days? \nIs it that hard just to hold indiviudal stocks like $AAOI or $MRVL that are already high-beta?\nYou can be right directionally, but wrong on short-term timing. \nOne extra week or month makes a huge difference.",
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 12:40",
-      "url": "https://x.com/aleabitoreddit/status/2063118835105014006"
+      "url": "https://x.com/aleabitoreddit/status/2063118835105014006",
+      "stats": {
+        "views": "1,515",
+        "likes": "30",
+        "reposts": "1",
+        "bookmarks": "2"
+      }
     },
     {
       "time": "06-06 09:55",
       "type": "推文",
       "ticker": "",
+      "tickers": [],
       "title": "推文 · @aleabitoreddit",
       "body": "真是让我受宠若惊，围绕着我的 X（推特）帖子居然建立起了一个完整的微型经济圈？\n-> 追踪我做多股票的网站\n-> Github 项目\n-> 新闻媒体\n-> 用 AI 直接搬运我内容的 X 大 V (网红)\n-> 迷因币/土狗币（我不支持，但你们开心就好）\n-> 帖子倒卖者\n我的所有内容都是免费发布的。之后衍生出的任何东西都是公开信息！所以，如果有人打算收费，希望他们至少能在原有基础上提供一些额外的价值！",
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 09:55",
-      "url": "https://x.com/aleabitoreddit/status/2063077375315996948"
+      "url": "https://x.com/aleabitoreddit/status/2063077375315996948",
+      "stats": {
+        "views": "1,723",
+        "likes": "34",
+        "reposts": "0",
+        "bookmarks": "1"
+      }
     }
   ],
   "mentions": {
@@ -64,11 +112,35 @@
       "h24": 1,
       "d7": 1
     },
+    "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
     "XFAB": {
       "h24": 1,
       "d7": 1
     },
+    "TSEM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ASX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NOK": {
+      "h24": 1,
+      "d7": 1
+    },
     "RDDT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MRVL": {
       "h24": 1,
       "d7": 1
     }
@@ -88,15 +160,15 @@
     },
     {
       "label": "24h 活跃",
-      "value": "10",
+      "value": "15",
       "delta": "live",
-      "hint": "较上一快照 -7"
+      "hint": "较上一快照 -2"
     },
     {
       "label": "7天活跃",
-      "value": "57",
+      "value": "58",
       "delta": "live",
-      "hint": "较上一快照 -5"
+      "hint": "较上一快照 -4"
     },
     {
       "label": "30天活跃",
@@ -120,7 +192,7 @@
     {
       "rank": 1,
       "ticker": "NVDA",
-      "time": "06-06 09:00",
+      "time": "06-06 21:00",
       "mentions24h": 2,
       "mentions7d": 19,
       "source": "新闻",
@@ -128,27 +200,13 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "06-05 23:58 推文称 NVDA 等龙头下跌更多反映利率预期和市场校正，作者仍强调 AI capex/公司预测。机构视角应继续用数据中心收入、Blackwell/Spectrum-X/NVLink、出口限制和客户 capex 来验证。",
-      "priority": 425
+      "note": "PM 新增 XFAB 长推把 NVIDIA evaluation 与 Nokia/欧洲硅光供应链相连；这扩展了网络侧和 CPO 证据链，但仍只是外部线索。结合 06-05 回调框架，NVDA 的核心验证仍是客户 capex、网络/交换机需求、价格条款、毛利率和出口限制。",
+      "priority": 456
     },
     {
       "rank": 2,
-      "ticker": "IREN",
-      "time": "06-06 09:00",
-      "mentions24h": 0,
-      "mentions7d": 3,
-      "source": "新闻",
-      "sourceCount": 10,
-      "gptLevel": "analysissite",
-      "sentiment": "看空",
-      "riskLabel": "谨慎",
-      "note": "本地事件队列提示：未见本地新增一手公司事实。 24 小时没有新增提及，但 7 天累计 4 次、30 天 32 次，仍有历史关注度。历史信号显示：边际新增了与Nvidia的34亿美元交易新闻，强化了AI转型的可行性并推动价格短期走强，但作者仍维持明确看空，未改变对稀释抑制上行空间的判断；该信息部分抵消了前期极度悲观的叙事，但尚未触及核心风险（6B ATM）。",
-      "priority": 396
-    },
-    {
-      "rank": 3,
       "ticker": "AAOI",
-      "time": "06-06 09:00",
+      "time": "06-06 21:00",
       "mentions24h": 3,
       "mentions7d": 8,
       "source": "新闻",
@@ -156,8 +214,22 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "06-05 23:58 推文在市场回调中继续强调 AI buildout 和公司预测，并引用 AAOI H1 2027 约 4.71 亿美元的目标线索。边际是作者未因回调改变多头立场，但仍需订单、交付、ASP 和毛利率验证。",
-      "priority": 355
+      "note": "12:40 推文把 AAOI 与 MRVL 作为已经具备高 beta 的个股持仓例子，用来对比短期限 RDDT 交易的时间错配；20:22 再次把 AAOI 与 SIVE 放在作者收益来源叙事里。边际是作者偏多表达未变，但需要用 06-05 8-K、订单、产能、ASP 和毛利率验证。",
+      "priority": 429
+    },
+    {
+      "rank": 3,
+      "ticker": "IREN",
+      "time": "06-06 21:00",
+      "mentions24h": 0,
+      "mentions7d": 3,
+      "source": "新闻",
+      "sourceCount": 10,
+      "gptLevel": "analysissite",
+      "sentiment": "看空",
+      "riskLabel": "谨慎",
+      "note": "未见本地新增一手公司事实。 24 小时没有新增提及，但 7 天累计 4 次、30 天 32 次，仍有历史关注度。历史信号显示：边际新增了与Nvidia的34亿美元交易新闻，强化了AI转型的可行性并推动价格短期走强，但作者仍维持明确看空，未改变对稀释抑制上行空间的判断；该信息部分抵消了前期极度悲观的叙事，但尚未触及核心风险（6B ATM）。",
+      "priority": 396
     }
   ],
   "stockPool": [
@@ -13599,7 +13671,7 @@
       },
       {
         "label": "观点变化",
-        "value": "5",
+        "value": "0",
         "hint": "来自 GPT xhigh 历史",
         "tone": "border-amber-200 bg-amber-50"
       },
@@ -13621,7 +13693,7 @@
       },
       {
         "name": "光模块/网络",
-        "count": 27
+        "count": 26
       },
       {
         "name": "数据中心电力",
@@ -13629,7 +13701,7 @@
       },
       {
         "name": "芯片/算力",
-        "count": 111
+        "count": 112
       }
     ],
     "positiveToDate": 154,
@@ -13662,11 +13734,26 @@
     ],
     "rows": [
       {
+        "ticker": "AAOI",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2025-12-12 06:10",
+        "lastMention": "2026-06-06 20:22",
+        "basePrice": "2025-12-12 @ 32",
+        "w1": "-2.3%",
+        "m1": "5.2%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "452.1%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
         "ticker": "NVDA",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
         "firstMention": "2025-07-28 16:19",
-        "lastMention": "2026-06-05 23:58",
+        "lastMention": "2026-06-06 16:37",
         "basePrice": "2025-07-28 @ 177",
         "w1": "1.8%",
         "m1": "2.7%",
@@ -13677,19 +13764,79 @@
         "recentView": "高风险偏多"
       },
       {
-        "ticker": "AAOI",
+        "ticker": "TSEM",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
-        "firstMention": "2025-12-12 06:10",
-        "lastMention": "2026-06-05 23:58",
-        "basePrice": "2025-12-12 @ 32",
-        "w1": "-2.3%",
-        "m1": "5.2%",
+        "firstMention": "2026-02-11 11:05",
+        "lastMention": "2026-06-06 16:37",
+        "basePrice": "2026-02-11 @ 134",
+        "w1": "-4.5%",
+        "m1": "-7.2%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "452.1%",
+        "toDate": "75.2%",
         "view": "看多",
         "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "NOK",
+        "chain": "光模块/网络",
+        "queue": "观察",
+        "firstMention": "2026-02-18 17:56",
+        "lastMention": "2026-06-06 16:37",
+        "basePrice": "2026-02-18 @ 7",
+        "w1": "1.9%",
+        "m1": "7.4%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "93.5%",
+        "view": "中性",
+        "recentView": "观察"
+      },
+      {
+        "ticker": "ASX",
+        "chain": "光模块/网络",
+        "queue": "积极观察",
+        "firstMention": "2026-01-25 04:46",
+        "lastMention": "2026-06-06 16:37",
+        "basePrice": "2026-01-26 @ 20",
+        "w1": "-2.1%",
+        "m1": "25.2%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "71.6%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "MRVL",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-08-26 04:41",
+        "lastMention": "2026-06-06 12:40",
+        "basePrice": "2025-08-26 @ 74",
+        "w1": "-13.0%",
+        "m1": "12.9%",
+        "m6": "5.6%",
+        "y1": "未到期",
+        "toDate": "254.8%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "RDDT",
+        "chain": "云与软件",
+        "queue": "积极观察",
+        "firstMention": "2025-09-14 20:13",
+        "lastMention": "2026-06-06 12:40",
+        "basePrice": "2025-09-15 @ 264",
+        "w1": "-2.3%",
+        "m1": "-25.5%",
+        "m6": "-46.9%",
+        "y1": "未到期",
+        "toDate": "-34.2%",
+        "view": "看多",
+        "recentView": "积极观察"
       },
       {
         "ticker": "MU",
@@ -13708,7 +13855,7 @@
       },
       {
         "ticker": "TSM",
-        "chain": "光模块/网络",
+        "chain": "芯片/算力",
         "queue": "积极观察",
         "firstMention": "2025-09-09 13:43",
         "lastMention": "2026-06-05 23:15",
@@ -13723,7 +13870,7 @@
       },
       {
         "ticker": "GFS",
-        "chain": "光模块/网络",
+        "chain": "芯片/算力",
         "queue": "积极观察",
         "firstMention": "2026-01-20 06:23",
         "lastMention": "2026-06-05 22:25",
@@ -13738,7 +13885,7 @@
       },
       {
         "ticker": "JBL",
-        "chain": "光模块/网络",
+        "chain": "芯片/算力",
         "queue": "积极观察",
         "firstMention": "2025-12-02 02:25",
         "lastMention": "2026-06-05 22:25",
@@ -13778,36 +13925,6 @@
         "m6": "22.0%",
         "y1": "未到期",
         "toDate": "194.1%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "RDDT",
-        "chain": "云与软件",
-        "queue": "积极观察",
-        "firstMention": "2025-09-14 20:13",
-        "lastMention": "2026-06-04 23:08",
-        "basePrice": "2025-09-15 @ 264",
-        "w1": "-2.3%",
-        "m1": "-25.5%",
-        "m6": "-46.9%",
-        "y1": "未到期",
-        "toDate": "-34.2%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "MRVL",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-08-26 04:41",
-        "lastMention": "2026-06-04 15:15",
-        "basePrice": "2025-08-26 @ 74",
-        "w1": "-13.0%",
-        "m1": "12.9%",
-        "m6": "5.6%",
-        "y1": "未到期",
-        "toDate": "254.8%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -13917,21 +14034,6 @@
         "recentView": "高风险观察"
       },
       {
-        "ticker": "NOK",
-        "chain": "光模块/网络",
-        "queue": "观察",
-        "firstMention": "2026-02-18 17:56",
-        "lastMention": "2026-06-03 19:50",
-        "basePrice": "2026-02-18 @ 7",
-        "w1": "1.9%",
-        "m1": "7.4%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "93.5%",
-        "view": "中性",
-        "recentView": "观察"
-      },
-      {
         "ticker": "POWI",
         "chain": "芯片/算力",
         "queue": "积极观察",
@@ -14003,21 +14105,6 @@
         "m6": "未到期",
         "y1": "未到期",
         "toDate": "241.7%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "TSEM",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2026-02-11 11:05",
-        "lastMention": "2026-06-02 21:17",
-        "basePrice": "2026-02-11 @ 134",
-        "w1": "-4.5%",
-        "m1": "-7.2%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "75.2%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -14258,21 +14345,6 @@
         "m6": "未到期",
         "y1": "未到期",
         "toDate": "96.9%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "ASX",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2026-01-25 04:46",
-        "lastMention": "2026-05-21 17:12",
-        "basePrice": "2026-01-26 @ 20",
-        "w1": "-2.1%",
-        "m1": "25.2%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "71.6%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -15832,7 +15904,7 @@
         "m1": "19.6%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "209.6%",
+        "toDate": "212.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -15877,7 +15949,7 @@
         "m1": "-10.4%",
         "m6": "16.0%",
         "y1": "未到期",
-        "toDate": "12.7%",
+        "toDate": "12.9%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -17037,5 +17109,476 @@
         "recentView": "高风险观察"
       }
     ]
+  },
+  "trackRecord": {
+    "stats": [
+      {
+        "label": "覆盖股票",
+        "value": "559",
+        "hint": "2026-05-28 13:48",
+        "tone": "border-blue-200 bg-blue-50"
+      },
+      {
+        "label": "Horizon rows",
+        "value": "2,788",
+        "hint": "1h / 4h / 1d / 5d / 1w",
+        "tone": "border-emerald-200 bg-emerald-50"
+      },
+      {
+        "label": "Constructive 1M",
+        "value": "53.0%",
+        "hint": "0.1 avg excess",
+        "tone": "border-slate-200 bg-slate-50"
+      },
+      {
+        "label": "Dilution 5D",
+        "value": "34.0%",
+        "hint": "-3.1 avg excess",
+        "tone": "border-amber-200 bg-amber-50"
+      }
+    ],
+    "horizons": [
+      "1D",
+      "5D",
+      "1W",
+      "1M",
+      "3M",
+      "6M"
+    ],
+    "heatmap": [
+      {
+        "view": "caution",
+        "cells": [
+          31.9,
+          52.8,
+          52.1,
+          45.7,
+          50.0,
+          13.2
+        ]
+      },
+      {
+        "view": "constructive",
+        "cells": [
+          34.6,
+          50.0,
+          44.1,
+          53.0,
+          52.0,
+          23.5
+        ]
+      },
+      {
+        "view": "constructive_high_risk",
+        "cells": [
+          32.4,
+          41.2,
+          45.6,
+          58.2,
+          53.3,
+          41.9
+        ]
+      },
+      {
+        "view": "watch",
+        "cells": [
+          26.7,
+          52.4,
+          51.8,
+          56.8,
+          59.8,
+          55.0
+        ]
+      },
+      {
+        "view": "watch_high_risk",
+        "cells": [
+          33.9,
+          48.3,
+          46.6,
+          51.0,
+          40.5,
+          34.0
+        ]
+      }
+    ],
+    "calibration": [
+      {
+        "group": "watch|medium_high",
+        "n": 118,
+        "winRate": 61.0,
+        "meanExcess": 3.7,
+        "medianExcess": 4.1
+      },
+      {
+        "group": "constructive|medium_high",
+        "n": 108,
+        "winRate": 53.7,
+        "meanExcess": 1.4,
+        "medianExcess": 2.0
+      },
+      {
+        "group": "watch_high_risk|medium",
+        "n": 94,
+        "winRate": 47.9,
+        "meanExcess": 6.3,
+        "medianExcess": -1.9
+      },
+      {
+        "group": "constructive_high_risk|medium",
+        "n": 47,
+        "winRate": 53.2,
+        "meanExcess": 1.1,
+        "medianExcess": 1.0
+      },
+      {
+        "group": "caution|medium",
+        "n": 33,
+        "winRate": 48.5,
+        "meanExcess": -1.6,
+        "medianExcess": -2.3
+      },
+      {
+        "group": "caution|medium_high",
+        "n": 29,
+        "winRate": 41.4,
+        "meanExcess": -0.8,
+        "medianExcess": -2.2
+      },
+      {
+        "group": "constructive_high_risk|medium_high",
+        "n": 20,
+        "winRate": 70.0,
+        "meanExcess": 10.7,
+        "medianExcess": 7.3
+      },
+      {
+        "group": "constructive|low",
+        "n": 15,
+        "winRate": 53.3,
+        "meanExcess": -3.2,
+        "medianExcess": 2.3
+      },
+      {
+        "group": "watch|low",
+        "n": 15,
+        "winRate": 26.7,
+        "meanExcess": 0.2,
+        "medianExcess": -0.8
+      },
+      {
+        "group": "watch_high_risk|medium_high",
+        "n": 10,
+        "winRate": 80.0,
+        "meanExcess": 13.8,
+        "medianExcess": 2.6
+      },
+      {
+        "group": "watch|medium_low",
+        "n": 8,
+        "winRate": 62.5,
+        "meanExcess": 17.3,
+        "medianExcess": 4.8
+      },
+      {
+        "group": "constructive|medium",
+        "n": 7,
+        "winRate": 42.9,
+        "meanExcess": -13.5,
+        "medianExcess": -5.8
+      }
+    ],
+    "groupTables": [
+      {
+        "key": "signal-kind",
+        "title": "Signal kind",
+        "horizon": "5D",
+        "note": "按事件类型分组看 5D 后续表现。",
+        "rows": [
+          {
+            "group": "analysis_update",
+            "n": 1402,
+            "winRate": 52.1,
+            "meanExcess": 1.4,
+            "medianExcess": 0.4
+          },
+          {
+            "group": "MA",
+            "n": 79,
+            "winRate": 70.9,
+            "meanExcess": 1.2,
+            "medianExcess": 5.9
+          },
+          {
+            "group": "dilution",
+            "n": 50,
+            "winRate": 34.0,
+            "meanExcess": -3.1,
+            "medianExcess": -4.1
+          },
+          {
+            "group": "guidance_update",
+            "n": 7,
+            "winRate": 42.9,
+            "meanExcess": 0.5,
+            "medianExcess": -0.1
+          },
+          {
+            "group": "triggering_event",
+            "n": 6,
+            "winRate": 50.0,
+            "meanExcess": 1.3,
+            "medianExcess": 0.5
+          },
+          {
+            "group": "audit_event",
+            "n": 3,
+            "winRate": 100.0,
+            "meanExcess": 4.3,
+            "medianExcess": 4.3
+          },
+          {
+            "group": "going_concern",
+            "n": 2,
+            "winRate": 50.0,
+            "meanExcess": 7.6,
+            "medianExcess": 7.6
+          }
+        ]
+      },
+      {
+        "key": "freshness",
+        "title": "Freshness",
+        "horizon": "5D",
+        "note": "按信息新鲜度分组看 5D 后续表现。",
+        "rows": [
+          {
+            "group": "real_time",
+            "n": 1402,
+            "winRate": 52.1,
+            "meanExcess": 1.4,
+            "medianExcess": 0.4
+          },
+          {
+            "group": "archival",
+            "n": 131,
+            "winRate": 55.7,
+            "meanExcess": -0.7,
+            "medianExcess": 2.0
+          },
+          {
+            "group": "weekly",
+            "n": 16,
+            "winRate": 62.5,
+            "meanExcess": 4.4,
+            "medianExcess": 2.5
+          }
+        ]
+      },
+      {
+        "key": "window",
+        "title": "反身性窗口",
+        "horizon": "Window",
+        "note": "把超额收益拆成短期反身性、后续反应和中期信号。",
+        "rows": [
+          {
+            "group": "reflexivity",
+            "n": 559,
+            "winRate": 31.5,
+            "meanExcess": -0.2,
+            "medianExcess": 0.0
+          },
+          {
+            "group": "reaction",
+            "n": 557,
+            "winRate": 47.4,
+            "meanExcess": -0.1,
+            "medianExcess": -0.3
+          },
+          {
+            "group": "signal",
+            "n": 405,
+            "winRate": 50.6,
+            "meanExcess": 8.8,
+            "medianExcess": 0.2
+          }
+        ]
+      },
+      {
+        "key": "stance",
+        "title": "Stance",
+        "horizon": "1M",
+        "note": "按 Serenity stance 分组看 1M 后续表现。",
+        "rows": [
+          {
+            "group": "neutral",
+            "n": 250,
+            "winRate": 54.4,
+            "meanExcess": 5.5,
+            "medianExcess": 2.3
+          },
+          {
+            "group": "bullish",
+            "n": 199,
+            "winRate": 54.8,
+            "meanExcess": 1.4,
+            "medianExcess": 2.0
+          },
+          {
+            "group": "bearish",
+            "n": 70,
+            "winRate": 45.7,
+            "meanExcess": -0.7,
+            "medianExcess": -1.5
+          }
+        ]
+      }
+    ],
+    "recentDecay": {
+      "title": "最近 30 天衰减",
+      "note": "比较最近 30 天样本与历史样本的胜率差异。",
+      "rows": [
+        {
+          "group": "caution|1d",
+          "recent": "100.0% / 2",
+          "history": "30.0% / 70",
+          "delta": "70.0pp"
+        },
+        {
+          "group": "constructive_high_risk|1d",
+          "recent": "100.0% / 1",
+          "history": "31.3% / 67",
+          "delta": "68.7pp"
+        },
+        {
+          "group": "constructive_high_risk|5d",
+          "recent": "100.0% / 1",
+          "history": "40.3% / 67",
+          "delta": "59.7pp"
+        },
+        {
+          "group": "constructive_high_risk|1w",
+          "recent": "100.0% / 1",
+          "history": "44.8% / 67",
+          "delta": "55.2pp"
+        },
+        {
+          "group": "caution|1w",
+          "recent": "100.0% / 1",
+          "history": "51.4% / 70",
+          "delta": "48.6pp"
+        },
+        {
+          "group": "caution|5d",
+          "recent": "100.0% / 2",
+          "history": "51.4% / 70",
+          "delta": "48.6pp"
+        },
+        {
+          "group": "watch_high_risk|5d",
+          "recent": "30.0% / 10",
+          "history": "50.0% / 108",
+          "delta": "-20.0pp"
+        },
+        {
+          "group": "watch_high_risk|1w",
+          "recent": "30.0% / 10",
+          "history": "48.1% / 108",
+          "delta": "-18.1pp"
+        },
+        {
+          "group": "watch_high_risk|1d",
+          "recent": "50.0% / 10",
+          "history": "32.4% / 108",
+          "delta": "17.6pp"
+        },
+        {
+          "group": "watch|1d",
+          "recent": "40.0% / 15",
+          "history": "25.3% / 150",
+          "delta": "14.7pp"
+        },
+        {
+          "group": "watch|1w",
+          "recent": "42.9% / 14",
+          "history": "52.7% / 150",
+          "delta": "-9.8pp"
+        },
+        {
+          "group": "watch|5d",
+          "recent": "50.0% / 14",
+          "history": "52.7% / 150",
+          "delta": "-2.7pp"
+        }
+      ]
+    },
+    "equalWeight": {
+      "title": "equal-weight 隐含组合",
+      "note": "机械等权持有最近 bullish 且有价格数据的股票；不是实盘仓位。",
+      "stats": [
+        {
+          "label": "YTD proxy",
+          "value": "50.5pp",
+          "hint": "no leverage",
+          "tone": "border-emerald-200 bg-emerald-50"
+        },
+        {
+          "label": "公开 YTD",
+          "value": "4502.0pp",
+          "hint": "2026-05-26",
+          "tone": "border-blue-200 bg-blue-50"
+        },
+        {
+          "label": "差值",
+          "value": "-4451.5pp",
+          "hint": "proxy - public",
+          "tone": "border-amber-200 bg-amber-50"
+        }
+      ],
+      "rows": [
+        {
+          "month": "2026-04",
+          "holdings": "98",
+          "proxy": "31.4pp",
+          "spy": "10.5pp",
+          "soxx": "-"
+        },
+        {
+          "month": "2026-03",
+          "holdings": "124",
+          "proxy": "-4.5pp",
+          "spy": "-5.3pp",
+          "soxx": "-"
+        },
+        {
+          "month": "2026-02",
+          "holdings": "124",
+          "proxy": "7.6pp",
+          "spy": "-1.3pp",
+          "soxx": "-"
+        },
+        {
+          "month": "2026-01",
+          "holdings": "137",
+          "proxy": "11.5pp",
+          "spy": "2.0pp",
+          "soxx": "-"
+        },
+        {
+          "month": "2025-12",
+          "holdings": "67",
+          "proxy": "18.8pp",
+          "spy": "0.2pp",
+          "soxx": "-"
+        },
+        {
+          "month": "2025-11",
+          "holdings": "60",
+          "proxy": "-9.7pp",
+          "spy": "-0.3pp",
+          "soxx": "-"
+        }
+      ]
+    }
   }
 }

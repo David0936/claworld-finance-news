@@ -9,6 +9,16 @@
   "fetchedAt": "2026-06-06 09:00",
   "feed": [
     {
+      "time": "06-06 18:46",
+      "type": "推文",
+      "ticker": "",
+      "title": "推文 · @aleabitoreddit",
+      "body": "Apparently I’m all over Chinese news now?\nI just published some research on LeaderDrive (688017) and their role in humanoid supply chains.\nLooks like China’s robotics stock sector went up and 688017 hit 20% limit up?\nI appreciate they called me “Overseas God”.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-06 18:46",
+      "url": "https://x.com/aleabitoreddit/status/2063211040989733012"
+    },
+    {
       "time": "06-06 16:37",
       "type": "推文",
       "ticker": "XFAB",
@@ -47,16 +57,6 @@
       "author": "@aleabitoreddit",
       "datetime": "2026-06-06 07:59",
       "url": "https://x.com/aleabitoreddit/status/2063048067432239598"
-    },
-    {
-      "time": "06-05 23:58",
-      "type": "推文",
-      "ticker": "NVDA",
-      "title": "推文线索 · NVDA",
-      "body": "Fun times with market corrections. \nLeaders from $NVDA down -4.87% to $MU down -7.03%。 High beta names like $PL down -22.02%。 \nFunny to see media always trying to explain like: \n\"Micron suffers record wipeout as Broadcom casts a shadow over chip stocks \"\nBroadcom projected insatiable demand into 2028, just made up narratives. Nothing's changed the AI buildout aside from increasing capex. \nMain material thing was rate hike probabilities increase.\nBut you have random ones like these few times a year into ATHs. \nPersonally wouldn't try and trade fed decision probabilities and stay long on current company projections (eg. $AAOI $471m h1 2027)",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-05 23:58",
-      "url": "https://x.com/aleabitoreddit/status/2062927167936504133"
     }
   ],
   "mentions": {
@@ -69,10 +69,6 @@
       "d7": 1
     },
     "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
       "h24": 1,
       "d7": 1
     }

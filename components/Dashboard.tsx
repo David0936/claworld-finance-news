@@ -15,6 +15,7 @@ import {
   resolveCoverage,
   findStock,
 } from "@/data/derive";
+import PoliticalTradesDashboard from "./PoliticalTradesDashboard";
 
 const NAV_ITEMS = [
   { label: "总览", path: "/" },
@@ -23,6 +24,7 @@ const NAV_ITEMS = [
   { label: "提及表现", path: "/mentions/" },
   { label: "战绩", path: "/performance/" },
   { label: "供应链", path: "/supply-chain/" },
+  { label: "政客交易", path: "/political-trades/" },
   { label: "多源", path: "/sources/" },
   { label: "行业", path: "/industries/" },
   { label: "AI分析", path: "/llm/" },
@@ -70,6 +72,11 @@ const SECTION_TITLES: Record<
     subtitle: "按规则视图比较各时间窗的胜率与超额；分组校准胜率是跑赢 SPY 的比例。",
   },
   供应链: { title: "供应链线索", subtitle: "上下游与生态验证链线索。" },
+  政客交易: {
+    eyebrow: "POLITICAL TRADES",
+    title: "政客持仓线索",
+    subtitle: "从 CapitolTrades 原始披露中筛高资金政客、持仓主题、重复交易与政策相关线索。",
+  },
   多源: {
     eyebrow: "MULTI-SOURCE",
     title: "多源信号",
@@ -280,6 +287,8 @@ function SectionContent({
       return <TrackRecordView data={data} />;
     case "供应链":
       return <SupplyChainView data={data} />;
+    case "政客交易":
+      return <PoliticalTradesDashboard embedded />;
     case "行业":
       return <IndustryView data={data} />;
     default:

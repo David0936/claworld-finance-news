@@ -1,0 +1,60 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netlify-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+      DEFAULT_NETLIFY_SITE_ID: d592cca9-9a2d-4668-8015-a60b4ef68d72
+    steps:
+      - name: Check Netlify token
+        id: netlify-token
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
+            echo "::notice::NETLIFY_AUTH_TOKEN is not configured; skipping direct Netlify deploy."
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.netlify-token.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        if: steps.netlify-token.outputs.enabled == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.netlify-token.outputs.enabled == 'true'
+        run: npm ci
+
+      - name: Build static export
+        if: steps.netlify-token.outputs.enabled == 'true'
+        run: npm run build
+
+      - name: Deploy production
+        if: steps.netlify-token.outputs.enabled == 'true'
+        run: |
+          SITE_ID="${NETLIFY_SITE_ID:-$DEFAULT_NETLIFY_SITE_ID}"
+          npx --yes netlify-cli deploy \
+            --prod \
+            --dir=out \
+            --site="$SITE_ID" \
+            --auth="$NETLIFY_AUTH_TOKEN"

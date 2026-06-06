@@ -104,8 +104,30 @@ node scripts/fetch-x.mjs --dry-run   # 用 scripts/fixtures/<handle>.json 验证
 ## 当前能自动更新的范围
 
 - ✅ 推文流（总览 / 推文 / 多源 标签页）、提及的 $代码、提及次数
+- ✅ 股票池、提及表现、战绩页的 analysissite 动态快照字段（含胜率热力图、校准曲线、分组表）
 - ✅ 已授权导入的会员频道内容（本地导入后进入同一 live 管线）
-- ⛔ GPT 情绪/风险、战绩、提及后收益 等分析字段仍是手写快照（需再接 LLM，二期）
+- ⛔ GPT 情绪/风险仍以 analysissite 已解析字段和手写规则为主；会员频道私密原文不自动抓取
+
+---
+
+# Netlify 发布
+
+项目是 Next.js 静态导出，`netlify.toml` 已固定为：
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "out"
+```
+
+如果 Netlify 自带的 Git 构建继续显示 `error`，可以让 GitHub Actions 直接发布到同一个站点：
+
+1. 到 GitHub 仓库 `Settings → Secrets and variables → Actions`。
+2. 添加 Secret：`NETLIFY_AUTH_TOKEN`（Netlify user access token）。
+3. 可选添加 Variable：`NETLIFY_SITE_ID`；不填时默认使用当前站点 `d592cca9-9a2d-4668-8015-a60b4ef68d72`。
+4. 手动运行 `Deploy to Netlify` workflow，或直接 push 到 `main`。
+
+定时抓取 workflow 也会在数据有变化后尝试直发 Netlify；没配置 token 时只跳过发布，不影响抓取和提交。
 
 ---
 

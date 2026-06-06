@@ -1,11 +1,11 @@
 # 自动抓取 X 推文
 
 每小时由 GitHub Actions（`.github/workflows/fetch.yml`）自动抓取，写入 `data/live/<id>.json`，
-提交后触发部署，网站推文随之更新。**不填 key 时抓取会自动跳过，不影响站点。**
+提交后触发部署，网站推文随之更新。**只有显式 `--dry-run` 才会使用 fixture；正式抓取不会再用假数据。**
 
 ## 一次性设置（你只需做这一步）
 
-1. 准备一个抓取 API 的 key。**省钱首选 Apify「最便宜抓取器」（约 1000 条/天免费）**，配法见下方「选数据源 · 方案 B」；图省事也可用 twitterapi.io（方案 A）。
+1. 准备一个抓取 API 的 key。**省钱首选 Apify「最便宜抓取器」（约 1000 条/天免费）**，配法见下方「选数据源 · 方案 B」；图省事也可用 twitterapi.io（方案 A）。如果暂时没有 key，脚本会尝试公开镜像源（方案 C）。
 2. 仓库 → **Settings → Secrets and variables → Actions → New repository secret**
    - Name: `TWITTER_API_KEY`
    - Value: 你的 key（Apify 则填 Apify token，并按方案 B 再设几个 Variable）
@@ -32,7 +32,18 @@
 
 请求体默认就是「取该博主最新 N 条」，无需额外配置。
 
-### 方案 C · 已授权浏览器 / 会员频道导入
+### 方案 C · 无 key 公开镜像源（默认 Sotwe）
+没有 `TWITTER_API_KEY` 时，脚本会尝试 `TWITTER_PUBLIC_SOURCE=sotwe`，读取公开页面并解析真实公开推文。
+这条链路不稳定，推荐作为兜底；生产长期跑还是建议配置 Apify。
+
+可选 Variables：
+
+| 变量 | 默认值 | 说明 |
+|---|---|---|
+| `TWITTER_PUBLIC_SOURCE` | `sotwe` | 无 key 时使用的公开源；设 `none` 可禁用 |
+| `SOTWE_BASE` | `https://www.sotwe.com` | Sotwe 镜像域名，域名变动时可替换 |
+
+### 方案 D · 已授权浏览器 / 会员频道导入
 公开推文继续走方案 A/B。会员频道这类受限内容，不在 Action 里自动登录抓取；你可以把自己已授权可见的内容导出成 JSON / 文本，放到本地 `scripts/captures/`，再导入为同一套 `data/live/<id>.json`：
 
 ```bash

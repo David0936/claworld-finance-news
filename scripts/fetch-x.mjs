@@ -23,7 +23,7 @@
  *    （请求体默认就是 {"searchTerms":["from:<handle>"],"sort":"Latest","maxItems":<MAX_TWEETS>}）
  *
  * 用法：
- *   node scripts/fetch-x.mjs            正常抓取（需要 key）
+ *   node scripts/fetch-x.mjs            正常抓取（有 key 走 API；没 key 尝试公开镜像源）
  *   node scripts/fetch-x.mjs --dry-run  用 scripts/fixtures/<handle>.json 跑，不联网（验证管线）
  */
 
@@ -45,8 +45,10 @@ const METHOD = (process.env.TWITTER_API_METHOD || "GET").toUpperCase();
 const USER_PARAM = process.env.TWITTER_API_USER_PARAM || "userName";
 const TOKEN_QUERY = process.env.TWITTER_API_TOKEN_QUERY || ""; // 设了则 key 放 query（Apify=token）
 const BODY_TMPL = process.env.TWITTER_API_BODY || "";
+const PUBLIC_SOURCE = (process.env.TWITTER_PUBLIC_SOURCE || (API_KEY ? "" : "sotwe")).toLowerCase();
+const SOTWE_BASE = process.env.SOTWE_BASE || "https://www.sotwe.com";
 
-const DRY_RUN = process.argv.includes("--dry-run") || !API_KEY;
+const DRY_RUN = process.argv.includes("--dry-run");
 const MAX_TWEETS = Number(process.env.MAX_TWEETS || 20);
 
 const pad = (n) => String(n).padStart(2, "0");
@@ -92,11 +94,14 @@ function tweetDate(t) {
   const d = new Date(raw);
   return isNaN(d.getTime()) ? new Date(0) : d;
 }
+function tweetId(t) {
+  return t.id || t.id_str || t.tweet_id || t.rest_id || t.conversation_id_str || "";
+}
 function tweetUrl(t, handle) {
   // 优先用 API 直接给的链接；否则用 id 拼 X 永久链接；再不行退到主页
   const direct = t.url || t.tweetUrl || t.twitterUrl || t.permalink || t.link;
   if (direct) return direct;
-  const id = t.id || t.id_str || t.tweet_id || t.rest_id;
+  const id = tweetId(t);
   return id ? `https://x.com/${handle}/status/${id}` : `https://x.com/${handle}`;
 }
 
@@ -117,6 +122,142 @@ function buildBody(handle) {
   return JSON.stringify({ searchTerms: [`from:${handle}`], sort: "Latest", maxItems: MAX_TWEETS });
 }
 
+function decodeHtml(s) {
+  return String(s || "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&#x2F;/g, "/")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16)));
+}
+
+function stripTags(html) {
+  return decodeHtml(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, "\n")
+      .replace(/<style[\s\S]*?<\/style>/gi, "\n")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/(p|div|article|section|li|h\d|time)>/gi, "\n")
+      .replace(/<[^>]+>/g, " ")
+  )
+    .replace(/\u00a0/g, " ")
+    .replace(/[ \t]+/g, " ")
+    .replace(/\n[ \t]+/g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function parseRelativeDate(label, now = new Date()) {
+  const s = String(label || "").toLowerCase().trim();
+  const d = new Date(now);
+  const n = Number(s.match(/\d+/)?.[0] || 1);
+  if (/minute|min/.test(s)) d.setUTCMinutes(d.getUTCMinutes() - n);
+  else if (/hour|hr/.test(s)) d.setUTCHours(d.getUTCHours() - n);
+  else if (/day/.test(s)) d.setUTCDate(d.getUTCDate() - n);
+  else if (/week/.test(s)) d.setUTCDate(d.getUTCDate() - n * 7);
+  else if (/month/.test(s)) d.setUTCMonth(d.getUTCMonth() - n);
+  else if (/year/.test(s)) d.setUTCFullYear(d.getUTCFullYear() - n);
+  else return null;
+  return d;
+}
+
+function collectTweetObjects(value, out = [], seen = new Set()) {
+  if (!value || out.length >= MAX_TWEETS * 4) return out;
+  if (Array.isArray(value)) {
+    for (const item of value) collectTweetObjects(item, out, seen);
+    return out;
+  }
+  if (typeof value !== "object") return out;
+
+  const text = tweetText(value).trim();
+  const id = tweetId(value);
+  const date = tweetDate(value);
+  const key = id || `${date.getTime()}|${text.slice(0, 80)}`;
+  if (text.length >= 12 && !seen.has(key)) {
+    seen.add(key);
+    out.push(value);
+  }
+
+  for (const child of Object.values(value)) collectTweetObjects(child, out, seen);
+  return out;
+}
+
+function extractJsonTweets(html) {
+  const out = [];
+  const scripts = [
+    ...html.matchAll(/<script[^>]*type=["']application\/json["'][^>]*>([\s\S]*?)<\/script>/gi),
+    ...html.matchAll(/<script[^>]*id=["']__NEXT_DATA__["'][^>]*>([\s\S]*?)<\/script>/gi),
+  ];
+  for (const match of scripts) {
+    try {
+      out.push(...collectTweetObjects(JSON.parse(decodeHtml(match[1]))));
+    } catch {
+      // 页面脚本不是 JSON 时忽略，继续走文本解析。
+    }
+  }
+  return out;
+}
+
+function extractTextTweets(html, handle) {
+  const text = stripTags(html);
+  const lines = text
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const out = [];
+  const seen = new Set();
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    const isTweetLike =
+      line.length >= 20 &&
+      !line.startsWith("@") &&
+      !/^ALEABITOREDDIT$/i.test(line) &&
+      !/^Image$/i.test(line) &&
+      (line.includes("$") || /tesla|robotaxi|lidar|partnership|earnings|stock|market/i.test(line));
+    if (!isTweetLike) continue;
+
+    const windowText = lines.slice(i, i + 8).join(" ");
+    const rel = windowText.match(/\b(?:about\s+)?\d+\s+(?:minutes?|hours?|days?|weeks?|months?|years?)\s+ago\b/i)?.[0];
+    const d = parseRelativeDate(rel) || new Date();
+    const key = `${fmtDateTime(d)}|${line.slice(0, 100)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push({
+      text: line.replace(/\s*Show more\s*$/i, "").trim(),
+      createdAt: d.toISOString(),
+      url: `https://x.com/${handle}`,
+    });
+  }
+  return out;
+}
+
+async function fetchSotweTweets(handle) {
+  const url = `${SOTWE_BASE.replace(/\/$/, "")}/${handle}`;
+  const res = await fetch(url, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
+      Accept: "text/html,application/xhtml+xml",
+    },
+  });
+  if (!res.ok) throw new Error(`Sotwe HTTP ${res.status} ${res.statusText}`);
+  const html = await res.text();
+  const tweets = [...extractJsonTweets(html), ...extractTextTweets(html, handle)];
+  const seen = new Set();
+  return tweets.filter((t) => {
+    const text = tweetText(t).trim();
+    const key = `${tweetId(t)}|${tweetDate(t).getTime()}|${text.slice(0, 100)}`;
+    if (!text || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 async function fetchTweets(handle) {
   if (DRY_RUN) {
     const fx = join(FIXTURE_DIR, `${handle}.json`);
@@ -125,6 +266,10 @@ async function fetchTweets(handle) {
       return [];
     }
     return pickTweets(JSON.parse(await readFile(fx, "utf8")));
+  }
+  if (!API_KEY) {
+    if (PUBLIC_SOURCE === "sotwe") return fetchSotweTweets(handle);
+    throw new Error("缺少 TWITTER_API_KEY，且未启用可用公开源（TWITTER_PUBLIC_SOURCE=sotwe）");
   }
   const url = buildUrl(handle);
   const headers = {};
@@ -179,6 +324,7 @@ function buildLive(id, handle, rawTweets) {
   return {
     id,
     handle,
+    source: DRY_RUN ? "fixture" : API_KEY ? API_BASE : PUBLIC_SOURCE,
     fetchedAt: fmtDateTime(new Date(now)),
     feed,
     mentions,
@@ -189,7 +335,7 @@ async function main() {
   console.log(
     DRY_RUN
       ? "== fetch-x DRY-RUN（使用 fixtures，不联网）=="
-      : `== fetch-x LIVE（${API_BASE}）==`
+      : `== fetch-x LIVE（${API_KEY ? API_BASE : PUBLIC_SOURCE}）==`
   );
   await mkdir(LIVE_DIR, { recursive: true });
   const handles = JSON.parse(
@@ -213,6 +359,10 @@ async function main() {
     }
   }
   console.log(`完成：${ok}/${handles.length} 个博主更新。`);
+  if (!DRY_RUN && ok === 0) {
+    console.error("没有任何博主抓取成功；拒绝生成空的“真数据”更新。");
+    process.exitCode = 1;
+  }
 }
 
 main().catch((e) => {

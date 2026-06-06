@@ -122,6 +122,9 @@ if (existsSync(LIVE_DIR)) {
         fail(`${context}: fetchedAt must be null or YYYY-MM-DD HH:MM`);
       }
     }
+    if (live.source === "fixture") {
+      fail(`${context}: fixture data must not be committed as live data`);
+    }
     if (!Array.isArray(live.feed)) fail(`${context}: feed must be an array`);
     else live.feed.forEach((item, index) => validateFeedItem(item, `${context}.feed[${index}]`));
     validateMentions(live.mentions ?? {}, `${context}.mentions`);

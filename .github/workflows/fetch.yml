@@ -5,6 +5,12 @@ on:
     # 每小时整点抓一次（UTC）。想改频率改这里的 cron。
     - cron: "0 * * * *"
   workflow_dispatch: # 也可在 Actions 页面手动点 Run
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/fetch.yml"
+      - "scripts/fetch-x.mjs"
+      - "scripts/handles.json"
 
 permissions:
   contents: write
@@ -36,13 +42,11 @@ jobs:
           TWITTER_API_USER_PARAM: ${{ vars.TWITTER_API_USER_PARAM }}
           TWITTER_API_TOKEN_QUERY: ${{ vars.TWITTER_API_TOKEN_QUERY }}
           TWITTER_API_BODY: ${{ vars.TWITTER_API_BODY }}
+          # 没有 TWITTER_API_KEY 时，脚本会尝试公开镜像源；设 none 可禁用。
+          TWITTER_PUBLIC_SOURCE: ${{ vars.TWITTER_PUBLIC_SOURCE }}
+          SOTWE_BASE: ${{ vars.SOTWE_BASE }}
           MAX_TWEETS: ${{ vars.MAX_TWEETS }}
-        run: |
-          if [ -z "$TWITTER_API_KEY" ]; then
-            echo "::warning::未配置 TWITTER_API_KEY，跳过抓取（先到 Settings → Secrets 添加 key）。"
-            exit 0
-          fi
-          node scripts/fetch-x.mjs
+        run: node scripts/fetch-x.mjs
 
       - name: Push digest to IM (Feishu / Telegram)
         # 把新推文整理成卡片推到飞书/Telegram。下面任一渠道留空即自动跳过，不会报错。

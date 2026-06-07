@@ -1,0 +1,148 @@
+{
+  "id": "aleabitoreddit",
+  "handle": "aleabitoreddit",
+  "source": "https://api.twtapi.com",
+  "fetchedAt": "2026-06-07 13:51",
+  "feed": [
+    {
+      "time": "06-07 13:10",
+      "type": "推文",
+      "ticker": "",
+      "title": "推文 · @aleabitoreddit",
+      "body": "哇？我的粉丝数竟然突破70万了……而且在过去的短短3天里，我又额外收获了5000名订阅者。\n\n真的非常感谢大家。\n\n尤其要特别感谢最近给予我巨大支持的中文社区！ https://t.co/nLLSohl0lN",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 13:10",
+      "url": "https://x.com/aleabitoreddit/status/2063609539396862206"
+    },
+    {
+      "time": "06-07 12:45",
+      "type": "推文",
+      "ticker": "NVDA",
+      "title": "推文线索 · NVDA",
+      "body": "On top: $NVDA CEO also called out Silicon Photonics (optical networking) with memory. \n\nStating that Nvidia would require “supply volumes beyond imagination”.\n\nWhat a bullish read through on the SiPH supply chain from $SIVE (now upstream Nvidia ecosystem) to $SOI https://t.co/m6jub4nfzx",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 12:45",
+      "url": "https://x.com/aleabitoreddit/status/2063603368178938193"
+    },
+    {
+      "time": "06-07 11:28",
+      "type": "推文",
+      "ticker": "NVDA",
+      "title": "推文线索 · NVDA",
+      "body": "Oh look… $NVDA CEO warned memory shortage is expected to persist for many years, due to massive scaling demand of AI infrastructure.\n\nWith further announcements tomorrow.\n\n$MU and $EWY (Samsung/SK Hynix) operating profit projections aren’t looking too crazy anymore? https://t.co/OvjyrifRtO",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 11:28",
+      "url": "https://x.com/aleabitoreddit/status/2063583856025108986"
+    },
+    {
+      "time": "06-07 10:39",
+      "type": "推文",
+      "ticker": "IREN",
+      "title": "推文线索 · IREN",
+      "body": "Sure, #1 thing is toxic financing structure/float dynamics. \n\nBest example is current Neoclouds landscape:\n\n- $IREN is basically trash, since they have $6,000,000,000 ATMs and virtually infinite dilution, likely selling into every rally (structural overhang)\n\n- While $NBIS is now YTD 153%+, from optimal structures (eg. $NVDA direct funding, mix of convertibles, etc.). \n\n- On the other hand, $CRWV has endless debt interest given they took out high interest rate loans to finance GPUs. \n\nIt's extremely nuanced, but you need to take a look at the float dynamics.\n\nIf they're legitimately a good company, then it might be a good idea to go long after all the existing holders get diluted to oblivion.\n\nBut if you care about your equity appreciation, it's a good idea to stay far away from toxic financing structures or toxic overhang (eg. debt interest, that eats away at a company FCF long term)\n\nWith smaller companies, they have this all the time, like \n$SLNH, where there's new $500m ATMs on a $250m MC. \n\nOr like $BKKT where there's endless dilution to fund executive pay. \n\nWith these companies you're basically transferring your money over to the company while influencers talk about them. So those are red flags. \n\nWith many software names like $SNAP, they mask stock-based compensation with profitability. So while the company optically looks profitable, you'll likely see the value of your equity decrease due to dilution. \n\nThere's endless types of these share structures you need to look when screening ideas.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 10:39",
+      "url": "https://x.com/aleabitoreddit/status/2063571485739106593"
+    },
+    {
+      "time": "06-07 03:37",
+      "type": "推文",
+      "ticker": "AXTI",
+      "title": "推文线索 · AXTI",
+      "body": "I think my personal style of investing is a bit different, just some reflection:\n\nIt's inherently discretionary, based on stuff markets don't know yet. And a culmination of life experiences?\n\nIf you look at $AXTI, $RPI, $SIVE, $IQE and others. \n\nLot of it is guessing on unstructured relationships then seeing if it's right or not down the line.   \n\n$RPI is the perfect example:\n\n1. Nobody really thought of Raspberry Pis for AI growth. Mainly people bought one or two just for class + education + hobbyist. \n2. After OpenClaw, just noticed all my friends and people just buying Apple Mac Minis / RPIs for AI applications. \n3. Found validation of that trend online with lot of people sharing video tutorials on AI orchestration with RPI. \n4. AI was their ideal perfect growth vector, did some modeling, and thought it was compelling. \n\nEarnings comes out and I was right. \n\nEveryone in media was calling it a meme stock because there's nothing online that shows revenue growth from AI (was 14% forecasted revenue growth, turned out to be 58%, my projection was around 55%).  \n\nSo it was a mix of guessing next industry trend (AI using lightweight hardware instead of GPU clusters), real life trends, then revenue forecasting off my guess.\n\n For stuff like $AXTI: \n\n1. Everyone called it a joke when I bought at ~$12. LLMs would hallucinate and say \"hyperscalers/govs would have known about this by now and fixed this vulnerability with InP substrates\" \n2. Or would conflate very nuanced parts of InP substrate stack, where there's multiple different chokepoints in upstream processing. \n3. So part of this was just discretionary based on what I've seen over InP substrate breakdowns, industry trends, etc. \n4. Then also guessing the major supercycle was photonics (this was before everyone caught onto $LITE, and others). Or before you saw the $141B TAM projections from GS. \n5. AXT owned 40% of InP supply chain, without them the supply chain just gets cripped). \n6. All the \"analysts\" were forecasting steady InP substrate growth, few hundred million TAM, etc. or export controls. \n7. Everyone kept trying to say $AXTI was overvalued based on TAM estimates. But if it's a few hundred million TAM you just think that's a joke and go into game theory over allocations. \n8. Then I just had to guess, how much would this be worth if it were a NAND style bottleneck, what MC could it reach based on control, how much would hyperscalers price it as, etc. \n\nA lot of the current research outputs from Goldman Sachs, or earnings reports from the Epiwafer companies, were confirmed after I published my piece on AXT. If you did research back then, lot of the same material /framing wouldn't have come up. \n\nWith stuff like $XFAB as you're seeing now, a lot of it is just pure guessing:\n\n1. Not really any CPO materials, how much their MTP process makes in revenue, etc. Everyone online keeps saying they're not a photonics player. \n2. But if you go through ASE docs or Gov websites, they all kinda cite XFAB as a major emerging player here. \n3. $NVDA also evaluating them right now (maybe it's successful who knows). \n4. No clear revenue around this area because their main silicon photonics process is still precommercial, but if you guess it's trying to create a EU supply chain to compete with $TSEM, once pre-commercial shifts to commercial, maybe similar but less volume contracts? \n5. Then just seeing updates over the next few months to see if anything confirms this thesis guess. \n\n_ \n\nI think a lot of information discovery still can be done with LLMs I'm seeing online. But it's also really hard to make a bunch of unstructured inferences based on unrelated material or even just trends you're seeing in real life. \n\nSo probably better to just do what's standard, eg. do valuation forecasting based on current numbers\n\nStuff like $AAOI, if they're projecting $471m/M h1 2027 and you see MC at $12B, probably undervalued might be a good idea to go long for next years. \n\nStuff like Samsung Electronics is easier, see what people are modeling for operating profits for 2027, 2028 then just seeing if it's undervalued or not at current levels. \n\nMaybe something harder is $JBL. I haven't really seen any great volume numbers around 1.6T LRO, but you can just make a guess on how popular that might be then project how that might impact current MCs. \n\nOr picking just good names everyone kinda agrees like $TSM, $INTC, $MRVL is also solid. \n\nSo a lot of things is just building up your life skills then applying that to markets. I don't think it's that can be taught with courses and stuff. \n\nOf course, much of what I'm doing is just high conviction inference based on unconnected parts. Could always be wrong.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 03:37",
+      "url": "https://x.com/aleabitoreddit/status/2063465386960736396"
+    }
+  ],
+  "mentions": {
+    "NVDA": {
+      "h24": 4,
+      "d7": 4
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "EWY": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IREN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CRWV": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SLNH": {
+      "h24": 1,
+      "d7": 1
+    },
+    "BKKT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNAP": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "RPI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "XFAB": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSEM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "JBL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "INTC": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MRVL": {
+      "h24": 1,
+      "d7": 1
+    }
+  }
+}

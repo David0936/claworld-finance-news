@@ -36,6 +36,7 @@ jobs:
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           # 如需换服务商/端点，在仓库 Variables 里设这几个即可（可留空用默认）
+          TWITTER_API_PROVIDER: ${{ vars.TWITTER_API_PROVIDER }}
           TWITTER_API_BASE: ${{ vars.TWITTER_API_BASE }}
           TWITTER_API_PATH: ${{ vars.TWITTER_API_PATH }}
           TWITTER_API_KEY_HEADER: ${{ vars.TWITTER_API_KEY_HEADER }}
@@ -43,6 +44,7 @@ jobs:
           TWITTER_API_USER_PARAM: ${{ vars.TWITTER_API_USER_PARAM }}
           TWITTER_API_TOKEN_QUERY: ${{ vars.TWITTER_API_TOKEN_QUERY }}
           TWITTER_API_BODY: ${{ vars.TWITTER_API_BODY }}
+          TWITTER_API_LANG: ${{ vars.TWITTER_API_LANG }}
           # 没有 TWITTER_API_KEY 时，脚本会尝试公开镜像源；设 none 可禁用。
           TWITTER_PUBLIC_SOURCE: ${{ vars.TWITTER_PUBLIC_SOURCE }}
           SOTWE_BASE: ${{ vars.SOTWE_BASE }}

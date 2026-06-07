@@ -55,6 +55,16 @@ function recomputeMentions(feed: FeedItem[]): LiveData["mentions"] {
 function mergeLive(a: LiveData | undefined, b: LiveData): LiveData {
   if (!a) return b;
   const preferred = (b.fetchedAt ?? "") >= (a.fetchedAt ?? "") ? b : a;
+  const rich = {
+    metrics: preferred.metrics ?? a.metrics ?? b.metrics,
+    priorityHeader: preferred.priorityHeader ?? a.priorityHeader ?? b.priorityHeader,
+    priorityQueue: preferred.priorityQueue ?? a.priorityQueue ?? b.priorityQueue,
+    stockPool: preferred.stockPool ?? a.stockPool ?? b.stockPool,
+    coverage: preferred.coverage ?? a.coverage ?? b.coverage,
+    mentionPerformance:
+      preferred.mentionPerformance ?? a.mentionPerformance ?? b.mentionPerformance,
+    trackRecord: preferred.trackRecord ?? a.trackRecord ?? b.trackRecord,
+  };
   const seen = new Set<string>();
   const feed = [...a.feed, ...b.feed]
     .filter((item) => {
@@ -66,6 +76,7 @@ function mergeLive(a: LiveData | undefined, b: LiveData): LiveData {
     .sort((x, y) => parseDT(y.datetime) - parseDT(x.datetime));
   return {
     ...preferred,
+    ...rich,
     id: a.id,
     handle: a.handle || b.handle,
     source: b.fetchedAt && (!a.fetchedAt || b.fetchedAt >= a.fetchedAt) ? b.source : a.source,

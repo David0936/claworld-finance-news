@@ -4,6 +4,7 @@
  *
  * 数据源：第三方抓取 API。换服务商只改环境变量，不用动代码。
  *   TWITTER_API_KEY    必填（没有则 dry-run 用 fixture，不会真请求）
+ *   TWITTER_API_PROVIDER 可选：twtapi | generic（不填按 TWITTER_API_BASE 推断）
  *   TWITTER_API_BASE   默认 https://api.twitterapi.io
  *   TWITTER_API_PATH   默认 /twitter/user/last_tweets
  *   TWITTER_API_KEY_HEADER 默认 X-API-Key（key 放请求头时用）
@@ -12,9 +13,10 @@
  *   TWITTER_API_TOKEN_QUERY 若设了，key 改放 URL query（如 Apify 用 token）而非请求头
  *   TWITTER_API_BODY   POST 时的请求体模板，占位符 {{handle}} {{max}}；不填则用 Apify 默认体
  *
- * ── 两种现成配法 ──
- * A) twitterapi.io（默认，GET+header）：只配 TWITTER_API_KEY 即可。
- * B) Apify「最便宜抓取器」（POST，按你的量基本免费）：
+ * ── 三种现成配法 ──
+ * A) TwtAPI（GET+header）：TWITTER_API_PROVIDER=twtapi，TWITTER_API_KEY=<你的 key>。
+ * B) twitterapi.io（默认，GET+header）：只配 TWITTER_API_KEY 即可。
+ * C) Apify「最便宜抓取器」（POST，按你的量基本免费）：
  *      TWITTER_API_KEY        = <你的 Apify token>
  *      TWITTER_API_BASE       = https://api.apify.com
  *      TWITTER_API_PATH       = /v2/acts/kaitoeasyapi~twitter-x-data-tweet-scraper-pay-per-result-cheapest/run-sync-get-dataset-items
@@ -37,7 +39,10 @@ const ROOT = join(__dirname, "..");
 const LIVE_DIR = join(ROOT, "data", "live");
 const FIXTURE_DIR = join(__dirname, "fixtures");
 
-const API_BASE = process.env.TWITTER_API_BASE || "https://api.twitterapi.io";
+const API_PROVIDER = (process.env.TWITTER_API_PROVIDER || "").toLowerCase();
+const DEFAULT_API_BASE =
+  API_PROVIDER === "twtapi" ? "https://api.twtapi.com" : "https://api.twitterapi.io";
+const API_BASE = process.env.TWITTER_API_BASE || DEFAULT_API_BASE;
 const API_PATH = process.env.TWITTER_API_PATH || "/twitter/user/last_tweets";
 const KEY_HEADER = process.env.TWITTER_API_KEY_HEADER || "X-API-Key";
 const API_KEY = process.env.TWITTER_API_KEY || "";
@@ -47,6 +52,8 @@ const TOKEN_QUERY = process.env.TWITTER_API_TOKEN_QUERY || ""; // 设了则 key 
 const BODY_TMPL = process.env.TWITTER_API_BODY || "";
 const PUBLIC_SOURCE = (process.env.TWITTER_PUBLIC_SOURCE || (API_KEY ? "" : "sotwe")).toLowerCase();
 const SOTWE_BASE = process.env.SOTWE_BASE || "https://www.sotwe.com";
+const API_LANG = process.env.TWITTER_API_LANG || "zh";
+const IS_TWTAPI = API_PROVIDER === "twtapi" || API_BASE.includes("api.twtapi.com");
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const MAX_TWEETS = Number(process.env.MAX_TWEETS || 20);
@@ -258,7 +265,110 @@ async function fetchSotweTweets(handle) {
   });
 }
 
-async function fetchTweets(handle) {
+function twtApiUrl(path, params = {}) {
+  const base = API_BASE.replace(/\/$/, "");
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const url = new URL(`${base}/api/v1/twitter${normalizedPath}`);
+  for (const [key, value] of Object.entries(params)) {
+    if (value != null && value !== "") url.searchParams.set(key, String(value));
+  }
+  return url;
+}
+
+async function fetchTwtApiJson(path, params = {}) {
+  const url = twtApiUrl(path, params);
+  const res = await fetch(url, {
+    headers: {
+      [KEY_HEADER]: API_KEY,
+      "X-Lang": API_LANG,
+    },
+  });
+  const json = await res.json().catch(() => null);
+  if (!res.ok) {
+    throw new Error(`TwtAPI HTTP ${res.status} ${res.statusText} — ${path}`);
+  }
+  if (json?.code && String(json.code) !== "200") {
+    throw new Error(`TwtAPI ${json.code}: ${json.msg || "request failed"}`);
+  }
+  return json;
+}
+
+function twtApiUserId(json) {
+  return (
+    json?.id_str ||
+    json?.rest_id ||
+    json?.user_id ||
+    json?.data?.id_str ||
+    json?.data?.rest_id ||
+    json?.data?.user_id ||
+    json?.data?.user?.id_str ||
+    json?.data?.user?.rest_id ||
+    ""
+  );
+}
+
+function twtApiScreenName(tweet) {
+  return (
+    tweet?.core?.user_results?.result?.core?.screen_name ||
+    tweet?.core?.user_results?.result?.legacy?.screen_name ||
+    tweet?.user_results?.result?.core?.screen_name ||
+    tweet?.user_results?.result?.legacy?.screen_name ||
+    ""
+  );
+}
+
+function twtApiTweetText(tweet) {
+  return (
+    tweet?.note_tweet?.note_tweet_results?.result?.text ||
+    tweet?.note_tweet?.note_tweet_results?.result?.richtext?.text ||
+    tweet?.legacy?.full_text ||
+    tweet?.legacy?.text ||
+    ""
+  );
+}
+
+function collectTwtApiTweets(value, handle, out = [], seen = new Set()) {
+  if (!value || out.length >= MAX_TWEETS * 8) return out;
+  if (Array.isArray(value)) {
+    for (const item of value) collectTwtApiTweets(item, handle, out, seen);
+    return out;
+  }
+  if (typeof value !== "object") return out;
+
+  const legacy = value.legacy;
+  const id = value.rest_id || legacy?.id_str || legacy?.conversation_id_str || "";
+  const text = twtApiTweetText(value);
+  const createdAt = legacy?.created_at || "";
+  const screenName = twtApiScreenName(value).toLowerCase();
+  const isSameAuthor = !screenName || screenName === handle.toLowerCase();
+
+  if (legacy && id && text && createdAt && isSameAuthor && !seen.has(id)) {
+    seen.add(id);
+    out.push({
+      id_str: id,
+      full_text: text,
+      created_at: createdAt,
+      url: `https://x.com/${handle}/status/${id}`,
+    });
+  }
+
+  for (const child of Object.values(value)) collectTwtApiTweets(child, handle, out, seen);
+  return out;
+}
+
+async function fetchTwtApiTweets(handle, knownUserId = "") {
+  let userId = knownUserId;
+  if (!userId) {
+    const user = await fetchTwtApiJson("/UsernameToUserId", { username: handle });
+    userId = twtApiUserId(user);
+  }
+  if (!userId) throw new Error(`TwtAPI 未能解析 @${handle} 的 user_id`);
+
+  const timeline = await fetchTwtApiJson("/UserTweets", { user_id: userId });
+  return collectTwtApiTweets(timeline, handle);
+}
+
+async function fetchTweets(handle, options = {}) {
   if (DRY_RUN) {
     const fx = join(FIXTURE_DIR, `${handle}.json`);
     if (!existsSync(fx)) {
@@ -271,6 +381,7 @@ async function fetchTweets(handle) {
     if (PUBLIC_SOURCE === "sotwe") return fetchSotweTweets(handle);
     throw new Error("缺少 TWITTER_API_KEY，且未启用可用公开源（TWITTER_PUBLIC_SOURCE=sotwe）");
   }
+  if (IS_TWTAPI) return fetchTwtApiTweets(handle, options.user_id);
   const url = buildUrl(handle);
   const headers = {};
   if (!TOKEN_QUERY && API_KEY) headers[KEY_HEADER] = API_KEY; // key 放请求头（默认）
@@ -343,14 +454,15 @@ async function main() {
   );
 
   let ok = 0;
-  for (const { id, handle } of handles) {
+  for (const entry of handles) {
+    const { id, handle } = entry;
     try {
-      const raw = await fetchTweets(handle);
+      const raw = await fetchTweets(handle, entry);
       const live = buildLive(id, handle, raw);
-      const out = join(LIVE_DIR, `${id}.json`);
+      const out = join(LIVE_DIR, `${id}.tweets.json`);
       await writeFile(out, JSON.stringify(live, null, 2) + "\n");
       console.log(
-        `  ✓ @${handle} → ${live.feed.length} 条推文，写入 data/live/${id}.json`
+        `  ✓ @${handle} → ${live.feed.length} 条推文，写入 data/live/${id}.tweets.json`
       );
       ok += 1;
     } catch (err) {

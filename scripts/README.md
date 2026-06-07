@@ -33,20 +33,32 @@ node scripts/validate-data.mjs
 ## 一次性设置（你只需做这一步）
 
 1. 默认先同步 analysissite 公开动态快照，不需要 key。
-2. 如果要绕开原站、直接抓 X，再准备一个抓取 API 的 key。**省钱首选 Apify「最便宜抓取器」（约 1000 条/天免费）**，配法见下方「选数据源 · 方案 B」；图省事也可用 twitterapi.io（方案 A）。
+2. 如果要绕开原站、直接抓 X，再准备一个抓取 API 的 key。当前可先试 **TwtAPI 300 次免费额度**（方案 A）；长期跑再按成本切 Apify（方案 C）或其它服务。
 2. 仓库 → **Settings → Secrets and variables → Actions → New repository secret**
    - Name: `TWITTER_API_KEY`
-   - Value: 你的 key（Apify 则填 Apify token，并按方案 B 再设几个 Variable）
+   - Value: 你的 key（TwtAPI / Apify 都填这里；不要写进代码）
 3. 完成。到 **Actions → Fetch X tweets → Run workflow** 手动跑一次验证；之后按 cron 自动跑。
 
 ## 选数据源（便宜 / 免费方案）
 
-脚本支持 GET（默认）和 POST 两种源，**换源只改 Variables，不动代码**。
+脚本支持 TwtAPI、GET（默认）和 POST 三种源，**换源只改 Variables，不动代码**。
 
-### 方案 A · twitterapi.io（默认，按量付费，最省事）
+### 方案 A · TwtAPI（300 次免费额度，适合先试）⭐
+在 **Settings → Secrets and variables → Actions** 设：
+
+| 变量 | 值 | 类型 |
+|---|---|---|
+| `TWITTER_API_KEY` | 你的 TwtAPI API key | Secret |
+| `TWITTER_API_PROVIDER` | `twtapi` | Variable |
+| `TWITTER_API_LANG` | `zh` | Variable，可选 |
+
+脚本会调用 `UserTweets`。若 `scripts/handles.json` 里没有 `user_id`，会先用 `UsernameToUserId` 查询一次；
+建议把公开 `user_id` 缓存在 `handles.json`，这样每轮每个博主只消耗 1 次调用。
+
+### 方案 B · twitterapi.io（GET + header，最省事）
 只配 `TWITTER_API_KEY` 即可。量大时偏贵。
 
-### 方案 B · Apify「最便宜抓取器」（推荐，按你的量基本免费）⭐
+### 方案 C · Apify「最便宜抓取器」（长期跑更稳）⭐
 免费额度约 **1000 条推文/天**，超出 $0.25/千条。注册 [apify.com](https://apify.com) → Settings → Integrations 拿 API token。
 在 **Settings → Secrets and variables → Actions** 设：
 
@@ -60,7 +72,7 @@ node scripts/validate-data.mjs
 
 请求体默认就是「取该博主最新 N 条」，无需额外配置。
 
-### 方案 C · 无 key 公开镜像源（默认 Sotwe）
+### 方案 D · 无 key 公开镜像源（默认 Sotwe）
 没有 `TWITTER_API_KEY` 时，脚本会尝试 `TWITTER_PUBLIC_SOURCE=sotwe`，读取公开页面并解析真实公开推文。
 这条链路不稳定，推荐作为兜底；生产长期跑还是建议配置 Apify。
 
@@ -71,7 +83,7 @@ node scripts/validate-data.mjs
 | `TWITTER_PUBLIC_SOURCE` | `sotwe` | 无 key 时使用的公开源；设 `none` 可禁用 |
 | `SOTWE_BASE` | `https://www.sotwe.com` | Sotwe 镜像域名，域名变动时可替换 |
 
-### 方案 D · 已授权浏览器 / 会员频道导入
+### 方案 E · 已授权浏览器 / 会员频道导入
 公开推文继续走方案 A/B。会员频道这类受限内容，不在 Action 里自动登录抓取；你可以把自己已授权可见的内容导出成 JSON / 文本，放到本地 `scripts/captures/`，再导入为同一套 `data/live/<id>.json`：
 
 ```bash
@@ -83,6 +95,7 @@ node scripts/import-x-capture.mjs scripts/captures/aleabit-member.json aleabitor
 ### 💡 省额度技巧（任何方案通用）
 - **当前频率**：`fetch.yml` 里 cron 默认每 30 分钟（`*/30 * * * *`）。这适合投研看板：足够新，又不必常驻服务器。
   > 注意：每 30 分钟 × 1 博主 × 20 条 ≈ 960 条/天；每新增一个博主就再乘一次。加博主或想留余量，建议把 `MAX_TWEETS` 调到 `10`，或改回每小时 / 每 3–4 小时。
+- **TwtAPI 300 次额度**：如果 300 次是每月额度，每 30 分钟 × 1 博主 ≈ 1440 次/月，明显超。建议改成每 4 小时（`0 */4 * * *`，约 180 次/月/博主）或只手动运行；如果 300 次是每天额度，30 分钟可以先跑。
 - **调量**：Variable `MAX_TWEETS`（默认 20）改小，如 `10`。
 
 ### 其它可调端点变量（都可留空用默认）
@@ -90,12 +103,13 @@ node scripts/import-x-capture.mjs scripts/captures/aleabit-member.json aleabitor
 | 变量 | 默认值 | 说明 |
 |---|---|---|
 | `TWITTER_API_KEY_HEADER` | `X-API-Key` | key 放请求头时的头名（方案 A 用）|
+| `TWITTER_API_PROVIDER` | （空）| 设为 `twtapi` 可启用 TwtAPI 两步抓取适配 |
 | `TWITTER_API_USER_PARAM` | `userName` | GET 时拼的用户名参数名 |
 | `TWITTER_API_BODY` | （Apify 默认体）| POST 自定义请求体模板，占位符 `{{handle}}` `{{max}}` |
 
 ## 抓哪些博主
 
-编辑 `scripts/handles.json`：`{ "id": 博主id, "handle": X用户名(不带@) }`。
+编辑 `scripts/handles.json`：`{ "id": 博主id, "handle": X用户名(不带@), "user_id": 可选数字ID }`。
 id 必须和 `data/bloggers.ts` 里的博主 id 一致。占位博主（quantflow/chiplens）没有真实账号，未列入。
 
 ## 本地测试（不联网）

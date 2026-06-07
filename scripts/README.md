@@ -110,24 +110,27 @@ node scripts/fetch-x.mjs --dry-run   # 用 scripts/fixtures/<handle>.json 验证
 
 ---
 
-# Netlify 发布
+# Vercel 发布
 
-项目是 Next.js 静态导出，`netlify.toml` 已固定为：
+项目改为 Vercel 托管。当前 `vercel.json` 固定了安装、构建和静态导出目录：
 
-```toml
-[build]
-  command = "npm run build"
-  publish = "out"
+```json
+{
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "out"
+}
 ```
 
-如果 Netlify 自带的 Git 构建继续显示 `error`，可以让 GitHub Actions 直接发布到同一个站点：
+推荐在 Vercel 项目里连接 GitHub 仓库 `David0936/claworld-Financial-Newa`：
 
-1. 到 GitHub 仓库 `Settings → Secrets and variables → Actions`。
-2. 添加 Secret：`NETLIFY_AUTH_TOKEN`（Netlify user access token）。
-3. 可选添加 Variable：`NETLIFY_SITE_ID`；不填时默认使用当前站点 `d592cca9-9a2d-4668-8015-a60b4ef68d72`。
-4. 手动运行 `Deploy to Netlify` workflow，或直接 push 到 `main`。
+1. Vercel → Add New Project → Import Git Repository。
+2. Framework 选择 Next.js，Build Command 保持 `npm run build`。
+3. Output Directory 使用 `out`。
+4. Production Branch 设为 `main`。
 
-定时抓取 workflow 也会在数据有变化后尝试直发 Netlify；没配置 token 时只跳过发布，不影响抓取和提交。
+定时抓取 workflow 在 `data/live` 有变化时会提交到 `main`；Vercel 的 Git 集成会自动重新部署。
 
 ---
 

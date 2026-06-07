@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 轻量数据验证：在 Netlify / 本地 build 前拦住最容易导致页面空白的配置错误。
+ * 轻量数据验证：在 Vercel / 本地 build 前拦住最容易导致页面空白的配置错误。
  */
 import { readFile, readdir } from "node:fs/promises";
 import { existsSync } from "node:fs";

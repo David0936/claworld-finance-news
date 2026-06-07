@@ -70,7 +70,6 @@ jobs:
         run: node scripts/push-im.mjs
 
       - name: Commit & push if changed
-        id: commit-live-data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -78,29 +77,7 @@ jobs:
             git add data/live
             git commit -m "chore: 自动更新博主推文 ($(date -u '+%Y-%m-%d %H:%M UTC'))"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "已提交更新，将触发部署。"
+            echo "已提交更新，Vercel Git 集成将自动触发部署。"
           else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "无变化，跳过。"
           fi
-
-      - name: Deploy to Netlify (optional direct publish)
-        if: steps.commit-live-data.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
-          DEFAULT_NETLIFY_SITE_ID: d592cca9-9a2d-4668-8015-a60b4ef68d72
-        run: |
-          if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
-            echo "::notice::NETLIFY_AUTH_TOKEN is not configured; skipping direct Netlify deploy."
-            exit 0
-          fi
-          SITE_ID="${NETLIFY_SITE_ID:-$DEFAULT_NETLIFY_SITE_ID}"
-          npm ci
-          npm run build
-          npx --yes netlify-cli deploy \
-            --prod \
-            --dir=out \
-            --site="$SITE_ID" \
-            --auth="$NETLIFY_AUTH_TOKEN"

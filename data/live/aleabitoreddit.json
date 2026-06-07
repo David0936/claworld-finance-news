@@ -9,6 +9,52 @@
   "fetchedAt": "2026-06-07 09:01",
   "feed": [
     {
+      "time": "06-07 19:28",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA",
+        "MU",
+        "EWY"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "Oh look… $NVDA CEO warned memory shortage is expected to persist for many years, due to massive scaling demand of AI infrastructure.\nWith further announcements tomorrow.\n$MU and $EWY (Samsung/SK Hynix) operating profit projections aren’t looking too crazy anymore?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 19:28",
+      "url": "https://x.com/aleabitoreddit/status/2063583856025108986",
+      "stats": {
+        "views": "5,872",
+        "likes": "92",
+        "reposts": "9",
+        "bookmarks": "17"
+      }
+    },
+    {
+      "time": "06-07 18:39",
+      "type": "推文",
+      "ticker": "IREN",
+      "tickers": [
+        "IREN",
+        "NBIS",
+        "NVDA",
+        "CRWV",
+        "SLNH",
+        "BKKT",
+        "SNAP"
+      ],
+      "title": "推文线索 · IREN",
+      "body": "Sure, #1 thing is toxic financing structure/float dynamics. \nBest example is current Neoclouds landscape:\n- $IREN is basically trash, since they have $6,000,000,000 ATMs and virtually infinite dilution, likely selling into every rally (structural overhang)\n- While $NBIS is now YTD 153%+, from optimal structures (eg. $NVDA direct funding, mix of convertibles, etc.). \n- On the other hand, $CRWV has endless debt interest given they took out high interest rate loans to finance GPUs. \nIt's extremely nuanced, but you need to take a look at the float dynamics.\nIf they're legitimately a good company, then it might be a good idea to go long after all the existing holders get diluted to oblivion.\nBut if you care about your equity appreciation, it's a good idea to stay far away from toxic financing structures or toxic overhang (eg. debt interest, that eats away at a company FCF long term)\nWith smaller companies, they have this all the time, like \n$SLNH, where there's new $500m ATMs on a $250m MC. \nOr like $BKKT where there's endless dilution to fund executive pay. \nWith these companies you're basically transferring your money over to the company while influencers talk about them. So those are red flags. \nWith many software names like $SNAP, they mask stock-based compensation with profitability. So while the company optically looks profitable, you'll likely see the value of your equity decrease due to dilution. \nThere's endless types of these share structures you need to look when screening ideas.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-07 18:39",
+      "url": "https://x.com/aleabitoreddit/status/2063571485739106593",
+      "stats": {
+        "views": "0",
+        "likes": "1",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
       "time": "06-07 16:23",
       "type": "推文",
       "ticker": "",
@@ -80,46 +126,45 @@
         "reposts": "6",
         "bookmarks": "26"
       }
-    },
-    {
-      "time": "06-06 20:22",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
-        "AAOI"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "If you’re curious:\n$4649 for 107,894,491 (100M+) impressions!\nAll of this is going to dog rescues, will be doing large donations later!\nIt’s ~$600 / dog rescued, so it scales proportionally with Serenity fan count!\nI also believe in making all my profits off $SIVE to $AAOI with stocks in the market, not off followers.\nEspecially if I’m a good enough investor.\nSo never felt the need to have high paywalls or do paid ads. (I’d do this anyway even if it weren’t monetized).\nI’m glad I can help things I care about just by posting ideas throughout the day for fun. \nAnd I’ve seen a lot of followers recently donate to their local shelters in my name.\nSo genuinely thank you all for that, makes me happy.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-06 20:22",
-      "url": "https://x.com/aleabitoreddit/status/2063235166336856251",
-      "stats": {
-        "views": "0",
-        "likes": "3",
-        "reposts": "1",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "06-06 18:46",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "Apparently I’m all over Chinese news now?\nI just published some research on LeaderDrive (688017) and their role in humanoid supply chains.\nLooks like China’s robotics stock sector went up and 688017 hit 20% limit up?\nI appreciate they called me “Overseas God”.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-06 18:46",
-      "url": "https://x.com/aleabitoreddit/status/2063211040989733012",
-      "stats": {
-        "views": "224",
-        "likes": "12",
-        "reposts": "1",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
+    "NVDA": {
+      "h24": 3,
+      "d7": 3
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "EWY": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IREN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CRWV": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SLNH": {
+      "h24": 1,
+      "d7": 1
+    },
+    "BKKT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNAP": {
+      "h24": 1,
+      "d7": 1
+    },
     "AXTI": {
       "h24": 1,
       "d7": 1
@@ -129,8 +174,8 @@
       "d7": 1
     },
     "SIVE": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "IQE": {
       "h24": 1,
@@ -144,17 +189,13 @@
       "h24": 1,
       "d7": 1
     },
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
     "TSEM": {
       "h24": 1,
       "d7": 1
     },
     "AAOI": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "JBL": {
       "h24": 1,

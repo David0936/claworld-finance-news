@@ -1,7 +1,10 @@
 # 自动抓取 X 推文
 
-每小时由 GitHub Actions（`.github/workflows/fetch.yml`）自动抓取，写入 `data/live/<id>.json`，
+每 30 分钟由 GitHub Actions（`.github/workflows/fetch.yml`）自动抓取，写入 `data/live/<id>.json`，
 提交后触发部署，网站推文随之更新。**只有显式 `--dry-run` 才会使用 fixture；正式抓取不会再用假数据。**
+
+> 这里的“实时”不是网页长连接推送，而是「定时抓取 → 提交数据 → Vercel 自动重建」。
+> GitHub schedule 和 Vercel 部署都可能有几分钟排队，通常可见延迟约 5–40 分钟；需要秒级实时才考虑 X 官方流式 API 或常驻后端。
 
 ## 已研究出的原站机制
 
@@ -78,8 +81,8 @@ node scripts/import-x-capture.mjs scripts/captures/aleabit-member.json aleabitor
 `scripts/captures/` 已加入 `.gitignore`，不要提交会员频道原文。
 
 ### 💡 省额度技巧（任何方案通用）
-- **降频**：`fetch.yml` 里 cron 默认每小时。给小白推研报用不着这么勤，改成每 3–4 小时（`0 */4 * * *`）能把用量砍掉 3/4。
-  > 注意：每小时 × 2 博主 × 20 条 ≈ 960 条/天，已逼近 Apify 免费线；**加博主或想留余量就务必降频**，或调小下面的 `MAX_TWEETS`。
+- **当前频率**：`fetch.yml` 里 cron 默认每 30 分钟（`*/30 * * * *`）。这适合投研看板：足够新，又不必常驻服务器。
+  > 注意：每 30 分钟 × 1 博主 × 20 条 ≈ 960 条/天；每新增一个博主就再乘一次。加博主或想留余量，建议把 `MAX_TWEETS` 调到 `10`，或改回每小时 / 每 3–4 小时。
 - **调量**：Variable `MAX_TWEETS`（默认 20）改小，如 `10`。
 
 ### 其它可调端点变量（都可留空用默认）

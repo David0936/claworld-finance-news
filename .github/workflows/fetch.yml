@@ -2,8 +2,8 @@ name: Fetch X tweets
 
 on:
   schedule:
-    # 每小时整点抓一次（UTC）。想改频率改这里的 cron。
-    - cron: "0 * * * *"
+    # 每 30 分钟抓一次（UTC）。GitHub 调度可能有几分钟延迟。
+    - cron: "*/30 * * * *"
   workflow_dispatch: # 也可在 Actions 页面手动点 Run
   push:
     branches: [main]
@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: fetch-x
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   fetch:
@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Fetch latest tweets from X API (optional)
+      - name: Fetch latest tweets from X API or public fallback
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           # 如需换服务商/端点，在仓库 Variables 里设这几个即可（可留空用默认）
@@ -48,11 +48,7 @@ jobs:
           SOTWE_BASE: ${{ vars.SOTWE_BASE }}
           MAX_TWEETS: ${{ vars.MAX_TWEETS }}
         run: |
-          if [ -z "$TWITTER_API_KEY" ]; then
-            echo "::notice::未配置 TWITTER_API_KEY，跳过直接 X API 抓取。"
-            exit 0
-          fi
-          node scripts/fetch-x.mjs
+          node scripts/fetch-x.mjs || echo "::warning::X/API 或公开镜像抓取失败，继续同步 analysissite 快照。"
 
       - name: Sync analysissite dynamic snapshot
         run: python3 scripts/sync-analysissite.py

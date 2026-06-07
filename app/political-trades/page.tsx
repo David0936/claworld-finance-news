@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import SectionPage from "../section-page";
+import PoliticalTradesDashboard from "@/components/PoliticalTradesDashboard";
 
 export const metadata: Metadata = {
-  title: "美国政客持仓线索追踪 | Serenity Analysis",
-  description: "从 CapitolTrades 原始披露中挖掘高资金政客、持仓主题与政策相关交易线索。",
+  title: "政客交易解析 | Serenity Analysis",
+  description: "CapitolTrades 英文原站入口与邀请码会员制 AI 政客交易解析。",
 };
 
 export default function PoliticalTradesPage() {
-  return <SectionPage initialNav="政客交易" />;
+  return <PoliticalTradesDashboard />;
 }

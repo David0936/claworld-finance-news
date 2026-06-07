@@ -118,7 +118,8 @@ node scripts/fetch-x.mjs --dry-run   # 用 scripts/fixtures/<handle>.json 验证
 {
   "framework": "nextjs",
   "installCommand": "npm ci",
-  "buildCommand": "npm run build"
+  "buildCommand": "npm run build",
+  "outputDirectory": null
 }
 ```
 
@@ -126,7 +127,7 @@ node scripts/fetch-x.mjs --dry-run   # 用 scripts/fixtures/<handle>.json 验证
 
 1. Vercel → Add New Project → Import Git Repository。
 2. Framework 选择 Next.js，Build Command 保持 `npm run build`。
-3. Output Directory 留空，交给 Vercel 的 Next.js 构建接管 `.next` 产物。
+3. Output Directory 留空，交给 Vercel 的 Next.js 构建接管产物；`vercel.json` 里用 `null` 覆盖旧的 `out` 配置。
 4. Production Branch 设为 `main`。
 
 定时抓取 workflow 在 `data/live` 有变化时会提交到 `main`；Vercel 的 Git 集成会自动重新部署。

@@ -108,6 +108,26 @@ export interface CluePipelineStep {
   description: string;
 }
 
+export interface HoldingClue {
+  politician: string;
+  party: "R" | "D" | "O";
+  chamber: "House" | "Senate";
+  state: string;
+  issuer: string;
+  ticker: string;
+  published: string;
+  traded: string;
+  filedAfter: string;
+  owner: string;
+  type: TradeSide | "exchange";
+  size: string;
+  price: string;
+  theme: string;
+  aiScore: number;
+  aiRead: string;
+  source: SourceLink;
+}
+
 export const politicalTradeSources = {
   capitolHome: {
     label: "CapitolTrades",
@@ -275,6 +295,161 @@ export const cluePipelineSteps: CluePipelineStep[] = [
     step: "04",
     title: "回原站核验",
     description: "核验 owner、transaction type、amount range、filed date、是否 amend，再写进研报。",
+  },
+];
+
+export const holdingClues: HoldingClue[] = [
+  {
+    politician: "Chip Roy",
+    party: "R",
+    chamber: "House",
+    state: "TX",
+    issuer: "Atlas Energy Solutions",
+    ticker: "AESI:US",
+    published: "2026-04-30",
+    traded: "2026-04-30",
+    filedAfter: "0d",
+    owner: "Spouse / verify",
+    type: "buy",
+    size: "5M-25M",
+    price: "$16.68",
+    theme: "Energy / Texas industrial policy",
+    aiScore: 92,
+    aiRead: "金额极高，属于优先核验线索。先确认 owner、是否 RSU/配偶交易，再进入能源主题研报。",
+    source: politicalTradeSources.texasTrades,
+  },
+  {
+    politician: "Michael McCaul",
+    party: "R",
+    chamber: "House",
+    state: "TX",
+    issuer: "Multi-issuer portfolio",
+    ticker: "500+ issuers",
+    published: "2026-04",
+    traded: "2026-03/04",
+    filedAfter: "var.",
+    owner: "Mixed",
+    type: "mixed",
+    size: "$500M+ 3Y volume",
+    price: "N/A",
+    theme: "National security / defense / tech / bonds",
+    aiScore: 88,
+    aiRead: "资金体量和政策暴露都高。更适合看资产配置迁移和主题聚类，而不是只盯单只股票。",
+    source: politicalTradeSources.capitolPoliticians,
+  },
+  {
+    politician: "Kevin Hern",
+    party: "R",
+    chamber: "House",
+    state: "OK",
+    issuer: "Devon Energy Corp",
+    ticker: "DVN:US",
+    published: "2026-06-06",
+    traded: "2026-05-08",
+    filedAfter: "25d",
+    owner: "Joint / Undisclosed",
+    type: "exchange",
+    size: "15K-50K",
+    price: "$45.61",
+    theme: "Energy basket rotation",
+    aiScore: 76,
+    aiRead: "CapitolTrades 最新交易流显示能源标的交换。金额中等，但同一政客多笔能源相关交易值得聚类。",
+    source: politicalTradeSources.capitolTrades,
+  },
+  {
+    politician: "Kevin Hern",
+    party: "R",
+    chamber: "House",
+    state: "OK",
+    issuer: "Coterra Energy",
+    ticker: "CTRA:US",
+    published: "2026-06-06",
+    traded: "2026-05-08",
+    filedAfter: "25d",
+    owner: "Joint / Undisclosed",
+    type: "exchange",
+    size: "15K-50K",
+    price: "N/A",
+    theme: "Energy basket rotation",
+    aiScore: 72,
+    aiRead: "与 DVN 同日同方向出现，说明看点在能源组合变化，而不是单笔 CTRA。",
+    source: politicalTradeSources.capitolTrades,
+  },
+  {
+    politician: "Virginia Foxx",
+    party: "R",
+    chamber: "House",
+    state: "NC",
+    issuer: "Alliance Resource Partners",
+    ticker: "ARLP:US",
+    published: "2026-06-06",
+    traded: "2026-05-15",
+    filedAfter: "18d",
+    owner: "Undisclosed",
+    type: "buy",
+    size: "1K-15K",
+    price: "$25.13",
+    theme: "Coal / energy income",
+    aiScore: 59,
+    aiRead: "金额小，单独信号弱；若同党派或同州能源买入增多，可提升权重。",
+    source: politicalTradeSources.capitolTrades,
+  },
+  {
+    politician: "Tony Wied",
+    party: "R",
+    chamber: "House",
+    state: "WI",
+    issuer: "Multi-issuer portfolio",
+    ticker: "35 issuers",
+    published: "2026-04/05",
+    traded: "2026-04",
+    filedAfter: "var.",
+    owner: "Mixed",
+    type: "mixed",
+    size: "$8.42M volume",
+    price: "N/A",
+    theme: "Trump-endorsed business owner",
+    aiScore: 74,
+    aiRead: "特朗普背书的新晋议员，高频且资金不小。适合跟踪其行业偏好是否形成稳定主题。",
+    source: politicalTradeSources.tonyWiedTrump,
+  },
+  {
+    politician: "Buddy Carter",
+    party: "R",
+    chamber: "House",
+    state: "GA",
+    issuer: "Concentrated holdings",
+    ticker: "3 issuers",
+    published: "2026-05",
+    traded: "2026-05",
+    filedAfter: "var.",
+    owner: "Mixed",
+    type: "watch",
+    size: "$13.48M volume",
+    price: "N/A",
+    theme: "Healthcare / pharmacy / concentrated assets",
+    aiScore: 71,
+    aiRead: "交易数量少但金额大。需要拆出具体发行人，判断是否与医保/药房政策相关。",
+    source: politicalTradeSources.capitolPoliticians,
+  },
+  {
+    politician: "Tim Moore",
+    party: "R",
+    chamber: "House",
+    state: "NC",
+    issuer: "AT&T",
+    ticker: "T:US",
+    published: "2026-05-20",
+    traded: "2026-05-18",
+    filedAfter: "1d",
+    owner: "Self",
+    type: "buy",
+    size: "15K-50K",
+    price: "$22.75",
+    theme: "Telecom case study",
+    aiScore: 63,
+    aiRead: "保留为事件拆解案例。金额不大，不是主线，但适合示范如何从新闻事件回查交易。",
+    source: politicalTradeSources.attIssuer,
   },
 ];
 

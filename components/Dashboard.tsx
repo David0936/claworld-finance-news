@@ -15,7 +15,6 @@ import {
   resolveCoverage,
   findStock,
 } from "@/data/derive";
-import PoliticalTradesDashboard from "./PoliticalTradesDashboard";
 
 const NAV_ITEMS = [
   { label: "总览", path: "/" },
@@ -102,6 +101,11 @@ export default function Dashboard({
   const live = liveSnapshot(data);
 
   const selectNav = (item: string) => {
+    if (item === "政客交易") {
+      window.location.href = "/political-trades/";
+      return;
+    }
+
     setActiveNav(item);
     if (typeof window !== "undefined") {
       const nextPath = pathForNav(item);
@@ -144,19 +148,29 @@ export default function Dashboard({
             </div>
           </div>
           <nav className="hidden items-center gap-1 lg:flex">
-            {NAV.map((item) => (
-              <button
-                key={item}
-                onClick={() => selectNav(item)}
-                className={`rounded-full px-3 py-1.5 text-sm transition ${
-                  activeNav === item
-                    ? "bg-slate-900 text-white"
-                    : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
-                }`}
-              >
-                {item}
-              </button>
-            ))}
+            {NAV.map((item) =>
+              item === "政客交易" ? (
+                <a
+                  key={item}
+                  href={pathForNav(item)}
+                  className="rounded-full px-3 py-1.5 text-sm text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
+                >
+                  {item}
+                </a>
+              ) : (
+                <button
+                  key={item}
+                  onClick={() => selectNav(item)}
+                  className={`rounded-full px-3 py-1.5 text-sm transition ${
+                    activeNav === item
+                      ? "bg-slate-900 text-white"
+                      : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+                  }`}
+                >
+                  {item}
+                </button>
+              ),
+            )}
           </nav>
           <button
             onClick={() => selectNav("多源")}
@@ -172,19 +186,29 @@ export default function Dashboard({
         <main className="min-w-0 flex-1 pb-24 xl:pb-6">
           {/* Mobile section tabs */}
           <div className="scroll-thin mb-4 flex gap-2 overflow-x-auto lg:hidden">
-            {NAV.map((item) => (
-              <button
-                key={item}
-                onClick={() => selectNav(item)}
-                className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
-                  activeNav === item
-                    ? "border-slate-900 bg-slate-900 text-white"
-                    : "border-slate-200 bg-white text-slate-500"
-                }`}
-              >
-                {item}
-              </button>
-            ))}
+            {NAV.map((item) =>
+              item === "政客交易" ? (
+                <a
+                  key={item}
+                  href={pathForNav(item)}
+                  className="shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-500"
+                >
+                  {item}
+                </a>
+              ) : (
+                <button
+                  key={item}
+                  onClick={() => selectNav(item)}
+                  className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
+                    activeNav === item
+                      ? "border-slate-900 bg-slate-900 text-white"
+                      : "border-slate-200 bg-white text-slate-500"
+                  }`}
+                >
+                  {item}
+                </button>
+              ),
+            )}
           </div>
 
           {/* Title block */}
@@ -287,8 +311,6 @@ function SectionContent({
       return <TrackRecordView data={data} />;
     case "供应链":
       return <SupplyChainView data={data} />;
-    case "政客交易":
-      return <PoliticalTradesDashboard embedded />;
     case "行业":
       return <IndustryView data={data} />;
     default:

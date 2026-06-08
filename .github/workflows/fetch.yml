@@ -2,8 +2,9 @@ name: Fetch X tweets
 
 on:
   schedule:
-    # 每 30 分钟抓一次（UTC）。GitHub 调度可能有几分钟延迟。
-    - cron: "*/30 * * * *"
+    # 一天 4 次：UTC 00/06/12/18 = 北京 08/14/20/02（早盘前/午后/收盘后/凌晨）。
+    # 研报站追溯历史为主，不需要高频；即时盯盘走监控 bot。GitHub 调度可能有几分钟延迟。
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch: # 也可在 Actions 页面手动点 Run
   push:
     branches: [main]

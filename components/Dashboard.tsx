@@ -5,6 +5,7 @@ import type { BloggerData, FeedItem, SupplyChainData } from "@/data/types";
 import LiveTweets from "./LiveTweets";
 import clawIcon from "@/public/claw-icon.png";
 import founderPhoto from "@/public/founder.jpg";
+import xhsQr from "@/public/xhs-qr.png";
 import {
   sentimentClass,
   deltaClass,
@@ -86,7 +87,7 @@ const SECTION_TITLES: Record<
   },
   行业: { title: "行业分布", subtitle: "按关注主题划分的覆盖分布。" },
   AI分析: { title: "AI 分析", subtitle: "GPT 更新与规则观点变化。" },
-  关注我: { title: "关注作者", subtitle: "博主主页与关注入口。" },
+  关注我: { title: "关注我", subtitle: "作者主页与联系入口。" },
 };
 
 export default function Dashboard({
@@ -1883,126 +1884,153 @@ function IndustryView({ data }: { data: BloggerData }) {
 }
 
 function FollowView({ data }: { data: BloggerData }) {
-  const url = `https://x.com/${data.handle.replace(/^@/, "")}`;
+  void data; // 本页只展示作者本人（David 小鱼 / Claworld）
   const rowCls =
     "inline-flex items-center justify-between gap-2 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50";
+  const copy = (t: string) => navigator.clipboard?.writeText(t);
   return (
-    <div className="grid gap-4">
-      <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-        <div className="flex items-center gap-4">
-          <div
-            className={`flex h-14 w-14 items-center justify-center rounded-xl text-lg font-bold ${data.avatarClass}`}
-          >
-            {data.initials}
-          </div>
-          <div>
-            <div className="text-lg font-semibold text-slate-900">
-              {data.name}
-            </div>
-            <div className="text-sm text-slate-400">{data.handle}</div>
-          </div>
-        </div>
-        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-600">
-          {data.bio}
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {data.focusTags.map((t) => (
-            <span
-              key={t}
-              className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600"
-            >
-              {t}
-            </span>
-          ))}
-        </div>
-        <div className="mt-5 flex flex-wrap gap-2">
-          <a
-            href={url}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
-          >
-            在 X 上关注 ↗
-          </a>
-          {data.memberUrl && (
-            <a
-              href={data.memberUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700 hover:bg-violet-100"
-            >
-              打开会员频道 ↗
-            </a>
-          )}
-        </div>
-      </section>
-
-      {/* Claworld 创始人 */}
-      <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-        <div className="flex items-center gap-4">
-          <img
-            src={founderPhoto.src}
-            alt="David 小鱼"
-            className="h-14 w-14 rounded-xl object-cover ring-1 ring-slate-200"
-          />
-          <div>
-            <div className="text-lg font-semibold text-slate-900">David 小鱼</div>
-            <div className="text-sm text-slate-500">
-              Claworld 创始人 · 人类炼化师
+    <div className="grid gap-4 lg:grid-cols-3">
+      {/* 左列：作者 + 小红书 */}
+      <div className="grid gap-4 lg:col-span-1">
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+          <div className="flex items-center gap-4">
+            <img
+              src={founderPhoto.src}
+              alt="David 小鱼"
+              className="h-16 w-16 rounded-xl object-cover ring-1 ring-slate-200"
+            />
+            <div>
+              <div className="text-lg font-semibold text-slate-900">David 小鱼</div>
+              <div className="text-sm text-slate-500">Claworld 创始人 · 人类炼化师</div>
             </div>
           </div>
-        </div>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-600">
-          用蒸馏改变一切。
-        </p>
-        <div className="mt-4 grid gap-2 sm:grid-cols-2">
+          <p className="mt-3 text-sm leading-relaxed text-slate-600">用蒸馏改变一切。</p>
           <a
             href="https://x.com/shark1996_"
             target="_blank"
             rel="noreferrer"
-            className={rowCls}
+            className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
           >
-            <span>X · @Shark1996_</span>
-            <span className="text-slate-400">↗</span>
+            在 X 上关注 @Shark1996_ ↗
           </a>
-          <a
-            href="https://www.youtube.com/@Singularity2026"
-            target="_blank"
-            rel="noreferrer"
-            className={rowCls}
-          >
-            <span>YouTube · @Singularity2026</span>
-            <span className="text-slate-400">↗</span>
-          </a>
+        </section>
+
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 text-center md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+            小红书
+          </div>
+          <h2 className="mt-1 text-base font-semibold text-slate-900">David小鱼</h2>
+          <img
+            src={xhsQr.src}
+            alt="小红书二维码"
+            className="mx-auto mt-3 h-44 w-44 rounded-lg ring-1 ring-slate-200"
+          />
+          <p className="mt-2 text-xs text-slate-400">扫码在小红书找到我</p>
           <a
             href="https://xhslink.com/m/6WBQosGc8F6"
             target="_blank"
             rel="noreferrer"
-            className={rowCls}
+            className="mt-3 inline-block text-xs font-medium text-rose-600 hover:underline"
           >
-            <span>小红书 · David小鱼</span>
-            <span className="text-slate-400">↗</span>
+            打开小红书主页 ↗
           </a>
-          <button
-            type="button"
-            title="点击复制微信号"
-            onClick={() => navigator.clipboard?.writeText("dragon-yu-171728")}
-            className={rowCls}
-          >
-            <span>微信 · dragon-yu-171728</span>
-            <span className="text-slate-400">⧉ 复制</span>
-          </button>
-          <button
-            type="button"
-            title="点击复制公众号名"
-            onClick={() => navigator.clipboard?.writeText("自家的鱼鱼")}
-            className={rowCls}
-          >
-            <span>公众号 · 自家的鱼鱼 / Claworld</span>
-            <span className="text-slate-400">⧉ 复制</span>
-          </button>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      {/* 右列：联系方式 + 更新公告 */}
+      <div className="grid gap-4 lg:col-span-2">
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+            CONTACT
+          </div>
+          <h2 className="mt-1 text-base font-semibold text-slate-900">联系方式</h2>
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <a href="https://x.com/shark1996_" target="_blank" rel="noreferrer" className={rowCls}>
+              <span>X · @Shark1996_</span>
+              <span className="text-slate-400">↗</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@Singularity2026"
+              target="_blank"
+              rel="noreferrer"
+              className={rowCls}
+            >
+              <span>YouTube · @Singularity2026</span>
+              <span className="text-slate-400">↗</span>
+            </a>
+            <a
+              href="https://xhslink.com/m/6WBQosGc8F6"
+              target="_blank"
+              rel="noreferrer"
+              className={rowCls}
+            >
+              <span>小红书 · David小鱼</span>
+              <span className="text-slate-400">↗</span>
+            </a>
+            <button
+              type="button"
+              title="点击复制微信号"
+              onClick={() => copy("dragon-yu-171728")}
+              className={rowCls}
+            >
+              <span>微信 · dragon-yu-171728</span>
+              <span className="text-slate-400">⧉ 复制</span>
+            </button>
+            <button
+              type="button"
+              title="点击复制公众号名"
+              onClick={() => copy("自家的鱼鱼")}
+              className={rowCls}
+            >
+              <span>公众号 · 自家的鱼鱼 / Claworld</span>
+              <span className="text-slate-400">⧉ 复制</span>
+            </button>
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+            UPDATES
+          </div>
+          <h2 className="mt-1 text-base font-semibold text-slate-900">更新公告</h2>
+          <div className="mt-3 rounded-xl bg-slate-50 p-4">
+            <div className="text-sm font-semibold text-slate-800">反馈与沟通</div>
+            <p className="mt-1 text-sm leading-relaxed text-slate-600">
+              X 用于即时沟通与反馈；小红书用于 Claworld 投研终端的教程、案例与中文沟通入口。
+              有功能建议或问题，欢迎在 X 留言或小红书私信。
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <a
+                href="https://xhslink.com/m/6WBQosGc8F6"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-white"
+              >
+                关注小红书
+              </a>
+              <a
+                href="https://x.com/shark1996_"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-white"
+              >
+                X 留言
+              </a>
+            </div>
+          </div>
+          <div className="mt-4 flex gap-4">
+            <div className="shrink-0 font-mono text-xs text-slate-400">2026-06-08</div>
+            <div>
+              <div className="text-sm font-semibold text-slate-800">
+                实时推文 + A股喊单 + 中英双语
+              </div>
+              <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                推文页接入实时更新；博主点名 A股/美股时红色置顶提示并推飞书；每条推文附中英双语与财经解读。
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

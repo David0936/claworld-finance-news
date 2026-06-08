@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Serenity Analysis",
-  description: "Serenity X 分析输出的动态投研看板",
+  title: "CLAWORLD · Serenity Analysis",
+  description: "Claworld 投研终端 · Serenity X 分析输出的动态投研看板",
 };
 
 export default function RootLayout({

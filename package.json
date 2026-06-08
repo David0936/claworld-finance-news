@@ -6,6 +6,7 @@
     "prebuild": "node scripts/validate-data.mjs",
     "dev": "next dev",
     "sync:analysissite": "python3 scripts/sync-analysissite.py",
+    "realtime": "node scripts/realtime-worker.mjs",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",

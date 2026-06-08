@@ -2,6 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { BloggerData, FeedItem, SupplyChainData } from "@/data/types";
+import LiveTweets from "./LiveTweets";
+import clawIcon from "@/public/claw-icon.png";
 import {
   sentimentClass,
   deltaClass,
@@ -133,14 +135,14 @@ export default function Dashboard({
       <header className="sticky top-0 z-30 px-3 pt-3 sm:px-4 lg:px-6">
         <div className="mx-auto flex w-full max-w-shell items-center justify-between gap-4 rounded-full border border-slate-200 bg-white/95 px-3 py-2 shadow-sm backdrop-blur md:px-4">
           <div className="flex min-w-0 items-center gap-3">
-            <div
-              className={`flex h-9 w-9 items-center justify-center rounded-md text-xs font-bold ${data.avatarClass}`}
-            >
-              {data.initials}
-            </div>
+            <img
+              src={clawIcon.src}
+              alt="Claworld"
+              className="h-9 w-9 shrink-0 rounded-md object-contain"
+            />
             <div className="grid min-w-0 gap-0.5">
               <span className="truncate text-sm font-semibold text-slate-900">
-                Serenity Analysis
+                CLAWORLD · Serenity
               </span>
               <span className="truncate text-xs text-slate-400">
                 动态投研终端 · {data.handle}
@@ -752,6 +754,8 @@ function TweetsView({
 
   return (
     <>
+      <LiveTweets fallback={tweets} handle={data.handle} />
+
       <section className="mb-4 grid gap-3 sm:grid-cols-2">
         <div className="rounded-xl border border-blue-200 bg-blue-50 p-4">
           <div className="text-xs text-slate-500">推文</div>

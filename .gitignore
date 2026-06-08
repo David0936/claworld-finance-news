@@ -8,4 +8,5 @@
 next-env.d.ts
 .claude/settings.local.json
 scripts/captures/
+scripts/.realtime-state.json
 tsconfig.tsbuildinfo

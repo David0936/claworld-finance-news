@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { BloggerData, FeedItem, SupplyChainData } from "@/data/types";
 import LiveTweets from "./LiveTweets";
 import clawIcon from "@/public/claw-icon.png";
+import founderPhoto from "@/public/founder.jpg";
 import {
   sentimentClass,
   deltaClass,
@@ -1940,9 +1941,9 @@ function FollowView({ data }: { data: BloggerData }) {
       <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
         <div className="flex items-center gap-4">
           <img
-            src={clawIcon.src}
-            alt="Claworld"
-            className="h-14 w-14 rounded-xl object-contain ring-1 ring-slate-200"
+            src={founderPhoto.src}
+            alt="David 小鱼"
+            className="h-14 w-14 rounded-xl object-cover ring-1 ring-slate-200"
           />
           <div>
             <div className="text-lg font-semibold text-slate-900">David 小鱼</div>

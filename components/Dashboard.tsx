@@ -1888,6 +1888,13 @@ function FollowView({ data }: { data: BloggerData }) {
   const rowCls =
     "inline-flex items-center justify-between gap-2 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50";
   const copy = (t: string) => navigator.clipboard?.writeText(t);
+  const links = [
+    {
+      name: "财富自由俱乐部",
+      desc: "链接全球顶级人脉，享人生自由",
+      url: "https://ff-club.vercel.app/",
+    },
+  ];
   return (
     <div className="grid gap-4 lg:grid-cols-3">
       {/* 左列：作者 + 小红书 */}
@@ -1935,8 +1942,35 @@ function FollowView({ data }: { data: BloggerData }) {
         </section>
       </div>
 
-      {/* 右列：联系方式 + 更新公告 */}
+      {/* 右列：站外导航 + 联系方式 + 更新公告 */}
       <div className="grid gap-4 lg:col-span-2">
+        {links.length > 0 && (
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              LINKS
+            </div>
+            <h2 className="mt-1 text-base font-semibold text-slate-900">站外导航</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {links.map((l) => (
+                <a
+                  key={l.url}
+                  href={l.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative block rounded-xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                >
+                  <div className="text-sm font-semibold text-slate-900">{l.name}</div>
+                  <div className="mt-0.5 text-xs text-slate-500">{l.desc}</div>
+                  <div className="mt-2 text-xs font-medium text-blue-600">
+                    {l.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                  </div>
+                  <span className="absolute right-3 top-3 text-slate-300">↗</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
+
         <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
           <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
             CONTACT

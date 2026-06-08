@@ -5,7 +5,7 @@ import type { BloggerData, FeedItem, SupplyChainData } from "@/data/types";
 import LiveTweets from "./LiveTweets";
 import clawIcon from "@/public/claw-icon.png";
 import founderPhoto from "@/public/founder.jpg";
-import xhsQr from "@/public/xhs-qr.png";
+import xhsCard from "@/public/xhs-card.jpg";
 import {
   sentimentClass,
   deltaClass,
@@ -1919,13 +1919,11 @@ function FollowView({ data }: { data: BloggerData }) {
           <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
             小红书
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">David小鱼</h2>
           <img
-            src={xhsQr.src}
-            alt="小红书二维码"
-            className="mx-auto mt-3 h-44 w-44 rounded-lg ring-1 ring-slate-200"
+            src={xhsCard.src}
+            alt="小红书 · David 小鱼 · 小红书号 677131897"
+            className="mx-auto mt-3 w-full max-w-[280px] rounded-xl ring-1 ring-slate-200"
           />
-          <p className="mt-2 text-xs text-slate-400">扫码在小红书找到我</p>
           <a
             href="https://xhslink.com/m/6WBQosGc8F6"
             target="_blank"
@@ -1967,6 +1965,15 @@ function FollowView({ data }: { data: BloggerData }) {
               <span>小红书 · David小鱼</span>
               <span className="text-slate-400">↗</span>
             </a>
+            <button
+              type="button"
+              title="点击复制小红书号"
+              onClick={() => copy("677131897")}
+              className={rowCls}
+            >
+              <span>小红书号 · 677131897</span>
+              <span className="text-slate-400">⧉ 复制</span>
+            </button>
             <button
               type="button"
               title="点击复制微信号"

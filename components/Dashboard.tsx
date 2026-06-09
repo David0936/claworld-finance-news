@@ -27,11 +27,11 @@ const NAV_ITEMS = [
   { label: "提及表现", path: "/mentions/" },
   { label: "战绩", path: "/performance/" },
   { label: "供应链", path: "/supply-chain/" },
-  { label: "政客交易", path: "/political-trades/" },
   { label: "多源", path: "/sources/" },
   { label: "行业", path: "/industries/" },
   { label: "AI分析", path: "/llm/" },
   { label: "关注我", path: "/follow/" },
+  { label: "政客交易", path: "/political-trades/" },
 ];
 
 const NAV = NAV_ITEMS.map((item) => item.label);
@@ -157,9 +157,11 @@ export default function Dashboard({
                 <a
                   key={item}
                   href={pathForNav(item)}
+                  target="_blank"
+                  rel="noreferrer"
                   className="rounded-full px-3 py-1.5 text-sm text-[#6f6b61] transition hover:bg-[#ece8dd] hover:text-[#16140f]"
                 >
-                  {item}
+                  {item} <span className="text-[#cf3019]">↗</span>
                 </a>
               ) : (
                 <button
@@ -195,9 +197,11 @@ export default function Dashboard({
                 <a
                   key={item}
                   href={pathForNav(item)}
+                  target="_blank"
+                  rel="noreferrer"
                   className="shrink-0 rounded-full border border-[#e3ddcf] bg-[#fffefb] px-3 py-1.5 text-sm text-[#6f6b61]"
                 >
-                  {item}
+                  {item} <span className="text-[#cf3019]">↗</span>
                 </a>
               ) : (
                 <button
@@ -205,7 +209,7 @@ export default function Dashboard({
                   onClick={() => selectNav(item)}
                   className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
                     activeNav === item
-                      ? "border-[#16140f] bg-[#16140f] text-white"
+                      ? "border-[#cf3019] bg-[#cf3019] text-white"
                       : "border-[#e3ddcf] bg-[#fffefb] text-[#6f6b61]"
                   }`}
                 >

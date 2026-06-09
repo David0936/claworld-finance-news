@@ -78,7 +78,7 @@ export default function LiveTweets({
       ? "bg-emerald-500"
       : status === "loading"
       ? "bg-amber-400"
-      : "bg-slate-300";
+      : "bg-[#d8d2c4]";
   const label =
     status === "live"
       ? "实时"
@@ -89,7 +89,7 @@ export default function LiveTweets({
       : "构建期快照";
 
   return (
-    <section className="mb-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+    <section className="mb-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
       <div className="flex flex-wrap items-center gap-2">
         <span className="relative flex h-2.5 w-2.5">
           {status === "live" && (
@@ -97,20 +97,20 @@ export default function LiveTweets({
           )}
           <span className={`relative inline-flex h-2.5 w-2.5 rounded-full ${dot}`} />
         </span>
-        <h2 className="text-base font-semibold text-slate-900">实时推文</h2>
-        <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-medium text-slate-600">
+        <h2 className="text-base font-semibold text-[#16140f]">实时推文</h2>
+        <span className="rounded-full bg-[#ece8dd] px-2 py-0.5 text-[11px] font-medium text-[#4b463d]">
           {label}
         </span>
         <a
           href={profileUrl}
           target="_blank"
           rel="noreferrer"
-          className="text-[11px] text-blue-600 hover:underline"
+          className="text-[11px] text-[#cf3019] hover:underline"
         >
           @{handle.replace(/^@/, "")}
         </a>
         {updatedAt && (
-          <span className="ml-auto text-[11px] text-slate-400">
+          <span className="ml-auto text-[11px] text-[#8c887e]">
             更新于 {new Date(updatedAt.replace(" ", "T") + (updatedAt.includes("Z") ? "" : "Z")).toLocaleTimeString("zh-CN", { hour12: false })}
           </span>
         )}
@@ -129,12 +129,12 @@ export default function LiveTweets({
                   ? "border-red-300 bg-red-50/60"
                   : isNew
                   ? "border-emerald-300 bg-emerald-50/60"
-                  : "border-slate-200"
+                  : "border-[#e3ddcf]"
               }`}
             >
               <div className="flex items-center gap-2">
-                <span className="font-mono text-xs text-slate-500">{t.datetime}</span>
-                <span className="text-xs text-slate-400">{t.author}</span>
+                <span className="font-mono text-xs text-[#6f6b61]">{t.datetime}</span>
+                <span className="text-xs text-[#8c887e]">{t.author}</span>
                 {isNew && (
                   <span className="rounded-full bg-emerald-500 px-1.5 py-0.5 text-[10px] font-semibold text-white">
                     NEW
@@ -144,7 +144,7 @@ export default function LiveTweets({
                   href={t.url ?? profileUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="ml-auto rounded-md border border-slate-200 px-2 py-1 text-[11px] text-slate-500 hover:bg-slate-50"
+                  className="ml-auto rounded-md border border-[#e3ddcf] px-2 py-1 text-[11px] text-[#6f6b61] hover:bg-[#f3efe7]"
                 >
                   ↗ X 原文
                 </a>
@@ -158,7 +158,7 @@ export default function LiveTweets({
                     {ashare.map((a) => (
                       <span
                         key={a.code}
-                        className="rounded-full bg-white px-2 py-0.5 text-[12px] font-semibold text-red-700 ring-1 ring-red-200"
+                        className="rounded-full bg-[#fffefb] px-2 py-0.5 text-[12px] font-semibold text-red-700 ring-1 ring-red-200"
                       >
                         {a.code}
                         {a.name ? ` ${a.name}` : ""}
@@ -170,10 +170,10 @@ export default function LiveTweets({
                   </p>
                 </div>
               )}
-              <p className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-slate-700">
+              <p className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-[#3a352d]">
                 {t.body}
               </p>
-              <div className="mt-2 flex items-center gap-3 text-[11px] text-slate-400">
+              <div className="mt-2 flex items-center gap-3 text-[11px] text-[#8c887e]">
                 <span>浏览 {t.stats?.views ?? "0"}</span>
                 <span>赞 {t.stats?.likes ?? "0"}</span>
                 <span>转发 {t.stats?.reposts ?? "0"}</span>

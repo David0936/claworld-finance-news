@@ -135,7 +135,7 @@ export default function Dashboard({
     <div className="flex min-h-screen flex-col">
       {/* Header pill bar */}
       <header className="sticky top-0 z-30 px-3 pt-3 sm:px-4 lg:px-6">
-        <div className="mx-auto flex w-full max-w-shell items-center justify-between gap-4 rounded-full border border-slate-200 bg-white/95 px-3 py-2 shadow-sm backdrop-blur md:px-4">
+        <div className="mx-auto flex w-full max-w-shell items-center justify-between gap-4 rounded-full border border-[#e3ddcf] bg-[#fffefb]/95 px-3 py-2 shadow-sm backdrop-blur md:px-4">
           <div className="flex min-w-0 items-center gap-3">
             <img
               src={clawIcon.src}
@@ -143,10 +143,10 @@ export default function Dashboard({
               className="h-9 w-9 shrink-0 rounded-md object-contain"
             />
             <div className="grid min-w-0 gap-0.5">
-              <span className="truncate text-sm font-semibold text-slate-900">
+              <span className="truncate font-serif-rpt text-[15px] font-semibold tracking-tight text-[#16140f]">
                 CLAWORLD · Serenity
               </span>
-              <span className="truncate text-xs text-slate-400">
+              <span className="truncate text-xs text-[#8c887e]">
                 动态投研终端 · {data.handle}
               </span>
             </div>
@@ -157,7 +157,7 @@ export default function Dashboard({
                 <a
                   key={item}
                   href={pathForNav(item)}
-                  className="rounded-full px-3 py-1.5 text-sm text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
+                  className="rounded-full px-3 py-1.5 text-sm text-[#6f6b61] transition hover:bg-[#ece8dd] hover:text-[#16140f]"
                 >
                   {item}
                 </a>
@@ -167,8 +167,8 @@ export default function Dashboard({
                   onClick={() => selectNav(item)}
                   className={`rounded-full px-3 py-1.5 text-sm transition ${
                     activeNav === item
-                      ? "bg-slate-900 text-white"
-                      : "text-slate-500 hover:bg-slate-100 hover:text-slate-900"
+                      ? "bg-[#cf3019] text-white"
+                      : "text-[#6f6b61] hover:bg-[#ece8dd] hover:text-[#16140f]"
                   }`}
                 >
                   {item}
@@ -178,7 +178,7 @@ export default function Dashboard({
           </nav>
           <button
             onClick={() => selectNav("多源")}
-            className="rounded-full border border-slate-200 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
+            className="rounded-full border border-[#e3ddcf] px-3 py-1.5 text-sm text-[#4b463d] hover:bg-[#f3efe7]"
           >
             数据源
           </button>
@@ -195,7 +195,7 @@ export default function Dashboard({
                 <a
                   key={item}
                   href={pathForNav(item)}
-                  className="shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-500"
+                  className="shrink-0 rounded-full border border-[#e3ddcf] bg-[#fffefb] px-3 py-1.5 text-sm text-[#6f6b61]"
                 >
                   {item}
                 </a>
@@ -205,8 +205,8 @@ export default function Dashboard({
                   onClick={() => selectNav(item)}
                   className={`shrink-0 rounded-full border px-3 py-1.5 text-sm ${
                     activeNav === item
-                      ? "border-slate-900 bg-slate-900 text-white"
-                      : "border-slate-200 bg-white text-slate-500"
+                      ? "border-[#16140f] bg-[#16140f] text-white"
+                      : "border-[#e3ddcf] bg-[#fffefb] text-[#6f6b61]"
                   }`}
                 >
                   {item}
@@ -217,23 +217,23 @@ export default function Dashboard({
 
           {/* Title block（总览自带报头，故隐藏） */}
           {activeNav !== "总览" && (
-          <section className="mb-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+          <section className="mb-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 {section.eyebrow && (
-                  <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+                  <div className="font-mono-rpt text-[10px] font-medium uppercase tracking-[0.16em] text-[#cf3019]">
                     {section.eyebrow}
                   </div>
                 )}
-                <h1 className="text-lg font-semibold text-slate-900">
+                <h1 className="mt-0.5 font-serif-rpt text-2xl font-semibold text-[#16140f]">
                   {section.title}
                 </h1>
-                <p className="mt-1 max-w-2xl text-sm text-slate-500">
+                <p className="mt-1 max-w-2xl text-sm text-[#6f6b61]">
                   {section.subtitle}
                 </p>
               </div>
               <div className={`rounded-xl px-3 py-2 text-right ${live.isLive ? "bg-emerald-50" : "bg-amber-50"}`}>
-                <div className="text-[11px] uppercase tracking-wide text-slate-400">
+                <div className="text-[11px] uppercase tracking-wide text-[#8c887e]">
                   {live.label}
                 </div>
                 <div className={`text-sm font-semibold ${live.isLive ? "text-emerald-900" : "text-amber-900"}`}>
@@ -248,7 +248,7 @@ export default function Dashboard({
               {data.focusTags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600"
+                  className="rounded-full bg-[#ece8dd] px-2.5 py-1 text-xs text-[#4b463d]"
                 >
                   {t}
                 </span>
@@ -663,28 +663,28 @@ function OverviewInsightGrid({
 
   return (
     <div className="mt-4 grid gap-4 xl:grid-cols-3">
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
         <div className="flex items-center justify-between gap-3">
           <div>
-            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
               Queue
             </div>
-            <h2 className="mt-1 text-base font-semibold text-slate-900">
+            <h2 className="mt-1 text-base font-semibold text-[#16140f]">
               队列分布
             </h2>
           </div>
-          <span className="text-xs text-slate-400">{pool.length} 标的</span>
+          <span className="text-xs text-[#8c887e]">{pool.length} 标的</span>
         </div>
         <div className="mt-4 grid gap-3">
           {queueRows.slice(0, 5).map(([queue, count]) => (
             <div key={queue}>
               <div className="mb-1 flex items-center justify-between gap-3 text-xs">
-                <span className="truncate text-slate-600">{queue}</span>
-                <span className="font-semibold text-slate-900">{count}</span>
+                <span className="truncate text-[#4b463d]">{queue}</span>
+                <span className="font-semibold text-[#16140f]">{count}</span>
               </div>
-              <div className="h-2 overflow-hidden rounded-full bg-slate-100">
+              <div className="h-2 overflow-hidden rounded-full bg-[#ece8dd]">
                 <div
-                  className="h-full rounded-full bg-slate-900"
+                  className="h-full rounded-full bg-[#16140f]"
                   style={{ width: `${(count / queueMax) * 100}%` }}
                 />
               </div>
@@ -693,26 +693,26 @@ function OverviewInsightGrid({
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
           Heat
         </div>
-        <h2 className="mt-1 text-base font-semibold text-slate-900">热点股票</h2>
+        <h2 className="mt-1 text-base font-semibold text-[#16140f]">热点股票</h2>
         <div className="mt-4 grid grid-cols-2 gap-2">
           {hotStocks.map((s) => (
             <button
               key={s.ticker}
-              className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-left hover:border-slate-300 hover:bg-white"
+              className="rounded-xl border border-[#e3ddcf] bg-[#f3efe7] px-3 py-2 text-left hover:border-[#cfc7b6] hover:bg-[#fffefb]"
               onClick={() => goToStock(s.ticker)}
               type="button"
             >
               <div className="flex items-center justify-between gap-2">
-                <span className="font-mono text-sm font-bold text-slate-900">
+                <span className="font-mono text-sm font-bold text-[#16140f]">
                   ${s.ticker}
                 </span>
                 <span className="text-[11px] text-rose-600">{s.mentions24h}H</span>
               </div>
-              <div className="mt-1 text-[11px] text-slate-400">
+              <div className="mt-1 text-[11px] text-[#8c887e]">
                 7D {s.mentions7d} · {s.source}
               </div>
             </button>
@@ -720,25 +720,25 @@ function OverviewInsightGrid({
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
           Freshness
         </div>
-        <h2 className="mt-1 text-base font-semibold text-slate-900">数据新鲜度</h2>
+        <h2 className="mt-1 text-base font-semibold text-[#16140f]">数据新鲜度</h2>
         <dl className="mt-4 grid gap-3 text-sm">
-          <div className="flex items-center justify-between gap-3 rounded-lg bg-blue-50 px-3 py-2">
-            <dt className="text-slate-500">公开推文</dt>
-            <dd className="font-semibold text-slate-900">{publicTweets}</dd>
+          <div className="flex items-center justify-between gap-3 rounded-lg bg-[#f3efe7] px-3 py-2">
+            <dt className="text-[#6f6b61]">公开推文</dt>
+            <dd className="font-semibold text-[#16140f]">{publicTweets}</dd>
           </div>
           <div className="flex items-center justify-between gap-3 rounded-lg bg-emerald-50 px-3 py-2">
-            <dt className="text-slate-500">最新时间</dt>
-            <dd className="font-mono text-xs font-semibold text-slate-900">
+            <dt className="text-[#6f6b61]">最新时间</dt>
+            <dd className="font-mono text-xs font-semibold text-[#16140f]">
               {latest?.datetime ?? "—"}
             </dd>
           </div>
-          <div className="flex items-center justify-between gap-3 rounded-lg bg-violet-50 px-3 py-2">
-            <dt className="text-slate-500">受限源</dt>
-            <dd className="font-semibold text-violet-700">{restricted.length}</dd>
+          <div className="flex items-center justify-between gap-3 rounded-lg bg-[#f3efe7] px-3 py-2">
+            <dt className="text-[#6f6b61]">受限源</dt>
+            <dd className="font-semibold text-[#a4220f]">{restricted.length}</dd>
           </div>
         </dl>
       </section>
@@ -764,82 +764,82 @@ function OverviewResearchGrid({ data }: { data: BloggerData }) {
 
   return (
     <div className="mt-4 grid gap-4 xl:grid-cols-5">
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-3">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5 xl:col-span-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
               Pipeline
             </div>
-            <h2 className="mt-1 text-base font-semibold text-slate-900">
+            <h2 className="mt-1 text-base font-semibold text-[#16140f]">
               解析工作流
             </h2>
           </div>
-          <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
+          <span className="rounded-full bg-[#16140f] px-2.5 py-1 text-xs font-medium text-white">
             {data.handle}
           </span>
         </div>
         <div className="mt-4 grid gap-3 sm:grid-cols-4">
           {workflow.map((step) => (
-            <div key={step.label} className="rounded-xl border border-slate-200 p-3">
-              <div className="text-[11px] text-slate-400">{step.label}</div>
-              <div className="mt-1 text-sm font-semibold text-slate-900">
+            <div key={step.label} className="rounded-xl border border-[#e3ddcf] p-3">
+              <div className="text-[11px] text-[#8c887e]">{step.label}</div>
+              <div className="mt-1 text-sm font-semibold text-[#16140f]">
                 {step.value}
               </div>
-              <div className="mt-1 truncate text-[11px] text-slate-400">
+              <div className="mt-1 truncate text-[11px] text-[#8c887e]">
                 {step.hint}
               </div>
             </div>
           ))}
         </div>
         {data.memberUrl && (
-          <div className="mt-3 rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 text-xs leading-relaxed text-violet-700">
+          <div className="mt-3 rounded-xl border border-[#e3ddcf] bg-[#f3efe7] px-3 py-2 text-xs leading-relaxed text-[#a4220f]">
             会员频道只展示入口和导入状态。已授权内容可通过导出/粘贴进入同一解析管线，避免把登录态抓取或付费内容固化在仓库里。
           </div>
         )}
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-2">
-        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5 xl:col-span-2">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
           Signal Mix
         </div>
-        <h2 className="mt-1 text-base font-semibold text-slate-900">信号构成</h2>
+        <h2 className="mt-1 text-base font-semibold text-[#16140f]">信号构成</h2>
         <div className="mt-4 grid gap-2">
           {Object.entries(feedTypeCounts).map(([type, count]) => (
             <div key={type} className="flex items-center justify-between gap-3 text-sm">
               <span className={`rounded px-2 py-1 text-xs ${feedTypeClass(type as FeedItem["type"])}`}>
                 {type}
               </span>
-              <span className="font-semibold text-slate-900">{count}</span>
+              <span className="font-semibold text-[#16140f]">{count}</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5 xl:col-span-5">
-        <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5 xl:col-span-5">
+        <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
           Catalysts
         </div>
-        <h2 className="mt-1 text-base font-semibold text-slate-900">
+        <h2 className="mt-1 text-base font-semibold text-[#16140f]">
           下一批复核清单
         </h2>
         {catalysts.length === 0 ? (
-          <p className="mt-3 text-sm text-slate-400">当前没有供应链传导提示。</p>
+          <p className="mt-3 text-sm text-[#8c887e]">当前没有供应链传导提示。</p>
         ) : (
           <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
             {catalysts.map((c) => (
-              <article key={`${c.target}-${c.path}`} className="rounded-xl border border-slate-200 p-3">
+              <article key={`${c.target}-${c.path}`} className="rounded-xl border border-[#e3ddcf] p-3">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-mono text-sm font-bold text-slate-900">
+                  <span className="font-mono text-sm font-bold text-[#16140f]">
                     {c.target}
                   </span>
-                  <span className="text-xs font-semibold text-slate-500">
+                  <span className="text-xs font-semibold text-[#6f6b61]">
                     {c.score}
                   </span>
                 </div>
-                <div className="mt-1 font-mono text-[11px] text-slate-400">
+                <div className="mt-1 font-mono text-[11px] text-[#8c887e]">
                   {c.path}
                 </div>
-                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
+                <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-[#6f6b61]">
                   {c.note}
                 </p>
               </article>
@@ -853,19 +853,19 @@ function OverviewResearchGrid({ data }: { data: BloggerData }) {
 
 function PriorityQueue({ data }: { data: BloggerData }) {
   return (
-    <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+    <section className="mt-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
-          <h2 className="text-base font-semibold text-slate-900">
+          <h2 className="text-base font-semibold text-[#16140f]">
             今日优先队列
           </h2>
-          <p className="text-xs text-slate-400">先处理有边际变化的股票</p>
+          <p className="text-xs text-[#8c887e]">先处理有边际变化的股票</p>
         </div>
         <div className="flex items-center gap-2 text-xs">
           <span className="rounded-full bg-red-50 px-2.5 py-1 font-medium text-red-700 ring-1 ring-red-200">
             {data.priorityHeader.riskLabel} {data.priorityHeader.riskCount}
           </span>
-          <span className="rounded-full bg-slate-900 px-2.5 py-1 font-medium text-white">
+          <span className="rounded-full bg-[#16140f] px-2.5 py-1 font-medium text-white">
             GPT {data.priorityHeader.gptCount}
           </span>
         </div>
@@ -875,40 +875,40 @@ function PriorityQueue({ data }: { data: BloggerData }) {
         {data.priorityQueue.map((s) => (
           <article
             key={s.ticker}
-            className="rounded-xl border border-slate-200 bg-slate-50/60 p-4"
+            className="rounded-xl border border-[#e3ddcf] bg-[#f3efe7]/60 p-4"
           >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="flex items-center gap-3">
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-900 text-xs font-bold text-white">
+                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#16140f] text-xs font-bold text-white">
                   {s.rank}
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="text-base font-bold text-slate-900">
+                    <span className="text-base font-bold text-[#16140f]">
                       {s.ticker}
                     </span>
-                    <span className="rounded bg-slate-900 px-1.5 py-0.5 text-[10px] font-medium uppercase text-white">
+                    <span className="rounded bg-[#16140f] px-1.5 py-0.5 text-[10px] font-medium uppercase text-white">
                       GPT {s.gptLevel}
                     </span>
                   </div>
-                  <div className="text-[11px] text-slate-400">{s.time}</div>
+                  <div className="text-[11px] text-[#8c887e]">{s.time}</div>
                 </div>
               </div>
-              <div className="flex items-center gap-4 text-center text-xs text-slate-500">
+              <div className="flex items-center gap-4 text-center text-xs text-[#6f6b61]">
                 <div>
-                  <div className="font-semibold text-slate-900">
+                  <div className="font-semibold text-[#16140f]">
                     {s.mentions24h}
                   </div>
                   <div className="text-[10px]">24h</div>
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-900">
+                  <div className="font-semibold text-[#16140f]">
                     {s.mentions7d}
                   </div>
                   <div className="text-[10px]">7天</div>
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-900">
+                  <div className="font-semibold text-[#16140f]">
                     {s.source}
                     {s.sourceCount ? ` ${s.sourceCount}` : ""}
                   </div>
@@ -917,7 +917,7 @@ function PriorityQueue({ data }: { data: BloggerData }) {
               </div>
             </div>
 
-            <p className="mt-3 text-sm leading-relaxed text-slate-600">
+            <p className="mt-3 text-sm leading-relaxed text-[#4b463d]">
               {s.note}
             </p>
 
@@ -932,7 +932,7 @@ function PriorityQueue({ data }: { data: BloggerData }) {
               <span className="rounded-full bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-700 ring-1 ring-amber-200">
                 {s.riskLabel}
               </span>
-              <span className="ml-auto rounded-full bg-slate-900 px-2.5 py-1 text-xs font-semibold text-white">
+              <span className="ml-auto rounded-full bg-[#16140f] px-2.5 py-1 text-xs font-semibold text-white">
                 优先级 {s.priority}
               </span>
             </div>
@@ -954,10 +954,10 @@ function FeedTimeline({
     return <EmptyState title="暂无记录" note="当前博主在该类型下没有数据。" />;
   }
   return (
-    <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+    <section className="mt-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
       <div className="flex items-center justify-between">
-        <h2 className="text-base font-semibold text-slate-900">{title}</h2>
-        <span className="text-xs text-slate-400">共 {items.length} 条</span>
+        <h2 className="text-base font-semibold text-[#16140f]">{title}</h2>
+        <span className="text-xs text-[#8c887e]">共 {items.length} 条</span>
       </div>
       <ol className="mt-4 space-y-0">
         {items.map((f, i) => (
@@ -969,7 +969,7 @@ function FeedTimeline({
                 )}`}
               />
               {i < items.length - 1 && (
-                <span className="my-1 w-px flex-1 bg-slate-200" />
+                <span className="my-1 w-px flex-1 bg-[#ece8dd]" />
               )}
             </div>
             <div className="flex-1 pb-5">
@@ -981,17 +981,17 @@ function FeedTimeline({
                 >
                   {f.type}
                 </span>
-                <span className="text-sm font-semibold text-slate-900">
+                <span className="text-sm font-semibold text-[#16140f]">
                   {f.title}
                 </span>
-                <span className="ml-auto text-[11px] text-slate-400">
+                <span className="ml-auto text-[11px] text-[#8c887e]">
                   {f.time}
                 </span>
               </div>
-              <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
+              <p className="mt-1.5 text-sm leading-relaxed text-[#4b463d]">
                 {f.body}
               </p>
-              <div className="mt-1.5 flex items-center gap-2 text-[11px] text-slate-400">
+              <div className="mt-1.5 flex items-center gap-2 text-[11px] text-[#8c887e]">
                 <span>{f.author}</span>
                 <span>·</span>
                 <span>{f.datetime}</span>
@@ -1005,11 +1005,11 @@ function FeedTimeline({
 }
 
 function riskBadgeClass(level?: string): string {
-  if (!level) return "bg-slate-100 text-slate-600";
+  if (!level) return "bg-[#ece8dd] text-[#4b463d]";
   if (level.includes("极端") || level.includes("高"))
     return "bg-red-50 text-red-700 ring-1 ring-red-200";
   if (level.includes("中低") || level.includes("低"))
-    return "bg-blue-50 text-blue-700 ring-1 ring-blue-200";
+    return "bg-[#f3efe7] text-[#a4220f] ring-1 ring-[#e3ddcf]";
   return "bg-amber-50 text-amber-700 ring-1 ring-amber-200";
 }
 
@@ -1037,19 +1037,19 @@ function TweetsView({
       <LiveTweets fallback={tweets} handle={data.handle} />
 
       <section className="mb-4 grid gap-3 sm:grid-cols-2">
-        <div className="rounded-xl border border-blue-200 bg-blue-50 p-4">
-          <div className="text-xs text-slate-500">推文</div>
-          <div className="mt-1 text-3xl font-bold text-slate-900">
+        <div className="rounded-xl border border-[#e3ddcf] bg-[#f3efe7] p-4">
+          <div className="text-xs text-[#6f6b61]">推文</div>
+          <div className="mt-1 text-3xl font-bold text-[#16140f]">
             {tweets.length}
           </div>
-          <div className="mt-1 text-[11px] text-slate-400">最新 {tweets.length} 条</div>
+          <div className="mt-1 text-[11px] text-[#8c887e]">最新 {tweets.length} 条</div>
         </div>
         <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4">
-          <div className="text-xs text-slate-500">相关公司</div>
-          <div className="mt-1 text-3xl font-bold text-slate-900">
+          <div className="text-xs text-[#6f6b61]">相关公司</div>
+          <div className="mt-1 text-3xl font-bold text-[#16140f]">
             {relatedTickers.length}
           </div>
-          <div className="mt-1 text-[11px] text-slate-500">
+          <div className="mt-1 text-[11px] text-[#6f6b61]">
             {relatedTickers.map((t) => `$${t}`).join(", ")}
           </div>
         </div>
@@ -1057,11 +1057,11 @@ function TweetsView({
 
       <div className="grid gap-4 xl:grid-cols-2">
         {/* 时间线 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             最新 {tweets.length} 条
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">时间线</h2>
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">时间线</h2>
           <div className="mt-4 grid gap-3">
             {tweets.map((t, i) => {
               const tweetTickers = t.tickers ?? (t.ticker ? [t.ticker] : []);
@@ -1074,26 +1074,26 @@ function TweetsView({
               return (
                 <article
                   key={i}
-                  className="rounded-xl border border-slate-200 p-4"
+                  className="rounded-xl border border-[#e3ddcf] p-4"
                 >
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs text-slate-500">
+                    <span className="font-mono text-xs text-[#6f6b61]">
                       {t.datetime}
                     </span>
-                    <span className="text-xs text-slate-400">{t.author}</span>
+                    <span className="text-xs text-[#8c887e]">{t.author}</span>
                     <a
                       href={t.url ?? profileUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="ml-auto rounded-md border border-slate-200 px-2 py-1 text-[11px] text-slate-500 hover:bg-slate-50"
+                      className="ml-auto rounded-md border border-[#e3ddcf] px-2 py-1 text-[11px] text-[#6f6b61] hover:bg-[#f3efe7]"
                     >
                       ↗ X
                     </a>
                   </div>
-                  <p className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-slate-700">
+                  <p className="mt-2 whitespace-pre-line text-[15px] leading-relaxed text-[#3a352d]">
                     {t.body}
                   </p>
-                  <div className="mt-2 flex items-center gap-3 text-[11px] text-slate-400">
+                  <div className="mt-2 flex items-center gap-3 text-[11px] text-[#8c887e]">
                     <span>浏览 {t.stats?.views ?? "0"}</span>
                     <span>赞 {t.stats?.likes ?? "0"}</span>
                     <span>转发 {t.stats?.reposts ?? "0"}</span>
@@ -1102,9 +1102,9 @@ function TweetsView({
                   {tweetStocks.length > 0 && (
                     <div className="mt-3 grid gap-2">
                       {tweetStocks.map((stock) => (
-                        <div key={stock.ticker} className="rounded-lg bg-slate-50 p-3">
+                        <div key={stock.ticker} className="rounded-lg bg-[#f3efe7] p-3">
                           <div className="flex items-center gap-2">
-                            <span className="font-bold text-slate-900">
+                            <span className="font-bold text-[#16140f]">
                               ${stock.ticker}
                             </span>
                             <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700 ring-1 ring-amber-200">
@@ -1112,12 +1112,12 @@ function TweetsView({
                             </span>
                             <button
                               onClick={() => goToStock(stock.ticker)}
-                              className="ml-auto text-[11px] font-medium text-blue-600 hover:underline"
+                              className="ml-auto text-[11px] font-medium text-[#cf3019] hover:underline"
                             >
                               打开股票页
                             </button>
                           </div>
-                          <p className="mt-1.5 text-[11px] leading-relaxed text-slate-500">
+                          <p className="mt-1.5 text-[11px] leading-relaxed text-[#6f6b61]">
                             提及: 24h {stock.mentions24h} / 7D {stock.mentions7d};
                             新闻: {stock.news}; 披露: {stock.disclosures}. 作者立场:{" "}
                             {stock.stance}
@@ -1144,17 +1144,17 @@ function TweetsView({
         </section>
 
         {/* 公司速读 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
           <div className="flex items-center justify-between">
             <div>
-              <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
                 标签提取
               </div>
-              <h2 className="mt-1 text-base font-semibold text-slate-900">
+              <h2 className="mt-1 text-base font-semibold text-[#16140f]">
                 公司速读
               </h2>
             </div>
-            <span className="text-xs text-slate-400">
+            <span className="text-xs text-[#8c887e]">
               {relatedTickers.length}
             </span>
           </div>
@@ -1165,19 +1165,19 @@ function TweetsView({
                 return (
                   <div
                     key={ticker}
-                    className="rounded-xl border border-slate-200 p-4"
+                    className="rounded-xl border border-[#e3ddcf] p-4"
                   >
-                    <span className="font-bold text-slate-900">${ticker}</span>
-                    <p className="mt-1 text-xs text-slate-400">
+                    <span className="font-bold text-[#16140f]">${ticker}</span>
+                    <p className="mt-1 text-xs text-[#8c887e]">
                       该标的暂未进入股票池。
                     </p>
                   </div>
                 );
               }
               return (
-                <div key={ticker} className="rounded-xl border border-slate-200 p-4">
+                <div key={ticker} className="rounded-xl border border-[#e3ddcf] p-4">
                   <div className="flex items-center gap-2">
-                    <span className="text-base font-bold text-slate-900">
+                    <span className="text-base font-bold text-[#16140f]">
                       ${s.ticker}
                     </span>
                     <span
@@ -1189,7 +1189,7 @@ function TweetsView({
                     </span>
                   </div>
                   {s.industry && (
-                    <div className="mt-1 font-mono text-[11px] text-slate-400">
+                    <div className="mt-1 font-mono text-[11px] text-[#8c887e]">
                       {s.industry}
                     </div>
                   )}
@@ -1200,14 +1200,14 @@ function TweetsView({
                       ["新闻", s.news],
                     ].map(([label, val]) => (
                       <div key={label as string}>
-                        <div className="text-sm font-semibold text-slate-900">
+                        <div className="text-sm font-semibold text-[#16140f]">
                           {val}
                         </div>
-                        <div className="text-[10px] text-slate-400">{label}</div>
+                        <div className="text-[10px] text-[#8c887e]">{label}</div>
                       </div>
                     ))}
                   </div>
-                  <p className="mt-3 text-[11px] leading-relaxed text-slate-500">
+                  <p className="mt-3 text-[11px] leading-relaxed text-[#6f6b61]">
                     提及: 24h {s.mentions24h} / 7D {s.mentions7d}; 新闻: {s.news};
                     披露: {s.disclosures}. 作者立场: {s.stance}
                     {s.confidence ? `; 置信度: ${s.confidence}` : ""}.
@@ -1218,7 +1218,7 @@ function TweetsView({
                   </p>
                   <button
                     onClick={() => goToStock(s.ticker)}
-                    className="mt-3 text-xs font-medium text-blue-600 hover:underline"
+                    className="mt-3 text-xs font-medium text-[#cf3019] hover:underline"
                   >
                     打开股票页
                   </button>
@@ -1241,12 +1241,12 @@ function queueBadgeClass(queue: string): string {
     return "bg-red-50 text-red-700 ring-1 ring-red-200";
   if (queue.includes("积极"))
     return "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200";
-  return "bg-slate-100 text-slate-600";
+  return "bg-[#ece8dd] text-[#4b463d]";
 }
 
 function revenueClass(rev: string): string {
   if (rev.startsWith("-")) return "text-red-600";
-  if (rev === "–") return "text-slate-300";
+  if (rev === "–") return "text-[#b8b2a4]";
   return "text-emerald-600";
 }
 
@@ -1342,14 +1342,14 @@ function StocksView({
   }
 
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white">
-      <div className="grid gap-3 border-b border-slate-200 bg-slate-50/70 p-4">
+    <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb]">
+      <div className="grid gap-3 border-b border-[#e3ddcf] bg-[#f3efe7]/70 p-4">
         <div className="flex flex-wrap items-center gap-3">
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="搜索股票 / 行业 / 链条"
-            className="h-9 min-w-[220px] flex-1 rounded-lg border border-slate-200 bg-white px-3 text-sm outline-none focus:border-slate-400"
+            className="h-9 min-w-[220px] flex-1 rounded-lg border border-[#e3ddcf] bg-[#fffefb] px-3 text-sm outline-none focus:border-[#b8b2a4]"
           />
           <button
             type="button"
@@ -1362,11 +1362,11 @@ function StocksView({
               setReturnFilter("全部收益");
               setSortMode("分数");
             }}
-            className="h-9 rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-600 hover:bg-slate-100"
+            className="h-9 rounded-lg border border-[#e3ddcf] bg-[#fffefb] px-3 text-sm text-[#4b463d] hover:bg-[#ece8dd]"
           >
             重置
           </button>
-          <span className="ml-auto text-xs text-slate-400">
+          <span className="ml-auto text-xs text-[#8c887e]">
             显示 {rows.length} / {pool.length}
           </span>
         </div>
@@ -1381,13 +1381,13 @@ function StocksView({
             ["排序", sortMode, setSortMode, ["分数", "24H", "7D", "30D", "新闻", "收入", "至今收益"]],
           ].map(([label, value, setter, options]) => (
             <label key={label as string} className="grid gap-1">
-              <span className="text-[11px] font-medium text-slate-400">
+              <span className="text-[11px] font-medium text-[#8c887e]">
                 {label as string}
               </span>
               <select
                 value={value as string}
                 onChange={(e) => (setter as (v: string) => void)(e.target.value)}
-                className="h-9 min-w-0 rounded-lg border border-slate-200 bg-white px-3 text-sm outline-none focus:border-slate-400"
+                className="h-9 min-w-0 rounded-lg border border-[#e3ddcf] bg-[#fffefb] px-3 text-sm outline-none focus:border-[#b8b2a4]"
               >
                 {(options as string[]).map((option) => (
                   <option key={option} value={option}>
@@ -1402,7 +1402,7 @@ function StocksView({
 
       <div className="overflow-x-auto">
         <table className="w-full min-w-[980px] text-sm">
-          <thead className="border-b border-slate-200 bg-slate-50 text-left text-xs text-slate-500">
+          <thead className="border-b border-[#e3ddcf] bg-[#f3efe7] text-left text-xs text-[#6f6b61]">
             <tr>
               <th className="px-4 py-3 font-medium">股票</th>
               <th className="px-4 py-3 font-medium">链条</th>
@@ -1424,11 +1424,11 @@ function StocksView({
               const perf = performanceByTicker.get(s.ticker);
               const chainLabel = perf?.chain ?? s.industry ?? "—";
               return (
-                <tr key={s.ticker} className="hover:bg-slate-50/60">
-                  <td className="px-4 py-3 font-bold text-slate-900">
+                <tr key={s.ticker} className="hover:bg-[#f3efe7]/60">
+                  <td className="px-4 py-3 font-bold text-[#16140f]">
                     {s.ticker}
                   </td>
-                  <td className="px-4 py-3 text-xs text-slate-500">
+                  <td className="px-4 py-3 text-xs text-[#6f6b61]">
                     {chainLabel}
                   </td>
                   <td className="px-4 py-3">
@@ -1449,20 +1449,20 @@ function StocksView({
                       {s.stance}
                     </span>
                   </td>
-                  <td className="px-4 py-3 font-mono text-xs text-slate-400">
+                  <td className="px-4 py-3 font-mono text-xs text-[#8c887e]">
                     {s.updatedAt}
                   </td>
                   <td className="px-3 py-3 text-right font-semibold text-rose-600">
                     {s.mentions24h}
                   </td>
-                  <td className="px-3 py-3 text-right text-slate-700">
+                  <td className="px-3 py-3 text-right text-[#3a352d]">
                     {s.mentions7d}
                   </td>
-                  <td className="px-3 py-3 text-right text-slate-700">
+                  <td className="px-3 py-3 text-right text-[#3a352d]">
                     {s.mentions30d}
                   </td>
-                  <td className="px-3 py-3 text-right text-slate-700">{s.news}</td>
-                  <td className="px-3 py-3 text-right text-slate-700">
+                  <td className="px-3 py-3 text-right text-[#3a352d]">{s.news}</td>
+                  <td className="px-3 py-3 text-right text-[#3a352d]">
                     {s.disclosures}
                   </td>
                   <td
@@ -1479,7 +1479,7 @@ function StocksView({
                   >
                     {perf?.toDate ?? "—"}
                   </td>
-                  <td className="px-4 py-3 text-right font-bold text-slate-900">
+                  <td className="px-4 py-3 text-right font-bold text-[#16140f]">
                     {s.score}
                   </td>
                 </tr>
@@ -1493,7 +1493,7 @@ function StocksView({
 }
 
 function returnClass(v: string): string {
-  if (v === "未到期" || v === "—") return "text-slate-300";
+  if (v === "未到期" || v === "—") return "text-[#b8b2a4]";
   if (v.startsWith("-")) return "text-red-600";
   return "text-emerald-600";
 }
@@ -1514,13 +1514,13 @@ function MentionsView({ data }: { data: BloggerData }) {
         {mp.stats.map((s) => (
           <div
             key={s.label}
-            className={`rounded-xl border p-4 ${s.tone ?? "border-slate-200 bg-white"}`}
+            className={`rounded-xl border p-4 ${s.tone ?? "border-[#e3ddcf] bg-[#fffefb]"}`}
           >
-            <div className="text-xs text-slate-500">{s.label}</div>
-            <div className="mt-1 text-2xl font-bold text-slate-900">
+            <div className="text-xs text-[#6f6b61]">{s.label}</div>
+            <div className="mt-1 text-2xl font-bold text-[#16140f]">
               {s.value}
             </div>
-            <div className="mt-1 text-[11px] text-slate-400">{s.hint}</div>
+            <div className="mt-1 text-[11px] text-[#8c887e]">{s.hint}</div>
           </div>
         ))}
       </section>
@@ -1529,9 +1529,9 @@ function MentionsView({ data }: { data: BloggerData }) {
         {mp.chains.map((c) => (
           <span
             key={c.name}
-            className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-600"
+            className="rounded-full border border-[#e3ddcf] bg-[#fffefb] px-3 py-1 text-xs text-[#4b463d]"
           >
-            {c.name} <span className="font-semibold text-slate-900">{c.count}</span>
+            {c.name} <span className="font-semibold text-[#16140f]">{c.count}</span>
           </span>
         ))}
         <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs text-emerald-700">
@@ -1539,14 +1539,14 @@ function MentionsView({ data }: { data: BloggerData }) {
         </span>
       </div>
 
-      <section className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-        <h2 className="text-base font-semibold text-slate-900">最大收益率 5 只</h2>
+      <section className="mt-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+        <h2 className="text-base font-semibold text-[#16140f]">最大收益率 5 只</h2>
         <ol className="mt-3 divide-y divide-slate-100">
           {mp.topGainers.map((g, i) => (
             <li key={g.ticker} className="flex items-center gap-3 py-2.5">
-              <span className="w-5 text-sm text-slate-400">{i + 1}</span>
-              <span className="font-bold text-slate-900">{g.ticker}</span>
-              <span className="text-xs text-slate-400">{g.chain}</span>
+              <span className="w-5 text-sm text-[#8c887e]">{i + 1}</span>
+              <span className="font-bold text-[#16140f]">{g.ticker}</span>
+              <span className="text-xs text-[#8c887e]">{g.chain}</span>
               <span className="ml-auto text-sm font-semibold text-emerald-600">
                 {g.gain}
               </span>
@@ -1555,9 +1555,9 @@ function MentionsView({ data }: { data: BloggerData }) {
         </ol>
       </section>
 
-      <section className="mt-4 rounded-2xl border border-slate-200 bg-white">
+      <section className="mt-4 rounded-2xl border border-[#e3ddcf] bg-[#fffefb]">
         <div className="flex items-center justify-between p-4">
-          <h2 className="text-base font-semibold text-slate-900">提及后表现</h2>
+          <h2 className="text-base font-semibold text-[#16140f]">提及后表现</h2>
           <div className="flex gap-1.5 text-[11px]">
             <span className="rounded bg-emerald-50 px-2 py-0.5 text-emerald-700">
               +收益
@@ -1565,14 +1565,14 @@ function MentionsView({ data }: { data: BloggerData }) {
             <span className="rounded bg-red-50 px-2 py-0.5 text-red-700">
               -收益
             </span>
-            <span className="rounded bg-slate-100 px-2 py-0.5 text-slate-400">
+            <span className="rounded bg-[#ece8dd] px-2 py-0.5 text-[#8c887e]">
               未到期/无价
             </span>
           </div>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[860px] text-sm">
-            <thead className="border-y border-slate-200 bg-slate-50 text-left text-xs text-slate-500">
+            <thead className="border-y border-[#e3ddcf] bg-[#f3efe7] text-left text-xs text-[#6f6b61]">
               <tr>
                 <th className="px-4 py-3 font-medium">股票</th>
                 <th className="px-4 py-3 font-medium">链条</th>
@@ -1589,11 +1589,11 @@ function MentionsView({ data }: { data: BloggerData }) {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {mp.rows.map((r) => (
-                <tr key={r.ticker} className="hover:bg-slate-50/60">
-                  <td className="px-4 py-3 font-bold text-slate-900">
+                <tr key={r.ticker} className="hover:bg-[#f3efe7]/60">
+                  <td className="px-4 py-3 font-bold text-[#16140f]">
                     {r.ticker}
                   </td>
-                  <td className="px-4 py-3 text-xs text-slate-500">{r.chain}</td>
+                  <td className="px-4 py-3 text-xs text-[#6f6b61]">{r.chain}</td>
                   <td className="px-4 py-3">
                     <span
                       className={`rounded-full px-2 py-0.5 text-xs font-medium ${queueBadgeClass(
@@ -1603,10 +1603,10 @@ function MentionsView({ data }: { data: BloggerData }) {
                       {r.queue}
                     </span>
                   </td>
-                  <td className="px-4 py-3 font-mono text-[11px] text-slate-400">
+                  <td className="px-4 py-3 font-mono text-[11px] text-[#8c887e]">
                     {r.firstMention}
                   </td>
-                  <td className="px-4 py-3 font-mono text-[11px] text-slate-400">
+                  <td className="px-4 py-3 font-mono text-[11px] text-[#8c887e]">
                     {r.basePrice}
                   </td>
                   <td className={`px-3 py-3 text-right ${returnClass(r.w1)}`}>
@@ -1657,25 +1657,25 @@ function DerivedMentionsView({ data }: { data: BloggerData }) {
   }
   return (
     <>
-      <div className="mb-3 rounded-xl border border-dashed border-slate-300 bg-white px-4 py-2.5 text-[11px] leading-relaxed text-slate-500">
+      <div className="mb-3 rounded-xl border border-dashed border-[#cfc7b6] bg-[#fffefb] px-4 py-2.5 text-[11px] leading-relaxed text-[#6f6b61]">
         该博主没有接入收益回测数据。以下按 7 天累计提及次数做的轻量排名。
       </div>
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
+      <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
         <div className="grid gap-3">
           {rows.map((r) => (
             <div key={r.ticker} className="flex items-center gap-3">
-              <span className="w-16 shrink-0 text-sm font-bold text-slate-900">
+              <span className="w-16 shrink-0 text-sm font-bold text-[#16140f]">
                 {r.ticker}
               </span>
-              <div className="h-6 flex-1 overflow-hidden rounded-full bg-slate-100">
+              <div className="h-6 flex-1 overflow-hidden rounded-full bg-[#ece8dd]">
                 <div
-                  className="flex h-full items-center justify-end rounded-full bg-slate-900 pr-2 text-[11px] font-medium text-white"
+                  className="flex h-full items-center justify-end rounded-full bg-[#16140f] pr-2 text-[11px] font-medium text-white"
                   style={{ width: `${(r.mentions7d / max) * 100}%` }}
                 >
                   {r.mentions7d}
                 </div>
               </div>
-              <span className="w-20 shrink-0 text-right text-xs text-slate-400">
+              <span className="w-20 shrink-0 text-right text-xs text-[#8c887e]">
                 24h {r.mentions24h}
               </span>
             </div>
@@ -1689,20 +1689,20 @@ function DerivedMentionsView({ data }: { data: BloggerData }) {
 function heatClass(pct: number): string {
   if (pct >= 60) return "bg-emerald-500";
   if (pct >= 52) return "bg-emerald-400";
-  if (pct >= 45) return "bg-slate-400";
-  if (pct >= 35) return "bg-slate-300";
-  return "bg-slate-200";
+  if (pct >= 45) return "bg-[#b8b2a4]";
+  if (pct >= 35) return "bg-[#d8d2c4]";
+  return "bg-[#ece8dd]";
 }
 
 function excessClass(v: number): string {
   if (v > 0) return "text-emerald-600";
   if (v < 0) return "text-red-600";
-  return "text-slate-400";
+  return "text-[#8c887e]";
 }
 
 function signedTextClass(v: string): string {
   if (v.trim().startsWith("-")) return "text-red-600";
-  if (v.trim() === "-" || v.trim() === "—") return "text-slate-300";
+  if (v.trim() === "-" || v.trim() === "—") return "text-[#b8b2a4]";
   return "text-emerald-600";
 }
 
@@ -1723,33 +1723,33 @@ function TrackRecordView({ data }: { data: BloggerData }) {
         {tr.stats.map((s) => (
           <div
             key={s.label}
-            className={`rounded-xl border p-4 ${s.tone ?? "border-slate-200 bg-white"}`}
+            className={`rounded-xl border p-4 ${s.tone ?? "border-[#e3ddcf] bg-[#fffefb]"}`}
           >
-            <div className="text-xs text-slate-500">{s.label}</div>
-            <div className="mt-1 text-3xl font-bold text-slate-900">
+            <div className="text-xs text-[#6f6b61]">{s.label}</div>
+            <div className="mt-1 text-3xl font-bold text-[#16140f]">
               {s.value}
             </div>
-            <div className="mt-1 text-[11px] text-slate-400">{s.hint}</div>
+            <div className="mt-1 text-[11px] text-[#8c887e]">{s.hint}</div>
           </div>
         ))}
       </section>
 
       <div className="mt-4 grid gap-4 xl:grid-cols-2">
         {/* Heatmap */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             Heatmap
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">
             View × Horizon
           </h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-[#8c887e]">
             按当前规则视图横向比较 1D 到 6M 的胜率；条块越满，代表该窗口跑赢 SPY 的比例越高。
           </p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[520px] text-sm">
               <thead>
-                <tr className="text-left text-[11px] uppercase text-slate-400">
+                <tr className="text-left text-[11px] uppercase text-[#8c887e]">
                   <th className="py-2 font-medium">VIEW</th>
                   {tr.horizons.map((h) => (
                     <th key={h} className="py-2 text-right font-medium">
@@ -1760,20 +1760,20 @@ function TrackRecordView({ data }: { data: BloggerData }) {
               </thead>
               <tbody>
                 {tr.heatmap.map((row) => (
-                  <tr key={row.view} className="border-t border-slate-100">
-                    <td className="py-2 pr-3 font-mono text-xs text-slate-600">
+                  <tr key={row.view} className="border-t border-[#ece8dd]">
+                    <td className="py-2 pr-3 font-mono text-xs text-[#4b463d]">
                       {row.view}
                     </td>
                     {row.cells.map((pct, i) => (
                       <td key={i} className="py-2 pl-2">
                         <div className="flex items-center justify-end gap-1.5">
-                          <span className="h-2 w-8 overflow-hidden rounded-full bg-slate-100">
+                          <span className="h-2 w-8 overflow-hidden rounded-full bg-[#ece8dd]">
                             <span
                               className={`block h-full ${heatClass(pct)}`}
                               style={{ width: `${pct}%` }}
                             />
                           </span>
-                          <span className="w-12 text-right text-xs tabular-nums text-slate-600">
+                          <span className="w-12 text-right text-xs tabular-nums text-[#4b463d]">
                             {pct.toFixed(1)}%
                           </span>
                         </div>
@@ -1787,17 +1787,17 @@ function TrackRecordView({ data }: { data: BloggerData }) {
         </section>
 
         {/* Calibration */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             1M
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">校准曲线</h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">校准曲线</h2>
+          <p className="mt-1 text-xs text-[#8c887e]">
             按 view 与 confidence 分组看 1M 后续表现；N 是样本数，胜率是跑赢 SPY 的比例，超额单位为百分点。
           </p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[460px] text-sm">
-              <thead className="text-left text-[11px] uppercase text-slate-400">
+              <thead className="text-left text-[11px] uppercase text-[#8c887e]">
                 <tr>
                   <th className="py-2 font-medium">分组</th>
                   <th className="py-2 text-right font-medium">N</th>
@@ -1808,12 +1808,12 @@ function TrackRecordView({ data }: { data: BloggerData }) {
               </thead>
               <tbody>
                 {tr.calibration.map((c) => (
-                  <tr key={c.group} className="border-t border-slate-100">
-                    <td className="py-2 pr-2 font-mono text-xs text-slate-600">
+                  <tr key={c.group} className="border-t border-[#ece8dd]">
+                    <td className="py-2 pr-2 font-mono text-xs text-[#4b463d]">
                       {c.group}
                     </td>
-                    <td className="py-2 text-right text-slate-500">{c.n}</td>
-                    <td className="py-2 text-right font-semibold text-slate-900">
+                    <td className="py-2 text-right text-[#6f6b61]">{c.n}</td>
+                    <td className="py-2 text-right font-semibold text-[#16140f]">
                       {c.winRate.toFixed(1)}%
                     </td>
                     <td className={`py-2 text-right ${excessClass(c.meanExcess)}`}>
@@ -1837,18 +1837,18 @@ function TrackRecordView({ data }: { data: BloggerData }) {
           {tr.groupTables.map((table) => (
             <div
               key={table.key}
-              className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5"
+              className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5"
             >
-              <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+              <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
                 {table.horizon}
               </div>
-              <h2 className="mt-1 text-base font-semibold text-slate-900">
+              <h2 className="mt-1 text-base font-semibold text-[#16140f]">
                 {table.title}
               </h2>
-              <p className="mt-1 text-xs text-slate-400">{table.note}</p>
+              <p className="mt-1 text-xs text-[#8c887e]">{table.note}</p>
               <div className="mt-4 overflow-x-auto">
                 <table className="w-full min-w-[460px] text-sm">
-                  <thead className="text-left text-[11px] uppercase text-slate-400">
+                  <thead className="text-left text-[11px] uppercase text-[#8c887e]">
                     <tr>
                       <th className="py-2 font-medium">分组</th>
                       <th className="py-2 text-right font-medium">N</th>
@@ -1859,12 +1859,12 @@ function TrackRecordView({ data }: { data: BloggerData }) {
                   </thead>
                   <tbody>
                     {table.rows.map((row) => (
-                      <tr key={row.group} className="border-t border-slate-100">
-                        <td className="py-2 pr-2 font-mono text-xs text-slate-600">
+                      <tr key={row.group} className="border-t border-[#ece8dd]">
+                        <td className="py-2 pr-2 font-mono text-xs text-[#4b463d]">
                           {row.group}
                         </td>
-                        <td className="py-2 text-right text-slate-500">{row.n}</td>
-                        <td className="py-2 text-right font-semibold text-slate-900">
+                        <td className="py-2 text-right text-[#6f6b61]">{row.n}</td>
+                        <td className="py-2 text-right font-semibold text-[#16140f]">
                           {row.winRate.toFixed(1)}%
                         </td>
                         <td
@@ -1893,17 +1893,17 @@ function TrackRecordView({ data }: { data: BloggerData }) {
 
       <div className="mt-4 grid gap-4 xl:grid-cols-2">
         {tr.recentDecay && tr.recentDecay.rows.length > 0 && (
-          <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
               recent_30d_vs_history
             </div>
-            <h2 className="mt-1 text-base font-semibold text-slate-900">
+            <h2 className="mt-1 text-base font-semibold text-[#16140f]">
               {tr.recentDecay.title}
             </h2>
-            <p className="mt-1 text-xs text-slate-400">{tr.recentDecay.note}</p>
+            <p className="mt-1 text-xs text-[#8c887e]">{tr.recentDecay.note}</p>
             <div className="mt-4 overflow-x-auto">
               <table className="w-full min-w-[520px] text-sm">
-                <thead className="text-left text-[11px] uppercase text-slate-400">
+                <thead className="text-left text-[11px] uppercase text-[#8c887e]">
                   <tr>
                     <th className="py-2 font-medium">分组</th>
                     <th className="py-2 text-right font-medium">Recent</th>
@@ -1913,14 +1913,14 @@ function TrackRecordView({ data }: { data: BloggerData }) {
                 </thead>
                 <tbody>
                   {tr.recentDecay.rows.map((row) => (
-                    <tr key={row.group} className="border-t border-slate-100">
-                      <td className="py-2 pr-2 font-mono text-xs text-slate-600">
+                    <tr key={row.group} className="border-t border-[#ece8dd]">
+                      <td className="py-2 pr-2 font-mono text-xs text-[#4b463d]">
                         {row.group}
                       </td>
-                      <td className="py-2 text-right font-mono text-xs text-slate-500">
+                      <td className="py-2 text-right font-mono text-xs text-[#6f6b61]">
                         {row.recent}
                       </td>
-                      <td className="py-2 text-right font-mono text-xs text-slate-500">
+                      <td className="py-2 text-right font-mono text-xs text-[#6f6b61]">
                         {row.history}
                       </td>
                       <td
@@ -1939,22 +1939,22 @@ function TrackRecordView({ data }: { data: BloggerData }) {
         )}
 
         {tr.equalWeight && (
-          <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
               equal-weight
             </div>
-            <h2 className="mt-1 text-base font-semibold text-slate-900">
+            <h2 className="mt-1 text-base font-semibold text-[#16140f]">
               {tr.equalWeight.title}
             </h2>
-            <p className="mt-1 text-xs text-slate-400">{tr.equalWeight.note}</p>
+            <p className="mt-1 text-xs text-[#8c887e]">{tr.equalWeight.note}</p>
             {tr.equalWeight.stats.length > 0 && (
               <div className="mt-4 grid gap-2 sm:grid-cols-3">
                 {tr.equalWeight.stats.map((s) => (
                   <div
                     key={s.label}
-                    className={`rounded-xl border p-3 ${s.tone ?? "border-slate-200 bg-slate-50"}`}
+                    className={`rounded-xl border p-3 ${s.tone ?? "border-[#e3ddcf] bg-[#f3efe7]"}`}
                   >
-                    <div className="text-[11px] text-slate-500">{s.label}</div>
+                    <div className="text-[11px] text-[#6f6b61]">{s.label}</div>
                     <div
                       className={`mt-1 text-lg font-bold ${signedTextClass(
                         s.value
@@ -1962,7 +1962,7 @@ function TrackRecordView({ data }: { data: BloggerData }) {
                     >
                       {s.value}
                     </div>
-                    <div className="mt-1 text-[10px] text-slate-400">{s.hint}</div>
+                    <div className="mt-1 text-[10px] text-[#8c887e]">{s.hint}</div>
                   </div>
                 ))}
               </div>
@@ -1970,7 +1970,7 @@ function TrackRecordView({ data }: { data: BloggerData }) {
             {tr.equalWeight.rows.length > 0 && (
               <div className="mt-4 overflow-x-auto">
                 <table className="w-full min-w-[460px] text-sm">
-                  <thead className="text-left text-[11px] uppercase text-slate-400">
+                  <thead className="text-left text-[11px] uppercase text-[#8c887e]">
                     <tr>
                       <th className="py-2 font-medium">月份</th>
                       <th className="py-2 text-right font-medium">持仓</th>
@@ -1981,11 +1981,11 @@ function TrackRecordView({ data }: { data: BloggerData }) {
                   </thead>
                   <tbody>
                     {tr.equalWeight.rows.map((row) => (
-                      <tr key={row.month} className="border-t border-slate-100">
-                        <td className="py-2 font-mono text-xs text-slate-600">
+                      <tr key={row.month} className="border-t border-[#ece8dd]">
+                        <td className="py-2 font-mono text-xs text-[#4b463d]">
                           {row.month}
                         </td>
-                        <td className="py-2 text-right text-slate-500">
+                        <td className="py-2 text-right text-[#6f6b61]">
                           {row.holdings}
                         </td>
                         <td
@@ -2024,10 +2024,10 @@ function sourceStatusClass(status: string): string {
   if (status === "primary")
     return "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200";
   if (status === "enabled")
-    return "bg-blue-50 text-blue-700 ring-1 ring-blue-200";
+    return "bg-[#f3efe7] text-[#a4220f] ring-1 ring-[#e3ddcf]";
   if (status === "restricted")
-    return "bg-violet-50 text-violet-700 ring-1 ring-violet-200";
-  return "bg-slate-100 text-slate-500";
+    return "bg-[#f3efe7] text-[#a4220f] ring-1 ring-[#e3ddcf]";
+  return "bg-[#ece8dd] text-[#6f6b61]";
 }
 
 function liveSnapshot(data: BloggerData) {
@@ -2056,7 +2056,7 @@ function MultiSourceView({ data }: { data: BloggerData }) {
   const live = liveSnapshot(data);
 
   const stats = [
-    { label: "覆盖股票", value: coverage, hint: live.isLive ? live.value : "等待 live", tone: "border-blue-200 bg-blue-50" },
+    { label: "覆盖股票", value: coverage, hint: live.isLive ? live.value : "等待 live", tone: "border-[#e3ddcf] bg-[#f3efe7]" },
     { label: "配置源", value: extra, hint: "extra X sources", tone: "border-emerald-200 bg-emerald-50" },
     { label: "启用源", value: enabled, hint: "cost gated", tone: "border-amber-200 bg-amber-50" },
   ];
@@ -2066,40 +2066,40 @@ function MultiSourceView({ data }: { data: BloggerData }) {
       <section className="grid gap-3 sm:grid-cols-3">
         {stats.map((s) => (
           <div key={s.label} className={`rounded-xl border p-4 ${s.tone}`}>
-            <div className="text-xs text-slate-500">{s.label}</div>
-            <div className="mt-1 text-3xl font-bold text-slate-900">
+            <div className="text-xs text-[#6f6b61]">{s.label}</div>
+            <div className="mt-1 text-3xl font-bold text-[#16140f]">
               {s.value}
             </div>
-            <div className="mt-1 text-[11px] text-slate-400">{s.hint}</div>
+            <div className="mt-1 text-[11px] text-[#8c887e]">{s.hint}</div>
           </div>
         ))}
       </section>
 
       <div className="mt-4 grid gap-4 xl:grid-cols-2">
         {/* Alpha 分类 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             V0 Scaffold
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">
             Serenity Alpha 分类
           </h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-[#8c887e]">
             按多源 stance 共识给股票分层；当前只有主源启用，unique 表示暂时只有该源覆盖。
           </p>
-          <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-4">
-            <span className="font-mono text-sm text-slate-700">unique</span>
-            <span className="text-sm font-bold text-slate-900">{coverage}</span>
+          <div className="mt-4 flex items-center justify-between border-t border-[#ece8dd] pt-4">
+            <span className="font-mono text-sm text-[#3a352d]">unique</span>
+            <span className="text-sm font-bold text-[#16140f]">{coverage}</span>
           </div>
         </section>
 
         {/* 信号源 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             Configured
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">信号源</h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">信号源</h2>
+          <p className="mt-1 text-xs text-[#8c887e]">
             列出已配置的外部观察源；disabled 表示为控制成本暂未抓取，enabled 后才会进入共识计算。
           </p>
           <ul className="mt-4 divide-y divide-slate-100">
@@ -2109,10 +2109,10 @@ function MultiSourceView({ data }: { data: BloggerData }) {
                 className="flex items-center justify-between gap-3 py-3"
               >
                 <div className="min-w-0">
-                  <div className="truncate text-sm font-semibold text-slate-900">
+                  <div className="truncate text-sm font-semibold text-[#16140f]">
                     {s.name}
                   </div>
-                  <div className="truncate font-mono text-xs text-slate-400">
+                  <div className="truncate font-mono text-xs text-[#8c887e]">
                     {s.handle}
                   </div>
                 </div>
@@ -2141,19 +2141,19 @@ function AiView({ data }: { data: BloggerData }) {
 
 function IndustryView({ data }: { data: BloggerData }) {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-      <p className="text-sm text-slate-500">该博主的关注主题：</p>
+    <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+      <p className="text-sm text-[#6f6b61]">该博主的关注主题：</p>
       <div className="mt-3 flex flex-wrap gap-2">
         {data.focusTags.map((t) => (
           <span
             key={t}
-            className="rounded-full bg-slate-100 px-3 py-1.5 text-sm text-slate-700"
+            className="rounded-full bg-[#ece8dd] px-3 py-1.5 text-sm text-[#3a352d]"
           >
             {t}
           </span>
         ))}
       </div>
-      <p className="mt-4 text-[11px] text-slate-400">
+      <p className="mt-4 text-[11px] text-[#8c887e]">
         细分行业分布需要按标的所属行业的结构化数据，可在数据中新增 sector
         字段后扩展。
       </p>
@@ -2164,7 +2164,7 @@ function IndustryView({ data }: { data: BloggerData }) {
 function FollowView({ data }: { data: BloggerData }) {
   void data; // 本页只展示作者本人（David 小鱼 / Claworld）
   const rowCls =
-    "inline-flex items-center justify-between gap-2 rounded-xl border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50";
+    "inline-flex items-center justify-between gap-2 rounded-xl border border-[#e3ddcf] px-4 py-2.5 text-sm font-medium text-[#3a352d] transition hover:bg-[#f3efe7]";
   const copy = (t: string) => navigator.clipboard?.writeText(t);
   const links = [
     {
@@ -2177,7 +2177,7 @@ function FollowView({ data }: { data: BloggerData }) {
     <div className="grid gap-4 lg:grid-cols-3">
       {/* 左列：作者 + 小红书 */}
       <div className="grid gap-4 lg:col-span-1">
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-5 md:p-6">
           <div className="flex items-center gap-4">
             <img
               src={founderPhoto.src}
@@ -2185,23 +2185,23 @@ function FollowView({ data }: { data: BloggerData }) {
               className="h-16 w-16 rounded-xl object-cover ring-1 ring-slate-200"
             />
             <div>
-              <div className="text-lg font-semibold text-slate-900">David 小鱼</div>
-              <div className="text-sm text-slate-500">Claworld 创始人 · 人类炼化师</div>
+              <div className="text-lg font-semibold text-[#16140f]">David 小鱼</div>
+              <div className="text-sm text-[#6f6b61]">Claworld 创始人 · 人类炼化师</div>
             </div>
           </div>
-          <p className="mt-3 text-sm leading-relaxed text-slate-600">用蒸馏改变一切。</p>
+          <p className="mt-3 text-sm leading-relaxed text-[#4b463d]">用蒸馏改变一切。</p>
           <a
             href="https://x.com/shark1996_"
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
+            className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#16140f] px-4 py-2 text-sm font-medium text-white hover:bg-[#2c2820]"
           >
             在 X 上关注 @Shark1996_ ↗
           </a>
         </section>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 text-center md:p-6">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-5 text-center md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             小红书
           </div>
           <img
@@ -2223,11 +2223,11 @@ function FollowView({ data }: { data: BloggerData }) {
       {/* 右列：站外导航 + 联系方式 + 更新公告 */}
       <div className="grid gap-4 lg:col-span-2">
         {links.length > 0 && (
-          <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-            <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+          <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-5 md:p-6">
+            <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
               LINKS
             </div>
-            <h2 className="mt-1 text-base font-semibold text-slate-900">站外导航</h2>
+            <h2 className="mt-1 text-base font-semibold text-[#16140f]">站外导航</h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
               {links.map((l) => (
                 <a
@@ -2235,29 +2235,29 @@ function FollowView({ data }: { data: BloggerData }) {
                   href={l.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="relative block rounded-xl border border-slate-200 p-4 transition hover:bg-slate-50"
+                  className="relative block rounded-xl border border-[#e3ddcf] p-4 transition hover:bg-[#f3efe7]"
                 >
-                  <div className="text-sm font-semibold text-slate-900">{l.name}</div>
-                  <div className="mt-0.5 text-xs text-slate-500">{l.desc}</div>
-                  <div className="mt-2 text-xs font-medium text-blue-600">
+                  <div className="text-sm font-semibold text-[#16140f]">{l.name}</div>
+                  <div className="mt-0.5 text-xs text-[#6f6b61]">{l.desc}</div>
+                  <div className="mt-2 text-xs font-medium text-[#cf3019]">
                     {l.url.replace(/^https?:\/\//, "").replace(/\/$/, "")}
                   </div>
-                  <span className="absolute right-3 top-3 text-slate-300">↗</span>
+                  <span className="absolute right-3 top-3 text-[#b8b2a4]">↗</span>
                 </a>
               ))}
             </div>
           </section>
         )}
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-5 md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             CONTACT
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">联系方式</h2>
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">联系方式</h2>
           <div className="mt-4 grid gap-2 sm:grid-cols-2">
             <a href="https://x.com/shark1996_" target="_blank" rel="noreferrer" className={rowCls}>
               <span>X · @Shark1996_</span>
-              <span className="text-slate-400">↗</span>
+              <span className="text-[#8c887e]">↗</span>
             </a>
             <a
               href="https://www.youtube.com/@Singularity2026"
@@ -2266,7 +2266,7 @@ function FollowView({ data }: { data: BloggerData }) {
               className={rowCls}
             >
               <span>YouTube · @Singularity2026</span>
-              <span className="text-slate-400">↗</span>
+              <span className="text-[#8c887e]">↗</span>
             </a>
             <a
               href="https://xhslink.com/m/6WBQosGc8F6"
@@ -2275,7 +2275,7 @@ function FollowView({ data }: { data: BloggerData }) {
               className={rowCls}
             >
               <span>小红书 · David小鱼</span>
-              <span className="text-slate-400">↗</span>
+              <span className="text-[#8c887e]">↗</span>
             </a>
             <button
               type="button"
@@ -2284,7 +2284,7 @@ function FollowView({ data }: { data: BloggerData }) {
               className={rowCls}
             >
               <span>小红书号 · 677131897</span>
-              <span className="text-slate-400">⧉ 复制</span>
+              <span className="text-[#8c887e]">⧉ 复制</span>
             </button>
             <button
               type="button"
@@ -2293,7 +2293,7 @@ function FollowView({ data }: { data: BloggerData }) {
               className={rowCls}
             >
               <span>微信 · dragon-yu-171728</span>
-              <span className="text-slate-400">⧉ 复制</span>
+              <span className="text-[#8c887e]">⧉ 复制</span>
             </button>
             <button
               type="button"
@@ -2302,19 +2302,19 @@ function FollowView({ data }: { data: BloggerData }) {
               className={rowCls}
             >
               <span>公众号 · 自家的鱼鱼 / Claworld</span>
-              <span className="text-slate-400">⧉ 复制</span>
+              <span className="text-[#8c887e]">⧉ 复制</span>
             </button>
           </div>
         </section>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 md:p-6">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-5 md:p-6">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             UPDATES
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">更新公告</h2>
-          <div className="mt-3 rounded-xl bg-slate-50 p-4">
-            <div className="text-sm font-semibold text-slate-800">反馈与沟通</div>
-            <p className="mt-1 text-sm leading-relaxed text-slate-600">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">更新公告</h2>
+          <div className="mt-3 rounded-xl bg-[#f3efe7] p-4">
+            <div className="text-sm font-semibold text-[#2a261f]">反馈与沟通</div>
+            <p className="mt-1 text-sm leading-relaxed text-[#4b463d]">
               X 用于即时沟通与反馈；小红书用于 Claworld 投研终端的教程、案例与中文沟通入口。
               有功能建议或问题，欢迎在 X 留言或小红书私信。
             </p>
@@ -2323,7 +2323,7 @@ function FollowView({ data }: { data: BloggerData }) {
                 href="https://xhslink.com/m/6WBQosGc8F6"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-white"
+                className="rounded-full border border-[#e3ddcf] px-3 py-1.5 text-xs font-medium text-[#3a352d] hover:bg-[#fffefb]"
               >
                 关注小红书
               </a>
@@ -2331,19 +2331,19 @@ function FollowView({ data }: { data: BloggerData }) {
                 href="https://x.com/shark1996_"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-white"
+                className="rounded-full border border-[#e3ddcf] px-3 py-1.5 text-xs font-medium text-[#3a352d] hover:bg-[#fffefb]"
               >
                 X 留言
               </a>
             </div>
           </div>
           <div className="mt-4 flex gap-4">
-            <div className="shrink-0 font-mono text-xs text-slate-400">2026-06-08</div>
+            <div className="shrink-0 font-mono text-xs text-[#8c887e]">2026-06-08</div>
             <div>
-              <div className="text-sm font-semibold text-slate-800">
+              <div className="text-sm font-semibold text-[#2a261f]">
                 实时推文 + A股喊单 + 中英双语
               </div>
-              <p className="mt-1 text-sm leading-relaxed text-slate-600">
+              <p className="mt-1 text-sm leading-relaxed text-[#4b463d]">
                 推文页接入实时更新；博主点名 A股/美股时红色置顶提示并推飞书；每条推文附中英双语与财经解读。
               </p>
             </div>
@@ -2369,7 +2369,7 @@ function SupplyChainView({ data }: { data: BloggerData }) {
   }
 
   const stats = [
-    { label: "节点", value: sc.nodes, hint: sc.asOf || sc.hopLabel, tone: "bg-blue-50" },
+    { label: "节点", value: sc.nodes, hint: sc.asOf || sc.hopLabel, tone: "bg-[#f3efe7]" },
     { label: "边", value: sc.edges, hint: sc.hopLabel, tone: "bg-emerald-50" },
     {
       label: "传导事件",
@@ -2382,7 +2382,7 @@ function SupplyChainView({ data }: { data: BloggerData }) {
   return (
     <>
       {sc.derived && (
-        <div className="mb-3 rounded-xl border border-dashed border-slate-300 bg-white px-4 py-2.5 text-[11px] leading-relaxed text-slate-500">
+        <div className="mb-3 rounded-xl border border-dashed border-[#cfc7b6] bg-[#fffefb] px-4 py-2.5 text-[11px] leading-relaxed text-[#6f6b61]">
           该博主未采用供应链研究方式。以下为根据其<strong>提及标的</strong>
           在共享供应链参考图谱上自动推导的关联视图（仅供参考）。
         </div>
@@ -2390,13 +2390,13 @@ function SupplyChainView({ data }: { data: BloggerData }) {
 
       <section className="grid gap-3 sm:grid-cols-3">
         {stats.map((s) => (
-          <div key={s.label} className={`rounded-xl border border-slate-200 p-4 ${s.tone}`}>
-            <div className="text-xs text-slate-500">{s.label}</div>
-            <div className="mt-1 text-3xl font-bold text-slate-900">
+          <div key={s.label} className={`rounded-xl border border-[#e3ddcf] p-4 ${s.tone}`}>
+            <div className="text-xs text-[#6f6b61]">{s.label}</div>
+            <div className="mt-1 text-3xl font-bold text-[#16140f]">
               {s.value}
             </div>
             {s.hint && (
-              <div className="mt-1 text-[11px] text-slate-400">{s.hint}</div>
+              <div className="mt-1 text-[11px] text-[#8c887e]">{s.hint}</div>
             )}
           </div>
         ))}
@@ -2404,27 +2404,27 @@ function SupplyChainView({ data }: { data: BloggerData }) {
 
       <div className="mt-4 grid gap-4 xl:grid-cols-2">
         {/* 角色分层 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             Supply-Chain
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">
             角色分层
           </h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-[#8c887e]">
             按供应链角色展示当前图谱覆盖的公司；节点只代表结构关系，不代表当前观点或仓位。
           </p>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {sc.roles.map((r) => (
               <div key={r.role}>
-                <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+                <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
                   {r.role}
                 </div>
                 <div className="mt-1.5 flex flex-wrap gap-1.5">
                   {r.tickers.map((t) => (
                     <span
                       key={t}
-                      className="rounded border border-slate-200 bg-slate-50 px-2 py-0.5 font-mono text-xs text-slate-700"
+                      className="rounded border border-[#e3ddcf] bg-[#f3efe7] px-2 py-0.5 font-mono text-xs text-[#3a352d]"
                     >
                       {t}
                     </span>
@@ -2436,18 +2436,18 @@ function SupplyChainView({ data }: { data: BloggerData }) {
         </section>
 
         {/* 传导提示 */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
-          <div className="text-[11px] font-medium uppercase tracking-wide text-slate-400">
+        <section className="rounded-2xl border border-[#e3ddcf] bg-[#fffefb] p-4 md:p-5">
+          <div className="text-[11px] font-medium uppercase tracking-wide text-[#8c887e]">
             Passive Catalysts
           </div>
-          <h2 className="mt-1 text-base font-semibold text-slate-900">
+          <h2 className="mt-1 text-base font-semibold text-[#16140f]">
             传导提示
           </h2>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-[#8c887e]">
             从近期高优先级事件出发，沿供应链边传导后的二阶观察清单；分数是衰减后的优先级，不是涨跌预测。
           </p>
           {sc.catalysts.length === 0 ? (
-            <p className="mt-4 text-sm text-slate-400">
+            <p className="mt-4 text-sm text-[#8c887e]">
               当前没有触发供应链传导的高优先级事件。
             </p>
           ) : (
@@ -2455,17 +2455,17 @@ function SupplyChainView({ data }: { data: BloggerData }) {
               {sc.catalysts.map((c, i) => (
                 <li key={i} className="py-3">
                   <div className="flex items-start justify-between gap-3">
-                    <span className="text-sm font-bold text-slate-900">
+                    <span className="text-sm font-bold text-[#16140f]">
                       {c.target}
                     </span>
-                    <span className="text-sm font-semibold text-slate-500">
+                    <span className="text-sm font-semibold text-[#6f6b61]">
                       {c.score}
                     </span>
                   </div>
-                  <div className="mt-0.5 font-mono text-[11px] text-slate-400">
+                  <div className="mt-0.5 font-mono text-[11px] text-[#8c887e]">
                     {c.path}
                   </div>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                  <p className="mt-1 text-sm leading-relaxed text-[#4b463d]">
                     {c.note}
                   </p>
                 </li>
@@ -2480,9 +2480,9 @@ function SupplyChainView({ data }: { data: BloggerData }) {
 
 function EmptyState({ title, note }: { title: string; note: string }) {
   return (
-    <section className="rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center">
-      <div className="text-sm font-semibold text-slate-700">{title}</div>
-      <p className="mx-auto mt-2 max-w-md text-xs leading-relaxed text-slate-400">
+    <section className="rounded-2xl border border-dashed border-[#cfc7b6] bg-[#fffefb] p-10 text-center">
+      <div className="text-sm font-semibold text-[#3a352d]">{title}</div>
+      <p className="mx-auto mt-2 max-w-md text-xs leading-relaxed text-[#8c887e]">
         {note}
       </p>
     </section>

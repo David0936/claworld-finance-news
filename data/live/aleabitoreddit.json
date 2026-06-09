@@ -9,6 +9,27 @@
   "fetchedAt": "2026-06-09 21:01",
   "feed": [
     {
+      "time": "06-09 22:57",
+      "type": "推文",
+      "ticker": "AAOI",
+      "tickers": [
+        "AAOI",
+        "LITE",
+        "SIVE"
+      ],
+      "title": "推文线索 · AAOI",
+      "body": "I don’t quite think photonics from $AAOI to $LITE or $SIVE are disappearing anytime soon…\nJust extremely volatile.\nAnyway, curious what other people are buying today?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-09 22:57",
+      "url": "https://x.com/aleabitoreddit/status/2064361170270933269",
+      "stats": {
+        "views": "8,183",
+        "likes": "121",
+        "reposts": "9",
+        "bookmarks": "13"
+      }
+    },
+    {
       "time": "06-09 21:54",
       "type": "推文",
       "ticker": "EWY",
@@ -99,31 +120,21 @@
         "reposts": "13",
         "bookmarks": "12"
       }
-    },
-    {
-      "time": "06-09 14:44",
-      "type": "推文",
-      "ticker": "JBL",
-      "tickers": [
-        "JBL",
-        "SIVE",
-        "INTC",
-        "AAOI"
-      ],
-      "title": "推文线索 · JBL",
-      "body": "Just a random thought: $JBL seems highkey compelling long idea at $38B.\nDon’t really think markets have priced in their 1.6T LRO pluggable transceiver business yet.\nEspecially if it’s “how much can you make” with $SIVE as the bottleneck H1 2027. Not really is there enough demand. \nThey already have the massive supply chains setup… and took over $INTC pluggable lines.\nSeems more scalable than $AAOI capex ATMs for laser fabs, if you have $SIVE + tons of different fabs like Win Semi + others mass producing lasers and $JBL doing the rest. \nSo you’re getting that Innolight style setup for free (with US premiums), with an already validated hyperscaler supply chain. \nDon’t currently have positions, just throwing out a thought for others to do research on. \nProb H1 2027 is when everyone starts realizing. Maybe 40% rereating seems plausible? \n(dont have any open positions, just a thought)",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-09 14:44",
-      "url": "https://x.com/aleabitoreddit/status/2064237083510952402",
-      "stats": {
-        "views": "4,306",
-        "likes": "21",
-        "reposts": "1",
-        "bookmarks": "8"
-      }
     }
   ],
   "mentions": {
+    "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "LITE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
     "EWY": {
       "h24": 1,
       "d7": 1
@@ -133,8 +144,8 @@
       "d7": 1
     },
     "JBL": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "VICR": {
       "h24": 1,
@@ -143,10 +154,6 @@
     "GFS": {
       "h24": 1,
       "d7": 1
-    },
-    "AAOI": {
-      "h24": 2,
-      "d7": 2
     },
     "TSEM": {
       "h24": 1,
@@ -172,10 +179,6 @@
       "h24": 1,
       "d7": 1
     },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
     "COHR": {
       "h24": 1,
       "d7": 1
@@ -192,15 +195,7 @@
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
-      "h24": 2,
-      "d7": 2
-    },
     "YSS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
       "h24": 1,
       "d7": 1
     }

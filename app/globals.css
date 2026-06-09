@@ -16,6 +16,17 @@ body {
   color: #0f172a;
 }
 
+/* 研报字体（huashu C · 瑞士网格）：大数字 grotesk / 引文衬线 / 数据等宽 */
+.font-grotesk {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+.font-serif-rpt {
+  font-family: "Newsreader", ui-serif, Georgia, serif;
+}
+.font-mono-rpt {
+  font-family: "Spline Sans Mono", ui-monospace, "SF Mono", monospace;
+}
+
 /* thin scrollbars for sidebar / feed */
 .scroll-thin {
   scrollbar-width: thin;

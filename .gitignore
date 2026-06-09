@@ -10,3 +10,9 @@ next-env.d.ts
 scripts/captures/
 scripts/.realtime-state.json
 tsconfig.tsbuildinfo
+
+# huashu 设计探索 + 安装的 skill（本地用，不进仓库）
+design-demos/
+.agents/
+.claude/skills/
+skills-lock.json

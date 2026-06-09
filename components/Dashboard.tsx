@@ -215,7 +215,8 @@ export default function Dashboard({
             )}
           </div>
 
-          {/* Title block */}
+          {/* Title block（总览自带报头，故隐藏） */}
+          {activeNav !== "总览" && (
           <section className="mb-4 rounded-2xl border border-slate-200 bg-white p-4 md:p-5">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
@@ -254,6 +255,7 @@ export default function Dashboard({
               ))}
             </div>
           </section>
+          )}
 
           {/* Tab content */}
           <SectionContent
@@ -324,6 +326,7 @@ function SectionContent({
 
 /* ---------- Views ---------- */
 
+// 总览研报 · huashu C「瑞士网格 · 数据」：纸底 + Claworld 红 + 大号 grotesk 数字 + 衬线引文
 function OverviewView({
   data,
   goToStock,
@@ -331,34 +334,309 @@ function OverviewView({
   data: BloggerData;
   goToStock: (ticker: string) => void;
 }) {
+  const mp = data.mentionPerformance;
+  const tr = data.trackRecord;
+  const tweets = data.feed.filter((f) => f.type === "推文").slice(0, 3);
+  const pq = [...data.priorityQueue].slice(0, 4);
+  const pool = (data.stockPool ?? []).slice(0, 12);
+  const gainers = (mp?.topGainers ?? []).slice(0, 5);
+  const parseGain = (g: string) => Math.abs(parseFloat((g || "").replace(/[^0-9.]/g, "")) || 0);
+  const maxGain = Math.max(1, ...gainers.map((g) => parseGain(g.gain)));
+  const stamp = (data.snapshotDate || "").replace(/-/g, "·");
+  const trStats = (tr?.stats ?? []).slice(0, 4);
+
+  const RuleLabel = ({ children }: { children: React.ReactNode }) => (
+    <span className="font-mono-rpt text-[9.5px] uppercase tracking-[0.16em] text-[#8c887e]">
+      {children}
+    </span>
+  );
+
   return (
-    <>
-      <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-        {data.metrics.map((m) => (
-          <div
-            key={m.label}
-            className="rounded-xl border border-slate-200 bg-white p-4"
-          >
-            <div className="text-xs text-slate-400">{m.label}</div>
-            <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-2xl font-semibold text-slate-900">
-                {m.value}
-              </span>
-              <span className={`text-xs font-medium ${deltaClass(m.delta)}`}>
-                {m.delta}
-              </span>
+    <div className="overflow-hidden rounded-lg border border-[#d9d6cd] bg-[#f7f6f3] text-[#16140f]">
+      <div className="h-1 bg-[#cf3019]" />
+      <div className="p-5 md:p-8">
+        {/* MASTHEAD */}
+        <header className="flex flex-wrap items-start justify-between gap-5 border-b-2 border-[#16140f] pb-5">
+          <div className="flex items-center gap-3">
+            <img src={clawIcon.src} alt="Claworld" className="h-11 w-11 shrink-0 object-contain" />
+            <div>
+              <RuleLabel>Claworld · 投资研究终端</RuleLabel>
+              <h1 className="mt-1 font-serif-rpt text-[34px] font-semibold leading-none md:text-[42px]">
+                Serenity <em className="italic text-[#cf3019]">总览研报</em>
+              </h1>
             </div>
-            {m.hint && (
-              <div className="mt-1 text-[11px] text-slate-400">{m.hint}</div>
-            )}
           </div>
-        ))}
-      </section>
-      <OverviewInsightGrid data={data} goToStock={goToStock} />
-      <PriorityQueue data={data} />
-      <OverviewResearchGrid data={data} />
-      <FeedTimeline items={data.feed} title="最新信息流" />
-    </>
+          <div className="text-right">
+            <div className="font-mono-rpt text-xl tracking-tight md:text-2xl">{stamp}</div>
+            <dl className="mt-2 grid gap-1 text-[11px]">
+              {[
+                ["快照时间", `${data.snapshotTime ?? "—"} UTC`],
+                ["编纂", data.handle],
+                ["覆盖", `${data.coverage ?? "—"} 标的`],
+              ].map(([k, v]) => (
+                <div key={k} className="flex items-center justify-end gap-5">
+                  <RuleLabel>{k}</RuleLabel>
+                  <span className="font-mono-rpt text-[#16140f]">{v}</span>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </header>
+
+        {/* SUBBAR */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9d6cd] py-2.5 font-mono-rpt text-[11px] text-[#8c887e]">
+          <div className="flex items-center gap-3">
+            <span className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#cf3019]" />
+              实时数据流
+            </span>
+            <span>
+              高风险 <b className="text-[#16140f]">{data.priorityHeader?.riskCount ?? "—"}</b>
+            </span>
+            <span>/</span>
+            <span>
+              GPT 信号 <b className="text-[#16140f]">{data.priorityHeader?.gptCount ?? "—"}</b>
+            </span>
+          </div>
+          <div>第 001 期 · 总览 · 机械汇编 · 非投资建议</div>
+        </div>
+
+        {/* METRICS WALL */}
+        <section className="mt-6 grid grid-cols-2 divide-x divide-y divide-[#d9d6cd] border border-[#d9d6cd] md:grid-cols-3 xl:grid-cols-6 xl:divide-y-0">
+          {data.metrics.map((m) => (
+            <div key={m.label} className="px-4 py-4">
+              <RuleLabel>{m.label}</RuleLabel>
+              <div className="mt-2 font-grotesk text-[40px] font-medium leading-none tracking-tight">
+                {m.value}
+              </div>
+              <div className="mt-2 font-mono-rpt text-[10px] text-[#8c887e]">
+                {m.hint || m.delta}
+              </div>
+            </div>
+          ))}
+        </section>
+
+        {/* PRIORITY QUEUE + FEED */}
+        <div className="mt-8 grid gap-8 xl:grid-cols-[1.6fr_1fr]">
+          <section>
+            <div className="flex items-baseline justify-between border-b-2 border-[#16140f] pb-2">
+              <h2 className="flex items-baseline gap-3 font-serif-rpt text-lg font-semibold">
+                <span className="font-grotesk text-[#cf3019]">01</span>优先队列 · Top 信号
+              </h2>
+              <RuleLabel>观点 / 提及 / 风险</RuleLabel>
+            </div>
+            {pq.map((s) => (
+              <article key={s.ticker} className="flex gap-4 border-b border-[#d9d6cd] py-5">
+                <div className="w-9 shrink-0 font-serif-rpt text-[40px] leading-none text-[#cf3019]">
+                  {String(s.rank).padStart(2, "0")}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => goToStock(s.ticker)}
+                      className="font-grotesk text-lg font-bold tracking-tight hover:text-[#cf3019]"
+                    >
+                      {s.ticker}
+                    </button>
+                    {s.sentiment && (
+                      <span className="border border-[#d9d6cd] px-1.5 py-0.5 font-mono-rpt text-[10px] uppercase tracking-wider">
+                        {s.sentiment}
+                      </span>
+                    )}
+                    {s.riskLabel && (
+                      <span className="border border-[#cf3019]/30 bg-[#cf3019]/[0.06] px-1.5 py-0.5 font-mono-rpt text-[10px] text-[#cf3019]">
+                        {s.riskLabel}
+                      </span>
+                    )}
+                    <span className="ml-auto font-mono-rpt text-[10px] text-[#8c887e]">{s.time}</span>
+                  </div>
+                  {s.note && (
+                    <p className="mt-2 border-l-2 border-[#cf3019] pl-3 font-serif-rpt text-[14px] leading-relaxed [text-wrap:pretty]">
+                      <span className="text-[#cf3019]">「</span>
+                      {s.note}
+                      <span className="text-[#cf3019]">」</span>
+                    </p>
+                  )}
+                  <div className="mt-3 grid grid-cols-4 gap-3">
+                    {[
+                      ["提及 24h", s.mentions24h],
+                      ["提及 7d", s.mentions7d],
+                      ["来源", s.source],
+                      ["综合分", s.priority],
+                    ].map(([k, v]) => (
+                      <div key={String(k)}>
+                        <RuleLabel>{k}</RuleLabel>
+                        <div className="mt-0.5 font-mono-rpt text-[17px] font-medium tracking-tight">
+                          {v as React.ReactNode}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ))}
+          </section>
+
+          <section>
+            <div className="flex items-baseline justify-between border-b-2 border-[#16140f] pb-2">
+              <h2 className="flex items-baseline gap-3 font-serif-rpt text-lg font-semibold">
+                <span className="font-grotesk text-[#cf3019]">02</span>最新推文线索
+              </h2>
+            </div>
+            {tweets.length === 0 && (
+              <p className="py-5 font-mono-rpt text-xs text-[#8c887e]">暂无推文</p>
+            )}
+            {tweets.map((t, i) => {
+              const tickers = t.tickers ?? (t.ticker ? [t.ticker] : []);
+              return (
+                <article key={i} className="border-b border-[#d9d6cd] py-3.5">
+                  <div className="flex items-center gap-2 font-mono-rpt text-[11px]">
+                    <span className="font-medium text-[#cf3019]">{t.time}</span>
+                    {tickers.map((tk) => (
+                      <button
+                        key={tk}
+                        type="button"
+                        onClick={() => goToStock(tk)}
+                        className="text-[#8c887e] hover:text-[#cf3019]"
+                      >
+                        ${tk}
+                      </button>
+                    ))}
+                  </div>
+                  <p className="mt-1.5 font-serif-rpt text-[14px] leading-relaxed [text-wrap:pretty]">
+                    {t.body}
+                  </p>
+                  {t.stats && (
+                    <div className="mt-1.5 flex gap-4 font-mono-rpt text-[10px] text-[#8c887e]">
+                      <span>浏览 {t.stats.views ?? "0"}</span>
+                      <span>赞 {t.stats.likes ?? "0"}</span>
+                      <span>转 {t.stats.reposts ?? "0"}</span>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </section>
+        </div>
+
+        {/* PERFORMANCE */}
+        <div className="mt-8 grid gap-8 xl:grid-cols-[1.4fr_1fr]">
+          <section>
+            <div className="flex items-baseline justify-between border-b-2 border-[#16140f] pb-2">
+              <h2 className="flex items-baseline gap-3 font-serif-rpt text-lg font-semibold">
+                <span className="font-grotesk text-[#cf3019]">03</span>提及后表现 · 最大涨幅
+              </h2>
+              {mp && (
+                <RuleLabel>
+                  正收益 {mp.positiveToDate} / {mp.rows?.length ?? 0}
+                </RuleLabel>
+              )}
+            </div>
+            <div className="mt-4 grid gap-2.5">
+              {gainers.map((g, i) => (
+                <div key={g.ticker} className="flex items-center gap-3">
+                  <span className="w-4 font-mono-rpt text-[11px] text-[#8c887e]">{i + 1}</span>
+                  <button
+                    type="button"
+                    onClick={() => goToStock(g.ticker)}
+                    className="w-16 text-left font-grotesk text-sm font-semibold hover:text-[#cf3019]"
+                  >
+                    ${g.ticker}
+                  </button>
+                  <div className="h-2 flex-1 bg-[#eceae3]">
+                    <div
+                      className="h-full bg-[#cf3019]"
+                      style={{ width: `${(parseGain(g.gain) / maxGain) * 100}%` }}
+                    />
+                  </div>
+                  <span className="w-20 text-right font-mono-rpt text-sm font-semibold tracking-tight text-[#cf3019]">
+                    {g.gain}
+                  </span>
+                </div>
+              ))}
+            </div>
+            {mp?.chains && mp.chains.length > 0 && (
+              <div className="mt-5 grid grid-cols-2 gap-x-6 gap-y-1.5 border-t border-[#d9d6cd] pt-4 sm:grid-cols-3">
+                {mp.chains.map((c) => (
+                  <div key={c.name} className="flex items-center justify-between gap-2">
+                    <span className="truncate font-mono-rpt text-[11px] text-[#8c887e]">{c.name}</span>
+                    <span className="font-mono-rpt text-[12px] font-medium">{c.count}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </section>
+
+          <section>
+            <div className="flex items-baseline justify-between border-b-2 border-[#16140f] pb-2">
+              <h2 className="flex items-baseline gap-3 font-serif-rpt text-lg font-semibold">
+                <span className="font-grotesk text-[#cf3019]">04</span>战绩
+              </h2>
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-5">
+              {trStats.map((s) => (
+                <div key={s.label}>
+                  <div className="font-grotesk text-[32px] font-medium leading-none tracking-tight text-[#cf3019]">
+                    {s.value}
+                  </div>
+                  <div className="mt-2 font-mono-rpt text-[10px] text-[#8c887e]">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        {/* STOCK POOL */}
+        {pool.length > 0 && (
+          <section className="mt-8">
+            <div className="flex items-baseline justify-between border-b-2 border-[#16140f] pb-2">
+              <h2 className="flex items-baseline gap-3 font-serif-rpt text-lg font-semibold">
+                <span className="font-grotesk text-[#cf3019]">05</span>股票池样本
+              </h2>
+              <RuleLabel>队列 / 立场 / 提及 / 分数</RuleLabel>
+            </div>
+            <div className="mt-3 overflow-x-auto">
+              <table className="w-full border-collapse font-mono-rpt text-[11.5px]">
+                <thead>
+                  <tr className="border-b border-[#d9d6cd] text-left text-[#8c887e]">
+                    {["标的", "队列", "立场", "24h", "7d", "30d", "新闻", "分数"].map((h) => (
+                      <th key={h} className="px-2 py-2 font-normal uppercase tracking-wider">
+                        {h}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {pool.map((s) => (
+                    <tr
+                      key={s.ticker}
+                      className="cursor-pointer border-b border-[#eceae3] hover:bg-[#fffefb]"
+                      onClick={() => goToStock(s.ticker)}
+                    >
+                      <td className="px-2 py-2 font-grotesk text-[12px] font-semibold">${s.ticker}</td>
+                      <td className="px-2 py-2 text-[#8c887e]">{s.queue}</td>
+                      <td className="px-2 py-2">{s.stance}</td>
+                      <td className="px-2 py-2">{s.mentions24h}</td>
+                      <td className="px-2 py-2">{s.mentions7d}</td>
+                      <td className="px-2 py-2">{s.mentions30d}</td>
+                      <td className="px-2 py-2">{s.news}</td>
+                      <td className="px-2 py-2 font-semibold text-[#cf3019]">{s.score}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+        {/* COLOPHON */}
+        <footer className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-[#d9d6cd] pt-4 font-mono-rpt text-[10px] text-[#8c887e]">
+          <span>Claworld · Serenity 投研终端 · 数据机械汇编自公开来源</span>
+          <span>⚠️ 仅信息提示，非投资建议</span>
+        </footer>
+      </div>
+    </div>
   );
 }
 

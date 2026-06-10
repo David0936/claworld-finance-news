@@ -9,199 +9,115 @@
   "fetchedAt": "2026-06-10 09:00",
   "feed": [
     {
-      "time": "06-10 09:33",
+      "time": "06-10 15:20",
+      "type": "推文",
+      "ticker": "SIVE",
+      "tickers": [
+        "SIVE"
+      ],
+      "title": "推文线索 · SIVE",
+      "body": "Yep, Blackrock has now entered $SIVE positions as passive owners following index listing.\nFidelity Research has shown up as starting direct positions of Sivers too.\nRemember when JP Morgan showed up last month with small positions…\nThen bought ~5.25% of the company? \nThis looks like US institutions validated Sivers’s position in photonics and are trying to accumulate positions.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-10 15:20",
+      "url": "https://x.com/aleabitoreddit/status/2064608597343125931",
+      "stats": {
+        "views": "334",
+        "likes": "7",
+        "reposts": "1",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-10 13:11",
       "type": "推文",
       "ticker": "NVDA",
       "tickers": [
-        "NVDA",
-        "LITE",
-        "MU"
+        "NVDA"
       ],
       "title": "推文线索 · NVDA",
-      "body": "CPO scale out earlier than expected:\n> Foxconn: est. units register upward and optical switches shipped early to $NVDA \nCPO scale up timelines from $LITE Mizuho Technology Conference today:\n“The company expects to start shipping Scale-Up optical products in the second half of 2027, with formal volume ramp-up in 2028”\nSVP $NVDA networking: “We’re going to ramp up CPO second half of this year”. No delay indications.\nI’m gonna go ahead and trust industry projections. Where they all reiterate faster timelines for scale out CPO H2 onward. And scale up CPO H2 2027 onward (with main growth happening 2028)\nOver a questionable motive analyst firm that said $MU had no share of HBM4 Rubin (causing a selloff)\nWhere micron went out shortly later to into enter mass production. (Triple digit return shortly after)\nI think people going long on temporary bridge architectures from this incorrect report won’t be too happy. \nAppreciate the buying opportunity though.",
+      "body": "If you want a TLDR of today:\n> be $NVDA, $5T company. Force shift to 800V DC and CPO\n> analyst: I don’t think u can do it in time!\n> market: “I don’t trust Nvidia, time to sell everything”\n> Nvidia and Lumentum executives after: Bullish on CPO, timelines accelerating.\n???",
       "author": "@aleabitoreddit",
-      "datetime": "2026-06-10 09:33",
-      "url": "https://x.com/aleabitoreddit/status/2064521404859719681",
+      "datetime": "2026-06-10 13:11",
+      "url": "https://x.com/aleabitoreddit/status/2064576200211861981",
       "stats": {
-        "views": "5,910",
-        "likes": "86",
+        "views": "5,687",
+        "likes": "100",
+        "reposts": "7",
+        "bookmarks": "7"
+      }
+    },
+    {
+      "time": "06-10 12:29",
+      "type": "推文",
+      "ticker": "LITE",
+      "tickers": [
+        "LITE",
+        "NVDA"
+      ],
+      "title": "推文线索 · LITE",
+      "body": "$LITE Management Speech from Mizuho Technology at today’s conference.\nThe company expects to start shipping CPO scale up optical products in the second half of 2027.\nWith formal ramp up in 2028.\nNo delays, as this aligns with previous timelines shared.\nSo today, we also got confirmation from\n$NVDA SVP no delays on CPO scale out timelines H2 2026, and they’re beginning mass production.\nAnd $LITE management also stated no delays on CPO scale up timeline.\nThe leading companies in Nvidia and Lumentum probably know their own timelines the better than incorrect analyst reports telling them no. \nAnd both are incredibly bullish on TAM and opportunities.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-10 12:29",
+      "url": "https://x.com/aleabitoreddit/status/2064565558432190724",
+      "stats": {
+        "views": "3,700",
+        "likes": "11",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-10 12:14",
+      "type": "推文",
+      "ticker": "LITE",
+      "tickers": [
+        "LITE",
+        "NVDA"
+      ],
+      "title": "推文线索 · LITE",
+      "body": "$LITE Management Speech from Mizuho Technology at today’s conference.\n“For the first time, they systemically outlined the roadmap” for the next 3-5 years.\n- “The company expects to start shipping scale up optical products in the second half of 2027 with formal ramp up in 2028”\n- “This aligns closely to long term framework $LITE previously shared”\nToday we got confirmation from\n$NVDA SVP no delays on their scale out program H2 2026.\nAnd $LITE management no delays on H2 2027 into 2028 volume ramp scale up timeline.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-10 12:14",
+      "url": "https://x.com/aleabitoreddit/status/2064561790378475752",
+      "stats": {
+        "views": "0",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-10 11:43",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "$NVDA Networking Senior Vice President refuting recent analyst reports on delays:\n- “ the most exciting stuff is co-packaged optics.”\n- There is no delay in H2 CPO product delivery schedule. \n- CPO switch will enter mass production and begin ramping up customer deliveries as planned in the second half of 2026\nThis was a media article, original interview source credit should have been credited to Tae Kim / Computex. \nSomething fun to note too was this quote “Gilad was VERY enthusiastic about the CPO ramp from Nvidia.” \nBoth near term and long term.\nYeah… I’m extremely bullish on CPO alongside Nvidia.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-10 11:43",
+      "url": "https://x.com/aleabitoreddit/status/2064554061253451815",
+      "stats": {
+        "views": "2,529",
+        "likes": "60",
         "reposts": "8",
-        "bookmarks": "15"
-      }
-    },
-    {
-      "time": "06-09 22:57",
-      "type": "推文",
-      "ticker": "AAOI",
-      "tickers": [
-        "AAOI",
-        "LITE",
-        "SIVE"
-      ],
-      "title": "推文线索 · AAOI",
-      "body": "I don’t quite think photonics from $AAOI to $LITE or $SIVE are disappearing anytime soon…\nJust extremely volatile.\nAnyway, curious what other people are buying today?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-09 22:57",
-      "url": "https://x.com/aleabitoreddit/status/2064361170270933269",
-      "stats": {
-        "views": "8,183",
-        "likes": "121",
-        "reposts": "9",
-        "bookmarks": "13"
-      }
-    },
-    {
-      "time": "06-09 21:54",
-      "type": "推文",
-      "ticker": "EWY",
-      "tickers": [
-        "EWY"
-      ],
-      "title": "推文线索 · EWY",
-      "body": "$EWY 32% IV into 58% IV expansion trade.\nInto underlying SK Hynix / Samsung increase way ITM.\nWas such a goated call? (~383% return)\nHad way too many great ideas this year… \nStill super proud of predicting South Korea index volatility increase due to memory concentration",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-09 21:54",
-      "url": "https://x.com/aleabitoreddit/status/2064345296226890026",
-      "stats": {
-        "views": "12K",
-        "likes": "88",
-        "reposts": "4",
-        "bookmarks": "8"
-      }
-    },
-    {
-      "time": "06-09 19:52",
-      "type": "推文",
-      "ticker": "ASX",
-      "tickers": [
-        "ASX",
-        "JBL",
-        "VICR",
-        "GFS",
-        "AAOI",
-        "TSEM",
-        "FN",
-        "CLS",
-        "NBIS",
-        "NOK",
-        "AMKR",
-        "LITE",
-        "COHR",
-        "ARM",
-        "MRVL"
-      ],
-      "title": "推文线索 · ASX",
-      "body": "Names like:\n- $ASX\n- Sumitomo Electric\n- $JBL\n- $VICR\n- $GFS \n- $AAOI \n- AlChip \n- $TSEM\n- $FN\n- Furukawa Electric\n- $CLS\n- $NBIS\n- $NOK\n- $AMKR\n- $LITE\n- $COHR\nOff the top of my head.\nSo basically, AI exposure trading in the $10-100B range.\nLikely have compelling ROI right now compared to indexes or $ARM to $MRVL that ran quite a bit? \n(Just a disclosure, only have financial interest in NBIS/TSEM/AAOI above)\nI mention a lot of smaller ideas, but that’s just to chase outsized returns.\nStill feels like many of these have room to go.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-09 19:52",
-      "url": "https://x.com/aleabitoreddit/status/2064314680521507114",
-      "stats": {
-        "views": "12K",
-        "likes": "76",
-        "reposts": "10",
-        "bookmarks": "72"
-      }
-    },
-    {
-      "time": "06-09 16:37",
-      "type": "推文",
-      "ticker": "IREN",
-      "tickers": [
-        "IREN"
-      ],
-      "title": "推文线索 · IREN",
-      "body": "Given my recent popularity, might be a good time to put out a PSA. \nEarly followers have known this from the start:\n1. I don't do any paid promotions, paid marketing, or accept outside gifts. \nBut I appreciate all the recent outreach from companies!\nIf you see or engage with something online related to any type of payment, it's fabricated for engagement or a scammer. \nThe reason I don't want to is because I'm just posting on X for fun, and when money is involved it turns into a job (which I don't want it to feel like).\nAlso, well off personally so I've never felt influenced by anyone outside.\n2. The only \"paid\" thing I have is $1 subscriptions. That's all. \nFrom the very start, I've never taken a single penny outside of X subscriptions/creator sharing. Which is why I say in my bio: \n\"I only use X, beware of imposters.\" \nAnyone approaching you to share an external community or app is a scammer or imposter. \nIt's just very frustrating that people still fall for these impersonators. \n3. I'm just one person posting my thoughts online. \n-> Not some institution or Illuminati team. \nQuality of research is \"high\" because I have a technical background. And I genuinely do this as a hobby researching supply chain ideas. \nThere's not some \"hidden\" motive like a paid research group from Asia, it's just fun lol. \n4. I will always disclose positions if I have them or if I don't. Very open and transparent about it. \nWith Chinese equities I'm just posting research in hope it benefits people find conviction in critical companies in global supply chains. \nI don't have any positions / any financial incentives (so I can be impartial), and haven't privately discussed with anyone about ideas I post beforehand. \nMaybe it happens in Asia, but in the US it's highly illegal to be running groups or getting paid to post about companies. \nI'm just posting my ideas for free without outside influence, in case others like the idea. \nIt probably seems odd, but I'm doing this as a hobby and for fulfillment of helping others. \n5. I'm staying anonymous so I can just freely post my ideas online. \nReason being is after I first posted negative things about $IREN, I would have a lot of personal IRL threats and harassment from dozens of accounts for me to stop.\nDon't want any personal safety or people around me to be at risk for just publishing free research online. \nAnyway, goal is to help out retail investors with free information synthesis; rather than just selling that directly to institutions. \nI'm sure this positive sum model might anger people along the way (who have expensive paywalls, or financial incentives) that might feel threatened by information democratization. \nBut genuinely just sharing day-to-day thoughts for free.\nVery surprised by recent popularity but it helps me distribute compelling ideas to more people. \nAnd grateful Elon / X gave me an opportunity through X.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-09 16:37",
-      "url": "https://x.com/aleabitoreddit/status/2064265545529307560",
-      "stats": {
-        "views": "5,867",
-        "likes": "158",
-        "reposts": "4",
-        "bookmarks": "5"
+        "bookmarks": "4"
       }
     }
   ],
   "mentions": {
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LITE": {
-      "h24": 3,
-      "d7": 3
-    },
-    "MU": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AAOI": {
-      "h24": 2,
-      "d7": 2
-    },
     "SIVE": {
       "h24": 1,
       "d7": 1
     },
-    "EWY": {
-      "h24": 1,
-      "d7": 1
+    "NVDA": {
+      "h24": 4,
+      "d7": 4
     },
-    "ASX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "JBL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "VICR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "GFS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSEM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "FN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CLS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NOK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AMKR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "COHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ARM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MRVL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
-      "h24": 1,
-      "d7": 1
+    "LITE": {
+      "h24": 2,
+      "d7": 2
     }
   },
   "metrics": [

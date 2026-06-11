@@ -9,6 +9,63 @@
   "fetchedAt": "2026-06-11 09:00",
   "feed": [
     {
+      "time": "06-11 16:46",
+      "type": "推文",
+      "ticker": "LPK",
+      "tickers": [
+        "LPK"
+      ],
+      "title": "推文线索 · LPK",
+      "body": "Just thought this was interesting: $LPK is an unknown SpaceX supplier.\nYou can find it in SpaceX US import logs. \nIt's fun information discovery ahead of Space'x IPO this week. Though, not sure what the exact contract entails. \nDisclosure: I have positions in LPK, NFA, credit to my follower Albert_TheVoid for the DM!\nEspecially since everyone seems to be talking about about SpaceX with Velo... \nJust a fun, new direct relationship between $LPK and SpaceX if people want to do more digging.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-11 16:46",
+      "url": "https://x.com/aleabitoreddit/status/2064992691902140603",
+      "stats": {
+        "views": "233",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-11 16:11",
+      "type": "推文",
+      "ticker": "SIVE",
+      "tickers": [
+        "SIVE"
+      ],
+      "title": "推文线索 · SIVE",
+      "body": "I like $SIVE",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-11 16:11",
+      "url": "https://x.com/aleabitoreddit/status/2064983882802565169",
+      "stats": {
+        "views": "4,209",
+        "likes": "175",
+        "reposts": "7",
+        "bookmarks": "3"
+      }
+    },
+    {
+      "time": "06-11 13:27",
+      "type": "推文",
+      "ticker": "AXTI",
+      "tickers": [
+        "AXTI"
+      ],
+      "title": "推文线索 · AXTI",
+      "body": "Oh look… a new report by Reuters shows China’s control over InP threatens the AI DC buildout.\nWho could have guessed $AXTI would have been a major point of failure?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-11 13:27",
+      "url": "https://x.com/aleabitoreddit/status/2064942505553170886",
+      "stats": {
+        "views": "3,177",
+        "likes": "1",
+        "reposts": "1",
+        "bookmarks": "0"
+      }
+    },
+    {
       "time": "06-11 11:18",
       "type": "推文",
       "ticker": "SOI",
@@ -51,80 +108,28 @@
         "reposts": "1",
         "bookmarks": "8"
       }
-    },
-    {
-      "time": "06-11 00:07",
-      "type": "推文",
-      "ticker": "SNDK",
-      "tickers": [
-        "SNDK"
-      ],
-      "title": "推文线索 · SNDK",
-      "body": "Just in case you weren’t aware…\nThe broader index is down a significant -3-4%。\nStocks don’t move in a straight lineup unless you’re $SNDK. \nAnd are largely affected by wider selloffs. \nCurious what my follower portfolios look like you’re green this week + long only?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-11 00:07",
-      "url": "https://x.com/aleabitoreddit/status/2064741308460351493",
-      "stats": {
-        "views": "12K",
-        "likes": "83",
-        "reposts": "7",
-        "bookmarks": "3"
-      }
-    },
-    {
-      "time": "06-10 21:44",
-      "type": "推文",
-      "ticker": "LITE",
-      "tickers": [
-        "LITE",
-        "AAOI",
-        "SIVE"
-      ],
-      "title": "推文线索 · LITE",
-      "body": "Glad optical players from $LITE to $AAOI and $SIVE are slightly recovering as they should.\nThe initial selloff was just stupid.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-10 21:44",
-      "url": "https://x.com/aleabitoreddit/status/2064705380933074945",
-      "stats": {
-        "views": "52",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "06-10 18:47",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA",
-        "MU"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "Morgan Stanley: $NVDA has denied the reports 800V DC has been pushed back.\nRecent SemiAnalysis reports run contrary to our own checks at Computex.\nBro this has gotta be the dumbest CPO/800V selloff I’ve seen.\nSince the selloff from their claim $MU had 0 share of Nvidia HBM4",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-10 18:47",
-      "url": "https://x.com/aleabitoreddit/status/2064660831405805648",
-      "stats": {
-        "views": "7,766",
-        "likes": "85",
-        "reposts": "7",
-        "bookmarks": "7"
-      }
     }
   ],
   "mentions": {
+    "LPK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
     "SOI": {
       "h24": 1,
       "d7": 1
     },
     "AAOI": {
-      "h24": 2,
-      "d7": 2
-    },
-    "SIVE": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "NBIS": {
       "h24": 1,
@@ -135,26 +140,14 @@
       "d7": 1
     },
     "NVDA": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "TSM": {
       "h24": 1,
       "d7": 1
     },
     "HIMX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SNDK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MU": {
       "h24": 1,
       "d7": 1
     }

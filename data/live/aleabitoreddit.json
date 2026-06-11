@@ -9,6 +9,94 @@
   "fetchedAt": "2026-06-11 21:01",
   "feed": [
     {
+      "time": "06-12 02:19",
+      "type": "推文",
+      "ticker": "SNDK",
+      "tickers": [
+        "SNDK",
+        "MRVL",
+        "LITE"
+      ],
+      "title": "推文线索 · SNDK",
+      "body": "Just in case you’re wondering why indexes + individual names like $SNDK to $MRVL to $LITE are green now.\nTrump just cancelled attacks on Iran.\nThis market is so volatile…",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-12 02:19",
+      "url": "https://x.com/aleabitoreddit/status/2065136761077158061",
+      "stats": {
+        "views": "3,955",
+        "likes": "60",
+        "reposts": "4",
+        "bookmarks": "3"
+      }
+    },
+    {
+      "time": "06-12 01:54",
+      "type": "推文",
+      "ticker": "WULF",
+      "tickers": [
+        "WULF",
+        "CIFR",
+        "WYFI",
+        "HUT"
+      ],
+      "title": "推文线索 · WULF",
+      "body": "New Anthropic news looks like a potential tailwind for the Neocloud colo sector.\nSuch as $WULF, $CIFR, $WYFI, $HUT and others (not named yet). \nAs Anthropic is pursuing its first DC leases. \n\"The AI company has signed more than a dozen letters of intent with U.S. developers\" per The Information.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-12 01:54",
+      "url": "https://x.com/aleabitoreddit/status/2065130589204992048",
+      "stats": {
+        "views": "3,925",
+        "likes": "79",
+        "reposts": "3",
+        "bookmarks": "21"
+      }
+    },
+    {
+      "time": "06-12 00:49",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "If you haven’t noticed too with my other investment themes with 800V DC and CPO recently.\nIt’s investing in $NVDA, America’s national champion in AI, and securing their supply chains. \nMany things feel technologically difficult with yields to substrate supply. \nPeople can always bear post laser capacity or export control bottlenecks and tell people to short Nvidia’s supply chains due to difficulties. \nBut by investing in the critical companies to give them more capex spend for FAU capacity / yields.\nOr funding upstream red phosphorus/InP substrate capacity or SiC/GaN capacity. \nIt builds up Western supply chains to make what’s technologically challenging, possible.\nAlso I believe in Jensen.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-12 00:49",
+      "url": "https://x.com/aleabitoreddit/status/2065114293767741950",
+      "stats": {
+        "views": "551",
+        "likes": "2",
+        "reposts": "1",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-12 00:13",
+      "type": "推文",
+      "ticker": "AAOI",
+      "tickers": [
+        "AAOI",
+        "INTC",
+        "IQE",
+        "XFAB",
+        "MU",
+        "WOLF",
+        "SOI",
+        "SIVE"
+      ],
+      "title": "推文线索 · AAOI",
+      "body": "Markets should be cheering on domestic champions like $AAOI. \nSince it's ideal to support critical AI infra from laser fab to production in the US, rather than being a bear.\nFeels like everyone just outsources transceivers to Asia like Malaysia or Thailand...\nWith $INTC, $IQE, $XFAB, $MU, $WOLF, $SOI, $SIVE, and others... \nIf you haven't noticed by now, they're all critical to US supply chains. And every one of them are getting subsidies for securing Western supply chains. \nBefore a major trade was to short developing US/Western equities, then hedge with subsidized foreign ones. \nAs seen with the energy/solar firms that went bankrupt, this backfired a lot on US AI infrastructure years later with the power grid. \nI wanted to help change this mindset, since I believe it's very positive sum to invest in building up critical Western supply chains like photonics today. \nEspecially if $AAOI hits their $471m/month projections after reshoring their production to America. \nInstead of hoping they fail and calling critical nodes in the supply chains memestocks/bubbles, maybe it's good to change mindsets a bit so we don't see a repeat of the US Solar sector years later. \nUS/EU don't just hand out subsidies or CHIPS act grants to anyone.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-12 00:13",
+      "url": "https://x.com/aleabitoreddit/status/2065105141238489398",
+      "stats": {
+        "views": "4,118",
+        "likes": "80",
+        "reposts": "4",
+        "bookmarks": "10"
+      }
+    },
+    {
       "time": "06-11 23:05",
       "type": "推文",
       "ticker": "META",
@@ -28,90 +116,73 @@
         "reposts": "7",
         "bookmarks": "4"
       }
-    },
-    {
-      "time": "06-11 22:07",
-      "type": "推文",
-      "ticker": "SPCX",
-      "tickers": [
-        "SPCX"
-      ],
-      "title": "推文线索 · SPCX",
-      "body": "Woah, Frankfurt Bank strategists say:\n8% of US current-account deficit could be refinanced in a single day by overseas demand for SpaceX ( $SPCX ) shares.\nExcited to see how markets react around a Mega-IPO... \nDon't think there's been any historical precedence like this yet?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-11 22:07",
-      "url": "https://x.com/aleabitoreddit/status/2065073494220849660",
-      "stats": {
-        "views": "7,143",
-        "likes": "90",
-        "reposts": "4",
-        "bookmarks": "5"
-      }
-    },
-    {
-      "time": "06-11 18:40",
-      "type": "推文",
-      "ticker": "RDDT",
-      "tickers": [
-        "RDDT",
-        "RKLB",
-        "HOOD"
-      ],
-      "title": "推文线索 · RDDT",
-      "body": "There was interesting research published called \"Democratization of Retail Trading\".\nThat did a study on 1.6 Million $RDDT WSB comments. \nand found: \n1. \"WSB outperformed almost all investment banks at detecting top-performing stocks.\"\n2. \"Their average returns compete with the best investment banks and outperform them in certain cases.\"\nTheir conclusion? \n\"We conclude that WSB may indeed constitute a freely accessible, valuable source of investment advice.\"\nI do find WSB is really early to names like $RKLB, $HOOD, and others, but often get timing extremely wrong (with options). \nI think X is where all the alpha is at nowadays.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-11 18:40",
-      "url": "https://x.com/aleabitoreddit/status/2065021329275855277",
-      "stats": {
-        "views": "0",
-        "likes": "15",
-        "reposts": "0",
-        "bookmarks": "1"
-      }
-    },
-    {
-      "time": "06-11 17:54",
-      "type": "推文",
-      "ticker": "XFAB",
-      "tickers": [
-        "XFAB",
-        "TSEM",
-        "GFS",
-        "NVDA"
-      ],
-      "title": "推文线索 · XFAB",
-      "body": "Why do I keep getting these questions!!! \n$XFAB is building a Silicon Photonics foundry alternative to $TSEM and $GFS. And has Europe backing it + $NVDA evaluations. \nIt takes time... Like October 2026, should finish up development. \nThen 2027 production scaled into 2028 (mass production), since they've been working on it since 2023. \nEveryone thinks it’s a depressed automaker supplier right now. And thankfully with European names they tend to look at TTM revenue over forward growth. \nSo somehow it’s leading EU’s efforts to create a $TSEM silicon photonics foundry + supply chain at ~€1.1B MC? \nThat R&D directors from ASE cite + others as future CPO routes.\nI’m might just really early to a lot of things, but of course most of the risk/reward comes from taking a little leap of faith in seeing it commercialized. \nOtherwise people can take the de-risked route with Tower directly (which I also wrote a thesis on awhile back and also like).",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-11 17:54",
-      "url": "https://x.com/aleabitoreddit/status/2065009883133644963",
-      "stats": {
-        "views": "5,563",
-        "likes": "53",
-        "reposts": "6",
-        "bookmarks": "12"
-      }
-    },
-    {
-      "time": "06-11 16:46",
-      "type": "推文",
-      "ticker": "LPK",
-      "tickers": [
-        "LPK"
-      ],
-      "title": "推文线索 · LPK",
-      "body": "Just thought this was interesting: $LPK is an unknown SpaceX supplier.\nYou can find it in SpaceX US import logs. \nIt's fun information discovery ahead of Space'x IPO this week. Though, not sure what the exact contract entails. \nDisclosure: I have positions in LPK, NFA, credit to my follower Albert_TheVoid for the DM!\nEspecially since everyone seems to be talking about about SpaceX with Velo... \nJust a fun, new direct relationship between $LPK and SpaceX if people want to do more digging.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-11 16:46",
-      "url": "https://x.com/aleabitoreddit/status/2064992691902140603",
-      "stats": {
-        "views": "233",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MRVL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WULF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CIFR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WYFI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "HUT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "INTC": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "XFAB": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WOLF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 1,
+      "d7": 1
+    },
     "META": {
       "h24": 1,
       "d7": 1
@@ -121,38 +192,6 @@
       "d7": 1
     },
     "SPCX": {
-      "h24": 2,
-      "d7": 2
-    },
-    "RDDT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "RKLB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "HOOD": {
-      "h24": 1,
-      "d7": 1
-    },
-    "XFAB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSEM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "GFS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LPK": {
       "h24": 1,
       "d7": 1
     }

@@ -9,6 +9,25 @@
   "fetchedAt": "2026-06-12 21:01",
   "feed": [
     {
+      "time": "06-12 23:55",
+      "type": "推文",
+      "ticker": "SPCX",
+      "tickers": [
+        "SPCX"
+      ],
+      "title": "推文线索 · SPCX",
+      "body": "$SPCX is now trading! \nAnd it’s now over $2.15T+ MC.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-12 23:55",
+      "url": "https://x.com/aleabitoreddit/status/2065462946785030506",
+      "stats": {
+        "views": "5,700",
+        "likes": "115",
+        "reposts": "4",
+        "bookmarks": "1"
+      }
+    },
+    {
       "time": "06-12 22:00",
       "type": "推文",
       "ticker": "SNDK",
@@ -85,80 +104,30 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "06-12 12:26",
-      "type": "推文",
-      "ticker": "ALAB",
-      "tickers": [
-        "ALAB",
-        "LITE",
-        "AAOI",
-        "NBIS",
-        "RKLB",
-        "TSM",
-        "SIVE",
-        "AXTI"
-      ],
-      "title": "推文线索 · ALAB",
-      "body": "Just some reflection, my core high conviction ideas from 2025 aged super well!\nFrom \n$ALAB: $97-> $372\n$LITE: $330 -> $904\n$AAOI: $30 -> $175\nAnd others like $NBIS, $RKLB, and $TSM!\nThis was back when I had close to no followers! \nI got some nuances slightly off before more information was made public. Lost conviction on ALAB along the way with optical transitions.\nBut this was back when AAOI and others were small $3B companies (~$14B now).\nSo maybe some others in the same range today like $SIVE should get some more attention?\nBut I’m happy a lot of them aged super well. \nAnd I think a large part of my recent following growth is just other seeing my ideas like $AXTI get validated over time.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-12 12:26",
-      "url": "https://x.com/aleabitoreddit/status/2065289672356745561",
-      "stats": {
-        "views": "523",
-        "likes": "6",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SPCX": {
+      "h24": 2,
+      "d7": 2
+    },
     "SNDK": {
       "h24": 1,
       "d7": 1
     },
-    "SPCX": {
+    "SIVE": {
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
-      "h24": 2,
-      "d7": 2
-    },
     "TSM": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "IQE": {
       "h24": 1,
       "d7": 1
     },
     "MTSI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ALAB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AAOI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "RKLB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AXTI": {
       "h24": 1,
       "d7": 1
     }

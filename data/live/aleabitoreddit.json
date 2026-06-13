@@ -9,6 +9,25 @@
   "fetchedAt": "2026-06-13 09:00",
   "feed": [
     {
+      "time": "06-13 12:20",
+      "type": "推文",
+      "ticker": "AXTI",
+      "tickers": [
+        "AXTI"
+      ],
+      "title": "推文线索 · AXTI",
+      "body": "The AI supremacy Wars begins.\nThink a lot of the upstream supply chain bottlenecks caused by each Country export controlling each other (eg. $AXTI)\nShould present some interesting opportunities in the near future.\nThat being said, Anthropic was getting distilled left and right in Singapore -> China and others.\nHot take, but steps like this do help preserve American dominance in AI, keeping the most advanced model at home. \nI don’t think Superintelligence should be global access, since we’re starting to get into uncharted territories.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-13 12:20",
+      "url": "https://x.com/aleabitoreddit/status/2065650434644304165",
+      "stats": {
+        "views": "4,351",
+        "likes": "46",
+        "reposts": "0",
+        "bookmarks": "9"
+      }
+    },
+    {
       "time": "06-12 23:55",
       "type": "推文",
       "ticker": "SPCX",
@@ -84,29 +103,13 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "06-12 15:22",
-      "type": "推文",
-      "ticker": "IQE",
-      "tickers": [
-        "IQE",
-        "MTSI"
-      ],
-      "title": "推文线索 · IQE",
-      "body": "VPEC new price hikes on Epiwafers today. \nPositive bottleneck read through on companies like $IQE and Landmark (3081) in terms of pricing power/demand for epiwafers.\nThis follows $MTSI investment into IQE to secure capacity, and shows how important some of these chokepoints are. \n(disclosure: have positions in IQE)",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-12 15:22",
-      "url": "https://x.com/aleabitoreddit/status/2065333919252418913",
-      "stats": {
-        "views": "266",
-        "likes": "1",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
     "SPCX": {
       "h24": 2,
       "d7": 2
@@ -120,14 +123,6 @@
       "d7": 1
     },
     "TSM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IQE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MTSI": {
       "h24": 1,
       "d7": 1
     }

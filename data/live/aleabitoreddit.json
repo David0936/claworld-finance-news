@@ -9,6 +9,33 @@
   "fetchedAt": "2026-06-14 21:01",
   "feed": [
     {
+      "time": "06-14 23:27",
+      "type": "推文",
+      "ticker": "SPCE",
+      "tickers": [
+        "SPCE",
+        "SPCX",
+        "SIVE",
+        "JBL",
+        "GFS",
+        "AXTI",
+        "IREN",
+        "LITE",
+        "AAOI"
+      ],
+      "title": "推文线索 · SPCE",
+      "body": "This is gonna upset a lot of people: \nBut TA is astrology for traders.\nIt's confirmation bias + trading human psychology about entries. \nKinda like how people frontran $SPCE from $SPCX IPO expecting retail to mess up tickers by trading psychology. \n$SIVE didn't go up 1900% because of the golden cross space comet firebreathing dragon candle that someone is trying to sell for $499. \nIt's because markets are pricing in future revenue from $JBL, $GFS that got announced. \n$AXTI didn't go up 8000% because the golden waterfall candle alert sounded back at $8. \nit's because of InP substrate, game theory on ASP hikes, export controls, photonics demand, and others. \nIf you want to figure out psychologically what other regards are believing, you use TA. \nBut for determining the actual upside... nah\nPeople have been drawing $120+ TAs on $IREN for the past idk how many months none of that crap matters when there's a $6B ATM that needs to be bought through first.\nIt's by theme (eg. $LITE to $AAOI relations), any news catalysts that affect forward revenue, projections, macro news, earnings, float dynamics, and so on. \nThen you can just derive what MC that company should be at. \nSo for entry points, sure you can use TA. \nFor determining where the stock heads, just throw the tyrannosaurs rex omega-green candle indicator out the window.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-14 23:27",
+      "url": "https://x.com/aleabitoreddit/status/2066180704661356593",
+      "stats": {
+        "views": "7,644",
+        "likes": "109",
+        "reposts": "7",
+        "bookmarks": "23"
+      }
+    },
+    {
       "time": "06-14 09:43",
       "type": "推文",
       "ticker": "",
@@ -82,45 +109,46 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "06-13 18:03",
-      "type": "推文",
-      "ticker": "TSM",
-      "tickers": [
-        "TSM"
-      ],
-      "title": "推文线索 · TSM",
-      "body": "Okay my fellow Koreans, it's been awhile. \nFoosung (093370, ~$1.2B MC) looks like a massive beneficiary soon. \nBasically China export controlled Japan, causing their WF₆ supply chain to go down.\nMeaning 25% of the world's supply required for SK Hynix, Samsung, $TSM go bye bye. \nIf you remember the Straight of Homuz with Oil, that's a lot. \nFoosung's importance just shot through the roof given from some est. they're 10% of the supply chain? \nSo that number goes up, massive bottleneck for demand. Then this looks like the best pure play beneficiary outside of China (even if precursors pricing are rough). \nDon't have positions, just wanted to publish an idea.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-13 18:03",
-      "url": "https://x.com/aleabitoreddit/status/2065736884752703865",
-      "stats": {
-        "views": "0",
-        "likes": "3",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
-    "SPCX": {
+    "SPCE": {
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
+    "SPCX": {
       "h24": 2,
       "d7": 2
     },
-    "SOI": {
+    "SIVE": {
+      "h24": 3,
+      "d7": 3
+    },
+    "JBL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GFS": {
       "h24": 1,
       "d7": 1
     },
     "AXTI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "IREN": {
       "h24": 1,
       "d7": 1
     },
-    "TSM": {
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SOI": {
       "h24": 1,
       "d7": 1
     }

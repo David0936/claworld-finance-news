@@ -9,6 +9,63 @@
   "fetchedAt": "2026-06-15 09:00",
   "feed": [
     {
+      "time": "06-15 16:18",
+      "type": "推文",
+      "ticker": "IQE",
+      "tickers": [
+        "IQE"
+      ],
+      "title": "推文线索 · IQE",
+      "body": "Ur welcome with $IQE",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-15 16:18",
+      "url": "https://x.com/aleabitoreddit/status/2066435132471513578",
+      "stats": {
+        "views": "0",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-15 15:25",
+      "type": "推文",
+      "ticker": "IQE",
+      "tickers": [
+        "IQE",
+        "TSEM",
+        "MTSI"
+      ],
+      "title": "推文线索 · IQE",
+      "body": "Wow, $IQE and $TSEM sign a multi year InP epiwafer deal.\nRemember I told you all IQE was important to Western optical supply chains back at $12?\n$MTSI had to go out of their way to secure their supply with IQE.\nNow there’s another critical deal with Tower Semi.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-15 15:25",
+      "url": "https://x.com/aleabitoreddit/status/2066421816793714938",
+      "stats": {
+        "views": "6,378",
+        "likes": "39",
+        "reposts": "5",
+        "bookmarks": "5"
+      }
+    },
+    {
+      "time": "06-15 14:15",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "I did say Foosung (093370) was going to be a major winner from the bottleneck created by Chinese export controls on Japan…\nMost people chase 7.5% index returns, yet random bottlenecks spotted might be 21% in a day lol",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-15 14:15",
+      "url": "https://x.com/aleabitoreddit/status/2066404298163154976",
+      "stats": {
+        "views": "8,585",
+        "likes": "71",
+        "reposts": "1",
+        "bookmarks": "5"
+      }
+    },
+    {
       "time": "06-15 11:21",
       "type": "推文",
       "ticker": "WOLF",
@@ -51,127 +108,42 @@
         "reposts": "7",
         "bookmarks": "15"
       }
-    },
-    {
-      "time": "06-15 09:24",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA",
-        "GOOGL",
-        "VRT"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "$NVDA and $GOOGL lead 800V DC ahead of schedule. \n\"Ahead of schedule\", pulled up to Q3 2026 with small volume shipments starting . \n- Delta Electronics (2308), $VRT\n- Song Chuan Precision (7788)\n- Schneider Electric, Eaton, Siemens.\nAll flagged as beneficiaries. \n\"Market sources indicate that Nvidia’s Vera Rubin platform and Google’s next-generation AI data centers will be the first to adopt the technology\"\nSource: Commercial Times \nThe power semi trade should be happy to hear this.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-15 09:24",
-      "url": "https://x.com/aleabitoreddit/status/2066331049605627951",
-      "stats": {
-        "views": "7,508",
-        "likes": "54",
-        "reposts": "4",
-        "bookmarks": "18"
-      }
-    },
-    {
-      "time": "06-14 23:27",
-      "type": "推文",
-      "ticker": "SPCE",
-      "tickers": [
-        "SPCE",
-        "SPCX",
-        "SIVE",
-        "JBL",
-        "GFS",
-        "AXTI",
-        "IREN",
-        "LITE",
-        "AAOI"
-      ],
-      "title": "推文线索 · SPCE",
-      "body": "This is gonna upset a lot of people: \nBut TA is astrology for traders.\nIt's confirmation bias + trading human psychology about entries. \nKinda like how people frontran $SPCE from $SPCX IPO expecting retail to mess up tickers by trading psychology. \n$SIVE didn't go up 1900% because of the golden cross space comet firebreathing dragon candle that someone is trying to sell for $499. \nIt's because markets are pricing in future revenue from $JBL, $GFS that got announced. \n$AXTI didn't go up 8000% because the golden waterfall candle alert sounded back at $8. \nit's because of InP substrate, game theory on ASP hikes, export controls, photonics demand, and others. \nIf you want to figure out psychologically what other regards are believing, you use TA. \nBut for determining the actual upside... nah\nPeople have been drawing $120+ TAs on $IREN for the past idk how many months none of that crap matters when there's a $6B ATM that needs to be bought through first.\nIt's by theme (eg. $LITE to $AAOI relations), any news catalysts that affect forward revenue, projections, macro news, earnings, float dynamics, and so on. \nThen you can just derive what MC that company should be at. \nSo for entry points, sure you can use TA. \nFor determining where the stock heads, just throw the tyrannosaurs rex omega-green candle indicator out the window.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-14 23:27",
-      "url": "https://x.com/aleabitoreddit/status/2066180704661356593",
-      "stats": {
-        "views": "7,644",
-        "likes": "109",
-        "reposts": "7",
-        "bookmarks": "23"
-      }
-    },
-    {
-      "time": "06-14 09:43",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "Do people in Sweden have a hard time making plans for lunch a day in advance?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-14 09:43",
-      "url": "https://x.com/aleabitoreddit/status/2065973347897557093",
-      "stats": {
-        "views": "2,033",
-        "likes": "30",
-        "reposts": "1",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
+    "IQE": {
+      "h24": 3,
+      "d7": 3
+    },
+    "TSEM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MTSI": {
+      "h24": 1,
+      "d7": 1
+    },
     "WOLF": {
       "h24": 1,
       "d7": 1
     },
     "LITE": {
-      "h24": 3,
-      "d7": 3
+      "h24": 2,
+      "d7": 2
     },
     "SPCX": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "AXTI": {
-      "h24": 2,
-      "d7": 2
-    },
-    "IQE": {
       "h24": 1,
       "d7": 1
     },
     "AAOI": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "SIVE": {
-      "h24": 2,
-      "d7": 2
-    },
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "GOOGL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "VRT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SPCE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "JBL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "GFS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
       "h24": 1,
       "d7": 1
     }

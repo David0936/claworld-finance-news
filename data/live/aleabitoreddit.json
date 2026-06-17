@@ -9,6 +9,44 @@
   "fetchedAt": "2026-06-17 21:00",
   "feed": [
     {
+      "time": "06-17 23:46",
+      "type": "推文",
+      "ticker": "SPCX",
+      "tickers": [
+        "SPCX"
+      ],
+      "title": "推文线索 · SPCX",
+      "body": "Jim Cramer gave $SPCX his blessing.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-17 23:46",
+      "url": "https://x.com/aleabitoreddit/status/2067272647545930045",
+      "stats": {
+        "views": "8,371",
+        "likes": "112",
+        "reposts": "5",
+        "bookmarks": "2"
+      }
+    },
+    {
+      "time": "06-17 23:24",
+      "type": "推文",
+      "ticker": "AEHR",
+      "tickers": [
+        "AEHR"
+      ],
+      "title": "推文线索 · AEHR",
+      "body": "$AEHR receives follow up production order from major Silicon Photonics Customer for wafer level burn in systems.\nNow up 11.29% today to $116. \nOnly 2 months ago it was in the $30's, good times.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-17 23:24",
+      "url": "https://x.com/aleabitoreddit/status/2067267047781015579",
+      "stats": {
+        "views": "8,715",
+        "likes": "57",
+        "reposts": "7",
+        "bookmarks": "7"
+      }
+    },
+    {
       "time": "06-17 22:57",
       "type": "推文",
       "ticker": "NBIS",
@@ -65,47 +103,17 @@
         "reposts": "1",
         "bookmarks": "4"
       }
-    },
-    {
-      "time": "06-17 19:24",
-      "type": "推文",
-      "ticker": "AMD",
-      "tickers": [
-        "AMD",
-        "SIVE",
-        "AAOI"
-      ],
-      "title": "推文线索 · AMD",
-      "body": "Trendforce reports that $AMD is actively trying to secure CW laser supply with multiple major procurement orders...\nIs probably just the start of the bottleneck? \nThere's not much independent capacity in Western supply chains left other than $SIVE or $AAOI and maybe Macom. \nEspecially after Lumentum/Coherent got locked up with multi-year agreements with Nvidia. (disclosure, own Sive and aaoi)\nLumentum is already CW laser constrained and is likely buying off Japanese companies like Sumitomo/Furukawa if I had to guess per ER, and those are probably running at max capacity. \nFrom the Trendforce report, this is:\n\"to ensure that its future capacity will not be constrained by NVIDIA and other major Cloud Service Providers (CSPs).\"\nI wouldn't be surprised if other hyperscalers like Amazon, Microsoft, and others saw Nvidia / AMD signing LTAs, and are trying to secure capacity next. \nA lot of it is game theory on not getting choked out by competitors, and looks like AMD is tipping the first domino after Nvidia.\nBut my opinion is that this just goes and show how invaluable this CW laser chokepoint is and the companies are inside it.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-17 19:24",
-      "url": "https://x.com/aleabitoreddit/status/2067206734427697196",
-      "stats": {
-        "views": "436",
-        "likes": "7",
-        "reposts": "2",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "06-17 14:40",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "European Media HATES this one trick:\nThe same ideas, just behind $2000 paywalls.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-17 14:40",
-      "url": "https://x.com/aleabitoreddit/status/2067135190640845161",
-      "stats": {
-        "views": "4,532",
-        "likes": "78",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SPCX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AEHR": {
+      "h24": 1,
+      "d7": 1
+    },
     "NBIS": {
       "h24": 1,
       "d7": 1
@@ -119,18 +127,6 @@
       "d7": 1
     },
     "LPK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AMD": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AAOI": {
       "h24": 1,
       "d7": 1
     }

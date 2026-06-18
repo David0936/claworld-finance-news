@@ -9,6 +9,25 @@
   "fetchedAt": "2026-06-18 21:00",
   "feed": [
     {
+      "time": "06-19 01:18",
+      "type": "推文",
+      "ticker": "ACMR",
+      "tickers": [
+        "ACMR"
+      ],
+      "title": "推文线索 · ACMR",
+      "body": "Anyone got a list or ideas of the biggest NAV discounts. But independently has AI growth?\nStuff more extreme end like $ACMR and WUS (2316) compared to SK Square.\nHave exposure to the ones above, just wanted to research more opportunities.\nSeems to be getting noticed recently",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-19 01:18",
+      "url": "https://x.com/aleabitoreddit/status/2067658240612262198",
+      "stats": {
+        "views": "196",
+        "likes": "8",
+        "reposts": "1",
+        "bookmarks": "4"
+      }
+    },
+    {
       "time": "06-18 23:06",
       "type": "推文",
       "ticker": "INTC",
@@ -88,28 +107,13 @@
         "reposts": "0",
         "bookmarks": "4"
       }
-    },
-    {
-      "time": "06-18 15:43",
-      "type": "推文",
-      "ticker": "ALRIB",
-      "tickers": [
-        "ALRIB"
-      ],
-      "title": "推文线索 · ALRIB",
-      "body": "$ALRIB general meeting notes came out today.\n-2nd ROSIE System expected to be delivered shortly to a leading quantum computing player” in the US.\n- They’re also intensifying BD for their products used for BTO/STO on photonics and recorded strong interest. \nJust for background, they’re the MBE duopoly with Veeco, which got re-rated heavily recently (Disclosure own Riber), with exposure to Quantum.\nPositive development overall.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-18 15:43",
-      "url": "https://x.com/aleabitoreddit/status/2067513458812473533",
-      "stats": {
-        "views": "3,410",
-        "likes": "17",
-        "reposts": "2",
-        "bookmarks": "5"
-      }
     }
   ],
   "mentions": {
+    "ACMR": {
+      "h24": 1,
+      "d7": 1
+    },
     "INTC": {
       "h24": 1,
       "d7": 1
@@ -143,10 +147,6 @@
       "d7": 1
     },
     "COHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ALRIB": {
       "h24": 1,
       "d7": 1
     }

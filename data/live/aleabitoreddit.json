@@ -9,6 +9,46 @@
   "fetchedAt": "2026-06-18 09:01",
   "feed": [
     {
+      "time": "06-18 17:38",
+      "type": "推文",
+      "ticker": "AAOI",
+      "tickers": [
+        "AAOI",
+        "SIVE",
+        "COHR"
+      ],
+      "title": "推文线索 · AAOI",
+      "body": "非常感谢中文社区对我最看好股票的投资思路进行的深度剖析！总的来说，像 $AAOI 和 $SIVE 这样的激光公司是我个人的最爱，因为它们在拓展营收方面有着极大的想象空间。它们可以不仅仅局限于销售激光器，还能制造完整的光模块 以及各种光引擎或 ELS (外部光源) 组件。又或者像 $COHR 那样，甚至可以向上游延伸进军衬底制造领域，从而实现垂直整合，并不断提升自身的毛利率和总潜在市场规模 TAM\n这其中很大一部分的关键在于要率先精准踩中投资主线，毕竟去年很多人甚至都不觉得“光子学（photonics）”能成为一个真正的热门概念。而且我认为最会让大多数人感到惊讶的是，我们目前仍处于极其早期的阶段。绝大多数的营收放量（爬坡）要到明年，也就是 2027 年的上半年乃至下半年才会真正开始！不过，能看到中文社区大家持续不断的支持，真的让我感觉非常棒。我会尽我所能，不辜负大家给我起的 “白毛股神” 这个称号。",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-18 17:38",
+      "url": "https://x.com/aleabitoreddit/status/2067542382523122001",
+      "stats": {
+        "views": "4,681",
+        "likes": "45",
+        "reposts": "0",
+        "bookmarks": "4"
+      }
+    },
+    {
+      "time": "06-18 15:43",
+      "type": "推文",
+      "ticker": "ALRIB",
+      "tickers": [
+        "ALRIB"
+      ],
+      "title": "推文线索 · ALRIB",
+      "body": "$ALRIB general meeting notes came out today.\n-2nd ROSIE System expected to be delivered shortly to a leading quantum computing player” in the US.\n- They’re also intensifying BD for their products used for BTO/STO on photonics and recorded strong interest. \nJust for background, they’re the MBE duopoly with Veeco, which got re-rated heavily recently (Disclosure own Riber), with exposure to Quantum.\nPositive development overall.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-18 15:43",
+      "url": "https://x.com/aleabitoreddit/status/2067513458812473533",
+      "stats": {
+        "views": "3,410",
+        "likes": "17",
+        "reposts": "2",
+        "bookmarks": "5"
+      }
+    },
+    {
       "time": "06-18 10:10",
       "type": "推文",
       "ticker": "",
@@ -60,61 +100,26 @@
         "reposts": "5",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "06-17 23:24",
-      "type": "推文",
-      "ticker": "AEHR",
-      "tickers": [
-        "AEHR"
-      ],
-      "title": "推文线索 · AEHR",
-      "body": "$AEHR receives follow up production order from major Silicon Photonics Customer for wafer level burn in systems.\nNow up 11.29% today to $116. \nOnly 2 months ago it was in the $30's, good times.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-17 23:24",
-      "url": "https://x.com/aleabitoreddit/status/2067267047781015579",
-      "stats": {
-        "views": "8,715",
-        "likes": "57",
-        "reposts": "7",
-        "bookmarks": "7"
-      }
-    },
-    {
-      "time": "06-17 22:57",
-      "type": "推文",
-      "ticker": "NBIS",
-      "tickers": [
-        "NBIS",
-        "IREN"
-      ],
-      "title": "推文线索 · NBIS",
-      "body": "And 7 months later... $NBIS is all time highs. \nWhile $IREN bagholders are still funding the $6,000,000,000 ATM and stuck at the same price back in November. \nGuess this settles the debate?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-17 22:57",
-      "url": "https://x.com/aleabitoreddit/status/2067260268166713561",
-      "stats": {
-        "views": "5,601",
-        "likes": "80",
-        "reposts": "9",
-        "bookmarks": "3"
-      }
     }
   ],
   "mentions": {
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "COHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ALRIB": {
+      "h24": 1,
+      "d7": 1
+    },
     "SPCX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AEHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
       "h24": 1,
       "d7": 1
     }

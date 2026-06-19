@@ -9,6 +9,40 @@
   "fetchedAt": "2026-06-19 09:01",
   "feed": [
     {
+      "time": "06-19 17:04",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Bernstein is basically the institutional version of Jim Cramer:\nTells retail Kioxia looks like it’s going to crash, gives a -50% PT.\nBunch of retail sells.\nStock proceeds to skyrocket right after, with another +12% today.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-19 17:04",
+      "url": "https://x.com/aleabitoreddit/status/2067896191338311750",
+      "stats": {
+        "views": "66",
+        "likes": "1",
+        "reposts": "2",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-19 12:15",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Just a random thought, maybe someone can do a startup to solve this:\nInteresting trend I’m seeing is human-recognized content farm spam sites like “Ad Hoc News”.\nFlooding tens of old/repeated misleading AI news every day on specific companies for views.\nBut it’s treated highly + fresh to AI retrieval. So LLMs like Gemini get polluted citing that data.\nThen you have people without technical backgrounds like college students making writeups on things they don’t understand, using AI.\nThen LLMs get polluted in training/retrieval with that too, so you see people conflating the wrong technical nuance like comparing single channels of a cw dfb laser array vs. single high power lasers outputs.\nSo you have a feedback loop of low tier AI feeding into frontier AI. With model retrieval getting contaminated.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-19 12:15",
+      "url": "https://x.com/aleabitoreddit/status/2067823653883113578",
+      "stats": {
+        "views": "941",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "2"
+      }
+    },
+    {
       "time": "06-19 10:22",
       "type": "推文",
       "ticker": "ASML",
@@ -65,46 +99,6 @@
         "reposts": "5",
         "bookmarks": "3"
       }
-    },
-    {
-      "time": "06-18 22:54",
-      "type": "推文",
-      "ticker": "MU",
-      "tickers": [
-        "MU",
-        "SNDK",
-        "EWY"
-      ],
-      "title": "推文线索 · MU",
-      "body": "Just a reminder: 99% of X was bearish on memory 3 months ago...\nSince then:\n$MU $380 -> $1122 (+195.26%)\n$SNDK $565 -> $2155 (+281.42%)\n$EWY $132 -> $219 (+65.91%)\nSK Hynix 849K -> 2.685M KRW (+215.5%)\nSamsung 172K -> 362K KRW (+110.7%)\nIf you see a bunch of projections on memory names like Samsung becoming the most profitable company in the world in 2028. \nMight be a good idea to think independently outside of the narratives at the time like \"Oil, LNG, Helium, Iran, etc.\"\nProbably same thing now with optical names and their projections into 2027, 2028. \nI do think photonics and memory are the 2 top themes though, with optics being very early into the supercycle.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-18 22:54",
-      "url": "https://x.com/aleabitoreddit/status/2067621883525394768",
-      "stats": {
-        "views": "3",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "06-18 21:45",
-      "type": "推文",
-      "ticker": "SPCX",
-      "tickers": [
-        "SPCX"
-      ],
-      "title": "推文线索 · SPCX",
-      "body": "I think Jim Cramer’s law needs to be studied in history books.\nEven $SPCX can’t withstand his blessing.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-18 21:45",
-      "url": "https://x.com/aleabitoreddit/status/2067604528959238272",
-      "stats": {
-        "views": "9,749",
-        "likes": "125",
-        "reposts": "5",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
@@ -121,22 +115,6 @@
       "d7": 1
     },
     "AAPL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MU": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SNDK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "EWY": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SPCX": {
       "h24": 1,
       "d7": 1
     }

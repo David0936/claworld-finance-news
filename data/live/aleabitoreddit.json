@@ -9,6 +9,28 @@
   "fetchedAt": "2026-06-20 09:01",
   "feed": [
     {
+      "time": "06-20 11:52",
+      "type": "推文",
+      "ticker": "CAMT",
+      "tickers": [
+        "CAMT",
+        "WYFI",
+        "SIVE",
+        "ACMR"
+      ],
+      "title": "推文线索 · CAMT",
+      "body": "In terms of personal notes:\n1. Priortech owns 21% of $CAMT, ~1.35x their MC, seems more like holding co.\n2. Bit Digital people kept shouting, but NAV discount is not clean $WYFI, lot of dilution + not AI parent. \n3. Wistron (3231) is the best one I've seen since $SIVE + Ayar + Wiwynn are one of my favorite trio. \n~$16.2B MC, Q1 revenue up a ridiculous amount with 144% Y/Y growth. \nOwns 35.46% of Wiwynn, which is ~0.66x of MC. I'd expect Wiwynn to keep on growing. \n4. Sin-American Silicon 5483 does own 46.64% of GlobalWafers (6488). \nMC is $3.5B, stake value is ~$7.9B, but not exactly growing too fast independently, though it's heavily trading heavily discount to NAV. \n5. Iljin Holdings owns 42.99% of Iljin Electric, it's ~$0.22B MC vs. ~$1.13B NAV holding. This was transformer/cable DC related. \nBut again idk if I trust korean stocks for NAV unlock, probably better for activist investors. \n6. Simmtech Holdings was ~$0.17B MC vs. ~$1.0B of parent, which also looks ridiculous. \nSo 6x+ NAV. PCB substrate related name. Also another prob don't trust korean governance type name. \nI think both $ACMR and WUS have H-Share subsidiary listing soon, and those were the biggest NAV discounts with independent growth. \nThen you have a highly successful activist going after WUS so I'd expect some middle ground there. \nSo maybe I'll put more concentration into those on top of what I already own Monday, we'll see. And Wistron was growing very fast independently. \nI'm still doing research, normally this goes in shower thoughts since I haven't formally made a conclusion, but thought others might be interested.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-20 11:52",
+      "url": "https://x.com/aleabitoreddit/status/2068180134667182470",
+      "stats": {
+        "views": "4,750",
+        "likes": "28",
+        "reposts": "3",
+        "bookmarks": "12"
+      }
+    },
+    {
       "time": "06-19 21:11",
       "type": "推文",
       "ticker": "LPK",
@@ -107,26 +129,25 @@
         "reposts": "0",
         "bookmarks": "8"
       }
-    },
-    {
-      "time": "06-19 17:04",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "Bernstein is basically the institutional version of Jim Cramer:\nTells retail Kioxia looks like it’s going to crash, gives a -50% PT.\nBunch of retail sells.\nStock proceeds to skyrocket right after, with another +12% today.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-19 17:04",
-      "url": "https://x.com/aleabitoreddit/status/2067896191338311750",
-      "stats": {
-        "views": "66",
-        "likes": "1",
-        "reposts": "2",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "CAMT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WYFI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "ACMR": {
+      "h24": 1,
+      "d7": 1
+    },
     "LPK": {
       "h24": 3,
       "d7": 3
@@ -140,10 +161,6 @@
       "d7": 1
     },
     "EWY": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
       "h24": 1,
       "d7": 1
     },

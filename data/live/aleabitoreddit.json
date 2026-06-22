@@ -9,6 +9,26 @@
   "fetchedAt": "2026-06-20 21:00",
   "feed": [
     {
+      "time": "06-22 18:33",
+      "type": "推文",
+      "ticker": "LPK",
+      "tickers": [
+        "LPK",
+        "AEHR"
+      ],
+      "title": "推文线索 · LPK",
+      "body": "As for $LPK: Maybe $3B-$5B seems reasonable when they fully volume ramp if I had to guess. \nFeels more asymmetrical to me personally since it's just a waiting game and they have the customers for glass substrates. \nSmall machine supplier chokepoints usually cap out from TAM though and don't go to $20B+ unless you're ASML or hold many chokepoints like KLAC. \nNot many dominant \"monopolies\" like these out there right before volume ramp this small: \nMaybe you have stuff like: \n- Aixtron (MOCVD) ~$8B\n- Towa (compression bonding) ~$2B \n- Techwing (memory handler/cube probes) ~$1.5B\n- MSScorps (CPO inspection), but pre-ramp. $850M\n- Riber (quantum MBE), very pre-ramp ~$350M \nThen LPK Laser for glass core substrates (about to ramp) at ~$730M, which thematically should have more premiums than memory. (eg. major advanced packaging shift, CPO adjacent, etc). \nLot of obscure chemical monopolies I know of, but those don't get as much attention cause BOM is much lower than equipment. \nBut for lpk you have:\neg. “80% of customers among major global players have selected LPKF equipment”. \n70% of LIDE market share target for TGV in the glass-core ramp, should be very material. (disclosure: own, the listed names above aside from techwing/aixtron, NFI).\nJust kinda the path they go if you follow $AEHR at ~$3.5B now:\n- <$500m: \"Oh they have no customers!\" \n---> (probably somewhere in the middle here).\n- < $1.5B: \"Maybe volume comes soon!\" \n- $3B+ onward: \"Looks like they're starting to volume ramp. \nJust a lesson for the cycle of the chokepoint machine suppliers from my personal experiences.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-22 18:33",
+      "url": "https://x.com/aleabitoreddit/status/2069005921318281566",
+      "stats": {
+        "views": "18K",
+        "likes": "29",
+        "reposts": "3",
+        "bookmarks": "8"
+      }
+    },
+    {
       "time": "06-22 10:14",
       "type": "推文",
       "ticker": "SIVE",
@@ -83,40 +103,24 @@
         "reposts": "120",
         "bookmarks": "456"
       }
-    },
-    {
-      "time": "06-21 15:53",
-      "type": "推文",
-      "ticker": "AAOI",
-      "tickers": [
-        "AAOI",
-        "COHR",
-        "LITE",
-        "SIVE",
-        "JBL",
-        "GFS"
-      ],
-      "title": "推文线索 · AAOI",
-      "body": "I've been getting a lot of questions about OE Solutions (138080) recently. \nHere's my research/thoughts so far on it: \nThey're a small Korean optical transceiver company, similar to $AAOI. \nAnd they've become one the few EML players in the world (eg. $COHR, $LITE, Mitsubishi, Source, Sumitomo), with scarce 100G EML laser capacity for 800G/1.6T. \nOE appears to be trying to make the full transceiver, not just the EML. They also have finished ELSFP CPO products, with UHP CW lasers, which is sampling Q3. \nLikewise, OE also seems to be building out the full ELSFP, rather than selling CW laser dies, so that's more market share. \nSo you can think of it as Korean AAOI but EML instead of CW, and less capacity/qualifications. And playing catch-up to the rest of the world. \nHowever in terms of timelines:\n1. 23dBm cooled ELSFP samples start in Q3 2026\n2. Sales base for 800G, and 2027 1.6T \"full force\"\n3. Late H2 2027, H1 2028 onward probably their ELSFP enters the volume production. \nAnd it seems they're working on 200G EML capability from their investor snipper 2025 OE IR snippet referenced “100GBaud EML / 200G PAM\". This seems promising given their IP/demos.\nELS has just been unveiled recently, sampling starts Q3. 800G/1.6T Optical transceivers are also likely 2027.\nSo this is basically Korea's sovereign photonics player, playing catchup to $LITE, $AAOI, and the bigger players.\n(Disclosure: I have positions in OE Solutions (138080). This is fundamental research for informational purposes, not financial advice).\nAs for OE solution valuations: \n1. Doesn't seem like there's confirmed customers yet for these growth verticals. \n2. Probably not many people understood what they're building toward yet. \n3. Yields data kinda uncertain\n1. Customers: We're actually in a major EML/CW laser shortage, so any independent capacity will be sought after. I personally don't think they'll have a hard time finding customers here. I would assume anything they make might get bought out and would get extra support from Korea. \n2. Institutional support: Probably not much since it doesn't meet threshold for many US institution given MC size + KR listing. I also don't think many people understood what they're building yet. \n3. Yields/Capacity: OE's disclosed wafer/module utilization is low (i remember was around 31% underutilized off the top of my head), so there's enough material revenue they can generate before they need to spend on capex. \nI'm also not sure about EML/CW and other yields. Probably need to go ask the company. \nIs this some random crap co? No. It's been doing optical transceivers stuff for more than 20Y, has R&D in the U.S. and Netherlands. \nBut their entire AI growth vertical seems to happen next year, and hinges mainly around capacity/yields.\nAnd I personally think the EML/CW tech is probably worth a lot more than their current MC, if it were an acquisition target. \nEspecially from a larger player that wanted to vertically integrate EML for pluggables and CW lasers for CPO. \nMarkets are probably waiting on more certainty around qualifications after Q3 sampling or earnings projections announcements. \nTLDR on thoughts:\nSome of my friends discussed this last year, was probably way too early. Saw it got many comments 2 months ago, still too early. \nI still think now is early, but later in Q3-Q4 might be more interesting. I personally think it's a lot higher risk than a major CPO player like $SIVE, that's embedded in Ayar, $JBL, $GFS, and many other hyperscaler suppliers. Which also has Win Semi and others de-risking volume ramp. \nAs OE Solutions looks like a new player trying to build out an $AAOI for the optical transceivers but sovereign EML and CW laser production for CPO products. \nAnd there's a lot of answered questions around customers + volume ramp, which presents material risk. \nBut if you believe Korea can build out an 800G/1.6T transceiver EML supply chain and ELSFP with CW lasers. \nWith OE Solutions, it might be worth taking a look into. Still researching the company tho, just initial thoughts.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-21 15:53",
-      "url": "https://x.com/aleabitoreddit/status/2068603148311404902",
-      "stats": {
-        "views": "467K",
-        "likes": "950",
-        "reposts": "72",
-        "bookmarks": "512"
-      }
     }
   ],
   "mentions": {
-    "SIVE": {
-      "h24": 3,
-      "d7": 3
+    "LPK": {
+      "h24": 1,
+      "d7": 1
     },
-    "JBL": {
+    "AEHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
       "h24": 2,
       "d7": 2
+    },
+    "JBL": {
+      "h24": 1,
+      "d7": 1
     },
     "POET": {
       "h24": 1,
@@ -127,18 +131,6 @@
       "d7": 1
     },
     "GFS": {
-      "h24": 2,
-      "d7": 2
-    },
-    "AAOI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "COHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LITE": {
       "h24": 1,
       "d7": 1
     }

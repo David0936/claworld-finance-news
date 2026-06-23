@@ -9,6 +9,40 @@
   "fetchedAt": "2026-06-23 21:00",
   "feed": [
     {
+      "time": "06-23 23:42",
+      "type": "推文",
+      "ticker": "KORU",
+      "tickers": [
+        "KORU",
+        "SOXL",
+        "IQE",
+        "DRAM",
+        "AXTI",
+        "FLNC",
+        "AAOI",
+        "SIVE",
+        "TSEM",
+        "SNDK",
+        "MU",
+        "MRVL",
+        "LITE",
+        "SOI",
+        "TSM",
+        "AMD"
+      ],
+      "title": "推文线索 · KORU",
+      "body": "Curious if anyone's portfolio is green after today's fun day. \n$KORU: -32.06%\n$SOXL: -22.98%\n$IQE: -13.58%\n$DRAM: -12.6%\n$AXTI: -12.57%\n$FLNC: -12.5%\n$AAOI: -11.2%\n$SIVE: -11.7%\n$TSEM: -10.24%\n$SNDK: -12.5%\n$MU: -11.8%\nSk Hynix: -12.35%\nSamsung: -9.6%\n$MRVL: -8.3%\n$LITE: -7.6%\n$SOI -7.15%\n$TSM: -6.1%\n$AMD: -6.04%\nFeels like anything high-beta or semis had a steep drop.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-23 23:42",
+      "url": "https://x.com/aleabitoreddit/status/2069445918114697463",
+      "stats": {
+        "views": "18K",
+        "likes": "106",
+        "reposts": "1",
+        "bookmarks": "19"
+      }
+    },
+    {
       "time": "06-23 22:39",
       "type": "推文",
       "ticker": "XFAB",
@@ -86,33 +120,74 @@
         "reposts": "4",
         "bookmarks": "4"
       }
-    },
-    {
-      "time": "06-23 18:55",
-      "type": "推文",
-      "ticker": "XFAB",
-      "tickers": [
-        "XFAB"
-      ],
-      "title": "推文线索 · XFAB",
-      "body": "$XFAB upgraded to outperform with a PT of €12.8 by Bernstein, up from €5.\nOkay I forgive you Bernstein for Kioxia and Intel.\nI still think that’s just reactive PTs off automotive recovery, SiC/power semi ramp up.\nAnd undershooting potential a lot… If markets price in the possibility of xfab moving to HVM.\nOn their silicon photonics foundry w/ photonixfab / Nvidia + LIGENTEC for TFLN on SOI.\nRegardless I’m bullish too on XFAB and curious where it heads.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-23 18:55",
-      "url": "https://x.com/aleabitoreddit/status/2069373894398743000",
-      "stats": {
-        "views": "9,732",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
-    "XFAB": {
+    "KORU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SOXL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "DRAM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "FLNC": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
       "h24": 2,
       "d7": 2
     },
+    "TSEM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
     "MU": {
+      "h24": 2,
+      "d7": 2
+    },
+    "MRVL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSM": {
+      "h24": 3,
+      "d7": 3
+    },
+    "AMD": {
+      "h24": 1,
+      "d7": 1
+    },
+    "XFAB": {
       "h24": 1,
       "d7": 1
     },
@@ -120,15 +195,7 @@
       "h24": 1,
       "d7": 1
     },
-    "TSM": {
-      "h24": 2,
-      "d7": 2
-    },
     "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
       "h24": 1,
       "d7": 1
     }

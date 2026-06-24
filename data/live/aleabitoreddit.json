@@ -9,6 +9,70 @@
   "fetchedAt": "2026-06-24 09:00",
   "feed": [
     {
+      "time": "06-24 14:52",
+      "type": "推文",
+      "ticker": "JBL",
+      "tickers": [
+        "JBL",
+        "SIVE",
+        "MRVL",
+        "MXL",
+        "TSEM"
+      ],
+      "title": "推文线索 · JBL",
+      "body": "OpenLight (private) seems to get bigger and bigger every time I look at it.\nIf you’re curious about their public ecosystem outside of Advantest:\n$JBL ( $SIVE partner ) for scaling PICs\n$MRVL and $MXL for DSPs\n$TSEM for the foundry.\n$300394.SZ / TFC Optical (OSAT/subassembly)\nCan often get exposure into private growth through public equities if you’re not an accredited investor.\nSince optical players look very interconnected.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-24 14:52",
+      "url": "https://x.com/aleabitoreddit/status/2069675057300082728",
+      "stats": {
+        "views": "14K",
+        "likes": "20",
+        "reposts": "1",
+        "bookmarks": "6"
+      }
+    },
+    {
+      "time": "06-24 13:36",
+      "type": "推文",
+      "ticker": "AMZN",
+      "tickers": [
+        "AMZN",
+        "TSLA",
+        "GOOGL"
+      ],
+      "title": "推文线索 · AMZN",
+      "body": "Don’t quite think “siphoned off” is the correct term. \nIt’s capex for massive revenue increase or margin increase down the line.\n$AMZN is probably my favorite hyperscaler right now and example to give.\nAmazon’s headcount is absurd, like ~1.57M. If the capex goes into automating their workforce with LLMs.\nThen transitioning into physical AI:\n- things from self driving (deliveries)\n- robotics (Amazon warehouses, shipping automation).\n+ revenue increase from building out AWS compute with Trainium and possibly selling chips too with the Neocloud strat.\nIt’s probably the clearest path forward compared to every hyperscaler out there. \n$TSLA optimus use case targets is extremely broad as a pitch, but Amazon already has a specific reason to scale robotics for internal opex optimization.\nAs for $GOOGL, probably 2nd right now, AI capex was necessary for defending its Google Search moat Gemini from ChatGPT\nThey also have Google Cloud revenue with efficient TPUs + can sell TPUs like Nvidia GPUs.\nGemini user volumes keep going up (despite the lack of contention in frontier benchmarks); and AI strategy to be working for ad optimization too.\nBut there’s less clear paths with physical AI stuff ig?\nMicrosoft and Meta are still trying to convince the market why capex is necessary, (we’re kinda seeing that in effect with Meta’s 30%+ Y/Y revenue growth), but doesn’t look like they’re convinced. \nAs for market narratives, Microsoft Maia seems to be behind, their AI development was stunted from OpenAi investments, so sentiment is kinda in the ground. \nBut think that will change down the road like the 180 with Google.\nI’m sure all the hyperscalers are seeing the leader effect right now:\nIf you have the leading LLM, people will keep using it. That LLM gets smarter from all the training data; and that gap might be structural.\nWhich is why everyone is kinda rushing the buildout right now, but for some the immediate incentives seem obvious.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-24 13:36",
+      "url": "https://x.com/aleabitoreddit/status/2069655980456149142",
+      "stats": {
+        "views": "56",
+        "likes": "6",
+        "reposts": "0",
+        "bookmarks": "1"
+      }
+    },
+    {
+      "time": "06-24 12:07",
+      "type": "推文",
+      "ticker": "RDDT",
+      "tickers": [
+        "RDDT",
+        "WEN"
+      ],
+      "title": "推文线索 · RDDT",
+      "body": "I find it interesting that the degens on $RDDT are starting a viral campaign to save Wendy’s ( $WEN ).\nThe US fast food burger chain.\nAnd the stock price is now up 20% overnight. \nJust for background: Wendy’s is a popular community meme, where people work behind the dumpsters after their portfolios go to 0 from 0DTE options.\n(No positions, just found it amusing) \nI wonder if it’s going to work?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-24 12:07",
+      "url": "https://x.com/aleabitoreddit/status/2069633445903675865",
+      "stats": {
+        "views": "15K",
+        "likes": "49",
+        "reposts": "5",
+        "bookmarks": "5"
+      }
+    },
+    {
       "time": "06-23 23:42",
       "type": "推文",
       "ticker": "KORU",
@@ -60,69 +124,49 @@
         "reposts": "1",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "06-23 22:08",
-      "type": "推文",
-      "ticker": "MU",
-      "tickers": [
-        "MU",
-        "INTC",
-        "TSM"
-      ],
-      "title": "推文线索 · MU",
-      "body": "Dip looks like a clear buying opportunity for me personally from $MU, $INTC, to $TSM. \nSince we got a massive drop off BS narratives like 3 rate hikes off no newly material macroeconomic data (which comes out Thursday). \nIf institutions really believed 3 rate hike sellside garbage that BofA put out:\nThey would profit off it with CME/prediction markets. \nWhich are still projecting 74% no rate hike in July. But they don't. \nSo they're feeding retail investors garbage.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-23 22:08",
-      "url": "https://x.com/aleabitoreddit/status/2069422448345518346",
-      "stats": {
-        "views": "27K",
-        "likes": "113",
-        "reposts": "8",
-        "bookmarks": "21"
-      }
-    },
-    {
-      "time": "06-23 20:38",
-      "type": "推文",
-      "ticker": "TSM",
-      "tickers": [
-        "TSM",
-        "NVDA"
-      ],
-      "title": "推文线索 · TSM",
-      "body": "Nothing is more stupid than Bloomberg copying BofA playbook with KOSPI back in March.\nAnd framing Taiwan’s $TSM ~23.6x forward p/e and $NVDA upstream supply chain as a “bubble”.\nThen using the words going into “debt” instead of “margin” + comparing Taiwan’s market to the .com bubble. \nCrap like this is why retail trust in media has dropped off a cliff in the past few years.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-23 20:38",
-      "url": "https://x.com/aleabitoreddit/status/2069399639154213281",
-      "stats": {
-        "views": "18K",
-        "likes": "77",
-        "reposts": "6",
-        "bookmarks": "5"
-      }
-    },
-    {
-      "time": "06-23 19:53",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "$SIVE + Aeva likely coded from the new PR today and SIVE + Apple.\nFor Sivers lasers powering robotics / physical AI.\n-> Sivers lasers powering Boston Dynamics Atlas via. LG Innotek for robotics\n-> Nvidia Hyperion ecosystem w/ Sivers lasers for physical AI. \nAre possible paths with Aeva.\nApple likely using Sivers also reiterated from the newer webpage￼:\n“Optical sensing modules for wearables” from biometric and health monitoring.\nThey just can’t namedrop partners due to confidentiality, but consumer sensing is probably the biggest tell.\nPhysical AI and mass consumer production with Apple would be very material to revenue.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-23 19:53",
-      "url": "https://x.com/aleabitoreddit/status/2069388279355756826",
-      "stats": {
-        "views": "3,269",
-        "likes": "40",
-        "reposts": "4",
-        "bookmarks": "4"
-      }
     }
   ],
   "mentions": {
+    "JBL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "MRVL": {
+      "h24": 2,
+      "d7": 2
+    },
+    "MXL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSEM": {
+      "h24": 2,
+      "d7": 2
+    },
+    "AMZN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSLA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GOOGL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "RDDT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WEN": {
+      "h24": 1,
+      "d7": 1
+    },
     "KORU": {
       "h24": 1,
       "d7": 1
@@ -151,23 +195,11 @@
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
-      "h24": 2,
-      "d7": 2
-    },
-    "TSEM": {
-      "h24": 1,
-      "d7": 1
-    },
     "SNDK": {
       "h24": 1,
       "d7": 1
     },
     "MU": {
-      "h24": 2,
-      "d7": 2
-    },
-    "MRVL": {
       "h24": 1,
       "d7": 1
     },
@@ -180,22 +212,14 @@
       "d7": 1
     },
     "TSM": {
-      "h24": 3,
-      "d7": 3
+      "h24": 1,
+      "d7": 1
     },
     "AMD": {
       "h24": 1,
       "d7": 1
     },
     "XFAB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
       "h24": 1,
       "d7": 1
     }

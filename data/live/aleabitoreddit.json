@@ -9,6 +9,64 @@
   "fetchedAt": "2026-06-25 09:00",
   "feed": [
     {
+      "time": "06-25 13:46",
+      "type": "推文",
+      "ticker": "WEN",
+      "tickers": [
+        "WEN",
+        "RDDT"
+      ],
+      "title": "推文线索 · WEN",
+      "body": "The $WEN meme traders made it to Global Media from Japan to US!\nThe burger fast food chain is now up ~50%, which is pretty impressive.\nFeels bad to be sidelined and see my AI memory/optical portfolio perform worse than a $RDDT memestock tho.\nDid anyone take positions?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-25 13:46",
+      "url": "https://x.com/aleabitoreddit/status/2070020727441621026",
+      "stats": {
+        "views": "16K",
+        "likes": "30",
+        "reposts": "5",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "06-25 12:56",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Global markets in a nutshell:\nJapanese Company: Active monopoly over random chokepoints in the hyperscaler AI buildout. \nValuation: $150m-$350M\nSilicon Valley: Here's a $200m for a \"Seed Round\".",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-25 12:56",
+      "url": "https://x.com/aleabitoreddit/status/2070008157892751624",
+      "stats": {
+        "views": "15K",
+        "likes": "47",
+        "reposts": "0",
+        "bookmarks": "7"
+      }
+    },
+    {
+      "time": "06-25 11:45",
+      "type": "推文",
+      "ticker": "MU",
+      "tickers": [
+        "MU",
+        "TSM",
+        "TSLA"
+      ],
+      "title": "推文线索 · MU",
+      "body": "Very interesting statement today: $MU CEO predicts a multi-decade memory demand cycle driven by humanoid robots.\n\"Humanoid robots, he says, will require roughly ten times more memory than today’s Level 2+ autonomous vehicles.\"\n\"And that demand wave is set to begin before the decade is out.\"\nSomething as well as was \"Over time, we expect the value of on-device AI combined with pent-up unit replacement demand to drive memory demand growth\"\nWhich is also another trend (Apple Intelligence is currently dog, but I'm sure we'll see innovations with localized/edge AI). \nFeels like all the industry leaders from $TSM Chairman, $TSLA Elon Musk, to $MU CEO see humanoids as the next major trend so physical AI is probably next. \nI wonder if the world is going to have enough memory. Or if we'll see enough breakthroughs to shrink memory usage.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-25 11:45",
+      "url": "https://x.com/aleabitoreddit/status/2069990311296975133",
+      "stats": {
+        "views": "2,455",
+        "likes": "19",
+        "reposts": "3",
+        "bookmarks": "8"
+      }
+    },
+    {
       "time": "06-25 10:15",
       "type": "推文",
       "ticker": "AXTI",
@@ -47,68 +105,29 @@
         "reposts": "1",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "06-25 05:16",
-      "type": "推文",
-      "ticker": "MU",
-      "tickers": [
-        "MU"
-      ],
-      "title": "推文线索 · MU",
-      "body": "Always amazing looking at $MU earnings: \nRevenue: $41.46B vs. $35.8B est.\nEPS: $25.11 vs. $20.78 est.\nForecasts:\nRevenue: $49B to $51B, vs $43.24B est \nEPS: $30.00 to $32.00, vs. $25.31.\n“Micron said on Wednesday that it has signed 16 long-term agreements”\n\"When completed, we expect approximately half or more of our company revenue to be under these\"\nLooks like memory demand has become structural…\nBut great earnings to show up the AI trade is continuing to ramp up.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-25 05:16",
-      "url": "https://x.com/aleabitoreddit/status/2069892511406100716",
-      "stats": {
-        "views": "18K",
-        "likes": "161",
-        "reposts": "10",
-        "bookmarks": "10"
-      }
-    },
-    {
-      "time": "06-24 21:53",
-      "type": "推文",
-      "ticker": "INTC",
-      "tickers": [
-        "INTC",
-        "UBER"
-      ],
-      "title": "推文线索 · INTC",
-      "body": "Nancy Pelosi just disclosed: \n- $1 million - $5 million of $INTC March 2027 calls\n- 200 $UBER March 19, 2027 call option contracts with a $50 strike price\nThis was done last month May 29th. (her husband is the active trader executing this). Just for the people who like following along Pelosi family trades.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-24 21:53",
-      "url": "https://x.com/aleabitoreddit/status/2069780882018459851",
-      "stats": {
-        "views": "8,035",
-        "likes": "37",
-        "reposts": "3",
-        "bookmarks": "2"
-      }
-    },
-    {
-      "time": "06-24 21:48",
-      "type": "推文",
-      "ticker": "INTC",
-      "tickers": [
-        "INTC",
-        "UBER"
-      ],
-      "title": "推文线索 · INTC",
-      "body": "Nancy Pelosi just disclosed: \n- $1 million - $5 million of $INTC March 2027 calls\n- 200 $UBER March 19, 2027 call option contracts with a $50 strike price\nI know a lot of people out there like following Nancy (this was done last month May 29th, Intel has appreciated quite a bit since then).",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-24 21:48",
-      "url": "https://x.com/aleabitoreddit/status/2069779605767278902",
-      "stats": {
-        "views": "28K",
-        "likes": "122",
-        "reposts": "3",
-        "bookmarks": "16"
-      }
     }
   ],
   "mentions": {
+    "WEN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "RDDT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSLA": {
+      "h24": 1,
+      "d7": 1
+    },
     "AXTI": {
       "h24": 1,
       "d7": 1
@@ -124,18 +143,6 @@
     "BABA": {
       "h24": 1,
       "d7": 1
-    },
-    "MU": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
-      "h24": 2,
-      "d7": 2
-    },
-    "UBER": {
-      "h24": 2,
-      "d7": 2
     }
   },
   "metrics": [

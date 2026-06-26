@@ -9,6 +9,26 @@
   "fetchedAt": "2026-06-26 09:00",
   "feed": [
     {
+      "time": "06-26 11:51",
+      "type": "推文",
+      "ticker": "SOI",
+      "tickers": [
+        "SOI",
+        "RKLB"
+      ],
+      "title": "推文线索 · SOI",
+      "body": "There's a global correction right now, no clue when it stops. \nKospi is down -8.18% (Sk hynix/Samsung)\nNikkei is down -4.8%\nTWSE Index is down -3.82%\nAs you've seen with $SOI or $RKLB dropping 30-40%。 \nFrom personal experience, high beta stocks get hit a lot harder, but usually frontrun index drops. \nAnd they typically recover earlier? \nAside from Korea which is typically volatile, when major indexes start correcting 3-4% a day, usually not a fun time.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-06-26 11:51",
+      "url": "https://x.com/aleabitoreddit/status/2070354308965728519",
+      "stats": {
+        "views": "62K",
+        "likes": "235",
+        "reposts": "18",
+        "bookmarks": "28"
+      }
+    },
+    {
       "time": "06-26 08:34",
       "type": "推文",
       "ticker": "AOSL",
@@ -99,29 +119,17 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "06-25 13:46",
-      "type": "推文",
-      "ticker": "WEN",
-      "tickers": [
-        "WEN",
-        "RDDT"
-      ],
-      "title": "推文线索 · WEN",
-      "body": "The $WEN meme traders made it to Global Media from Japan to US!\nThe burger fast food chain is now up ~50%, which is pretty impressive.\nFeels bad to be sidelined and see my AI memory/optical portfolio perform worse than a $RDDT memestock tho.\nDid anyone take positions?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-06-25 13:46",
-      "url": "https://x.com/aleabitoreddit/status/2070020727441621026",
-      "stats": {
-        "views": "16K",
-        "likes": "30",
-        "reposts": "5",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "RKLB": {
+      "h24": 2,
+      "d7": 2
+    },
     "AOSL": {
       "h24": 1,
       "d7": 1
@@ -131,8 +139,8 @@
       "d7": 1
     },
     "WEN": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "MU": {
       "h24": 2,
@@ -182,19 +190,11 @@
       "h24": 1,
       "d7": 1
     },
-    "RKLB": {
-      "h24": 1,
-      "d7": 1
-    },
     "PLTR": {
       "h24": 1,
       "d7": 1
     },
     "CRM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "RDDT": {
       "h24": 1,
       "d7": 1
     }

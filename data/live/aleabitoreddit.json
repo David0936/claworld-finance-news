@@ -9,6 +9,28 @@
   "fetchedAt": "2026-07-01 21:00",
   "feed": [
     {
+      "time": "07-02 01:09",
+      "type": "推文",
+      "ticker": "CCXI",
+      "tickers": [
+        "CCXI",
+        "AMZN",
+        "NVDA",
+        "TSLA"
+      ],
+      "title": "推文线索 · CCXI",
+      "body": "Just dropping these 3 slides from Agility Robotics ( $CCXI ) presentations.\nFor the US robotic program doomposters:\n1. “75% of parts” - sourced from the USA\n2. Just eyeballing the graph, looks like <$30k BOM mass production.\nPeople were just looking at the ~$145K cost. \n3. 10,000 RoboFab capacity, and they build in Salem/Pittsburgh/Fremont (USA).\nSo looks like majority US supply chains with targets of <$30K mass production\nIt does help they’re backed by $AMZN / SoftBank / Foxconn / $NVDA as investors to get this done.\nJust personal thoughts as a shareholder in $CCXI (NFA):\nMy personal biggest fear were US humanoid leaders like $TSLA were just building out their entire supply chains in China.\nSo US robotics could just be export controlled/halted down the road.\neg. South China Morning Post: ‘Optimus chain’: Chinese suppliers form the backbone of Tesla’s humanoid robot initiative and engaged with hundreds of Chinese component suppliers. \nAnd that Western companies are not able to lower costs to a competitive level + are forced to use Chinese components. \nI'm still not sure how they're going to do it but if Agility can achieve those mass production targets with that BOM cost in the USA/West. \nIt would be a great validation for Made in America US robotics programs. \nIMO the top 5 US humanoid programs right now in terms of commercialization potential are:\n1. Tesla Optimus\n2. Figure\n3. Agility Robotics\n4. Boston Dynamics (yeah KR parent)\n5. Apptronik\nTesla is a $1T+ company. Figure is private and valued around ~$39B. Owning Boston Dynamics through Hyundai is a bit messy.\nAnd I’d prefer not to invest in adversarial programs just as a personal preference.\nSo I’ve been personally excited for Agility to be listed as early as September.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-02 01:09",
+      "url": "https://x.com/aleabitoreddit/status/2072367082248040621",
+      "stats": {
+        "views": "15K",
+        "likes": "45",
+        "reposts": "2",
+        "bookmarks": "23"
+      }
+    },
+    {
       "time": "07-01 21:42",
       "type": "推文",
       "ticker": "META",
@@ -89,26 +111,25 @@
         "reposts": "0",
         "bookmarks": "7"
       }
-    },
-    {
-      "time": "07-01 16:54",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "This market feels like an ADHD goldfish with a 5 second attention span, trading popular themes. \nIt's like markets only care about physical AI and energy right now?\nAnd sold off memory and photonics that are bottlenecked past 2028?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-01 16:54",
-      "url": "https://x.com/aleabitoreddit/status/2072242322688057579",
-      "stats": {
-        "views": "101K",
-        "likes": "778",
-        "reposts": "29",
-        "bookmarks": "72"
-      }
     }
   ],
   "mentions": {
+    "CCXI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "AMZN": {
+      "h24": 2,
+      "d7": 2
+    },
+    "NVDA": {
+      "h24": 2,
+      "d7": 2
+    },
+    "TSLA": {
+      "h24": 1,
+      "d7": 1
+    },
     "META": {
       "h24": 2,
       "d7": 2
@@ -124,18 +145,6 @@
     "NBIS": {
       "h24": 2,
       "d7": 2
-    },
-    "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AMZN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
     }
   },
   "metrics": [

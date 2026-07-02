@@ -9,6 +9,44 @@
   "fetchedAt": "2026-07-02 09:00",
   "feed": [
     {
+      "time": "07-02 14:53",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META"
+      ],
+      "title": "推文线索 · META",
+      "body": "Wells Fargo: $META intent to sell excess compute is a positive signal around underlying demand and unit economics of AI.\n“Despite this shift, we don’t expect a pullback in Meta’s capex or that overall compute needs are lower”\nRegarding Neoclouds: WF thinks it validated the massive AI infra opportunity as well as acquisition opportunities. Despite any potential competition for Neoclouds. \nI’m inclined to agree with Wells Fargo here and say markets completely misunderstood Meta’s excess compute comment.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-02 14:53",
+      "url": "https://x.com/aleabitoreddit/status/2072574465763111166",
+      "stats": {
+        "views": "16K",
+        "likes": "67",
+        "reposts": "4",
+        "bookmarks": "10"
+      }
+    },
+    {
+      "time": "07-02 14:38",
+      "type": "推文",
+      "ticker": "INTC",
+      "tickers": [
+        "INTC"
+      ],
+      "title": "推文线索 · INTC",
+      "body": "I feel like Trump is probably going to like this idea:\nOpenAI discussed giving the US gov a 5% stake in its company per FT.\nIf this turns into an $INTC type situation, would be interesting if the US government becomes a soft backstop for their $1T+ in future capex/obligations.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-02 14:38",
+      "url": "https://x.com/aleabitoreddit/status/2072570681586553112",
+      "stats": {
+        "views": "12K",
+        "likes": "39",
+        "reposts": "10",
+        "bookmarks": "4"
+      }
+    },
+    {
       "time": "07-02 01:09",
       "type": "推文",
       "ticker": "CCXI",
@@ -70,73 +108,36 @@
         "reposts": "8",
         "bookmarks": "9"
       }
-    },
-    {
-      "time": "07-01 20:49",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "title": "推文线索 · META",
-      "body": "Finally, $META to build a Cloud Business to sell excess AI compute per Bloomberg.\nThought Meta should go up against GCP, Azure, and AWS eventually to increase revenue streams. \nMeta up 6.65% premarket.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-01 20:49",
-      "url": "https://x.com/aleabitoreddit/status/2072301677211009426",
-      "stats": {
-        "views": "0",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-01 19:07",
-      "type": "推文",
-      "ticker": "CCXI",
-      "tickers": [
-        "CCXI",
-        "AMZN",
-        "NVDA",
-        "GOOGL"
-      ],
-      "title": "推文线索 · CCXI",
-      "body": "Just a random thought, leading US humanoid players strangely me of the current LLM dynamics:\nAgility ( $CCXI ) kinda feels like Anthropic for robotics.\nWith $AMZN and $NVDA heavily backing it, ingrained with $GOOGL Deepmind (like TPUs). And it starts off with enterprise commercialization.\nOptimus is kinda off doing its own thing like xAI.\nSupported by Tesla/Elon and his visionary roadmap as usual.\nFigure is like ChatGPT\nWith Microsoft/OpenAI investing (kinda like Microsoft), then ended up kinda competing them by building their own VlA and setting them behind. \nBut ends up top 2 leaders anyway.\nBoston Dynamics is Gemini\nKinda started the entire humanoids thing like transformers with backflip videos.\nWith R&D supported by $GOOGL but somehow let everyone else leapfrog them in commercialization.\nAnd then there’s $NVDA just chilling, silently powering the entire humanoids ecosystem.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-01 19:07",
-      "url": "https://x.com/aleabitoreddit/status/2072275805330362648",
-      "stats": {
-        "views": "9,821",
-        "likes": "26",
-        "reposts": "0",
-        "bookmarks": "7"
-      }
     }
   ],
   "mentions": {
-    "CCXI": {
+    "META": {
       "h24": 2,
       "d7": 2
+    },
+    "INTC": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
     },
     "AMZN": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "NVDA": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "TSLA": {
       "h24": 1,
       "d7": 1
     },
-    "META": {
-      "h24": 2,
-      "d7": 2
-    },
     "GOOGL": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "CRWV": {
       "h24": 1,

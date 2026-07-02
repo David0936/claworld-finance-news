@@ -9,6 +9,83 @@
   "fetchedAt": "2026-07-02 21:00",
   "feed": [
     {
+      "time": "07-03 03:12",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "AEHR",
+        "AAOI",
+        "SIVEF",
+        "SNDK",
+        "TER",
+        "GLW",
+        "MRVL",
+        "LITE",
+        "NBIS"
+      ],
+      "title": "推文线索 · META",
+      "body": "Always a fun time seeing semi markets crash from Bloomberg report framing once again…\nUBS analyst on $META report: “this is not new news”.\nRegardless:\n$AEHR down -18.3%\n$AAOI down -17.13%\n$SIVEF down -15.4%\n$SNDK down -14.8%\n$TER down -13.8%\n$GLW down -11.4%\n$MRVL down -11.2%\n$LITE down -10.2%\n$NBIS down -7.8%\nGetting PTSD from Bloombert’s previous misleading report on AMD/Nvidia global export controls earlier this year that crashed semi stocks.\nFYI: Meta doesn’t randomly buy $48B+ worth of neocoud contracts if they overbuilt capacity and can cut capex…\nMarkets are stupid sometimes.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-03 03:12",
+      "url": "https://x.com/aleabitoreddit/status/2072760446617280650",
+      "stats": {
+        "views": "1,930",
+        "likes": "56",
+        "reposts": "6",
+        "bookmarks": "5"
+      }
+    },
+    {
+      "time": "07-03 01:57",
+      "type": "推文",
+      "ticker": "CCXI",
+      "tickers": [
+        "CCXI",
+        "TSLA",
+        "AMZN",
+        "MELI",
+        "NVDA"
+      ],
+      "title": "推文线索 · CCXI",
+      "body": "Agility Robotics is literally the #1 humanoid player in the US in terms of commercialization today imo. \nPersonal Rankings:\n1. Agility Robotics via $CCXI \n2. $TSLA Optimus ($1T+ company)\n3. Figure at $39B from 2025, likely higher now.\nWith Tesla likely taking the lead a year from now. So at $16, you have a ~$4B MC pre-money humanoid player.\nWhich is already inside $AMZN and $MELI (ideal use cases to start out, before step-functioning to general-use), with $AMZN, $NVDA, Softbank, Foxconn, and others as investors.\nNFA, but at those valuations... there's direct exposure for the first ever humanoid player today, that's likely further ahead than Figure for commercialization. \nNo hard feelings about Robostrategy, but it's over 4x+ NAV: \nWhich would value Figure at $156B... \nWhile there's the #1 commercialized humanoid player with Agility at $4B today. \nSo my personal preference is $CCXI.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-03 01:57",
+      "url": "https://x.com/aleabitoreddit/status/2072741541404406008",
+      "stats": {
+        "views": "113",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "07-03 00:56",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA",
+        "LITE",
+        "POET",
+        "COHR",
+        "AAOI",
+        "SIVE",
+        "AMD",
+        "META"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "Photonics is backed by actual revenue numbers and it's an architectural shift championed by $NVDA.\nQuantum barely has any revenue.\n$LITE is completely sold out for the next 2 years (per $POET AGM) likely starting into 2029. Lumentum is so strained that they buy CW lasers off competitors (earnings transcript)\n$COHR is bottlenecked, so they buy EML off Lumentum.\nThen, $AAOI is coming in with Made-in-America independent CW capacity, are projecting $1.4B/quarterly revenue ending H1 2027 of a stupid $9.3B MC today. \nSo all the CW capacity from independent players who have it now like $AAOI or $SIVE are likely to become scarce resources.\nMany other hyperscalers have already started LTA discussions (per Trendforce). And players like $AMD are currently talking with players such as $AAOI (Rosenblatt channel checks).\nThematically, next 2 years is 9x TAM to US$154B per GS reports, especially with 16x/45x dollar content increase in scale out/scale up.\nThen there's the overall thematic AI drop from $META, which is widely misunderstood because people conflate what \"excess capacity\" means. And as UBS mentioned, Meta planning a cloud offering is NOT NEW NEWS.\nBloomberg just has a tendency to publish information that causes doom drops across the semi sector like Nvidia export controls a few months back. \nBut I'm familiar with what I'm holding so I'm confident in these numbers playing out. \nEspecially when all the major players are sold out, the fundamentals catch up eventually.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-03 00:56",
+      "url": "https://x.com/aleabitoreddit/status/2072726120706007465",
+      "stats": {
+        "views": "4,265",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "1"
+      }
+    },
+    {
       "time": "07-02 18:34",
       "type": "推文",
       "ticker": "TSLA",
@@ -46,94 +123,86 @@
         "reposts": "0",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-02 14:53",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "title": "推文线索 · META",
-      "body": "Wells Fargo: $META intent to sell excess compute is a positive signal around underlying demand and unit economics of AI.\n“Despite this shift, we don’t expect a pullback in Meta’s capex or that overall compute needs are lower”\nRegarding Neoclouds: WF thinks it validated the massive AI infra opportunity as well as acquisition opportunities. Despite any potential competition for Neoclouds. \nI’m inclined to agree with Wells Fargo here and say markets completely misunderstood Meta’s excess compute comment.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-02 14:53",
-      "url": "https://x.com/aleabitoreddit/status/2072574465763111166",
-      "stats": {
-        "views": "16K",
-        "likes": "67",
-        "reposts": "4",
-        "bookmarks": "10"
-      }
-    },
-    {
-      "time": "07-02 14:38",
-      "type": "推文",
-      "ticker": "INTC",
-      "tickers": [
-        "INTC"
-      ],
-      "title": "推文线索 · INTC",
-      "body": "I feel like Trump is probably going to like this idea:\nOpenAI discussed giving the US gov a 5% stake in its company per FT.\nIf this turns into an $INTC type situation, would be interesting if the US government becomes a soft backstop for their $1T+ in future capex/obligations.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-02 14:38",
-      "url": "https://x.com/aleabitoreddit/status/2072570681586553112",
-      "stats": {
-        "views": "12K",
-        "likes": "39",
-        "reposts": "10",
-        "bookmarks": "4"
-      }
-    },
-    {
-      "time": "07-02 01:09",
-      "type": "推文",
-      "ticker": "CCXI",
-      "tickers": [
-        "CCXI",
-        "AMZN",
-        "NVDA",
-        "TSLA"
-      ],
-      "title": "推文线索 · CCXI",
-      "body": "Just dropping these 3 slides from Agility Robotics ( $CCXI ) presentations.\nFor the US robotic program doomposters:\n1. “75% of parts” - sourced from the USA\n2. Just eyeballing the graph, looks like <$30k BOM mass production.\nPeople were just looking at the ~$145K cost. \n3. 10,000 RoboFab capacity, and they build in Salem/Pittsburgh/Fremont (USA).\nSo looks like majority US supply chains with targets of <$30K mass production\nIt does help they’re backed by $AMZN / SoftBank / Foxconn / $NVDA as investors to get this done.\nJust personal thoughts as a shareholder in $CCXI (NFA):\nMy personal biggest fear were US humanoid leaders like $TSLA were just building out their entire supply chains in China.\nSo US robotics could just be export controlled/halted down the road.\neg. South China Morning Post: ‘Optimus chain’: Chinese suppliers form the backbone of Tesla’s humanoid robot initiative and engaged with hundreds of Chinese component suppliers. \nAnd that Western companies are not able to lower costs to a competitive level + are forced to use Chinese components. \nI'm still not sure how they're going to do it but if Agility can achieve those mass production targets with that BOM cost in the USA/West. \nIt would be a great validation for Made in America US robotics programs. \nIMO the top 5 US humanoid programs right now in terms of commercialization potential are:\n1. Tesla Optimus\n2. Figure\n3. Agility Robotics\n4. Boston Dynamics (yeah KR parent)\n5. Apptronik\nTesla is a $1T+ company. Figure is private and valued around ~$39B. Owning Boston Dynamics through Hyundai is a bit messy.\nAnd I’d prefer not to invest in adversarial programs just as a personal preference.\nSo I’ve been personally excited for Agility to be listed as early as September.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-02 01:09",
-      "url": "https://x.com/aleabitoreddit/status/2072367082248040621",
-      "stats": {
-        "views": "15K",
-        "likes": "45",
-        "reposts": "2",
-        "bookmarks": "23"
-      }
     }
   ],
   "mentions": {
-    "TSLA": {
+    "META": {
       "h24": 2,
       "d7": 2
+    },
+    "AEHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVEF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TER": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GLW": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MRVL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
     },
     "CCXI": {
       "h24": 2,
       "d7": 2
     },
-    "IREN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
-      "h24": 1,
-      "d7": 1
+    "TSLA": {
+      "h24": 2,
+      "d7": 2
     },
     "AMZN": {
       "h24": 1,
       "d7": 1
     },
+    "MELI": {
+      "h24": 1,
+      "d7": 1
+    },
     "NVDA": {
+      "h24": 2,
+      "d7": 2
+    },
+    "POET": {
+      "h24": 1,
+      "d7": 1
+    },
+    "COHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AMD": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IREN": {
       "h24": 1,
       "d7": 1
     }

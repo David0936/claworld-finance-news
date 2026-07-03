@@ -9,6 +9,25 @@
   "fetchedAt": "2026-07-03 09:00",
   "feed": [
     {
+      "time": "07-03 18:09",
+      "type": "推文",
+      "ticker": "LPK",
+      "tickers": [
+        "LPK"
+      ],
+      "title": "推文线索 · LPK",
+      "body": "So positive readthrough on the upstream glass substrate supply chain:\n- Sumitomo Chemical and Samsung Electro-Mechanics formally establish JV in Korea within the year to handle the glass core substrate business (GlaSSEM).\nMain thing was timeline/funding was finalized: \"full scale commercialization targeted H2 2027\" for the Samsung/Dongwoo JV / KRW 482.1B planned capital.\nThink the \"full scale commercialization\" is the word to highlight, since that would imply timeline moving faster than expected than starting ramp or early production H2 2027.\nSo... TGV/LIDE with $LPK (that I own)/E&R and Onto in terms of yields are just some examples of possible sector beneficiaries. \nSince companies like LPK stated in the past: “80% of customers among major global players have selected LPKF equipment” and targeted \"70% of LIDE market share target for TGV in the glass-core ramp\". \nThese players also typically have revenue pulled forward, since equipment orders during capex cycle hit before actual ramp. \nRegardless, just an update on developments.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-03 18:09",
+      "url": "https://x.com/aleabitoreddit/status/2072986020640076052",
+      "stats": {
+        "views": "7,558",
+        "likes": "5",
+        "reposts": "0",
+        "bookmarks": "2"
+      }
+    },
+    {
       "time": "07-03 14:53",
       "type": "推文",
       "ticker": "NVDA",
@@ -84,35 +103,20 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "07-03 12:38",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "title": "推文线索 · META",
-      "body": "$META: upcoming AI model “Watermelon” has caught up to OpenAI’s GPT 5.5.\nWang noted it uses an \"order of magnitude\" more compute than its predecessor “Avocado”.\nWho said they were out of the AI race again?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-03 12:38",
-      "url": "https://x.com/aleabitoreddit/status/2072902886712094919",
-      "stats": {
-        "views": "14K",
-        "likes": "76",
-        "reposts": "3",
-        "bookmarks": "4"
-      }
     }
   ],
   "mentions": {
+    "LPK": {
+      "h24": 1,
+      "d7": 1
+    },
     "NVDA": {
       "h24": 1,
       "d7": 1
     },
     "META": {
-      "h24": 3,
-      "d7": 3
+      "h24": 2,
+      "d7": 2
     },
     "NBIS": {
       "h24": 1,

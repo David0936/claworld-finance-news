@@ -9,6 +9,25 @@
   "fetchedAt": "2026-07-04 09:00",
   "feed": [
     {
+      "time": "07-04 15:18",
+      "type": "推文",
+      "ticker": "NBIS",
+      "tickers": [
+        "NBIS"
+      ],
+      "title": "推文线索 · NBIS",
+      "body": "TIL floating DC and ocean compute exists?\nApparently it’s free cooling + optimal for places in tight geography…\nIt’s going to be wild taking a cruise ship, and passing by a bunch of $NBIS or Samsung floating AI DCs one day.\nIf this ever becomes a thing like orbital compute?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-04 15:18",
+      "url": "https://x.com/aleabitoreddit/status/2073305375957541013",
+      "stats": {
+        "views": "12K",
+        "likes": "37",
+        "reposts": "0",
+        "bookmarks": "2"
+      }
+    },
+    {
       "time": "07-04 08:07",
       "type": "推文",
       "ticker": "",
@@ -81,29 +100,13 @@
         "reposts": "4",
         "bookmarks": "1"
       }
-    },
-    {
-      "time": "07-03 13:58",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META",
-        "NBIS"
-      ],
-      "title": "推文线索 · META",
-      "body": "SemiAnalysis on $META “overcapacity” and market reactions with $NBIS and others:\n“We believe Meta’s datacenter and compute will accelerate”.\n“Capex in 2027 will be shockingly high”.\nRecent global crash, especially in the photonics sector was stupid… Off misleading narratives of Meta dropping out of AI race to sell excess compute…\nWhen in fact things are likely to accelerate from Meta catching up to GPT5.5.\nI’m personally expecting a sharp V recovery, especially with the names that crashed 50%+ from this narrative.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-03 13:58",
-      "url": "https://x.com/aleabitoreddit/status/2072922974345445511",
-      "stats": {
-        "views": "13K",
-        "likes": "49",
-        "reposts": "6",
-        "bookmarks": "13"
-      }
     }
   ],
   "mentions": {
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
+    },
     "AEVA": {
       "h24": 1,
       "d7": 1
@@ -113,14 +116,6 @@
       "d7": 1
     },
     "NVDA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
       "h24": 1,
       "d7": 1
     }

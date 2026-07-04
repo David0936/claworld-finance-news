@@ -9,6 +9,26 @@
   "fetchedAt": "2026-07-04 09:00",
   "feed": [
     {
+      "time": "07-04 18:23",
+      "type": "推文",
+      "ticker": "AMZN",
+      "tickers": [
+        "AMZN",
+        "CCXI"
+      ],
+      "title": "推文线索 · AMZN",
+      "body": "Bruh, when I first tried out ChatGPT around 2023, I thought it LLMs were garbage at coding. \n3Y later, Mythos is considered a modern day “nuke” for cybersecurity. \nPeople keep saying humanoids can’t do X or Y task today like plumbing or DC wiring. No sht, but it’s about where things are heading over the few years.\nAnd it’s clear to me and VC apparently that we’ve just hit the inflection point where soon: majority of labor you think is human-only, can be replaced by robotics/humanoids. \nYou're already seeing this too with internal strategies: Remember $AMZN leaked strat planned to avoid hiring 600,000 workers by them with robots like $CCXI? \nIf you see past the \"assistive robotics\" public image framing to prevent protest, it's clear the goals is maximizing, opex efficiency. \nThe main areas I think are safe however are regulation bound (eg. Medicine), ultra specialized labor, or require human/emotional connections.\nBut I think you'll be blown away by the rate of change when frontier technologies become national security races between US and China... especially when China is currently in the lead.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-04 18:23",
+      "url": "https://x.com/aleabitoreddit/status/2073351980131754203",
+      "stats": {
+        "views": "14K",
+        "likes": "36",
+        "reposts": "3",
+        "bookmarks": "7"
+      }
+    },
+    {
       "time": "07-04 15:18",
       "type": "推文",
       "ticker": "NBIS",
@@ -81,28 +101,17 @@
         "reposts": "0",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-03 14:53",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "Be SemiAnalysis:\n- Post a scathing piece on CPO delays + optical company valuations, causing a crash.\nWhich $NVDA, analyst desks, and major optical companies refuted\n- Launch an institutional photonics ETF after optical names dropped 40-60%。",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-03 14:53",
-      "url": "https://x.com/aleabitoreddit/status/2072936659369517341",
-      "stats": {
-        "views": "3,163",
-        "likes": "22",
-        "reposts": "4",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
+    "AMZN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
+    },
     "NBIS": {
       "h24": 1,
       "d7": 1
@@ -112,10 +121,6 @@
       "d7": 1
     },
     "LPK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
       "h24": 1,
       "d7": 1
     }

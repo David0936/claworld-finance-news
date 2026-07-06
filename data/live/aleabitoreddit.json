@@ -9,6 +9,75 @@
   "fetchedAt": "2026-07-05 09:00",
   "feed": [
     {
+      "time": "07-06 04:32",
+      "type": "推文",
+      "ticker": "CCXI",
+      "tickers": [
+        "CCXI",
+        "TSLA",
+        "AMZN",
+        "FDX",
+        "GM",
+        "FORD"
+      ],
+      "title": "推文线索 · CCXI",
+      "body": "Came across an interesting report from SVRC Research called \"State of Robotics 2026\", published in April. \nWhich listed:\n1. Figure AI \n2. Agility Robotics $CCXI\n3. Apptronik \n4. $TSLA \n5. Boston Dynamics\n6. Physical Intelligence \n7. 1X Technologies\n8. $AMZN Robotics\n9. Covariant\n10. Skild AI \nAs the National Champions of the United States robotics program. \n\"The United States leads the world in where robotics is heading: Fundation models, OpenAI-style scaling laws applied to action, autonomous vehicles. \nWhile losing the race on where robotics is shipping today.\" \nThen it frames:\n1. Rare Earths Exposure: from Neodymium for motors to samarium-cobalt for high-temp applications as a critical vulnerability.\n2. Actuator dependency. Series elastic actuators, quasi-direct-drive motors, and precision reducers overwhelmingly sourced from Japan, Germany, and China\nAs one of the main vulnerabilities alongside Manufacturing velocity/data collection cost/regulations. Then their take was: \n\"With at least six well-funded US humanoid companies competing for a market still in early formation, we expect at least two significant consolidation events (acquisition or merger) in 2027\". \nWith Logistics / E-commerce (like $AMZN / $FDX) and Automotive from $GM to $FORD as being the immediate top use cases for deployment.\nI think it's just interesting to see a lot of my points I've been talking about reiterated by research firms. Regardless, I do think it's going to be a major frontier race between the US and China. \nAgility Robotics (which I own), Tesla, Figure, and Apptronik as leaders representing the USA. Competing against Unitree, AGIbot, Ubtech, and others in China.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-06 04:32",
+      "url": "https://x.com/aleabitoreddit/status/2073867745243127973",
+      "stats": {
+        "views": "192K",
+        "likes": "963",
+        "reposts": "91",
+        "bookmarks": "647"
+      }
+    },
+    {
+      "time": "07-05 23:36",
+      "type": "推文",
+      "ticker": "MU",
+      "tickers": [
+        "MU",
+        "SNDK",
+        "SIMO"
+      ],
+      "title": "推文线索 · MU",
+      "body": "Just some consolidated updates on memory: \n- $MU leads new 1.5T Yen investment in Hiroshima ~$9.3B. (bullish read through for Disco, Advantest, Resonac, Towa) since capex is localized.\n- Morgan Stanley pointed out NAND will continue to be in short supply into 2027 so $SNDK / Kioxia type players are happy alongisde $SIMO and upstream.\n- MS remains especially positive on Macronix/Winbond\n- UBS expects the average price of DDR contracts in the Q3 2026 to increase 32% | 18% Q4, vs. 17% and 12% est. \n- UBS expects NAND flash to be raised 30% from prev quarter. \n- Samsung reportedly plans 20% DRAM hike Q3. TrendForce recently forecast DRAM contract prices to rise 13 to 18 percent in the third quarter from the previous quarter, so this hike beats expectations.\nSomething to note:\nLot people see 20%... and don't think it's a lot compared to the 70-80% from previous quarters. \nBut if you hike something by 100%, then hike something by 100%, then hike something by 30%, it's a lot more than people estimate since it's compounded. Similar to tracking inflation. \nI've already made projections going into 2028 from the start of the year on my memory names... \nI'm just sitting back and watching things play out through all the \"memory optimization\" and \"they can't keep price hiking like this!\" noise.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-05 23:36",
+      "url": "https://x.com/aleabitoreddit/status/2073793206408667392",
+      "stats": {
+        "views": "363K",
+        "likes": "1,699",
+        "reposts": "98",
+        "bookmarks": "478"
+      }
+    },
+    {
+      "time": "07-05 21:38",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "AMZN",
+        "VRT",
+        "ETN",
+        "BWA",
+        "ENS"
+      ],
+      "title": "推文线索 · META",
+      "body": "Looks like there's a high power cylindrical cell / BBU cell shortage (aka: bottleneck):\n- Samsung SDI supplies the cells to Simplo, which assembles them into BBUs for $META to $AMZN. \n- As demand from data centers has increased, production of Samsung SDI's cylindrical cells has also risen sharply.\n- Industry sources said Panasonic, Samsung are experiencing supply shortages for BBU cells.\nSo main beneficiaries imo look like:\n- Samsung SDI (KRX: 006400) / Panasonic Energy as cleaneset winners\n- Murata (6981) / this keeps showing up everywhere with MLCC and others lol\n- LG Energy (KRX: 373220) / incoming\nThere's not really much direct US players? But adjacent read through like $VRT, $ETN or $BWA / $ENS. Not quite in my domain emphasis cup of tea though. \nI wouldn't conflate this as all shortages having a massive TAM, but there could be opportunities...",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-05 21:38",
+      "url": "https://x.com/aleabitoreddit/status/2073763512216899825",
+      "stats": {
+        "views": "255K",
+        "likes": "748",
+        "reposts": "63",
+        "bookmarks": "304"
+      }
+    },
+    {
       "time": "07-05 17:45",
       "type": "推文",
       "ticker": "IREN",
@@ -50,66 +119,65 @@
         "reposts": "3",
         "bookmarks": "8"
       }
-    },
-    {
-      "time": "07-05 03:19",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "an apple a day keeps the bottleneck away",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-05 03:19",
-      "url": "https://x.com/aleabitoreddit/status/2073486870315745406",
-      "stats": {
-        "views": "14K",
-        "likes": "55",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-05 02:02",
-      "type": "推文",
-      "ticker": "HIMX",
-      "tickers": [
-        "HIMX",
-        "LITE"
-      ],
-      "title": "推文线索 · HIMX",
-      "body": "UDN Money report \"殺翻光通訊後 SemiAnalysis 惹議 業界揭其劣跡 許多公司慘遭魔手\":\n- SemiAnalysis, released a report in June, questioning the timing of the launch of the CPO on the grounds of low yield and delay, which caused the photonics sector to collapse. \n- The agency then partnered with Tema to launch a photonics ETF. \n- The shares held in the ETF under the trading code LAZR happened to be the photonics stocks that were mentioned negatively in the report\n$HIMX and $LITE, which were specifically targeted negatively in their article \"Powered Down, Lights Off\", have been bought in Semianalysis and Tema's new ETF after the optical sector crash.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-05 02:02",
-      "url": "https://x.com/aleabitoreddit/status/2073467493998555192",
-      "stats": {
-        "views": "13K",
-        "likes": "39",
-        "reposts": "5",
-        "bookmarks": "4"
-      }
-    },
-    {
-      "time": "07-04 18:23",
-      "type": "推文",
-      "ticker": "AMZN",
-      "tickers": [
-        "AMZN",
-        "CCXI"
-      ],
-      "title": "推文线索 · AMZN",
-      "body": "Bruh, when I first tried out ChatGPT around 2023, I thought it LLMs were garbage at coding. \n3Y later, Mythos is considered a modern day “nuke” for cybersecurity. \nPeople keep saying humanoids can’t do X or Y task today like plumbing or DC wiring. No sht, but it’s about where things are heading over the few years.\nAnd it’s clear to me and VC apparently that we’ve just hit the inflection point where soon: majority of labor you think is human-only, can be replaced by robotics/humanoids. \nYou're already seeing this too with internal strategies: Remember $AMZN leaked strat planned to avoid hiring 600,000 workers by them with robots like $CCXI? \nIf you see past the \"assistive robotics\" public image framing to prevent protest, it's clear the goals is maximizing, opex efficiency. \nThe main areas I think are safe however are regulation bound (eg. Medicine), ultra specialized labor, or require human/emotional connections.\nBut I think you'll be blown away by the rate of change when frontier technologies become national security races between US and China... especially when China is currently in the lead.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-04 18:23",
-      "url": "https://x.com/aleabitoreddit/status/2073351980131754203",
-      "stats": {
-        "views": "14K",
-        "likes": "36",
-        "reposts": "3",
-        "bookmarks": "7"
-      }
     }
   ],
   "mentions": {
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSLA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AMZN": {
+      "h24": 3,
+      "d7": 3
+    },
+    "FDX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "FORD": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIMO": {
+      "h24": 1,
+      "d7": 1
+    },
+    "META": {
+      "h24": 1,
+      "d7": 1
+    },
+    "VRT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ETN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "BWA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ENS": {
+      "h24": 1,
+      "d7": 1
+    },
     "IREN": {
       "h24": 1,
       "d7": 1
@@ -122,10 +190,6 @@
       "h24": 1,
       "d7": 1
     },
-    "AMZN": {
-      "h24": 1,
-      "d7": 2
-    },
     "DASH": {
       "h24": 1,
       "d7": 1
@@ -136,18 +200,6 @@
     },
     "MELI": {
       "h24": 1,
-      "d7": 1
-    },
-    "HIMX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CCXI": {
-      "h24": 0,
       "d7": 1
     }
   },

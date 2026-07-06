@@ -9,6 +9,77 @@
   "fetchedAt": "2026-07-05 09:00",
   "feed": [
     {
+      "time": "07-06 17:29",
+      "type": "推文",
+      "ticker": "XFAB",
+      "tickers": [
+        "XFAB",
+        "SILEX",
+        "NVDA"
+      ],
+      "title": "推文线索 · XFAB",
+      "body": "Kelper upgrades $XFAB to \"Buy\" citing:\n- Melexis demand strengthening “week-after-week, day-after-day” (their lead customer). \n- AI giving XFAB a structural growth leg with SiC, GaN, and photonics offsetting auto cyclicality. \n- Scarce Western speciality foundries like $SILEX commanding higher multiples. \n\"X-Fab remains the cheapest specialty foundry peer on every multiple, trading at 4.8x 2027 EV/EBITDA versus a peer median of 14.5x\" \nI treat this as good signal for the core fundamentals improving like auto players. \nBut in terms of unpriced long term growth vectors, I'm personally looking at XFAB from a different angle in terms of photonics growth with photonixfab. Given $NVDA as a potential key driver. \nBut it's hard for traditional firms to price these types of active developments into valuation models until there's volume contracts.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-06 17:29",
+      "url": "https://x.com/aleabitoreddit/status/2074063175293809150",
+      "stats": {
+        "views": "14K",
+        "likes": "36",
+        "reposts": "2",
+        "bookmarks": "6"
+      }
+    },
+    {
+      "time": "07-06 16:25",
+      "type": "推文",
+      "ticker": "SIVE",
+      "tickers": [
+        "SIVE",
+        "LITE",
+        "JBL",
+        "GFS",
+        "AMD",
+        "NVDA",
+        "AEVA",
+        "POET",
+        "MRVL",
+        "FN",
+        "AAOI"
+      ],
+      "title": "推文线索 · SIVE",
+      "body": "I personally think $SIVE can be the next $LITE. \nIn the past few months alone, we've seen:\n1. Partnerships with O-Net pushing ELS into mass production\n2. $JBL 1.6T LRO mass production signals with \"relatively dramatic moats\" for pluggables using Sivers.\n3. $GFS SCALE reference level laser for hyperscalers with pluggable, NPO, CPO.\n-> -> where $AMD and others went to GFS for CPO.\n4. Ayar, which joined $NVDA NVLink for CPO\n-> -> which removed Lumentum/Macom from their website and likely made Sivers their primary laser supplier. \n-> -> AlChip likely Trainium win from Amazon price placement (Ayar's customer)\n-> -> GUC rack level design in with Ayar.\n-> -> Raised $500m for mass production by AMD, Alchip, Mediatek, and NVIDIA\n5. ~ $AEVA starting HVM H2 2026.\n6. $POET starting HVM H2 2026 with hyperscaler suppliers like Lumilens (\"top 3 hyperscaler initial customer\")\n7. TFLN + $SIVE CW Lasers with Lightium\n8. Likely direct relationships with $MRVL Celestial and CPO players like Lightelligence/Lightmatter.\n9. Multiple new undisclosed relationships for pluggables following Jabil in their quarterly transcripts\nWith new Trendforce reports that $AMD and other hyperscalers are trying to source LTAs for CW laser sources, serving as a direct catalyst for independent CW sources.\nSo when hyperscaler suppliers from Jabil to O-Net are incentivized to mass produce as many as they can: That's very material for revenue for Sivers relative to current valuations, and it looks like just a waiting game. \nEven in the past week:\n- $SIVE raised an oversubscribed institutional round for volume ramp... This is very nuanced since Sivers is fab-lite so it's not going to in-house foundry capex to scale. Likely toward Win Semi and others (they mentioned other partners too), for laser scaling + foundry allocations. \nSo this is likely signaling material for revenue ramp is coming. \n- Sivers also mentioned NASDAQ listing completion targeted in the next few quarters (probably H2 2026 or Q1 2027 is my est. timeframe). \nThis would fund M&A efforts, since it's impossible with the fundraising environments in local Swedish markets. \nAs for becoming the next $LITE:\nM&A makes their lasers more valuable, so downstream IP acqusition -> into contract manufacturing like $FN, and others to make the full 1.6T pluggable or optical engines. Is how they get there, since laser array ASP scaling that people are modeling off of, wouldn't command a $60B+ valuations. \nThere's going to be a lot of bridge architectures like NPO/pluggables, etc and noise around certain architectural delays in the meantime. \nBut markets misunderstand laser companies like $LITE, $SIVE, $AAOI and others are used across different architectures compared to if you just look at certain passive optical components. \nSo markets see \"CPO delay headlines\" algos sell off laser companies that benefit from other architectures. \nBeing included in the pluggable 1.6T ramp to CPO scale out (Which Sivers is included in), helps bridge revenue waiting gaps until scale up inflection point H2 2027. \nI'm personally holding long term, since I haven't seen a ~$1.4B company mapping to this many hyperscalers before. \nTLDR:\n- Waiting on volume ramps from different architectures to play out across their hyperscaler supplier mapping\n-> 1.6T LRO/CPO scale out late H2 2026 start into high volume ramp 2027\n-> H2 2027 CPO scale up volume ramp\n- Waiting on NASDAQ listing likely H2 2026/Q1 2027 for M&A efforts to fully take off, unless Sivers get more creative with equity financing in the meantime.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-06 16:25",
+      "url": "https://x.com/aleabitoreddit/status/2074046947434860971",
+      "stats": {
+        "views": "12K",
+        "likes": "55",
+        "reposts": "4",
+        "bookmarks": "14"
+      }
+    },
+    {
+      "time": "07-06 13:48",
+      "type": "推文",
+      "ticker": "AXTI",
+      "tickers": [
+        "AXTI",
+        "IQE",
+        "SNDK"
+      ],
+      "title": "推文线索 · AXTI",
+      "body": "Nomura’s report cites $AXTI and $IQE as the leading players. \nThen regarding ASP updates:\n- 2in InP substrate price hike 42-76%\n- 3in InP substrates price hike 78%\n- 2in EML Epiwafer price hike 50-75%\n- 3in CW Epiwafer price hike ~40%+\n- Prices lower domestically in China as expected.\nHyperscalers bottlenecking upstream photonics confirmation validation… on all fronts from pricing, demand, to supply shortages.\nMy personal expectation was that price hikes would keep going up like $SNDK given ramping optical demand. \nWe’ll see if this turns out right given another 2 years of the demand curve.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-06 13:48",
+      "url": "https://x.com/aleabitoreddit/status/2074007618046345249",
+      "stats": {
+        "views": "55",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
       "time": "07-06 04:32",
       "type": "推文",
       "ticker": "CCXI",
@@ -52,76 +123,73 @@
         "reposts": "98",
         "bookmarks": "478"
       }
-    },
-    {
-      "time": "07-05 21:38",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META",
-        "AMZN",
-        "VRT",
-        "ETN",
-        "BWA",
-        "ENS"
-      ],
-      "title": "推文线索 · META",
-      "body": "Looks like there's a high power cylindrical cell / BBU cell shortage (aka: bottleneck):\n- Samsung SDI supplies the cells to Simplo, which assembles them into BBUs for $META to $AMZN. \n- As demand from data centers has increased, production of Samsung SDI's cylindrical cells has also risen sharply.\n- Industry sources said Panasonic, Samsung are experiencing supply shortages for BBU cells.\nSo main beneficiaries imo look like:\n- Samsung SDI (KRX: 006400) / Panasonic Energy as cleaneset winners\n- Murata (6981) / this keeps showing up everywhere with MLCC and others lol\n- LG Energy (KRX: 373220) / incoming\nThere's not really much direct US players? But adjacent read through like $VRT, $ETN or $BWA / $ENS. Not quite in my domain emphasis cup of tea though. \nI wouldn't conflate this as all shortages having a massive TAM, but there could be opportunities...",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-05 21:38",
-      "url": "https://x.com/aleabitoreddit/status/2073763512216899825",
-      "stats": {
-        "views": "255K",
-        "likes": "748",
-        "reposts": "63",
-        "bookmarks": "304"
-      }
-    },
-    {
-      "time": "07-05 17:45",
-      "type": "推文",
-      "ticker": "IREN",
-      "tickers": [
-        "IREN",
-        "SHAZ"
-      ],
-      "title": "推文线索 · IREN",
-      "body": "Leaked Anthropic docs show plans to secure 1.4GW capacity from Australia, amounting to ~$21.6B.\nRecently $IREN, $SHAZ, and other Neoclouds have been building sovereign DCs in Australia.\nGuess like a lot of things are stating to make more sense connection wise?\n(disclosure: no open positions in any of the above).",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-05 17:45",
-      "url": "https://x.com/aleabitoreddit/status/2073704784398528599",
-      "stats": {
-        "views": "13K",
-        "likes": "54",
-        "reposts": "8",
-        "bookmarks": "12"
-      }
-    },
-    {
-      "time": "07-05 05:44",
-      "type": "推文",
-      "ticker": "JD",
-      "tickers": [
-        "JD",
-        "AMZN",
-        "DASH",
-        "UBER",
-        "MELI"
-      ],
-      "title": "推文线索 · JD",
-      "body": "Nikkei - $JD E-Commerce Giant CEO warns \"Robots Will Replace 700,000 Delivery Workers\". \nPer FT's earlier piece last month: The 700,000 delivery personnel working for the firm will be replaced by robots, highlighting how rapid automation has become a new threat to China's already severe job market.\nLiu Qiangdong, revealed that the company has signed contracts with approximately 120 schools to retrain its delivery workers, enabling them to transition into new roles such as robot repair and maintenance...\n\"Beijing has started to track AI’s hit to jobs as a national priority.\"\nThis follows other corporate strategy reports like $AMZN, of avoiding 600,000 future hires with robots. \nBut it's very interesting to see the shift in worker roles to robot support. Maybe $DASH to $UBER to $MELI, we'll all start to see this rollout following China. \nThere's a lot of retail disbelief over humanoid/robotics commercialization. But feels like the direction industry is heading down is pretty clear.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-05 05:44",
-      "url": "https://x.com/aleabitoreddit/status/2073523410643366242",
-      "stats": {
-        "views": "11K",
-        "likes": "31",
-        "reposts": "3",
-        "bookmarks": "8"
-      }
     }
   ],
   "mentions": {
+    "XFAB": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SILEX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "JBL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GFS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AMD": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AEVA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "POET": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MRVL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "FN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 2,
+      "d7": 2
+    },
     "CCXI": {
       "h24": 1,
       "d7": 1
@@ -131,8 +199,8 @@
       "d7": 1
     },
     "AMZN": {
-      "h24": 3,
-      "d7": 3
+      "h24": 1,
+      "d7": 1
     },
     "FDX": {
       "h24": 1,
@@ -150,55 +218,7 @@
       "h24": 1,
       "d7": 1
     },
-    "SNDK": {
-      "h24": 1,
-      "d7": 1
-    },
     "SIMO": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "VRT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ETN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "BWA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ENS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SHAZ": {
-      "h24": 1,
-      "d7": 1
-    },
-    "JD": {
-      "h24": 1,
-      "d7": 1
-    },
-    "DASH": {
-      "h24": 1,
-      "d7": 1
-    },
-    "UBER": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MELI": {
       "h24": 1,
       "d7": 1
     }

@@ -9,6 +9,47 @@
   "fetchedAt": "2026-07-06 21:00",
   "feed": [
     {
+      "time": "07-07 03:31",
+      "type": "推文",
+      "ticker": "CCXI",
+      "tickers": [
+        "CCXI",
+        "AMZN",
+        "NVDA",
+        "SPCX"
+      ],
+      "title": "推文线索 · CCXI",
+      "body": "It’s interesting to witness psychology around valuation anchoring + scarcity.\nRetail, for example, are buying Figure, last valued at ~$39B through CEFs…\nAt $158B, since it’s private, round 4x valuations. \nThen Agility Robotics $CCXI, which has broader commercialization. \nIs at ~$4.3B pre-money and publicly available before the name change. At closer pricing that $AMZN, $NVDA, SoftBank, and Foxconn vaulted it at.\nYet some end up paying 4-5x prices of already hiked private investor rounds for exposure…\nI’m convinced if Agility raised a very small private round at $39B as well from $2.5B (which it definitely could), to set a valuation anchor.\nInvestors would be foaming in the mouth for a private allocation, just due to psychology rather than underlying fundamentals. \nWe’ve also seen this anchoring with $SPCX recently at $1.75T.\nPeak market inefficiency? Or lack of knowledge from retail?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-07 03:31",
+      "url": "https://x.com/aleabitoreddit/status/2074214669808717906",
+      "stats": {
+        "views": "16K",
+        "likes": "37",
+        "reposts": "1",
+        "bookmarks": "5"
+      }
+    },
+    {
+      "time": "07-07 00:34",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "$NVDA refuting recent Kyber delay claims:\n“Our roadmap is intact”.\nlol, damage has already been done with stocks in many markets (esp. in Taiwan/Japan/Soutj Korea) crashing after the “report”",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-07 00:34",
+      "url": "https://x.com/aleabitoreddit/status/2074170197486039524",
+      "stats": {
+        "views": "16K",
+        "likes": "97",
+        "reposts": "8",
+        "bookmarks": "8"
+      }
+    },
+    {
       "time": "07-06 22:48",
       "type": "推文",
       "ticker": "META",
@@ -62,64 +103,30 @@
         "reposts": "3",
         "bookmarks": "4"
       }
-    },
-    {
-      "time": "07-06 18:19",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "I find it hard for any bears to defend against this humanoid bull case.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-06 18:19",
-      "url": "https://x.com/aleabitoreddit/status/2074075634851340779",
-      "stats": {
-        "views": "12K",
-        "likes": "48",
-        "reposts": "0",
-        "bookmarks": "3"
-      }
-    },
-    {
-      "time": "07-06 17:29",
-      "type": "推文",
-      "ticker": "XFAB",
-      "tickers": [
-        "XFAB",
-        "SILEX",
-        "NVDA"
-      ],
-      "title": "推文线索 · XFAB",
-      "body": "Kelper upgrades $XFAB to \"Buy\" citing:\n- Melexis demand strengthening “week-after-week, day-after-day” (their lead customer). \n- AI giving XFAB a structural growth leg with SiC, GaN, and photonics offsetting auto cyclicality. \n- Scarce Western speciality foundries like $SILEX commanding higher multiples. \n\"X-Fab remains the cheapest specialty foundry peer on every multiple, trading at 4.8x 2027 EV/EBITDA versus a peer median of 14.5x\" \nI treat this as good signal for the core fundamentals improving like auto players. \nBut in terms of unpriced long term growth vectors, I'm personally looking at XFAB from a different angle in terms of photonics growth with photonixfab. Given $NVDA as a potential key driver. \nBut it's hard for traditional firms to price these types of active developments into valuation models until there's volume contracts.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-06 17:29",
-      "url": "https://x.com/aleabitoreddit/status/2074063175293809150",
-      "stats": {
-        "views": "14K",
-        "likes": "36",
-        "reposts": "2",
-        "bookmarks": "6"
-      }
     }
   ],
   "mentions": {
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AMZN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SPCX": {
+      "h24": 1,
+      "d7": 1
+    },
     "META": {
       "h24": 1,
       "d7": 1
     },
     "WULF": {
-      "h24": 1,
-      "d7": 1
-    },
-    "XFAB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SILEX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
       "h24": 1,
       "d7": 1
     }

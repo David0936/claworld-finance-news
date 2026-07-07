@@ -9,6 +9,68 @@
   "fetchedAt": "2026-07-07 21:00",
   "feed": [
     {
+      "time": "07-08 02:56",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "CRVW",
+        "ORCL"
+      ],
+      "title": "推文线索 · META",
+      "body": "Just Bloomberg and $META doing damage control after crashing the market with Meta Compute framing:\nSpokesperson: \"Meta is still hungry for even more computing power. \nIt is still moving forward with plans for expensive new data centers and recently inked major computing deals with $CRVW, Google, $ORCL, and others.\"\nJust dropped that in with the Meta Muse announcement, and evenn threw in the \"expensive\" framing with DCs to signal capex. \nBut little late given we're likely seeing a lot of margin liquidation cascades and heavy losses from media framing earlier.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 02:56",
+      "url": "https://x.com/aleabitoreddit/status/2074568161299771394",
+      "stats": {
+        "views": "9,854",
+        "likes": "41",
+        "reposts": "7",
+        "bookmarks": "2"
+      }
+    },
+    {
+      "time": "07-08 01:39",
+      "type": "推文",
+      "ticker": "TSLA",
+      "tickers": [
+        "TSLA",
+        "CCXI"
+      ],
+      "title": "推文线索 · TSLA",
+      "body": "How is the US so far behind?\nXinhua: China's output of humanoids are expected to hit 100,000+ this year. \nEven Morgan Stanley originally projected 14,000 for 2026... \nReally need Elon's $TSLA, $CCXI (Agility), Apptronik, and Figure to catchup. And for more US Gov. subsidies to pour into upstream supply chains + rare earths. \nCause this disparity between US vs. China mass production is getting ridiculous... \nBut it almost feels like the start of Russia/US Space race Sputnik Moment for robotics?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 01:39",
+      "url": "https://x.com/aleabitoreddit/status/2074548850996707412",
+      "stats": {
+        "views": "2,560",
+        "likes": "1",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "07-08 00:38",
+      "type": "推文",
+      "ticker": "SIVE",
+      "tickers": [
+        "SIVE",
+        "AEHR",
+        "AXTI"
+      ],
+      "title": "推文线索 · SIVE",
+      "body": "This is the average visual TA bro, takes a 50% 50% coinflip: \nIf it goes the other way, they say \"ABC Pattern Invalidated\", should have known... \nIf they get the coinflip right, they promote their $40/month chart. \n-> People drawing swiggly lines over KOSPI mean nothing where it heads. When it's primarily Samsung/SK Hynix and forward operating income growth from DRAM/NAND. \n-> The swiggly drawing over $SIVE, $AEHR, and others mean nothing. When it's primarily hyperscaler suppliers, thematic premiums, and volume ramp orders determining valuations. \nThen if something randomly goes from $1 to $60 like $AXTI, they claim they spotted it with their \"Golden Egg Dragon Candle\", while ignoring anything with InP substrate and otpical demand. \nThere's rare times like these where it's a massive sector drop all together.\nBut now the TA bros are showing up everywhere saying\nhere's a $40 course on how they predicted it with swiggly lines.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 00:38",
+      "url": "https://x.com/aleabitoreddit/status/2074533565505876218",
+      "stats": {
+        "views": "6,516",
+        "likes": "28",
+        "reposts": "4",
+        "bookmarks": "3"
+      }
+    },
+    {
       "time": "07-07 22:03",
       "type": "推文",
       "ticker": "NBIS",
@@ -52,68 +114,41 @@
         "reposts": "0",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-07 20:12",
-      "type": "推文",
-      "ticker": "SPCX",
-      "tickers": [
-        "SPCX"
-      ],
-      "title": "推文线索 · SPCX",
-      "body": "Raymond James initiated coverage of $SPCX with “Strong Buy”.\nAnd a $800 PT, from $160. Giving SpaceX a ~$10T valuation.\nNo words. Jokes about “institutional” notes for retail speak for itself.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-07 20:12",
-      "url": "https://x.com/aleabitoreddit/status/2074466488413835265",
-      "stats": {
-        "views": "13K",
-        "likes": "39",
-        "reposts": "1",
-        "bookmarks": "2"
-      }
-    },
-    {
-      "time": "07-07 16:54",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA",
-        "AAPL"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "Be Samsung at $1.24T:\n> market: we don’t think you can keep hiking memory prices\n> proceeds to hikes dram by 20%\n> releases earnings\n> most profitable company in the world beating $NVDA and $AAPL\n> operating profits growing 1803% Y/Y \nmarket: sells off Samsung -7%",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-07 16:54",
-      "url": "https://x.com/aleabitoreddit/status/2074416685843612031",
-      "stats": {
-        "views": "12K",
-        "likes": "68",
-        "reposts": "7",
-        "bookmarks": "4"
-      }
-    },
-    {
-      "time": "07-07 16:10",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META",
-        "NVDA"
-      ],
-      "title": "推文线索 · META",
-      "body": "One of the dumbest thematic selloffs I’ve seen to to date off:\n- $META compute news that’s not new\n- CPO delay report 1, that got refuted by $NVDA\n- CPO delay report 2, that got refuted by $NVDA\nHigh confidence, institutions will end up going long on the same names they’re bearposting after retail capitulates.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-07 16:10",
-      "url": "https://x.com/aleabitoreddit/status/2074405723816304743",
-      "stats": {
-        "views": "16K",
-        "likes": "132",
-        "reposts": "15",
-        "bookmarks": "13"
-      }
     }
   ],
   "mentions": {
+    "META": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CRVW": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ORCL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSLA": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "AEHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
     "NBIS": {
       "h24": 1,
       "d7": 1
@@ -134,10 +169,6 @@
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
     "MU": {
       "h24": 1,
       "d7": 1
@@ -147,18 +178,6 @@
       "d7": 1
     },
     "SPCX": {
-      "h24": 2,
-      "d7": 2
-    },
-    "NVDA": {
-      "h24": 2,
-      "d7": 2
-    },
-    "AAPL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
       "h24": 1,
       "d7": 1
     }

@@ -9,6 +9,43 @@
   "fetchedAt": "2026-07-07 09:00",
   "feed": [
     {
+      "time": "07-07 16:10",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "NVDA"
+      ],
+      "title": "推文线索 · META",
+      "body": "One of the dumbest thematic selloffs I’ve seen to to date off:\n- $META compute news that’s not new\n- CPO delay report 1, that got refuted by $NVDA\n- CPO delay report 2, that got refuted by $NVDA\nHigh confidence, institutions will end up going long on the same names they’re bearposting after retail capitulates.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-07 16:10",
+      "url": "https://x.com/aleabitoreddit/status/2074405723816304743",
+      "stats": {
+        "views": "16K",
+        "likes": "132",
+        "reposts": "15",
+        "bookmarks": "13"
+      }
+    },
+    {
+      "time": "07-07 14:32",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Trump: “You have a couple of guys who went short. Those poor ******* they’re in big trouble.\nThey’re being wiped out. The short guys. \nI never liked short guys because they’re betting against the country”.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-07 14:32",
+      "url": "https://x.com/aleabitoreddit/status/2074381029146837207",
+      "stats": {
+        "views": "15K",
+        "likes": "71",
+        "reposts": "3",
+        "bookmarks": "2"
+      }
+    },
+    {
       "time": "07-07 05:14",
       "type": "推文",
       "ticker": "RDDT",
@@ -71,47 +108,17 @@
         "reposts": "8",
         "bookmarks": "8"
       }
-    },
-    {
-      "time": "07-06 22:48",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "title": "推文线索 · META",
-      "body": "I’d like to give a special thank you to Bloomberg’s piece on $META compute.\nAs well as the 2 back to back bear posts on CPO delays.\nBut I believe thematically photonics, memory, energy, and physical AI will outperform in the long run.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-06 22:48",
-      "url": "https://x.com/aleabitoreddit/status/2074143469015281953",
-      "stats": {
-        "views": "14K",
-        "likes": "24",
-        "reposts": "6",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-06 20:35",
-      "type": "推文",
-      "ticker": "WULF",
-      "tickers": [
-        "WULF"
-      ],
-      "title": "推文线索 · WULF",
-      "body": "Wow, $WULF signs a $19B DC lease with Anthropic today. \nProbably a very positive tailwind for the Neocloud/Colo sector.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-06 20:35",
-      "url": "https://x.com/aleabitoreddit/status/2074109998544846954",
-      "stats": {
-        "views": "2,770",
-        "likes": "38",
-        "reposts": "3",
-        "bookmarks": "3"
-      }
     }
   ],
   "mentions": {
+    "META": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 3,
+      "d7": 3
+    },
     "RDDT": {
       "h24": 1,
       "d7": 1
@@ -140,19 +147,7 @@
       "h24": 1,
       "d7": 1
     },
-    "NVDA": {
-      "h24": 2,
-      "d7": 2
-    },
     "SPCX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "WULF": {
       "h24": 1,
       "d7": 1
     }

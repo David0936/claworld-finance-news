@@ -3,11 +3,65 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-07-08T09-00-01-08-00",
+  "upstreamSnapshotId": "2026-07-08T21-00-05-08-00",
   "snapshotDate": "2026-07-08",
-  "snapshotTime": "09:00",
-  "fetchedAt": "2026-07-08 09:00",
+  "snapshotTime": "21:01",
+  "fetchedAt": "2026-07-08 21:01",
   "feed": [
+    {
+      "time": "07-08 20:49",
+      "type": "推文",
+      "ticker": "RKLB",
+      "tickers": [
+        "RKLB",
+        "ASTS"
+      ],
+      "title": "推文线索 · RKLB",
+      "body": "Blue Origin reportedly raising $10B at a $130B valuation per NYT.\nSeems pretty positive for $RKLB, $ASTS, and other space names in terms of relative valuation anchoring. \nIf SpaceX and Blue Origin is able to set such high valuations.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 20:49",
+      "url": "https://x.com/aleabitoreddit/status/2074838397341065516",
+      "stats": {
+        "views": "8,233",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "07-08 18:14",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Trump: “Spain is a terrible partner in NATO. \nThey don't participate. They don't pay. \nCut off all trade with Spain”\nTbh no clue what’s going on anymore…",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 18:14",
+      "url": "https://x.com/aleabitoreddit/status/2074799339680202869",
+      "stats": {
+        "views": "16K",
+        "likes": "60",
+        "reposts": "3",
+        "bookmarks": "2"
+      }
+    },
+    {
+      "time": "07-08 16:42",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Trump: Memorandum of Understanding with Iran “is over”\n“It’s a waste of time dealing with them,” Trump said at the NATO summit.\nAlways an exciting time with markets.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-08 16:42",
+      "url": "https://x.com/aleabitoreddit/status/2074776109074583565",
+      "stats": {
+        "views": "20K",
+        "likes": "78",
+        "reposts": "13",
+        "bookmarks": "4"
+      }
+    },
     {
       "time": "07-08 03:49",
       "type": "推文",
@@ -51,76 +105,17 @@
         "reposts": "7",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-08 01:39",
-      "type": "推文",
-      "ticker": "TSLA",
-      "tickers": [
-        "TSLA",
-        "CCXI"
-      ],
-      "title": "推文线索 · TSLA",
-      "body": "How is the US so far behind?\nXinhua: China's output of humanoids are expected to hit 100,000+ this year. \nEven Morgan Stanley originally projected 14,000 for 2026... \nReally need Elon's $TSLA, $CCXI (Agility), Apptronik, and Figure to catchup. And for more US Gov. subsidies to pour into upstream supply chains + rare earths. \nCause this disparity between US vs. China mass production is getting ridiculous... \nBut it almost feels like the start of Russia/US Space race Sputnik Moment for robotics?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-08 01:39",
-      "url": "https://x.com/aleabitoreddit/status/2074548850996707412",
-      "stats": {
-        "views": "2,560",
-        "likes": "1",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-08 00:38",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
-        "AEHR",
-        "AXTI"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "This is the average visual TA bro, takes a 50% 50% coinflip: \nIf it goes the other way, they say \"ABC Pattern Invalidated\", should have known... \nIf they get the coinflip right, they promote their $40/month chart. \n-> People drawing swiggly lines over KOSPI mean nothing where it heads. When it's primarily Samsung/SK Hynix and forward operating income growth from DRAM/NAND. \n-> The swiggly drawing over $SIVE, $AEHR, and others mean nothing. When it's primarily hyperscaler suppliers, thematic premiums, and volume ramp orders determining valuations. \nThen if something randomly goes from $1 to $60 like $AXTI, they claim they spotted it with their \"Golden Egg Dragon Candle\", while ignoring anything with InP substrate and otpical demand. \nThere's rare times like these where it's a massive sector drop all together.\nBut now the TA bros are showing up everywhere saying\nhere's a $40 course on how they predicted it with swiggly lines.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-08 00:38",
-      "url": "https://x.com/aleabitoreddit/status/2074533565505876218",
-      "stats": {
-        "views": "6,516",
-        "likes": "28",
-        "reposts": "4",
-        "bookmarks": "3"
-      }
-    },
-    {
-      "time": "07-07 22:03",
-      "type": "推文",
-      "ticker": "NBIS",
-      "tickers": [
-        "NBIS",
-        "MRVL",
-        "INTC",
-        "SNDK",
-        "AMD",
-        "SIVE",
-        "MU",
-        "LITE"
-      ],
-      "title": "推文线索 · NBIS",
-      "body": "Just putting it out there:\nIf everything crashes together from $NBIS, $MRVL, $INTC, $SNDK, $AMD, $SIVE, $MU, $LITE, and others... \nWhich are all down -4% to -10%+ today so far. \nProbably doesn't have anything to do with individual fundamentals. \nIndiscriminate selloffs from things like cascading margin liquidations, usually provide compelling opportunities if the underlying improves.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-07 22:03",
-      "url": "https://x.com/aleabitoreddit/status/2074494514061017508",
-      "stats": {
-        "views": "23K",
-        "likes": "252",
-        "reposts": "16",
-        "bookmarks": "19"
-      }
     }
   ],
   "mentions": {
+    "RKLB": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ASTS": {
+      "h24": 1,
+      "d7": 1
+    },
     "NVDA": {
       "h24": 1,
       "d7": 1
@@ -134,12 +129,12 @@
       "d7": 1
     },
     "LITE": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "SIVE": {
-      "h24": 3,
-      "d7": 3
+      "h24": 1,
+      "d7": 1
     },
     "META": {
       "h24": 1,
@@ -150,46 +145,6 @@
       "d7": 1
     },
     "ORCL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSLA": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AEHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AXTI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MRVL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SNDK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AMD": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MU": {
       "h24": 1,
       "d7": 1
     }
@@ -205,31 +160,31 @@
       "label": "股票覆盖",
       "value": "803",
       "delta": "live",
-      "hint": "较上一快照 +1"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "24h 活跃",
       "value": "21",
       "delta": "live",
-      "hint": "较上一快照 +9"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "7天活跃",
-      "value": "58",
+      "value": "60",
       "delta": "live",
-      "hint": "较上一快照 -2"
+      "hint": "较上一快照 +2"
     },
     {
       "label": "30天活跃",
       "value": "126",
       "delta": "live",
-      "hint": "较上一快照 -24"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "新闻驱动",
       "value": "76",
       "delta": "live",
-      "hint": "较上一快照 -1"
+      "hint": "较上一快照 持平"
     }
   ],
   "priorityHeader": {
@@ -241,21 +196,21 @@
     {
       "rank": 1,
       "ticker": "NVDA",
-      "time": "07-08 09:00",
-      "mentions24h": 3,
+      "time": "07-08 21:00",
+      "mentions24h": 1,
       "mentions7d": 11,
       "source": "新闻",
       "sourceCount": 10,
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "03:49 的当日发帖把 Hesai 与 NVDA 合作的美国审查风险连接到西方 lidar 及上游激光供应商的二阶机会；该信号需要政策文件和订单数据验证。",
-      "priority": 447
+      "note": "03:49 的当日发帖把 Hesai 与 NVDA 合作审查延伸到西方 lidar 及上游激光供应链；该信号需要政策文件、客户迁移和订单数据验证。 02:56 的当日发帖称 Meta compute 需求仍在，但要求把媒体框架、公司回应、合同期限、收入确认和 capex 回收期拆开验证。",
+      "priority": 391
     },
     {
       "rank": 2,
       "ticker": "MRVL",
-      "time": "07-08 09:00",
+      "time": "07-08 21:00",
       "mentions24h": 1,
       "mentions7d": 4,
       "source": "新闻",
@@ -263,13 +218,13 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "未见本地新增一手公司事实。近 24 小时未见新增提及，但 7 天和 30 天仍有存量关注。历史信号提示：近期新闻进一步强化 AI 定制芯片与 AWS Trainium 合作叙事，Wells Fargo 目标价上调至 195 美元，但股价 60 日上涨超 130% 已充分反映预期，估值安全边际持续收窄，情绪高温加剧潜在波动。",
+      "note": "本地未见足以单独改变公司价值的一手公司事实；当前主要是当天消息、历史信号、新闻热度、披露状态和价格结构的再平衡。历史信号保留为先验问题清单：近期新闻进一步强化 AI 定制芯片与 AWS Trainium 合作叙事，Wells Fargo 目标价上调至 195 美元，但股价 60 日上涨超 130% 已充分反映预期，估值安全边际持续收窄，情绪高温加剧潜在波动。",
       "priority": 333
     },
     {
       "rank": 3,
       "ticker": "SNDK",
-      "time": "07-08 09:00",
+      "time": "07-08 21:00",
       "mentions24h": 1,
       "mentions7d": 4,
       "source": "新闻",
@@ -277,7 +232,7 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "结构化状态保留 AI capex 关注线索。近 24 小时仍有新增提及，7 天和 30 天热度保持高位。历史信号提示：作者在近30天内高频看多且未改变立场，最新推文仍以历史涨幅炫耀强化持仓信念；新闻面持续集中报道AI转型与需求缺口，无新增分歧信息；边际方向不变但情绪过热的警示信号增多。",
+      "note": "本地未见足以单独改变公司价值的一手公司事实；当前主要是当天消息、历史信号、新闻热度、披露状态和价格结构的再平衡。历史信号保留为先验问题清单：作者在近30天内高频看多且未改变立场，最新推文仍以历史涨幅炫耀强化持仓信念；新闻面持续集中报道AI转型与需求缺口，无新增分歧信息；边际方向不变但情绪过热的警示信号增多。",
       "priority": 327
     }
   ],
@@ -287,13 +242,13 @@
       "queue": "高风险偏多",
       "stance": "看多",
       "updatedAt": "2026-05-24 23:56",
-      "mentions24h": 3,
+      "mentions24h": 1,
       "mentions7d": 11,
       "mentions30d": 35,
       "news": 10,
       "disclosures": 3,
       "revenue": "65.5%",
-      "score": 243,
+      "score": 227,
       "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
@@ -492,25 +447,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "META",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-05-22",
-      "mentions24h": 2,
-      "mentions7d": 10,
-      "mentions30d": 18,
-      "news": 10,
-      "disclosures": 0,
-      "revenue": "–",
-      "score": 164,
-      "industry": "optical-photonics-cpo",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "AMZN",
       "queue": "积极观察",
       "stance": "看多",
@@ -523,6 +459,44 @@
       "revenue": "12.4%",
       "score": 156,
       "industry": "consumer-cyclical-specialty-retail",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "META",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-05-22",
+      "mentions24h": 1,
+      "mentions7d": 10,
+      "mentions30d": 18,
+      "news": 10,
+      "disclosures": 0,
+      "revenue": "–",
+      "score": 156,
+      "industry": "optical-photonics-cpo",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "RKLB",
+      "queue": "高风险偏多",
+      "stance": "看多",
+      "updatedAt": "2026-05-22 08:33",
+      "mentions24h": 1,
+      "mentions7d": 1,
+      "mentions30d": 9,
+      "news": 10,
+      "disclosures": 1,
+      "revenue": "38.0%",
+      "score": 156,
+      "industry": "industrials-aerospace-defense",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -580,25 +554,6 @@
       "revenue": "15.1%",
       "score": 149,
       "industry": "communication-services-internet-content-information",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "RKLB",
-      "queue": "高风险偏多",
-      "stance": "看多",
-      "updatedAt": "2026-05-22 08:33",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 8,
-      "news": 10,
-      "disclosures": 1,
-      "revenue": "38.0%",
-      "score": 147,
-      "industry": "industrials-aerospace-defense",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -708,11 +663,30 @@
       "mentions24h": 0,
       "mentions7d": 0,
       "mentions30d": 0,
-      "news": 3,
+      "news": 4,
       "disclosures": 6,
       "revenue": "605.3%",
-      "score": 124,
+      "score": 129,
       "industry": "technology-communication-equipment",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "HIMS",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-05-17",
+      "mentions24h": 0,
+      "mentions7d": 1,
+      "mentions30d": 1,
+      "news": 6,
+      "disclosures": 2,
+      "revenue": "59.0%",
+      "score": 123,
+      "industry": "healthcare-medical---equipment-services",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -739,44 +713,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "AAPL",
-      "queue": "观察",
-      "stance": "中性",
-      "updatedAt": "2026-05-20 07:20",
-      "mentions24h": 1,
-      "mentions7d": 1,
-      "mentions30d": 2,
-      "news": 10,
-      "disclosures": 0,
-      "revenue": "6.4%",
-      "score": 120,
-      "industry": "technology-consumer-electronics",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "HIMS",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-05-17",
-      "mentions24h": 0,
-      "mentions7d": 1,
-      "mentions30d": 1,
-      "news": 5,
-      "disclosures": 2,
-      "revenue": "59.0%",
-      "score": 118,
-      "industry": "healthcare-medical---equipment-services",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "COHR",
       "queue": "观察",
       "stance": "中性",
@@ -784,11 +720,30 @@
       "mentions24h": 0,
       "mentions7d": 2,
       "mentions30d": 5,
-      "news": 5,
+      "news": 6,
       "disclosures": 0,
       "revenue": "23.4%",
-      "score": 114,
+      "score": 119,
       "industry": "technology-hardware-equipment-parts",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "AAPL",
+      "queue": "观察",
+      "stance": "中性",
+      "updatedAt": "2026-05-20 07:20",
+      "mentions24h": 0,
+      "mentions7d": 1,
+      "mentions30d": 2,
+      "news": 10,
+      "disclosures": 0,
+      "revenue": "6.4%",
+      "score": 112,
+      "industry": "technology-consumer-electronics",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -986,6 +941,44 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "ASTS",
+      "queue": "高风险观察",
+      "stance": "中性",
+      "updatedAt": "2026-04-20 13:27",
+      "mentions24h": 1,
+      "mentions7d": 1,
+      "mentions30d": 3,
+      "news": 10,
+      "disclosures": 1,
+      "revenue": "1505.2%",
+      "score": 89,
+      "industry": "communication-services-telecommunications-services",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "EWY",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-05-24 00:55",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 9,
+      "news": 8,
+      "disclosures": 0,
+      "revenue": "–",
+      "score": 87,
+      "industry": "financial-services-asset-management---global",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "QBTS",
       "queue": "谨慎",
       "stance": "看空",
@@ -1043,25 +1036,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "EWY",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-05-24 00:55",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 9,
-      "news": 7,
-      "disclosures": 0,
-      "revenue": "–",
-      "score": 82,
-      "industry": "financial-services-asset-management---global",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "AVAV",
       "queue": "谨慎",
       "stance": "看空",
@@ -1081,25 +1055,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "ASTS",
-      "queue": "高风险观察",
-      "stance": "中性",
-      "updatedAt": "2026-04-20 13:27",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 2,
-      "news": 10,
-      "disclosures": 1,
-      "revenue": "1505.2%",
-      "score": 80,
-      "industry": "communication-services-telecommunications-services",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "OUST",
       "queue": "高风险观察",
       "stance": "中性",
@@ -1111,7 +1066,7 @@
       "disclosures": 2,
       "revenue": "52.5%",
       "score": 79,
-      "industry": "technology-semiconductors",
+      "industry": "ai-infrastructure",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -1328,6 +1283,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "IBKR",
+      "queue": "高风险偏多",
+      "stance": "看多",
+      "updatedAt": "2026-05-17 07:47",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 0,
+      "news": 6,
+      "disclosures": 0,
+      "revenue": "9.8%",
+      "score": 69,
+      "industry": "financial-services-investment---banking-investment-services",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "JBL",
       "queue": "积极观察",
       "stance": "看多",
@@ -1492,25 +1466,6 @@
       "revenue": "52.3%",
       "score": 66,
       "industry": "industrials-aerospace-defense",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "IBKR",
-      "queue": "高风险偏多",
-      "stance": "看多",
-      "updatedAt": "2026-05-17 07:47",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 0,
-      "news": 5,
-      "disclosures": 0,
-      "revenue": "9.8%",
-      "score": 64,
-      "industry": "financial-services-investment---banking-investment-services",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -1765,6 +1720,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "NVO",
+      "queue": "观察",
+      "stance": "中性",
+      "updatedAt": "2026-05-09 12:51",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 0,
+      "news": 10,
+      "disclosures": 0,
+      "revenue": "6.4%",
+      "score": 58,
+      "industry": "healthcare-drug-manufacturers---general",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "AEHR",
       "queue": "高风险偏多",
       "stance": "看多",
@@ -1936,25 +1910,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "NVO",
-      "queue": "观察",
-      "stance": "中性",
-      "updatedAt": "2026-05-09 12:51",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 0,
-      "news": 9,
-      "disclosures": 0,
-      "revenue": "6.4%",
-      "score": 53,
-      "industry": "healthcare-drug-manufacturers---general",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "VPG",
       "queue": "观察",
       "stance": "中性",
@@ -1974,16 +1929,16 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "2454.TW",
+      "ticker": "3081.TWO",
       "queue": "高风险观察",
       "stance": "中性",
       "updatedAt": "",
       "mentions24h": 0,
-      "mentions7d": 1,
+      "mentions7d": 0,
       "mentions30d": 1,
       "news": 0,
       "disclosures": 0,
-      "revenue": "12.3%",
+      "revenue": "82.3%",
       "score": 52,
       "industry": "technology-semiconductors",
       "riskLevel": "待验证",
@@ -2278,6 +2233,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "GFS",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-05-16 03:21",
+      "mentions24h": 0,
+      "mentions7d": 1,
+      "mentions30d": 12,
+      "news": 3,
+      "disclosures": 0,
+      "revenue": "0.6%",
+      "score": 51,
+      "industry": "technology-semiconductors",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "HGRAF",
       "queue": "高风险观察",
       "stance": "中性",
@@ -2487,6 +2461,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "BTC",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-02-02 19:23",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 0,
+      "news": 6,
+      "disclosures": 1,
+      "revenue": "–",
+      "score": 49,
+      "industry": "financial-services-asset-management---cryptocurrency",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "KRKNF",
       "queue": "高风险偏多",
       "stance": "看多",
@@ -2620,25 +2613,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "HUT",
-      "queue": "高风险偏多",
-      "stance": "看多",
-      "updatedAt": "2026-01-06 02:07",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 1,
-      "news": 0,
-      "disclosures": 2,
-      "revenue": "-90.7%",
-      "score": 47,
-      "industry": "financial-services-financial---capital-markets",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "INHD",
       "queue": "高风险观察",
       "stance": "中性",
@@ -2689,25 +2663,6 @@
       "revenue": "63.9%",
       "score": 46,
       "industry": "financial-services-financial---capital-markets",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "GFS",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-05-16 03:21",
-      "mentions24h": 0,
-      "mentions7d": 1,
-      "mentions30d": 12,
-      "news": 2,
-      "disclosures": 0,
-      "revenue": "0.6%",
-      "score": 46,
-      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -2841,25 +2796,6 @@
       "revenue": "-19.7%",
       "score": 44,
       "industry": "technology-software---infrastructure",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "BTC",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-02-02 19:23",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 0,
-      "news": 5,
-      "disclosures": 1,
-      "revenue": "–",
-      "score": 44,
-      "industry": "financial-services-asset-management---cryptocurrency",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -3494,6 +3430,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "OKLO",
+      "queue": "谨慎",
+      "stance": "看空",
+      "updatedAt": "2025-12-15 07:58",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 0,
+      "news": 5,
+      "disclosures": 0,
+      "revenue": "–",
+      "score": 40,
+      "industry": "industrials-industrial---machinery",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "SIMO",
       "queue": "积极观察",
       "stance": "看多",
@@ -3551,6 +3506,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "2454.TW",
+      "queue": "观察",
+      "stance": "中性",
+      "updatedAt": "",
+      "mentions24h": 0,
+      "mentions7d": 1,
+      "mentions30d": 1,
+      "news": 0,
+      "disclosures": 0,
+      "revenue": "12.3%",
+      "score": 39,
+      "industry": "technology-semiconductors",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "300394.SZ",
       "queue": "高风险观察",
       "stance": "中性",
@@ -3563,25 +3537,6 @@
       "revenue": "57.3%",
       "score": 39,
       "industry": "technology-communication-equipment",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "3081.TWO",
-      "queue": "高风险观察",
-      "stance": "中性",
-      "updatedAt": "",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 1,
-      "news": 0,
-      "disclosures": 0,
-      "revenue": "82.3%",
-      "score": 39,
-      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -4976,18 +4931,18 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "OKLO",
-      "queue": "谨慎",
-      "stance": "看空",
-      "updatedAt": "2025-12-15 07:58",
+      "ticker": "FLNC",
+      "queue": "高风险观察",
+      "stance": "中性",
+      "updatedAt": "2026-05-17",
       "mentions24h": 0,
       "mentions7d": 0,
-      "mentions30d": 0,
-      "news": 4,
+      "mentions30d": 1,
+      "news": 2,
       "disclosures": 0,
-      "revenue": "–",
+      "revenue": "-16.1%",
       "score": 35,
-      "industry": "industrials-industrial---machinery",
+      "industry": "utilities-renewable-utilities",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -5026,25 +4981,6 @@
       "revenue": "9.4%",
       "score": 34,
       "industry": "financial-services-financial---capital-markets",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "SPCX",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-07-07 20:13",
-      "mentions24h": 2,
-      "mentions7d": 3,
-      "mentions30d": 18,
-      "news": 0,
-      "disclosures": 0,
-      "revenue": "33.2%",
-      "score": 34,
-      "industry": "industrials-aerospace-defense",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -5349,25 +5285,6 @@
       "revenue": "26.2%",
       "score": 31,
       "industry": "financial-services-financial---capital-markets",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "FLNC",
-      "queue": "高风险观察",
-      "stance": "中性",
-      "updatedAt": "2026-05-17",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 1,
-      "news": 1,
-      "disclosures": 0,
-      "revenue": "-16.1%",
-      "score": 30,
-      "industry": "utilities-renewable-utilities",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -5805,6 +5722,25 @@
       "revenue": "-8.2%",
       "score": 26,
       "industry": "technology-semiconductors",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "HUT",
+      "queue": "高风险偏多",
+      "stance": "看多",
+      "updatedAt": "2026-01-06 02:07",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 1,
+      "news": 0,
+      "disclosures": 2,
+      "revenue": "-90.7%",
+      "score": 25,
+      "industry": "financial-services-financial---capital-markets",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -6781,6 +6717,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "PDYN",
+      "queue": "高风险偏多",
+      "stance": "看多",
+      "updatedAt": "2026-01-25 02:19",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 0,
+      "news": 0,
+      "disclosures": 1,
+      "revenue": "-32.6%",
+      "score": 20,
+      "industry": "technology-software---infrastructure",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "SOFI",
       "queue": "观察",
       "stance": "中性",
@@ -7123,6 +7078,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "SPCX",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-07-07 20:13",
+      "mentions24h": 0,
+      "mentions7d": 3,
+      "mentions30d": 18,
+      "news": 0,
+      "disclosures": 0,
+      "revenue": "33.2%",
+      "score": 18,
+      "industry": "industrials-aerospace-defense",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "006400.KS",
       "queue": "观察",
       "stance": "中性",
@@ -7268,25 +7242,6 @@
       "revenue": "-4.8%",
       "score": 16,
       "industry": "industrials-industrial---machinery",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "6315.T",
-      "queue": "观察",
-      "stance": "中性",
-      "updatedAt": "",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 1,
-      "news": 0,
-      "disclosures": 0,
-      "revenue": "1.7%",
-      "score": 16,
-      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -7743,25 +7698,6 @@
       "revenue": "15.9%",
       "score": 16,
       "industry": "communication-services-entertainment",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "PDYN",
-      "queue": "高风险偏多",
-      "stance": "看多",
-      "updatedAt": "2026-01-25 02:19",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 0,
-      "news": 0,
-      "disclosures": 0,
-      "revenue": "-32.6%",
-      "score": 16,
-      "industry": "technology-software---infrastructure",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -9852,6 +9788,25 @@
       "revenue": "-4.5%",
       "score": 8,
       "industry": "energy-oil-gas-refining-marketing",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "6315.T",
+      "queue": "观察",
+      "stance": "中性",
+      "updatedAt": "",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 1,
+      "news": 0,
+      "disclosures": 0,
+      "revenue": "1.7%",
+      "score": 8,
+      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -15563,7 +15518,7 @@
       },
       {
         "label": "观点变化",
-        "value": "2",
+        "value": "0",
         "hint": "来自 GPT xhigh 历史",
         "tone": "border-amber-200 bg-amber-50"
       },
@@ -15577,7 +15532,7 @@
     "chains": [
       {
         "name": "AI基础设施",
-        "count": 15
+        "count": 16
       },
       {
         "name": "云与软件",
@@ -15593,7 +15548,7 @@
       },
       {
         "name": "芯片/算力",
-        "count": 111
+        "count": 110
       }
     ],
     "positiveToDate": 146,
@@ -15657,7 +15612,7 @@
       },
       {
         "ticker": "OUST",
-        "chain": "芯片/算力",
+        "chain": "AI基础设施",
         "queue": "高风险观察",
         "firstMention": "2026-01-07 09:26",
         "lastMention": "2026-07-08 03:49",

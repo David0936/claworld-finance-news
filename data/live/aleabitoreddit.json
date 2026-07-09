@@ -9,6 +9,28 @@
   "fetchedAt": "2026-07-09 21:01",
   "feed": [
     {
+      "time": "07-10 02:44",
+      "type": "推文",
+      "ticker": "SIVE",
+      "tickers": [
+        "SIVE",
+        "SIVEF",
+        "GFS",
+        "JBL"
+      ],
+      "title": "推文线索 · SIVE",
+      "body": "Three new $SIVE insider purchases today. \nMost notably: $SIVEF CEO Vikram bought 1,000,000 SEK worth of shares on the open market today. \nThis is following the massive drop on Sivers stock following 2 misleading CPO delay reports, Meta Compute headlines, and another insider sale report from another photonics director. \nTypically, insider sells for any number of reasons. But having the CEO buy on the open-market is the clearest signal in management confidence. \nFollowing $GFS, $JBL, and other laser supplier partnerships, and his goal of NASDAQ listing in the near term. \nFeels like the CEO sees a clear potential for Sivers to become the next photonics giant (myself included).",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-10 02:44",
+      "url": "https://x.com/aleabitoreddit/status/2075289915697553697",
+      "stats": {
+        "views": "16K",
+        "likes": "70",
+        "reposts": "7",
+        "bookmarks": "11"
+      }
+    },
+    {
       "time": "07-09 20:46",
       "type": "推文",
       "ticker": "META",
@@ -87,29 +109,25 @@
         "reposts": "0",
         "bookmarks": "19"
       }
-    },
-    {
-      "time": "07-08 20:49",
-      "type": "推文",
-      "ticker": "RKLB",
-      "tickers": [
-        "RKLB",
-        "ASTS"
-      ],
-      "title": "推文线索 · RKLB",
-      "body": "Blue Origin reportedly raising $10B at a $130B valuation per NYT.\nSeems pretty positive for $RKLB, $ASTS, and other space names in terms of relative valuation anchoring. \nIf SpaceX and Blue Origin is able to set such high valuations.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-08 20:49",
-      "url": "https://x.com/aleabitoreddit/status/2074838397341065516",
-      "stats": {
-        "views": "8,233",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVEF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GFS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "JBL": {
+      "h24": 1,
+      "d7": 1
+    },
     "META": {
       "h24": 2,
       "d7": 2
@@ -130,19 +148,7 @@
       "h24": 1,
       "d7": 1
     },
-    "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
     "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "RKLB": {
-      "h24": 1,
-      "d7": 1
-    },
-    "ASTS": {
       "h24": 1,
       "d7": 1
     }

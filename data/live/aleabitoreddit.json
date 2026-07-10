@@ -9,6 +9,30 @@
   "fetchedAt": "2026-07-10 09:00",
   "feed": [
     {
+      "time": "07-10 16:23",
+      "type": "推文",
+      "ticker": "LITE",
+      "tickers": [
+        "LITE",
+        "SIVE",
+        "TSM",
+        "AAOI",
+        "IQE",
+        "AXTI"
+      ],
+      "title": "推文线索 · LITE",
+      "body": "Yep, it’s interesting to witness retail capitulation.\nAfter we got Bloomberg Meta compute article cleared up by their internal memo. \nAnd the 2 reports on delays were denied by Nvidia. \nBoth of which caused the selloff in the first place...\nSo Photonics / Nvidia’s roadmap hasn’t fundamentally changed:\n$LITE is still completely sold out for the next 2 years and likely into 2029.\n$SIVE is about to volume ramp with GlobalFoundries, Jabil, Poet, Ayar, and other hyperscaler suppliers.\n$TSM COUPE and their TW suppliers from Shunsin to Foci aren’t randomly disappearing into the void.\n$AAOI and their $471m/month h2 2027 revenue projections haven’t changed.\n$IQE and their epiwafer contracts with Macom and Tower Semi haven’t disappeared.\n$AXTI ownership of 40% of the InP substrate supply chains haven’t suddenly disappeared.\nAs with any theme from Rocketlab + Space sector 50% drop back in 2025. \nOr Nebius + Neocloud 50% drop entering 2026.\nOr the Samsung/SK Hynix crash from Iran War LNG/Helium/Oil fears few months ago.\nVolatility from indiscriminate thematic selloffs isn’t typically representative of individual company fundamentals.\nRetail tends to build conviction over price movements and imaginary charts, then lose that when a stock drops.\nAnd institutions are probably placing limit orders to capitalize on that.\nConviction shouldn’t be tied to the quote of a stock on a certain day, but long term revenue or operating income growth.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-10 16:23",
+      "url": "https://x.com/aleabitoreddit/status/2075496116481884524",
+      "stats": {
+        "views": "13K",
+        "likes": "38",
+        "reposts": "3",
+        "bookmarks": "15"
+      }
+    },
+    {
       "time": "07-10 03:35",
       "type": "推文",
       "ticker": "TSLA",
@@ -88,37 +112,38 @@
         "reposts": "2",
         "bookmarks": "5"
       }
-    },
-    {
-      "time": "07-09 05:16",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META"
-      ],
-      "title": "推文线索 · META",
-      "body": "$META to build a new $10B DC in Canada to expand AI capacity.\nSo much for the media framing of “Meta Compute”as overbuilding and cutting capex.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-09 05:16",
-      "url": "https://x.com/aleabitoreddit/status/2074965761345642660",
-      "stats": {
-        "views": "15K",
-        "likes": "84",
-        "reposts": "11",
-        "bookmarks": "4"
-      }
     }
   ],
   "mentions": {
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "TSM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
     "TSLA": {
       "h24": 1,
       "d7": 1
     },
     "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
       "h24": 1,
       "d7": 1
     },
@@ -135,15 +160,15 @@
       "d7": 1
     },
     "META": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "SNDK": {
       "h24": 1,
       "d7": 1
     },
     "SPCX": {
-      "h24": 1,
+      "h24": 0,
       "d7": 1
     }
   },

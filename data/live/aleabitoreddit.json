@@ -9,6 +9,85 @@
   "fetchedAt": "2026-07-10 21:00",
   "feed": [
     {
+      "time": "07-11 02:17",
+      "type": "推文",
+      "ticker": "AMZN",
+      "tickers": [
+        "AMZN",
+        "AAOI",
+        "SIVE"
+      ],
+      "title": "推文线索 · AMZN",
+      "body": "Regarding $AMZN RNG + OpenAI’s MRC and VCSELs. \nIn what appears to be an indirect response on B. Riley's $AAOI sell report regarding optimizations that \"flattens networks and cuts transceiver TAM 40-50%\".\nRosenblatt TLDR: They've already modeled for this, even though each XPU may use fewer transceivers.\nThe number of XPUs is growing so quickly that total optical demand should still rise. \nOn lasers architectures for CPO: VCSELs are useful as a credible bridge for NPO/short reach. \nIdeal architecture though for CPO is UHP CW over other lasers, and cites Broadcom for that statements. Which happens to supports my core $SIVE thesis. \nI feel like Rosenblatt and I share the same views on a lot of things, I like the way they roll.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-11 02:17",
+      "url": "https://x.com/aleabitoreddit/status/2075645547978084371",
+      "stats": {
+        "views": "0",
+        "likes": "1",
+        "reposts": "1",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "07-11 01:31",
+      "type": "推文",
+      "ticker": "AAOI",
+      "tickers": [
+        "AAOI",
+        "LITE",
+        "SIVEF",
+        "COHR"
+      ],
+      "title": "推文线索 · AAOI",
+      "body": "Rosenblatt on recent optical sector weakness from $AAOI to $LITE:\n\"Stocks in the Optical sector have traded poorly for the last 1-2 months\" due to CPO delay reports and China capacity scares.\n\"We think short sellers... do not actually strongly believe in the thesis.\"\nMultiple short sellers told them they will likely close their positions... late July and early August. Further, they say they plan to buy Optical stocks in 2027 for the scale up CPO opportunity.\nHilarious report on laser weakness, read is very positive for $SIVEF, $COHR, and others moving forward.\nI've been long on CPO sector, but seems like institutions want entry points, just a bit later on.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-11 01:31",
+      "url": "https://x.com/aleabitoreddit/status/2075634064518955297",
+      "stats": {
+        "views": "16K",
+        "likes": "68",
+        "reposts": "6",
+        "bookmarks": "19"
+      }
+    },
+    {
+      "time": "07-11 00:01",
+      "type": "推文",
+      "ticker": "SKHYV",
+      "tickers": [
+        "SKHYV"
+      ],
+      "title": "推文线索 · SKHYV",
+      "body": "Sk Hynix is now trading under $SKHYV!\nIt's now up an insane 16%。\nI wonder how Sk Hynix over in Korea is going to react on Monday.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-11 00:01",
+      "url": "https://x.com/aleabitoreddit/status/2075611260771852590",
+      "stats": {
+        "views": "19K",
+        "likes": "54",
+        "reposts": "7",
+        "bookmarks": "5"
+      }
+    },
+    {
+      "time": "07-10 22:38",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Why do I have this weird feeling the main reason retail is excited SK Hynix NASDAQ listing.\nIs because they can do degen option calls instead of individual stock purchases.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-10 22:38",
+      "url": "https://x.com/aleabitoreddit/status/2075590371531493729",
+      "stats": {
+        "views": "22K",
+        "likes": "85",
+        "reposts": "8",
+        "bookmarks": "6"
+      }
+    },
+    {
       "time": "07-10 20:27",
       "type": "推文",
       "ticker": "CCXI",
@@ -27,127 +106,22 @@
         "reposts": "7",
         "bookmarks": "10"
       }
-    },
-    {
-      "time": "07-10 19:17",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "The \"Mythical Golden Egg Dragon Candle\" predicted the $SIVE rally today. \nIf you look at the Golden Egg hatching indicator I drew, you can tell it predicts Sivers CEO buying on the open market a day later. \nDo you guys think it's time I should sell courses on TA?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-10 19:17",
-      "url": "https://x.com/aleabitoreddit/status/2075539824589860866",
-      "stats": {
-        "views": "12K",
-        "likes": "50",
-        "reposts": "3",
-        "bookmarks": "1"
-      }
-    },
-    {
-      "time": "07-10 16:23",
-      "type": "推文",
-      "ticker": "LITE",
-      "tickers": [
-        "LITE",
-        "SIVE",
-        "TSM",
-        "AAOI",
-        "IQE",
-        "AXTI"
-      ],
-      "title": "推文线索 · LITE",
-      "body": "Yep, it’s interesting to witness retail capitulation.\nAfter we got Bloomberg Meta compute article cleared up by their internal memo. \nAnd the 2 reports on delays were denied by Nvidia. \nBoth of which caused the selloff in the first place...\nSo Photonics / Nvidia’s roadmap hasn’t fundamentally changed:\n$LITE is still completely sold out for the next 2 years and likely into 2029.\n$SIVE is about to volume ramp with GlobalFoundries, Jabil, Poet, Ayar, and other hyperscaler suppliers.\n$TSM COUPE and their TW suppliers from Shunsin to Foci aren’t randomly disappearing into the void.\n$AAOI and their $471m/month h2 2027 revenue projections haven’t changed.\n$IQE and their epiwafer contracts with Macom and Tower Semi haven’t disappeared.\n$AXTI ownership of 40% of the InP substrate supply chains haven’t suddenly disappeared.\nAs with any theme from Rocketlab + Space sector 50% drop back in 2025. \nOr Nebius + Neocloud 50% drop entering 2026.\nOr the Samsung/SK Hynix crash from Iran War LNG/Helium/Oil fears few months ago.\nVolatility from indiscriminate thematic selloffs isn’t typically representative of individual company fundamentals.\nRetail tends to build conviction over price movements and imaginary charts, then lose that when a stock drops.\nAnd institutions are probably placing limit orders to capitalize on that.\nConviction shouldn’t be tied to the quote of a stock on a certain day, but long term revenue or operating income growth.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-10 16:23",
-      "url": "https://x.com/aleabitoreddit/status/2075496116481884524",
-      "stats": {
-        "views": "13K",
-        "likes": "38",
-        "reposts": "3",
-        "bookmarks": "15"
-      }
-    },
-    {
-      "time": "07-10 03:35",
-      "type": "推文",
-      "ticker": "TSLA",
-      "tickers": [
-        "TSLA",
-        "CCXI"
-      ],
-      "title": "推文线索 · TSLA",
-      "body": "\"China is shipping ~90% of the world's humanoid robots. We cannot keep taking them lightly.\"\nElon's comment: \"For now\"\nMeanwhile, 1X today posts a video of the most advanced humanoid hand.\nLooks like the inflection point for American humanoid programs is here?\nBoth technologically with players like 1X and with mass production with $TSLA? \nI'm am personally long on Agility through $CCXI targeting commercialization with Amazon and others. \nBut I'm proud to see American robotics as a whole go brrrr.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-10 03:35",
-      "url": "https://x.com/aleabitoreddit/status/2075302956581449892",
-      "stats": {
-        "views": "12K",
-        "likes": "25",
-        "reposts": "3",
-        "bookmarks": "1"
-      }
-    },
-    {
-      "time": "07-10 02:44",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
-        "SIVEF",
-        "GFS",
-        "JBL"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "Three new $SIVE insider purchases today. \nMost notably: $SIVEF CEO Vikram bought 1,000,000 SEK worth of shares on the open market today. \nThis is following the massive drop on Sivers stock following 2 misleading CPO delay reports, Meta Compute headlines, and another insider sale report from another photonics director. \nTypically, insider sells for any number of reasons. But having the CEO buy on the open-market is the clearest signal in management confidence. \nFollowing $GFS, $JBL, and other laser supplier partnerships, and his goal of NASDAQ listing in the near term. \nFeels like the CEO sees a clear potential for Sivers to become the next photonics giant (myself included).",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-10 02:44",
-      "url": "https://x.com/aleabitoreddit/status/2075289915697553697",
-      "stats": {
-        "views": "16K",
-        "likes": "70",
-        "reposts": "7",
-        "bookmarks": "11"
-      }
     }
   ],
   "mentions": {
-    "CCXI": {
-      "h24": 2,
-      "d7": 2
-    },
-    "JBL": {
-      "h24": 2,
-      "d7": 2
-    },
-    "SIVE": {
-      "h24": 3,
-      "d7": 3
-    },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSM": {
+    "AMZN": {
       "h24": 1,
       "d7": 1
     },
     "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVE": {
       "h24": 1,
       "d7": 1
     },
-    "IQE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AXTI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSLA": {
+    "LITE": {
       "h24": 1,
       "d7": 1
     },
@@ -155,7 +129,19 @@
       "h24": 1,
       "d7": 1
     },
-    "GFS": {
+    "COHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SKHYV": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CCXI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "JBL": {
       "h24": 1,
       "d7": 1
     }

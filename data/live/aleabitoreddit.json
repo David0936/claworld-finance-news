@@ -3,11 +3,31 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-07-11T09-00-05-08-00",
+  "upstreamSnapshotId": "2026-07-11T21-00-00-08-00",
   "snapshotDate": "2026-07-11",
-  "snapshotTime": "09:01",
-  "fetchedAt": "2026-07-11 09:01",
+  "snapshotTime": "21:01",
+  "fetchedAt": "2026-07-11 21:01",
   "feed": [
+    {
+      "time": "07-11 18:45",
+      "type": "推文",
+      "ticker": "AAPL",
+      "tickers": [
+        "AAPL",
+        "GOOGL"
+      ],
+      "title": "推文线索 · AAPL",
+      "body": "Contrarian take, but Sam Altman / OpenAI is doing something right if he's pissing off every Mag7 like $AAPL. \nBy building their own ecosystem instead of being sucked into another. \nIt's been awhile since $GOOGL, Apple, Microsoft, and others had some genuine disruptors.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-11 18:45",
+      "url": "https://x.com/aleabitoreddit/status/2075894311741440041",
+      "stats": {
+        "views": "13K",
+        "likes": "46",
+        "reposts": "2",
+        "bookmarks": "1"
+      }
+    },
     {
       "time": "07-11 02:17",
       "type": "推文",
@@ -86,29 +106,17 @@
         "reposts": "8",
         "bookmarks": "6"
       }
-    },
-    {
-      "time": "07-10 20:27",
-      "type": "推文",
-      "ticker": "CCXI",
-      "tickers": [
-        "CCXI",
-        "JBL"
-      ],
-      "title": "推文线索 · CCXI",
-      "body": "Mitsubishi Motors joins robotics race to deploy humanoid workers by 2027. \nPairing with Highlanders, a Japanese robotics company.\n- Agility $CCXI x Foxconn, Toyota\n- Apptronik x $JBL, Mercedes\n- Highlanders x Mitsubishi\n- Figure × BMW\n- Boston Dynamics x Hyundai (subsidiaries)\n- Optimus x Tesla (Internal)\n- Rainbow Robotics x Samsung (subsidiaries)\nIdk if it's just me of there's a lot of patterns with humanoid companies playing buddy-buddy up with a major auto player/manufacturer. \nIf they're not already vertically integrated by one already. \nThen the Chinese players like UBTech/AgiBot/Unitree don't seem to care and work with a wide variety of auto players in China. \nCurious how this trend plays out...",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-10 20:27",
-      "url": "https://x.com/aleabitoreddit/status/2075557588159058076",
-      "stats": {
-        "views": "18K",
-        "likes": "57",
-        "reposts": "7",
-        "bookmarks": "10"
-      }
     }
   ],
   "mentions": {
+    "AAPL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "GOOGL": {
+      "h24": 1,
+      "d7": 1
+    },
     "AMZN": {
       "h24": 1,
       "d7": 1
@@ -136,14 +144,6 @@
     "SKHYV": {
       "h24": 1,
       "d7": 1
-    },
-    "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "JBL": {
-      "h24": 1,
-      "d7": 1
     }
   },
   "metrics": [
@@ -157,19 +157,19 @@
       "label": "股票覆盖",
       "value": "804",
       "delta": "live",
-      "hint": "较上一快照 +1"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "24h 活跃",
-      "value": "12",
+      "value": "9",
       "delta": "live",
-      "hint": "较上一快照 +1"
+      "hint": "较上一快照 -3"
     },
     {
       "label": "7天活跃",
-      "value": "58",
+      "value": "59",
       "delta": "live",
-      "hint": "较上一快照 +2"
+      "hint": "较上一快照 +1"
     },
     {
       "label": "30天活跃",
@@ -181,7 +181,7 @@
       "label": "新闻驱动",
       "value": "78",
       "delta": "live",
-      "hint": "较上一快照 +1"
+      "hint": "较上一快照 持平"
     }
   ],
   "priorityHeader": {
@@ -193,7 +193,7 @@
     {
       "rank": 1,
       "ticker": "NVDA",
-      "time": "07-11 09:00",
+      "time": "07-11 21:00",
       "mentions24h": 0,
       "mentions7d": 7,
       "source": "新闻",
@@ -207,7 +207,7 @@
     {
       "rank": 2,
       "ticker": "LITE",
-      "time": "07-11 09:00",
+      "time": "07-11 21:00",
       "mentions24h": 2,
       "mentions7d": 7,
       "source": "新闻",
@@ -216,21 +216,21 @@
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
       "note": "AM 转述的券商观点认为光学股弱势主要来自 CPO 延迟和 China capacity 担忧，部分空头可能在 7 月下旬至 8 月初平仓。这提高反身性和入场窗口讨论，但不是公司新增指引。",
-      "priority": 345
+      "priority": 330
     },
     {
       "rank": 3,
-      "ticker": "AAOI",
-      "time": "07-11 09:00",
-      "mentions24h": 3,
-      "mentions7d": 4,
+      "ticker": "AMZN",
+      "time": "07-11 21:00",
+      "mentions24h": 1,
+      "mentions7d": 5,
       "source": "新闻",
-      "sourceCount": 3,
+      "sourceCount": 10,
       "gptLevel": "analysissite",
       "sentiment": "看多",
-      "riskLabel": "高风险偏多",
-      "note": "AM 边际来自光互连空头 thesis 与 TAM 争论：转述观点认为单 XPU 光模块用量下降已被模型考虑，XPU 数量增长仍可能推升总需求。这改善叙事，但公司层面仍要验证订单、产能和毛利率。",
-      "priority": 324
+      "riskLabel": "积极观察",
+      "note": "AMZN 线索集中在云网络架构：若每颗 XPU 光模块减少被 XPU 数量增长抵消，光互连需求仍可能上行。对 AMZN 需进一步验证 capex 效率和云利润率。",
+      "priority": 309
     }
   ],
   "stockPool": [

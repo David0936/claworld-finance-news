@@ -9,6 +9,25 @@
   "fetchedAt": "2026-07-14 09:01",
   "feed": [
     {
+      "time": "07-14 09:51",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "So Jensen himself went out to do damage control with $NVDA delays reports apparently:\n1. Jensen Huang said no delays: \n- 800V and rack-to-rack optical interconnects is progressing fully in line with the original plan with no material delay. \n- Debunked the rumor that the next-generation flagship, Rubin Ultra, would be delayed until 2028 and said it would be on track to ship next year\n- Rack system optimizations, like replacing Kyber with a new design are architectural optimizations, not impacting delivery timelines.\n2. On ASIC competition: no loss of market share.\n- Talked about how a leading frontier lab that previously relied heavily on internal ASICs has shifted nearly 50% of its compute load to Nvidia\n3. On over-reliance on hyperscalers.\n- AI frontier labs currently contributing to ~20% of demand.\n- Traditional cloud providers, Nvidia provides Vera CPUs and high-speed networking\n- Sovereign AI",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-14 09:51",
+      "url": "https://x.com/aleabitoreddit/status/2076846994614792663",
+      "stats": {
+        "views": "2,805",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
       "time": "07-14 07:17",
       "type": "推文",
       "ticker": "AAOI",
@@ -100,29 +119,13 @@
         "reposts": "2",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "07-12 19:25",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA",
-        "TSM"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "Apparently there’s a new popular trend to bearpost trillion dollar companies.\nLike $NVDA or $TSM.\nBy finding isolating technical details, then blowing it out of proportions by claiming their whole program is delayed.\n-> if the company doesn’t respond, stock prices/sentiment are damaged. \n-> if the company issues a response, they can’t go into detail since supply chains are confidential… but people still doubt them\n-> Poster gain more impressions, then does it again with more views the next time.\nDon’t quite think this is very healthy, with more folks copying that playbook. Especially around incentive structures.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-12 19:25",
-      "url": "https://x.com/aleabitoreddit/status/2076266613675069628",
-      "stats": {
-        "views": "9,021",
-        "likes": "23",
-        "reposts": "1",
-        "bookmarks": "2"
-      }
     }
   ],
   "mentions": {
+    "NVDA": {
+      "h24": 2,
+      "d7": 2
+    },
     "AAOI": {
       "h24": 1,
       "d7": 1
@@ -145,7 +148,7 @@
     },
     "TSM": {
       "h24": 2,
-      "d7": 3
+      "d7": 2
     },
     "GFS": {
       "h24": 1,
@@ -162,10 +165,6 @@
     "SPCX": {
       "h24": 1,
       "d7": 1
-    },
-    "NVDA": {
-      "h24": 1,
-      "d7": 2
     },
     "AAPL": {
       "h24": 1,

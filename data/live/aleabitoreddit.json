@@ -9,6 +9,48 @@
   "fetchedAt": "2026-07-14 21:00",
   "feed": [
     {
+      "time": "07-14 22:57",
+      "type": "推文",
+      "ticker": "NBIS",
+      "tickers": [
+        "NBIS",
+        "SPCX",
+        "META",
+        "MSFT"
+      ],
+      "title": "推文线索 · NBIS",
+      "body": "$NBIS signs $1B+ compute agreement with Reflection AI, for GB300 access through 2029.\nReflection also signed a multi-billion dollar agreement with $SPCX earlier. \nInteresting to say the least, seeing Nebius drop -5% off the news today. \nAlso... counterparty to get this done kinda reminds me of OpenAI, where they might not have the funds to actually execute on these LTAs yet compared to $META or $MSFT. \nBut generally positive long term developments, customer diversification was one of the core strengths of Nebius.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-14 22:57",
+      "url": "https://x.com/aleabitoreddit/status/2077044786402660829",
+      "stats": {
+        "views": "7,143",
+        "likes": "0",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "07-14 22:35",
+      "type": "推文",
+      "ticker": "TSEM",
+      "tickers": [
+        "TSEM",
+        "AAOI"
+      ],
+      "title": "推文线索 · TSEM",
+      "body": "Two different capacity expansion announcements today across $TSEM and $AAOI.\nTower Semi, supported by the Japanese government, announced expansion of its 300mm Silicon Photonics (SiPho), Silicon Germanium (SiGe), and advanced packaging capabilities. \nTargeting $1.2B net profit, and $3.6B revenue in 2028 (with a ~$28B MC, that's ~23.3 2028 forward p/e).\nAAOI announced the commencement of its buildout, roughly 400,000 square feet of manufacturing to make 800g/1.6T production go brrr. \nThe overall expansion is also supported by the local city government in Texas. (they also $20.85M worth of subsidies from the State earlier).\nThis one isn't exactly as materially new as Tower, since AAOI originally announced these plans before. Just commencement of it. \nRegardless, glad to see both of these companies in their Anime training arc phase as they power up.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-14 22:35",
+      "url": "https://x.com/aleabitoreddit/status/2077039373711970804",
+      "stats": {
+        "views": "15K",
+        "likes": "43",
+        "reposts": "4",
+        "bookmarks": "3"
+      }
+    },
+    {
       "time": "07-14 09:51",
       "type": "推文",
       "ticker": "NVDA",
@@ -73,60 +115,34 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "07-13 08:45",
-      "type": "推文",
-      "ticker": "GLW",
-      "tickers": [
-        "GLW",
-        "SPCX",
-        "NVDA",
-        "AAPL",
-        "INTC",
-        "TSM",
-        "AMKR",
-        "MU",
-        "META",
-        "AVGO",
-        "TSLA"
-      ],
-      "title": "推文线索 · GLW",
-      "body": "Just a semi recap TLDR:\n- $GLW glass bridge per Morgan Stanley has potential, but hard to displace FAU (like FOCI) in short term\n- $SPCX Starlink Gen 3 is scaling to 100,000 units (10x prev gen) creating possible capacity constraints for suppliers of switches to CCL.\n- PCB supply shortages are projected to persist until 2028, and component shortages/price hikes are already forcing ODMs like Inventec to issue conservative H2 shipment\n- 历史信号 and Zhipu are developing custom ASICs to bypass $NVDA (kinda expected by now). \n- Anthropic has achieved a $30B ARR and is projected to hit >$1B in Q3 profit. Turns out these frontier labs are more profitable than people think. \n- US admin pressured $AAPL to source from $INTC, in exchange for tariff exception. Kinda pressuring alignment away from TSM. \n- $TSM plans a 30x expansion of its Photonic Integrated Circuit (PIC) capacity by 2028, growing from 500 to 25,000 wafers per month\n- Hanmi Semiconductor is entering the CoWoS packaging equipment market\n- $NVDA and NTT hosting a conference July 24th to discuss CPO strategies. \n- 5x general NAND flash price hike this year, market size $489B by next year triggered by RAG/inference. Samsung and SK Hynix make emergency fab investments, NAND equipment suppliers go brrrr. \n- Gas turbine bottleneck, 40% supply gap accompanied by staggering 5-year delivery cycles (mega-fabs need them for mass production).\n- AI probe card assembly has hit a severe bottleneck apparently. Which is attempted to by solved with things like Innovation Service's machines. \n- Nanya, 79.5% gross margins reported, memory go brr. 4x capex for capacity/advanced packaging. \n- CXMT's STAR Market IPO on July 16, so should bring a lot of attention to memory players in that supply chain. \n- KYEC $1.4B investment into US for $TSM Arizona output test facilities. Lot of these players like $AMKR and others should go brr in 2028.\n- $INTC CEO warned last month that helium could hinder the manufacturing costs and delivery times of AI chips\n- 3D NAND word lines are shifting from Tungsten to Molybdenum starting at the 375-layer node\n- SambaNova secured JPM for AI inference and raised $1B at an $11B valuation.\n- HBM prices projections to double in 2027 as $NVDA Rubin platform drives demand.\n- $MU provides $500 million in funding to support GlobalWafers' US manufacturing capacity \n- $META 'Iris' will enter mass production in September via $AVGO and TSMC and Meta aims to double computing power to 14GW by 2027.\n- Largan Precision has secured its first CPO FAU order, mass production slated for middle of next year (kinda indication around Foci and others). \n- Samsung and SK Hynix have delayed the implementation of hybrid bonding packaging technology for HBM4 apparently \n- Memory costs (DRAM/NAND) have reached 60% of the BOM for sub-$400 smartphones, causing a severe volume contraction.\n- SK Hynix successfully rasied $26.5 billion through a Nasdaq ADR\n- $TSLA issued procurement guidelines requiring suppliers to reach weekly production of 1,000 units by September and double to 2,000-2,500 by year end for its 3rd gen Optimus robot. Apparently Alliance Technology and A-Link may be in this supply chain harmonic reducers and vision lenses?\nKinda go through all this stuff every day, but don't wanna be a news reporter so just consolidated stuff I found interesting.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-13 08:45",
-      "url": "https://x.com/aleabitoreddit/status/2076467953995071881",
-      "stats": {
-        "views": "0",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-13 02:27",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "Looks like the Strait of Hormuz is open for the 50th time this year per Trump.\nI’m getting tired looking at macro.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-13 02:27",
-      "url": "https://x.com/aleabitoreddit/status/2076372905450188998",
-      "stats": {
-        "views": "14K",
-        "likes": "53",
-        "reposts": "2",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
-    "NVDA": {
+    "NBIS": {
       "h24": 1,
+      "d7": 1
+    },
+    "SPCX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "META": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MSFT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSEM": {
+      "h24": 2,
       "d7": 2
     },
     "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "NVDA": {
       "h24": 1,
       "d7": 1
     },
@@ -148,50 +164,10 @@
     },
     "TSM": {
       "h24": 1,
-      "d7": 2
+      "d7": 1
     },
     "GFS": {
       "h24": 1,
-      "d7": 1
-    },
-    "TSEM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "GLW": {
-      "h24": 0,
-      "d7": 1
-    },
-    "SPCX": {
-      "h24": 0,
-      "d7": 1
-    },
-    "AAPL": {
-      "h24": 0,
-      "d7": 1
-    },
-    "INTC": {
-      "h24": 0,
-      "d7": 1
-    },
-    "AMKR": {
-      "h24": 0,
-      "d7": 1
-    },
-    "MU": {
-      "h24": 0,
-      "d7": 1
-    },
-    "META": {
-      "h24": 0,
-      "d7": 1
-    },
-    "AVGO": {
-      "h24": 0,
-      "d7": 1
-    },
-    "TSLA": {
-      "h24": 0,
       "d7": 1
     }
   },

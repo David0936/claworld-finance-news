@@ -9,6 +9,63 @@
   "fetchedAt": "2026-07-15 21:00",
   "feed": [
     {
+      "time": "07-16 00:56",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Anthropic to IPO as early as October per Bloomberg.\nThis is following their $65B financing at a $965 billion valuation last May.\nHmm, would you all invest in Anthropic at a $1T+ valuation?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-16 00:56",
+      "url": "https://x.com/aleabitoreddit/status/2077437150715666900",
+      "stats": {
+        "views": "9,591",
+        "likes": "9",
+        "reposts": "3",
+        "bookmarks": "3"
+      }
+    },
+    {
+      "time": "07-15 23:53",
+      "type": "推文",
+      "ticker": "AAPL",
+      "tickers": [
+        "AAPL",
+        "MSFT",
+        "META"
+      ],
+      "title": "推文线索 · AAPL",
+      "body": "$AAPL looks to acquire AI chip companies for running AI (Source: The Information)\nRight now, $MSFT, $META, Amazon, Google are carrying AI capex spend.\nBut what if Apple joined the others after M&A? \nA possible scenario is that they revise capex largely upward for their own AI buildout. \nSince they probably witnessed Google cutting off Meta from compute constraints... or what happens when you partner with OpenAI for LLMs. \nThen learned how important it is to have your own infrastructure. \nThis scenario would be quite bullish thematically from optical networking to foundries and something markets would not expect? We'll see what happens.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-15 23:53",
+      "url": "https://x.com/aleabitoreddit/status/2077421268991926703",
+      "stats": {
+        "views": "17K",
+        "likes": "68",
+        "reposts": "10",
+        "bookmarks": "7"
+      }
+    },
+    {
+      "time": "07-15 22:54",
+      "type": "推文",
+      "ticker": "NVDA",
+      "tickers": [
+        "NVDA"
+      ],
+      "title": "推文线索 · NVDA",
+      "body": "$NVDA CEO, Jensen Huang in Tokyo today said:\n\"The reports are not true. Vera Rubin is already in production. Giant amounts of production incoming\"\nAs a flat denial to the accusation that their AI servers would be delayed. \nJensen appears to be using the Umbrella term for Rubin Ultra/Kyber, then pointed to current gen ramp. \nRegardless, lot of damage has been done already to Nvidia supply chains stock prices, after the multiple delay reports. Even if Nvidia refuted them by clarifying Kyber change was an architecture optimization, not impacting timelines.\nIt's a very dangerous and growing trend for folks to post overreaching broader claims from technical nuances to grow viewcount... Especially if they get Jensen has to respond.\nIn the end, I'm trusting $NVDA on timelines since they probably have the greatest visibility into their own supply chain.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-15 22:54",
+      "url": "https://x.com/aleabitoreddit/status/2077406548012466390",
+      "stats": {
+        "views": "18K",
+        "likes": "100",
+        "reposts": "9",
+        "bookmarks": "5"
+      }
+    },
+    {
       "time": "07-15 11:08",
       "type": "推文",
       "ticker": "MU",
@@ -46,70 +103,25 @@
         "reposts": "4",
         "bookmarks": "9"
       }
-    },
-    {
-      "time": "07-14 22:57",
-      "type": "推文",
-      "ticker": "NBIS",
-      "tickers": [
-        "NBIS",
-        "SPCX",
-        "META",
-        "MSFT"
-      ],
-      "title": "推文线索 · NBIS",
-      "body": "$NBIS signs $1B+ compute agreement with Reflection AI, for GB300 access through 2029.\nReflection also signed a multi-billion dollar agreement with $SPCX earlier. \nInteresting to say the least, seeing Nebius drop -5% off the news today. \nAlso... counterparty to get this done kinda reminds me of OpenAI, where they might not have the funds to actually execute on these LTAs yet compared to $META or $MSFT. \nBut generally positive long term developments, customer diversification was one of the core strengths of Nebius.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-14 22:57",
-      "url": "https://x.com/aleabitoreddit/status/2077044786402660829",
-      "stats": {
-        "views": "7,143",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
-    },
-    {
-      "time": "07-14 22:35",
-      "type": "推文",
-      "ticker": "TSEM",
-      "tickers": [
-        "TSEM",
-        "AAOI"
-      ],
-      "title": "推文线索 · TSEM",
-      "body": "Two different capacity expansion announcements today across $TSEM and $AAOI.\nTower Semi, supported by the Japanese government, announced expansion of its 300mm Silicon Photonics (SiPho), Silicon Germanium (SiGe), and advanced packaging capabilities. \nTargeting $1.2B net profit, and $3.6B revenue in 2028 (with a ~$28B MC, that's ~23.3 2028 forward p/e).\nAAOI announced the commencement of its buildout, roughly 400,000 square feet of manufacturing to make 800g/1.6T production go brrr. \nThe overall expansion is also supported by the local city government in Texas. (they also $20.85M worth of subsidies from the State earlier).\nThis one isn't exactly as materially new as Tower, since AAOI originally announced these plans before. Just commencement of it. \nRegardless, glad to see both of these companies in their Anime training arc phase as they power up.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-14 22:35",
-      "url": "https://x.com/aleabitoreddit/status/2077039373711970804",
-      "stats": {
-        "views": "15K",
-        "likes": "43",
-        "reposts": "4",
-        "bookmarks": "3"
-      }
-    },
-    {
-      "time": "07-14 09:51",
-      "type": "推文",
-      "ticker": "NVDA",
-      "tickers": [
-        "NVDA"
-      ],
-      "title": "推文线索 · NVDA",
-      "body": "So Jensen himself went out to do damage control with $NVDA delays reports apparently:\n1. Jensen Huang said no delays: \n- 800V and rack-to-rack optical interconnects is progressing fully in line with the original plan with no material delay. \n- Debunked the rumor that the next-generation flagship, Rubin Ultra, would be delayed until 2028 and said it would be on track to ship next year\n- Rack system optimizations, like replacing Kyber with a new design are architectural optimizations, not impacting delivery timelines.\n2. On ASIC competition: no loss of market share.\n- Talked about how a leading frontier lab that previously relied heavily on internal ASICs has shifted nearly 50% of its compute load to Nvidia\n3. On over-reliance on hyperscalers.\n- AI frontier labs currently contributing to ~20% of demand.\n- Traditional cloud providers, Nvidia provides Vera CPUs and high-speed networking\n- Sovereign AI",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-14 09:51",
-      "url": "https://x.com/aleabitoreddit/status/2076846994614792663",
-      "stats": {
-        "views": "2,805",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "AAPL": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MSFT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "META": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 1,
+      "d7": 1
+    },
     "MU": {
       "h24": 1,
       "d7": 1
@@ -120,34 +132,6 @@
     },
     "SNDK": {
       "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SPCX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MSFT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "TSEM": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AAOI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NVDA": {
-      "h24": 0,
       "d7": 1
     }
   },

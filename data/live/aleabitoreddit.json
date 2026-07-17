@@ -9,6 +9,27 @@
   "fetchedAt": "2026-07-17 09:00",
   "feed": [
     {
+      "time": "07-17 11:16",
+      "type": "推文",
+      "ticker": "SKHY",
+      "tickers": [
+        "SKHY",
+        "INTC",
+        "MU"
+      ],
+      "title": "推文线索 · SKHY",
+      "body": "Kim Sunwoo of Meritz Securities: \"This Is Not the Time to Sell Samsung Electronics and $SKHY\"\nThey claim markets are excessively misunderstanding the situation with semis. And that DRAM shortage will intensify in the second half of this year. \n- H2 2026: \"suppliers can fulfill only 75%–80% of DRAM demand\". \n- 2027: \"fulfillment is expected to fall into the 60% range.\"\nIn the article, they attached market forecasts that show SK Hynix with a 2027 3.5x P/E and Samsung a 3.9x P/E. \nThink the $INTC CEO said it best around timeframes with his quote \"no relief in memory supply or pricing until at least 2028\". \nEspecially after $MU 16 LTAs with favorable take or pay volume contracts... memory demand seems structural.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-17 11:16",
+      "url": "https://x.com/aleabitoreddit/status/2077955479742173422",
+      "stats": {
+        "views": "14K",
+        "likes": "33",
+        "reposts": "5",
+        "bookmarks": "7"
+      }
+    },
+    {
       "time": "07-16 23:57",
       "type": "推文",
       "ticker": "INTC",
@@ -88,29 +109,20 @@
         "reposts": "0",
         "bookmarks": "0"
       }
-    },
-    {
-      "time": "07-16 21:05",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "I hope there's someone at X can fix this subscription bug. \nMany people are reporting that subscriptions don't renew anymore.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-16 21:05",
-      "url": "https://x.com/aleabitoreddit/status/2077741421667438728",
-      "stats": {
-        "views": "12K",
-        "likes": "16",
-        "reposts": "1",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
-    "INTC": {
+    "SKHY": {
       "h24": 1,
       "d7": 1
+    },
+    "INTC": {
+      "h24": 2,
+      "d7": 2
+    },
+    "MU": {
+      "h24": 2,
+      "d7": 2
     },
     "LITE": {
       "h24": 1,
@@ -137,10 +149,6 @@
       "d7": 1
     },
     "POET": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MU": {
       "h24": 1,
       "d7": 1
     },

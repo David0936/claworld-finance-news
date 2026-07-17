@@ -3,11 +3,88 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-07-17T09-00-00-08-00",
+  "upstreamSnapshotId": "2026-07-17T21-00-00-08-00",
   "snapshotDate": "2026-07-17",
-  "snapshotTime": "09:00",
-  "fetchedAt": "2026-07-17 09:00",
+  "snapshotTime": "21:01",
+  "fetchedAt": "2026-07-17 21:01",
   "feed": [
+    {
+      "time": "07-18 01:51",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "SPCX",
+        "NBIS",
+        "IREN"
+      ],
+      "title": "推文线索 · META",
+      "body": "$META in talks to lease compute to Anthropic in a $10B dollar deal.\nSeems like they saw how profitable \n$SPCX $45B compute deal was.\nBut just goes to validate Neocloud business models like $NBIS, $IREN, and co if hyperscalers are copying their homework.\nSource: NYT",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-18 01:51",
+      "url": "https://x.com/aleabitoreddit/status/2078175882620059719",
+      "stats": {
+        "views": "15K",
+        "likes": "61",
+        "reposts": "5",
+        "bookmarks": "6"
+      }
+    },
+    {
+      "time": "07-18 00:54",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Wow, apparently there’s claims ~3.4% of the adult population in Korea faces liquidation risk?\n“As of July 13, over 1.2 million leveraged retail traders' accounts hit margin call lines, with 320,000 to 360,000 accounts force-liquidated by brokers.”\n(There were other sources claiming this data came from Goldman Sachs desks rather than SK financial supervisory service data)\nRegardless, just evidence recent crash was accelerated by liquidation cascades/deleveraging rather than fundamentals:",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-18 00:54",
+      "url": "https://x.com/aleabitoreddit/status/2078161322769068533",
+      "stats": {
+        "views": "14K",
+        "likes": "53",
+        "reposts": "7",
+        "bookmarks": "5"
+      }
+    },
+    {
+      "time": "07-18 00:11",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Feels bad, -49.4% drawdown this month after the recent crash.\nMy portfolio is mainly AI chokepoints and bottlenecks. \nIn the memory, photonics, robotics, and upstream semis, (on margin) which all tend to be higher beta than others. But reduced leverage recently from the crash.\nI see a lot of people making fun of the drop or AI names, saying it’s obvious that:\n- “AI is a bubble”\n- “memory/kospi is a bubble”\n- “photonics is a bubble”\n- “humanoids won’t get anywhere”\n- “neoclouds will get replaced by hyperscalers like Meta”\nAnd a bunch of retail + bots saying “sell everything, it’s never going to recover”.\nBut I have conviction that all these themes are backed by structural revenue growth or technological shifts.\nAnd I’ve had similar drawdowns back when there admin threatened global tariffs, before markets pulled off a recovery.\nI personally have a longer horizon + higher tolerance for volatility than others, to see how this plays out.\nEspecially considering a lot of retail view things on a week to week basis: no, my thesis isn’t wrong yet if I project revenue inflection in H2 2027 and it’s 2026 now. \nAnyway, feels bad short term just wanted to share anyway for transparency.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-18 00:11",
+      "url": "https://x.com/aleabitoreddit/status/2078150537074373117",
+      "stats": {
+        "views": "21K",
+        "likes": "205",
+        "reposts": "11",
+        "bookmarks": "28"
+      }
+    },
+    {
+      "time": "07-17 22:52",
+      "type": "推文",
+      "ticker": "AAOI",
+      "tickers": [
+        "AAOI",
+        "SIVE",
+        "NVDA"
+      ],
+      "title": "推文线索 · AAOI",
+      "body": "Agreed! It’s nice to remember your thesis during a market crash.\nFrom my own personal thesis, if $AAOI hits $1.4B quarterly revenue start of Q3 2027. Which is annualized $5.6B off a $8B MC. \nIs it “over” for the company if that revenue ramp hasn’t even shown up in the quarterly earnings… when it’s 2026?\nSame applies to my CPO sector exposure like $SIVE, an architecture shift led by $NVDA. \nIf scale out volume ramps from H2 2026 into 2027, and scale up heavily volume ramps into 2028.\nIs it “over” that $0 -> $91B TAM expansion (per GS) hasn’t even hit yet?\nWith robotics like Agility, is it over in 2026 if the listing hasn’t even happened yet and humanoids haven’t ramped?\nI personally think current market conditions are a reflection of liquidity and leverage, not individual fundamentals.\nIt’s brutal for everyone to see KOSPI, TW, Nikkei, and AI, space, robotics sector stocks crash recently. \nEspecially when there’s a lot of irrational behavior stemming from those leverage.\nIn the end, we can’t tell you what stocks to buy, what timeframe you should sell, how to size your positions, or what you should do. \nOnly share personal thoughts or research and track if they get validated over time.\nSo it’s extremely important to build your own thesis, since everyone has unique risk tolerance or investing timeframes.\nAnd that usually leads to having higher conviction during crashes.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-17 22:52",
+      "url": "https://x.com/aleabitoreddit/status/2078130772121399553",
+      "stats": {
+        "views": "8,578",
+        "likes": "41",
+        "reposts": "2",
+        "bookmarks": "8"
+      }
+    },
     {
       "time": "07-17 11:16",
       "type": "推文",
@@ -28,107 +105,26 @@
         "reposts": "5",
         "bookmarks": "7"
       }
-    },
-    {
-      "time": "07-16 23:57",
-      "type": "推文",
-      "ticker": "INTC",
-      "tickers": [
-        "INTC",
-        "LITE",
-        "RDDT"
-      ],
-      "title": "推文线索 · INTC",
-      "body": "My guess is we’re close to market bottom on semis from $INTC to $LITE.\nA good indicator is if everyone on $RDDT blew up their portfolios to $0.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-16 23:57",
-      "url": "https://x.com/aleabitoreddit/status/2077784594959725056",
-      "stats": {
-        "views": "19K",
-        "likes": "154",
-        "reposts": "6",
-        "bookmarks": "21"
-      }
-    },
-    {
-      "time": "07-16 22:54",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
-        "AMD",
-        "GFS",
-        "JBL",
-        "POET"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "Lot of people were curious about $SIVE capacity volume ramp modeling through fab-light (Win Semi + others):\nUsing 10% of Win's wafer capacity as a low-end allocation (65% yield assumption, $50-$75 ASP):\nSivers would support $341-$512M worth of annual array revenue. Given upper end of managements 50-60%+ gross margin target, would be roughly:\n$205–307M of annual gross profit.\nAgainst Sivers current ~$1.1B MC, would be ~:\n3.6–5.4× MC/gross profit if this capacity scenario plays out in 2028. \nAnd at 15% would be $307–461M in gross profit (2.4–3.6× MC/gross profit)\nSivers CEO also replied that they're working with more fabs for capacity. And from an older deck, there looks to be more qualifications since 2024. \nSo capacity targets might be larger than what's stated here as CPO takes off. \nI also expect to see revenue pipeline projections hiked in future quarters, as more qualification suppliers to into HVM. \n_\nAs for demand side, CW also happens to be very bottlenecked. \nLumentum are buying CW off the open market due to EML obligations from their ER transcript. \nAnd $AMD are signing LTAs to secure CW capacity (from Trendforce). So when Sivers is ramping with $GFS, $JBL, Ayar, $POET, O-NET and others... \nGiven the current constraints, it's highly likely any independent qualified capacity that comes online would be absorbed. \nAnd as a cherry on top, Morgan Stanley named $SIVE (~$1.1B) as one of the three leading CPO laser players .\nAlongside $55B+ players Coherent and Lumentum in their recent note for a reason...\n_\nTLDR: Sivers only needs a low end allocation from Win to make substantial gross income relative to current valuations. \nI think the largest revenue upside that isn't modeled in if they TAM expansion with M&A after US NASDAQ listing. \nBy copying the Lumentum playbook with Cloud Light to build out entire transceiver modules or with optical engines.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-16 22:54",
-      "url": "https://x.com/aleabitoreddit/status/2077768896061563339",
-      "stats": {
-        "views": "22K",
-        "likes": "47",
-        "reposts": "4",
-        "bookmarks": "10"
-      }
-    },
-    {
-      "time": "07-16 21:54",
-      "type": "推文",
-      "ticker": "MU",
-      "tickers": [
-        "MU",
-        "QCOM"
-      ],
-      "title": "推文线索 · MU",
-      "body": "Today, $MU announced it signed memory LTAs with $QCOM.\nInteresting reaction to see Micron proceeded to drop 5.37% right after.\nDoesn’t quite feel like there’s anything individually wrong with memory or AI names with all these structural agreements signed?\nMore like the tail end of deleveraging / margin cascades.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-16 21:54",
-      "url": "https://x.com/aleabitoreddit/status/2077753660592033828",
-      "stats": {
-        "views": "18K",
-        "likes": "110",
-        "reposts": "12",
-        "bookmarks": "9"
-      }
-    },
-    {
-      "time": "07-16 21:06",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "I hope there's someone at X can fix this subscription bug. \nMany people are reporting that subscriptions don't renew anymore.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-16 21:06",
-      "url": "https://x.com/aleabitoreddit/status/2077741631135191234",
-      "stats": {
-        "views": "4,077",
-        "likes": "20",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
-    "SKHY": {
+    "META": {
       "h24": 1,
       "d7": 1
     },
-    "INTC": {
-      "h24": 2,
-      "d7": 2
-    },
-    "MU": {
-      "h24": 2,
-      "d7": 2
-    },
-    "LITE": {
+    "SPCX": {
       "h24": 1,
       "d7": 1
     },
-    "RDDT": {
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IREN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
       "h24": 1,
       "d7": 1
     },
@@ -136,23 +132,19 @@
       "h24": 1,
       "d7": 1
     },
-    "AMD": {
+    "NVDA": {
       "h24": 1,
       "d7": 1
     },
-    "GFS": {
+    "SKHY": {
       "h24": 1,
       "d7": 1
     },
-    "JBL": {
+    "INTC": {
       "h24": 1,
       "d7": 1
     },
-    "POET": {
-      "h24": 1,
-      "d7": 1
-    },
-    "QCOM": {
+    "MU": {
       "h24": 1,
       "d7": 1
     }
@@ -160,31 +152,31 @@
   "metrics": [
     {
       "label": "活跃信号",
-      "value": "491",
+      "value": "490",
       "delta": "live",
       "hint": "风险 + AI + 最新事件"
     },
     {
       "label": "股票覆盖",
-      "value": "809",
+      "value": "810",
       "delta": "live",
-      "hint": "较上一快照 持平"
+      "hint": "较上一快照 +1"
     },
     {
       "label": "24h 活跃",
-      "value": "10",
+      "value": "13",
       "delta": "live",
-      "hint": "较上一快照 +6"
+      "hint": "较上一快照 +3"
     },
     {
       "label": "7天活跃",
-      "value": "40",
+      "value": "42",
       "delta": "live",
       "hint": "较上一快照 +2"
     },
     {
       "label": "30天活跃",
-      "value": "122",
+      "value": "123",
       "delta": "live",
       "hint": "较上一快照 +1"
     },
@@ -192,7 +184,7 @@
       "label": "新闻驱动",
       "value": "83",
       "delta": "live",
-      "hint": "较上一快照 +1"
+      "hint": "较上一快照 持平"
     }
   ],
   "priorityHeader": {
@@ -204,7 +196,7 @@
     {
       "rank": 1,
       "ticker": "NVDA",
-      "time": "07-17 09:00",
+      "time": "07-17 21:00",
       "mentions24h": 0,
       "mentions7d": 5,
       "source": "新闻",
@@ -212,13 +204,13 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "Anthropic 潜在 IPO 与高估值讨论延续私募 AI 估值锚，但它只能作为资金偏好和 capex 回收期信号，不能直接外推为上市公司收入。",
+      "note": "未见足以单独改变公司结论的一手新增事实；历史信号作为风险清单并入本轮复核。历史信号曾给出 偏多但高风险 方向；无观点变化，但近期新闻（增加股息、80B回购授权）强化管理层信心和股东回报，确认基本面改善趋势；SEC 10-Q和8-K如期提交，未见负面意外；作者自2026年1月初转看多后立场稳定，持续关注CPO生态和上游瓶颈，短期关注6月Computex催化。",
       "priority": 339
     },
     {
       "rank": 2,
       "ticker": "LITE",
-      "time": "07-17 09:00",
+      "time": "07-17 21:00",
       "mentions24h": 1,
       "mentions7d": 4,
       "source": "新闻",
@@ -226,22 +218,22 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "7/16 夜间作者把半导体从 INTC 到 LITE 的回撤描述为接近市场底，并把 RDDT 散户组合受损作为反向情绪指标；这是仓位和情绪线索，不是基本面事实。",
+      "note": "未见足以单独改变公司结论的一手新增事实；历史信号作为风险清单并入本轮复核。历史信号曾给出 偏多但高风险 方向；边际变化：最新状态与前期一致，作者立场仍为看多且连续确认赢利，价格动量保持强势；基本面趋势改善（FY25营收同比+21%、净利转正）但利润质量仍弱（运营亏损）；新闻面持续密集看涨，强化拥挤叙事；无新增重大披露催化，情绪与估值风险边际上有所抬升。",
       "priority": 318
     },
     {
       "rank": 3,
-      "ticker": "AMD",
-      "time": "07-17 09:00",
-      "mentions24h": 1,
-      "mentions7d": 1,
+      "ticker": "INTC",
+      "time": "07-17 21:00",
+      "mentions24h": 2,
+      "mentions7d": 4,
       "source": "新闻",
       "sourceCount": 10,
       "gptLevel": "analysissite",
-      "sentiment": "看多",
-      "riskLabel": "高风险偏多",
-      "note": "Anthropic 潜在 IPO 与高估值讨论延续私募 AI 估值锚，但它只能作为资金偏好和 capex 回收期信号，不能直接外推为上市公司收入。",
-      "priority": 307
+      "sentiment": "中性",
+      "riskLabel": "观察",
+      "note": "PM 推文引用 INTC CEO 对内存供给和价格无明显缓解的时间表；边际价值在行业供需判断，不等同于 INTC 自身收入改善。",
+      "priority": 310
     }
   ],
   "stockPool": [
@@ -15722,6 +15714,21 @@
     ],
     "rows": [
       {
+        "ticker": "MU",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-09-26 00:25",
+        "lastMention": "2026-07-17 11:16",
+        "basePrice": "2025-09-26 @ 157",
+        "w1": "19.4%",
+        "m1": "40.0%",
+        "m6": "127.1%",
+        "y1": "未到期",
+        "toDate": "442.5%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
         "ticker": "LITE",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
@@ -15810,21 +15817,6 @@
         "toDate": "33.5%",
         "view": "看多",
         "recentView": "积极观察"
-      },
-      {
-        "ticker": "MU",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-09-26 00:25",
-        "lastMention": "2026-07-16 21:54",
-        "basePrice": "2025-09-26 @ 157",
-        "w1": "19.4%",
-        "m1": "40.0%",
-        "m6": "127.1%",
-        "y1": "未到期",
-        "toDate": "442.5%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "QCOM",
@@ -15964,7 +15956,7 @@
       {
         "ticker": "TSM",
         "chain": "芯片/算力",
-        "queue": "高风险偏多",
+        "queue": "积极观察",
         "firstMention": "2025-09-09 13:43",
         "lastMention": "2026-07-14 03:20",
         "basePrice": "2025-09-09 @ 251",
@@ -15974,7 +15966,7 @@
         "y1": "未到期",
         "toDate": "63.3%",
         "view": "看多",
-        "recentView": "高风险偏多"
+        "recentView": "积极观察"
       },
       {
         "ticker": "AVGO",
@@ -16302,7 +16294,7 @@
         "m1": "20.1%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-4.8%",
+        "toDate": "-23.0%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17292,7 +17284,7 @@
         "m1": "41.8%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "34.4%",
+        "toDate": "26.1%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17532,7 +17524,7 @@
         "m1": "16.3%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-8.8%",
+        "toDate": "-12.6%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17757,7 +17749,7 @@
         "m1": "-13.5%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "56.9%",
+        "toDate": "52.9%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -17922,7 +17914,7 @@
         "m1": "-10.4%",
         "m6": "16.0%",
         "y1": "未到期",
-        "toDate": "-13.5%",
+        "toDate": "-12.9%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18112,12 +18104,12 @@
         "queue": "高风险偏多",
         "firstMention": "2025-10-13 23:51",
         "lastMention": "2026-02-21 17:35",
-        "basePrice": "2025-10-13 @ 509",
+        "basePrice": "2025-10-13 @ 127",
         "w1": "-1.0%",
         "m1": "7.3%",
         "m6": "-20.9%",
         "y1": "未到期",
-        "toDate": "27.8%",
+        "toDate": "60.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18387,7 +18379,7 @@
         "m1": "5.0%",
         "m6": "37.8%",
         "y1": "未到期",
-        "toDate": "45.2%",
+        "toDate": "32.5%",
         "view": "看多",
         "recentView": "高风险偏多"
       },

@@ -9,6 +9,25 @@
   "fetchedAt": "2026-07-18 09:00",
   "feed": [
     {
+      "time": "07-18 12:39",
+      "type": "推文",
+      "ticker": "SKHY",
+      "tickers": [
+        "SKHY"
+      ],
+      "title": "推文线索 · SKHY",
+      "body": "For anyone watching the 25%+ premium in $SKHY versus SK Hynix's Korean shares:\nThe ADRs and local shares become convertible on July 29.\nShould open the door for arbitrage and likely compress the ADR premium. Maybe lifting Korean shares or pressuring US shares. \n2.5% currently is the US ADR stock, so an additional 22.5% can be converted.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-18 12:39",
+      "url": "https://x.com/aleabitoreddit/status/2078338950150959558",
+      "stats": {
+        "views": "12K",
+        "likes": "30",
+        "reposts": "2",
+        "bookmarks": "4"
+      }
+    },
+    {
       "time": "07-18 09:00",
       "type": "推文",
       "ticker": "",
@@ -86,31 +105,13 @@
         "reposts": "0",
         "bookmarks": "1"
       }
-    },
-    {
-      "time": "07-18 01:51",
-      "type": "推文",
-      "ticker": "META",
-      "tickers": [
-        "META",
-        "SPCX",
-        "NBIS",
-        "IREN"
-      ],
-      "title": "推文线索 · META",
-      "body": "$META in talks to lease compute to Anthropic in a $10B dollar deal.\nSeems like they saw how profitable \n$SPCX $45B compute deal was.\nBut just goes to validate Neocloud business models like $NBIS, $IREN, and co if hyperscalers are copying their homework.\nSource: NYT",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-18 01:51",
-      "url": "https://x.com/aleabitoreddit/status/2078175882620059719",
-      "stats": {
-        "views": "15K",
-        "likes": "61",
-        "reposts": "5",
-        "bookmarks": "6"
-      }
     }
   ],
   "mentions": {
+    "SKHY": {
+      "h24": 1,
+      "d7": 1
+    },
     "AAOI": {
       "h24": 2,
       "d7": 2
@@ -120,8 +121,8 @@
       "d7": 1
     },
     "NBIS": {
-      "h24": 2,
-      "d7": 2
+      "h24": 1,
+      "d7": 1
     },
     "INTC": {
       "h24": 1,
@@ -140,18 +141,6 @@
       "d7": 1
     },
     "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "META": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SPCX": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
       "h24": 1,
       "d7": 1
     }

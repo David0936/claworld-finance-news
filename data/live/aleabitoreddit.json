@@ -3,11 +3,28 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-07-19T09-00-04-08-00",
+  "upstreamSnapshotId": "2026-07-19T21-00-00-08-00",
   "snapshotDate": "2026-07-19",
-  "snapshotTime": "09:01",
-  "fetchedAt": "2026-07-19 09:01",
+  "snapshotTime": "21:01",
+  "fetchedAt": "2026-07-19 21:01",
   "feed": [
+    {
+      "time": "07-20 02:46",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "There’s nothing quite like the scent of more AI capex on a Sunday.\nProbably some ways to go if leading frontier models are out of capacity from too much demand.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-20 02:46",
+      "url": "https://x.com/aleabitoreddit/status/2078914447180263438",
+      "stats": {
+        "views": "4,843",
+        "likes": "3",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
     {
       "time": "07-18 12:39",
       "type": "推文",
@@ -82,29 +99,6 @@
         "reposts": "0",
         "bookmarks": "1"
       }
-    },
-    {
-      "time": "07-18 05:19",
-      "type": "推文",
-      "ticker": "TSM",
-      "tickers": [
-        "TSM",
-        "SIVE",
-        "SOI",
-        "AAOI",
-        "LITE"
-      ],
-      "title": "推文线索 · TSM",
-      "body": "Thanks, love reading the comments!\nGoldman Sachs raised Innolight PT to 2581 RMB. Roughly 163.6% upside from current valuations.\nBut the largest thing is its 2026–2028 earnings est revision raised by a whopping 65%/108%/119%, based on:\n- Much higher silicon photonics module volumes\n- scale out, scale up, scale across volumes\n- 1.6T/3.2T lifting blended ASP + margins\n- increase in AI capex\nThis is typically very material read through on the optical sector since:\nI tend to think of Innolight as a $TSM (semi capex) type read on how the photonics landscape is doing.\nEg. Higher silicon photonics penetration means more TAM for cw lasers like $SIVE (cw) / SOI wafer demand for $SOI. ASP hikes for future gen is positive for the other optical markers too.\nThink my other takeaway outside the report was Innolight stating 800g demand was growing more significantly than expected from their transcript on the 12th. \nWhich in turn signals more demand for names like $AAOI to $LITE next earnings.\nTLDR: GS gives high earnings projections during a time of massive corrections. \nFundamentally, broader photonics ecosystem should be happy when it’s ER time.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-18 05:19",
-      "url": "https://x.com/aleabitoreddit/status/2078228019584668121",
-      "stats": {
-        "views": "266",
-        "likes": "4",
-        "reposts": "0",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
@@ -114,7 +108,7 @@
     },
     "AAOI": {
       "h24": 0,
-      "d7": 2
+      "d7": 1
     },
     "MRVL": {
       "h24": 0,
@@ -125,22 +119,6 @@
       "d7": 1
     },
     "INTC": {
-      "h24": 0,
-      "d7": 1
-    },
-    "TSM": {
-      "h24": 0,
-      "d7": 1
-    },
-    "SIVE": {
-      "h24": 0,
-      "d7": 1
-    },
-    "SOI": {
-      "h24": 0,
-      "d7": 1
-    },
-    "LITE": {
       "h24": 0,
       "d7": 1
     }
@@ -160,21 +138,21 @@
     },
     {
       "label": "24h 活跃",
-      "value": "2",
+      "value": "0",
       "delta": "live",
-      "hint": "较上一快照 -12"
+      "hint": "较上一快照 -2"
     },
     {
       "label": "7天活跃",
       "value": "35",
       "delta": "live",
-      "hint": "较上一快照 -7"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "30天活跃",
       "value": "115",
       "delta": "live",
-      "hint": "较上一快照 -8"
+      "hint": "较上一快照 持平"
     },
     {
       "label": "新闻驱动",
@@ -192,7 +170,7 @@
     {
       "rank": 1,
       "ticker": "NVDA",
-      "time": "07-19 09:00",
+      "time": "07-19 21:00",
       "mentions24h": 0,
       "mentions7d": 4,
       "source": "新闻",
@@ -200,13 +178,13 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "最近光互连链条的边际输入来自 800G 需求、硅光渗透和更高速率 ASP 讨论；这提高订单、产能、良率和客户认证复核优先级，但不是该公司订单确认。新增 02:39 AI capex 推文，直接点名该标的。近 24 小时仍有新增提及，7 天和 30 天热度保持高位。",
+      "note": "7/19 新增新闻主要集中在 AMZN Trainium 年化口径、GOOGL/TESLA/INTC 财报周前瞻、NVDA/MRVL/MU AI memory wall 讨论，以及平台 AI capex 回收期。它们是上游半导体和光链需求质量的校验器，不是直接的公司订单事实。近期社交流存量关注仍较高，但 7/19 未找到同日推文补档。",
       "priority": 325
     },
     {
       "rank": 2,
       "ticker": "LITE",
-      "time": "07-19 09:00",
+      "time": "07-19 21:00",
       "mentions24h": 0,
       "mentions7d": 4,
       "source": "新闻",
@@ -214,13 +192,13 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "最近光互连链条的边际输入来自 800G 需求、硅光渗透和更高速率 ASP 讨论；这提高订单、产能、良率和客户认证复核优先级，但不是该公司订单确认。未见本地新增一手公司事实。近 24 小时仍有新增提及，7 天和 30 天热度保持高位。",
+      "note": "7/18 光链输入仍是今天全天最重要的产业线索：Innolight、800G 需求、硅光渗透和更高速率 ASP 的讨论继续读穿到 LITE、AAOI、SIVE、AXTI、MRVL、COHR、GLW 等链条。该线索提高验证优先级，但不是任一上市公司订单确认。未见本地新增一手公司事实；7 天和 30 天仍有存量关注。",
       "priority": 303
     },
     {
       "rank": 3,
       "ticker": "MRVL",
-      "time": "07-19 09:00",
+      "time": "07-19 21:00",
       "mentions24h": 0,
       "mentions7d": 1,
       "source": "新闻",
@@ -228,7 +206,7 @@
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "最近光互连链条的边际输入来自 800G 需求、硅光渗透和更高速率 ASP 讨论；这提高订单、产能、良率和客户认证复核优先级，但不是该公司订单确认。未见本地新增一手公司事实。近 24 小时未见新增提及，但 7 天和 30 天仍有存量关注。",
+      "note": "7/18 光链输入仍是今天全天最重要的产业线索：Innolight、800G 需求、硅光渗透和更高速率 ASP 的讨论继续读穿到 LITE、AAOI、SIVE、AXTI、MRVL、COHR、GLW 等链条。该线索提高验证优先级，但不是任一上市公司订单确认。未见本地新增一手公司事实；7 天和 30 天仍有存量关注。",
       "priority": 296
     }
   ],
@@ -747,6 +725,25 @@
       "fundamentals": "待补充"
     },
     {
+      "ticker": "POET",
+      "queue": "谨慎",
+      "stance": "看空",
+      "updatedAt": "2026-05-23 13:41",
+      "mentions24h": 0,
+      "mentions7d": 1,
+      "mentions30d": 8,
+      "news": 3,
+      "disclosures": 0,
+      "revenue": "2494.6%",
+      "score": 110,
+      "industry": "technology-semiconductors",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
       "ticker": "ONDS",
       "queue": "高风险观察",
       "stance": "中性",
@@ -759,25 +756,6 @@
       "revenue": "605.3%",
       "score": 107,
       "industry": "technology-communication-equipment",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
-      "ticker": "POET",
-      "queue": "谨慎",
-      "stance": "看空",
-      "updatedAt": "2026-05-23 13:41",
-      "mentions24h": 0,
-      "mentions7d": 1,
-      "mentions30d": 8,
-      "news": 2,
-      "disclosures": 0,
-      "revenue": "2494.6%",
-      "score": 105,
-      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -1279,25 +1257,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "000660.KS",
-      "queue": "高风险观察",
-      "stance": "中性",
-      "updatedAt": "",
-      "mentions24h": 1,
-      "mentions7d": 3,
-      "mentions30d": 13,
-      "news": 0,
-      "disclosures": 0,
-      "revenue": "46.8%",
-      "score": 72,
-      "industry": "technology-semiconductors",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "UBER",
       "queue": "观察",
       "stance": "中性",
@@ -1424,6 +1383,25 @@
       "revenue": "52.3%",
       "score": 65,
       "industry": "industrials-aerospace-defense",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "000660.KS",
+      "queue": "高风险观察",
+      "stance": "中性",
+      "updatedAt": "",
+      "mentions24h": 0,
+      "mentions7d": 3,
+      "mentions30d": 13,
+      "news": 0,
+      "disclosures": 0,
+      "revenue": "46.8%",
+      "score": 64,
+      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -5345,18 +5323,18 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "SKHY",
-      "queue": "观察",
-      "stance": "中性",
-      "updatedAt": "",
-      "mentions24h": 1,
-      "mentions7d": 2,
-      "mentions30d": 2,
-      "news": 0,
+      "ticker": "FN",
+      "queue": "积极观察",
+      "stance": "看多",
+      "updatedAt": "2026-05-20 19:23",
+      "mentions24h": 0,
+      "mentions7d": 0,
+      "mentions30d": 1,
+      "news": 2,
       "disclosures": 0,
-      "revenue": "–",
+      "revenue": "18.6%",
       "score": 26,
-      "industry": "technology-semiconductors",
+      "industry": "technology-hardware-equipment-parts",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",
@@ -6086,25 +6064,6 @@
       "fundamentals": "待补充"
     },
     {
-      "ticker": "FN",
-      "queue": "积极观察",
-      "stance": "看多",
-      "updatedAt": "2026-05-20 19:23",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "mentions30d": 1,
-      "news": 1,
-      "disclosures": 0,
-      "revenue": "18.6%",
-      "score": 21,
-      "industry": "technology-hardware-equipment-parts",
-      "riskLevel": "待验证",
-      "confidence": "analysissite",
-      "valuationRisk": "未知",
-      "sentimentRisk": "待观察",
-      "fundamentals": "待补充"
-    },
-    {
       "ticker": "ACHR",
       "queue": "高风险偏多",
       "stance": "看多",
@@ -6801,6 +6760,25 @@
       "revenue": "–",
       "score": 19,
       "industry": "optical-photonics-cpo",
+      "riskLevel": "待验证",
+      "confidence": "analysissite",
+      "valuationRisk": "未知",
+      "sentimentRisk": "待观察",
+      "fundamentals": "待补充"
+    },
+    {
+      "ticker": "SKHY",
+      "queue": "观察",
+      "stance": "中性",
+      "updatedAt": "",
+      "mentions24h": 0,
+      "mentions7d": 2,
+      "mentions30d": 2,
+      "news": 0,
+      "disclosures": 0,
+      "revenue": "–",
+      "score": 18,
+      "industry": "technology-semiconductors",
       "riskLevel": "待验证",
       "confidence": "analysissite",
       "valuationRisk": "未知",

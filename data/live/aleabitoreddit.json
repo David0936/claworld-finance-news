@@ -9,6 +9,26 @@
   "fetchedAt": "2026-07-20 09:00",
   "feed": [
     {
+      "time": "07-20 14:22",
+      "type": "推文",
+      "ticker": "TTMI",
+      "tickers": [
+        "TTMI",
+        "VSH"
+      ],
+      "title": "推文线索 · TTMI",
+      "body": "Some updates on bottleneck timelines: \n- ABF substrates: 1 year \n/ eg. Ajinomoto (2802) for ABF film, Ibiden, Unimicron, Nan Ya PCB, etc make the substrates \n- HDI Boards: Over 6 months \n/ Victory Giant (300476), Zhen Ding (4958), Unimicron, Compeq (2313), Meiko (6787)\n- Multilayer boards: ~6 months \n/ Victory Giant, WUS (002463), $TTMI, Gold Circuit Electronics (2368), \n- CCL: Over 6 months (severe shortages of materials) \n/ Elite Material (2383), Shengyi (600183), TUC (6274), ITEQ (6213), Nan Ya Plastics (1303), Resonac (4004)\nMitsui Kinzoku (5706) / HVLP copper foil. Nittobo / glass fiber/cloth\n- MLCCs, chip resistors, tantalum capacitors, aluminum electrolytic capacitors: 15-20 weeks to 1 year+\nMLCC: Murata (6981), Samsung Electro-Mechanics, TDK (6762), Taiyo Yuden (6976), Yageo (2327), Walsin (2492)\nChip Resistors: Yageo, Walsin, KOA (6999), Rohm (6963) and $VSH\nTantalum capacitors: Kyocera/AVX, Yageo/KEMET, $VSH again\nAluminum electrolytic capacitors: Nippon Chemi-Con (6997) Nichicon (6996) | Timelines sourced from Digitimes, did the honors of adding in related companies. \nBut it's slightly more nuanced since MLCCs and others mix. in commodity types vs. AI DCs.\nRegardless, just some helpful mapping.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-20 14:22",
+      "url": "https://x.com/aleabitoreddit/status/2079089592385610023",
+      "stats": {
+        "views": "10K",
+        "likes": "14",
+        "reposts": "5",
+        "bookmarks": "9"
+      }
+    },
+    {
       "time": "07-20 02:46",
       "type": "推文",
       "ticker": "",
@@ -77,48 +97,18 @@
         "reposts": "0",
         "bookmarks": "3"
       }
-    },
-    {
-      "time": "07-18 08:03",
-      "type": "推文",
-      "ticker": "AAOI",
-      "tickers": [
-        "AAOI",
-        "MRVL",
-        "NBIS",
-        "INTC"
-      ],
-      "title": "推文线索 · AAOI",
-      "body": "The nice thing about X is seeing cultural differences:\nI get a bunch of sidelined European accounts up 2% YTD off bank saving interest.\nComing out of hibernation, and saying all along that investing in $AAOI for photonics or Samsung for memory is considered gambling.\nAnd celebrating when everything AI from $MRVL to $NBIS to $INTC finally had a crash after a few hundred percent rally.\nThink it’s mainly a lack of understanding of technological shifts mixed with capital preservation culture vs. growth.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-18 08:03",
-      "url": "https://x.com/aleabitoreddit/status/2078269277115727900",
-      "stats": {
-        "views": "13K",
-        "likes": "27",
-        "reposts": "0",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
+    "TTMI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "VSH": {
+      "h24": 1,
+      "d7": 1
+    },
     "SKHY": {
-      "h24": 0,
-      "d7": 1
-    },
-    "AAOI": {
-      "h24": 0,
-      "d7": 1
-    },
-    "MRVL": {
-      "h24": 0,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 0,
-      "d7": 1
-    },
-    "INTC": {
       "h24": 0,
       "d7": 1
     }

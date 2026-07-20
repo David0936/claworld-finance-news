@@ -9,6 +9,31 @@
   "fetchedAt": "2026-07-20 21:00",
   "feed": [
     {
+      "time": "07-21 01:18",
+      "type": "推文",
+      "ticker": "IREN",
+      "tickers": [
+        "IREN",
+        "HUT",
+        "CIFR",
+        "CLSK",
+        "WYFI",
+        "NBIS",
+        "CRWV"
+      ],
+      "title": "推文线索 · IREN",
+      "body": "$IREN +19.69% after revising ARR target to $4B+ from new AI cloud contracts. Its customer base now includes Microsoft, Nvidia, Perplexity, and Figure.\n$HUT +10.45% off a 15Y $9.8B AI DC lease\n$CIFR +16.76%\n$CLSK +13.7%\n$WYFI +9.18%\n$NBIS and $CRWV are taking their time in the shower.\nBut does look like Neoclouds/Colo players are sharply recovering following new catalysts, such as Kimi compute shortage news and new contracts.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-21 01:18",
+      "url": "https://x.com/aleabitoreddit/status/2079254669793316962",
+      "stats": {
+        "views": "10K",
+        "likes": "50",
+        "reposts": "4",
+        "bookmarks": "4"
+      }
+    },
+    {
       "time": "07-20 14:22",
       "type": "推文",
       "ticker": "TTMI",
@@ -80,26 +105,37 @@
         "reposts": "2",
         "bookmarks": "3"
       }
-    },
-    {
-      "time": "07-18 09:00",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "Thanks! I’ve always shared personal research and core thoughts for free. Not trying to sell anything or tell others what to do.\nAnd above all, just being transparent about my own returns (win or loss)\nMaybe this information democratization cannibalizes upsets some business",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-18 09:00",
-      "url": "https://x.com/aleabitoreddit/status/2078283634784817183",
-      "stats": {
-        "views": "9,027",
-        "likes": "16",
-        "reposts": "0",
-        "bookmarks": "3"
-      }
     }
   ],
   "mentions": {
+    "IREN": {
+      "h24": 1,
+      "d7": 1
+    },
+    "HUT": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CIFR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CLSK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "WYFI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NBIS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CRWV": {
+      "h24": 1,
+      "d7": 1
+    },
     "TTMI": {
       "h24": 1,
       "d7": 1

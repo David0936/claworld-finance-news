@@ -9,6 +9,40 @@
   "fetchedAt": "2026-07-21 21:00",
   "feed": [
     {
+      "time": "07-22 01:41",
+      "type": "推文",
+      "ticker": "SIVEF",
+      "tickers": [
+        "SIVEF",
+        "IQEF",
+        "AEHR",
+        "CIFR",
+        "NBIS",
+        "AAOI",
+        "LPK",
+        "AXTI",
+        "MU",
+        "SNDK",
+        "SOI",
+        "TSEM",
+        "LITE",
+        "INTC",
+        "AMD",
+        "MRVL"
+      ],
+      "title": "推文线索 · SIVEF",
+      "body": "Wow, a historic single day recovery.\n$SIVEF +30.89%\n$IQEF +28.6%\n$AEHR +26.53%\n$CIFR +17.82%\n$NBIS +17.3%\n$AAOI +15.6%\n$LPK +14.48%\n$AXTI +14.12%\n$MU +12.54%\n$SNDK +12.8%\n$SOI +11.1%\n$TSEM +10.39%\n$LITE +9.25%\n$INTC +8.22%\n$AMD +8.11%\n$MRVL +7.27%",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-22 01:41",
+      "url": "https://x.com/aleabitoreddit/status/2079622706572804368",
+      "stats": {
+        "views": "15K",
+        "likes": "177",
+        "reposts": "14",
+        "bookmarks": "13"
+      }
+    },
+    {
       "time": "07-21 17:14",
       "type": "推文",
       "ticker": "AMD",
@@ -94,35 +128,70 @@
         "reposts": "3",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-21 01:18",
-      "type": "推文",
-      "ticker": "IREN",
-      "tickers": [
-        "IREN",
-        "HUT",
-        "CIFR",
-        "CLSK",
-        "WYFI",
-        "NBIS",
-        "CRWV"
-      ],
-      "title": "推文线索 · IREN",
-      "body": "$IREN +19.69% after revising ARR target to $4B+ from new AI cloud contracts. Its customer base now includes Microsoft, Nvidia, Perplexity, and Figure.\n$HUT +10.45% off a 15Y $9.8B AI DC lease\n$CIFR +16.76%\n$CLSK +13.7%\n$WYFI +9.18%\n$NBIS and $CRWV are taking their time in the shower.\nBut does look like Neoclouds/Colo players are sharply recovering following new catalysts, such as Kimi compute shortage news and new contracts.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-21 01:18",
-      "url": "https://x.com/aleabitoreddit/status/2079254669793316962",
-      "stats": {
-        "views": "10K",
-        "likes": "50",
-        "reposts": "4",
-        "bookmarks": "4"
-      }
     }
   ],
   "mentions": {
+    "SIVEF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQEF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AEHR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CIFR": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NBIS": {
+      "h24": 3,
+      "d7": 3
+    },
+    "AAOI": {
+      "h24": 2,
+      "d7": 2
+    },
+    "LPK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSEM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "LITE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "INTC": {
+      "h24": 2,
+      "d7": 2
+    },
     "AMD": {
+      "h24": 3,
+      "d7": 3
+    },
+    "MRVL": {
       "h24": 2,
       "d7": 2
     },
@@ -146,47 +215,7 @@
       "h24": 1,
       "d7": 1
     },
-    "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AAOI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 3,
-      "d7": 3
-    },
     "IREN": {
-      "h24": 2,
-      "d7": 2
-    },
-    "INTC": {
-      "h24": 1,
-      "d7": 1
-    },
-    "MRVL": {
-      "h24": 1,
-      "d7": 1
-    },
-    "HUT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CIFR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CLSK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "WYFI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "CRWV": {
       "h24": 1,
       "d7": 1
     }

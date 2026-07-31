@@ -9,215 +9,200 @@
   "fetchedAt": "2026-07-22 09:00",
   "feed": [
     {
-      "time": "07-22 05:02",
+      "time": "07-31 15:14",
       "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "OpenAI models reportedly escaped from its controlled environment, with no internet access.\nExploited zero day vulnerabilities and hacked into Hugging Face to cheat on benchmarks.\nHugging face then used China GLM models to carry out its defense. \nOpenAI said it was an “an unprecedented cyber incident.”\nWe’re getting closer and closer to Skynet. \nAnd I’m sure markets will love it.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-22 05:02",
-      "url": "https://x.com/aleabitoreddit/status/2079673469567226149",
-      "stats": {
-        "views": "14K",
-        "likes": "80",
-        "reposts": "10",
-        "bookmarks": "12"
-      }
-    },
-    {
-      "time": "07-22 01:41",
-      "type": "推文",
-      "ticker": "SIVEF",
+      "ticker": "AXTI",
       "tickers": [
-        "SIVEF",
-        "IQEF",
-        "AEHR",
-        "CIFR",
-        "NBIS",
-        "AAOI",
-        "LPK",
         "AXTI",
+        "AMZN",
         "MU",
-        "SNDK",
-        "SOI",
-        "TSEM",
-        "LITE",
-        "INTC",
-        "AMD",
-        "MRVL"
+        "GOOGL",
+        "META",
+        "MSFT",
+        "COHR",
+        "LITE"
       ],
-      "title": "推文线索 · SIVEF",
-      "body": "Wow, a historic single day recovery.\n$SIVEF +30.89%\n$IQEF +28.6%\n$AEHR +26.53%\n$CIFR +17.82%\n$NBIS +17.3%\n$AAOI +15.6%\n$LPK +14.48%\n$AXTI +14.12%\n$MU +12.54%\n$SNDK +12.8%\n$SOI +11.1%\n$TSEM +10.39%\n$LITE +9.25%\n$INTC +8.22%\n$AMD +8.11%\n$MRVL +7.27%",
+      "title": "推文线索 · AXTI",
+      "body": "Few earnings TLDRs with my favorite $AXTI and $AMZN:\nAmazon:\n- Raised 2026 capex to $220B vs. prior $200B (partly due to higher memory costs, which is bullish on $MU to Samsung) \n- Even at $220B, Amazon will not have enough capacity to meet all 2026 demand; Jassy expects the same in 2027.\n- Most incoming 2027 capacity is already reserved, with substantial 2028 capacity also reserved.\nMostly read through on upstream semis. $GOOGL, $META, $AMZN, and $MSFT all identified compute shortage. \nAll the narratives a few weeks earlier was \"excess compute\" from Meta and others + hyperscalers cutting back on spend... All BS. \nAmazon earnings was very bullish on AI semi trade. \nAXTI:\n- AXT to double InP capacity during 2026. Then double again in 2027. \nThis is expected to make AXT \"by far the largest indium phosphide producer in the world.\" - LFG\n- Q2 rev was $47.6M, the highest quarterly revenue in AXT history (InP revenue reached a record $30.7M, from DC applications.)\n- Revenue increased 77% sequentially and 164% year over year.\n- InP revenue-capacity targets: $60M per quarter exiting 2026.\n- $130M per quarter exiting 2027 \nThat $130m target could be hiked too since management stated they find \"whatever ways to increase that capacity expansion\"\n- Management said the reported backlog remains well above $100M, but that number no longer reflects all available demand.\n\"Customer demand continues to outpace supply, no matter how fast we add capacity.\" 800G/1.6T is driving the current cycle, while NPO/CPO extends it beyond 2027. \nAlso they're targeting 50%-plus gross margin: \"We should definitely be targeting a number that begins with a five.\"\nChina demand more than doubled, and their agreements with Casela, $COHR and $LITE did not materially drive Q2. \nThis is not even considering my projected massive ASP hikes yet as InP substrates get more bottlenecked. \nTLDR:\n- Amazon too much compute demands, needs capex to fufill it, so upstream semis go brrr. \n- AXT world largest InP substrate supplier, high gross margins, expansion, and supply can't keep up with demand. \nBullish on demand side from Amazon + capex. Bullish on upstream optical supply chains from too much demand.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-07-22 01:41",
-      "url": "https://x.com/aleabitoreddit/status/2079622706572804368",
+      "datetime": "2026-07-31 15:14",
+      "url": "https://x.com/aleabitoreddit/status/2083088870942642391",
       "stats": {
-        "views": "15K",
-        "likes": "177",
-        "reposts": "14",
-        "bookmarks": "13"
-      }
-    },
-    {
-      "time": "07-21 17:14",
-      "type": "推文",
-      "ticker": "AMD",
-      "tickers": [
-        "AMD",
-        "NVDA",
-        "SIVE",
-        "GFS",
-        "ALAB",
-        "AVGO"
-      ],
-      "title": "推文线索 · AMD",
-      "body": "It's slightly more nuanced. Basically, $AMD SF event is tomorrow, Wed/Thurs (July 22, 23).\nFrom Jefferies client note, AMD is expected to provide additional disclosures around their likely scale-up CPO roadmap + MI500. \nIf they confirm CPO route, would positive thematically since it's not just $NVDA forcing the transition. \nAs for $SIVE, we'll get a better read if they're directly in AMD supply chains. \nSince right now, it's possible to map it through $GFS (reportedly involved in AMD MI500 CPO work) or AYAR (which AMD invested in). But no formal confirmations. \nSo if you're turning in: \n- CPO thematic positive: MI500 explicitly commits to CPO/optical UALink.\n- AMD gives details using Ayar Labs or GF SCALE for MI500 CPO: That would be extremely positive for $SIVE, given they're the upstream laser supplier / reference laser. \nCurrently, Blayne Curtis from Jefferies expect AMD to work with $ALAB on UAL and $AVGO on ESUN... but juicy details are here: \n\"We are looking for whether AMD commits to a CPO based scale up solution and who supplies the optical engine\"\nWe'll get a broader read through on the supply chain come Wednesday/Thursday, too early to tell today.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-21 17:14",
-      "url": "https://x.com/aleabitoreddit/status/2079495178793201678",
-      "stats": {
-        "views": "14K",
-        "likes": "42",
-        "reposts": "2",
-        "bookmarks": "7"
-      }
-    },
-    {
-      "time": "07-21 16:13",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
-        "LITE",
-        "AAOI",
-        "NBIS",
-        "IREN",
-        "INTC",
-        "AMD",
-        "MRVL"
-      ],
-      "title": "推文线索 · SIVE",
-      "body": "Memory names from Kioxia finished up a whopping +17.18%。 Samsung up +6.15%。 \nOptical networking from $SIVE, $LITE, and $AAOI are showing signs of recovery, all up 4%+. \nNeoclouds from $NBIS to $IREN all up 4%+ premarket. \n$INTC to $AMD to $MRVL all up 4%+. \nDoes the Cramer effect work on the entire AI trade?",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-21 16:13",
-      "url": "https://x.com/aleabitoreddit/status/2079479755481776221",
-      "stats": {
-        "views": "11K",
-        "likes": "26",
-        "reposts": "5",
+        "views": "9,284",
+        "likes": "8",
+        "reposts": "0",
         "bookmarks": "2"
       }
     },
     {
-      "time": "07-21 05:38",
+      "time": "07-31 02:31",
       "type": "推文",
       "ticker": "NBIS",
       "tickers": [
         "NBIS",
-        "NVDA"
+        "IREN",
+        "SHAZ",
+        "SNDK",
+        "BE",
+        "SKHY",
+        "INTC"
       ],
       "title": "推文线索 · NBIS",
-      "body": "If you’re curious why $NBIS is up after hours.\n$NVDA disclosed it owns 9.3% beneficial ownership of Nebius via SEC filings.\nNot exactly too new since it dates back to Nvidia’s existing share position of 1.19M shares + $2B prefunded warrant of ~21M shares.\nBut great for sentiment having Nvidia be a large shareholder of the Neocloud leader.",
+      "body": "Did Citadel really just liquidate Situational Awareness…\nThen brought up entire markets the next day?\n$NBIS +26.25%\n$IREN +25.96%\n$SHAZ +22.82%\n$SNDK + 23.98%\n$BE +23.67%\n$SKHY +16.98%\n$INTC +12.16%\nAmid many others. This has gotta be one of the wildest liquidations I’ve seen.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-07-21 05:38",
-      "url": "https://x.com/aleabitoreddit/status/2079319999915925938",
+      "datetime": "2026-07-31 02:31",
+      "url": "https://x.com/aleabitoreddit/status/2082896789880119590",
       "stats": {
-        "views": "14K",
-        "likes": "73",
-        "reposts": "8",
-        "bookmarks": "8"
+        "views": "376K",
+        "likes": "3,162",
+        "reposts": "204",
+        "bookmarks": "433"
+      }
+    },
+    {
+      "time": "07-30 16:10",
+      "type": "推文",
+      "ticker": "BE",
+      "tickers": [
+        "BE",
+        "SNDK",
+        "SHAZ"
+      ],
+      "title": "推文线索 · BE",
+      "body": "There's a lot of stupid commentary around Leopold raising funds. After names like $BE, $SNDK, $SHAZ, and others all had very sharp drawdowns in July.\nJust remember... here's a man in finance that's\n1. 6'5\n2. Blue Eyes\n3. Hedge Fund\nProbably better looking than you, and was up 439% through June YTD. \nRegarding the drawdown, Aschenbrenner acknowledged that the fund had \"not been immune\" to the market turmoil, particularly in Asia. FT separately reported that leverage amplified both its extraordinary gains and recent losses.\nHe described the sell-off as potentially the best buying opportunity since early 2025\nI'd agree with him and hope he succeeds with the raise.\nSince a lot of the current selloff looks like it overshot its mark through forced deleveraging.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-30 16:10",
+      "url": "https://x.com/aleabitoreddit/status/2082740477795745942",
+      "stats": {
+        "views": "464K",
+        "likes": "2,336",
+        "reposts": "87",
+        "bookmarks": "293"
+      }
+    },
+    {
+      "time": "07-30 14:52",
+      "type": "推文",
+      "ticker": "FORM",
+      "tickers": [
+        "FORM",
+        "TSM",
+        "NVDA"
+      ],
+      "title": "推文线索 · FORM",
+      "body": "Just some interesting takeaways from $FORM earnings call on CPO:\nSince they attributed systems revenue nearly doubled due to: \"accelerating growth in co-packaged optics or CPO\". \nQ1 2026: \"we now expect 2026 CPO revenues to come in at the high end of the $10 million to $20 million range\"\nQ2 2026 (now): \"expect to exceed that range by the end of the third quarter, and to significantly exceed the $20 million level for the year overall.\"\nManagement stated \"We’re seeing some significant acceleration in this [CPO] business\". \nQ: CPO adoption outlook. Are we perhaps expecting the timeline to accelerate a little bit?\nA: \"What I would say is there’s acceleration here in the very short term.\" But management stated there's not a significant pull-in on timelines. \nCiting production infrastructure (not just R&D) for:\n- The growing volumes of CPO chips planned for later this year + test insertion for scale-up and scale-out switches. \n- Seems like that CPO piece flows through $TSM COUPE [ likely maps to $NVDA CPO products] - \"The CPO piece does flow through that 10% customer\"\nSo now, test is ramping given management cited growing volumes of CPO chips. \n\"The rapid recent growth of our CPO business is an exciting development, which we believe represents the very early stages of widespread adoption of silicon photonics in the broader semiconductor industry\"\nTLDR: Fundamentally, CPO as a theme is very early, and should start to go brrr soon since it's starting to show up in earnings now (equipment/test players usually appear up first before optical engines / laser volumes ramp). \nPersonally once all the deleveraging stops, I think markets will start to care more.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-30 14:52",
+      "url": "https://x.com/aleabitoreddit/status/2082720873908494456",
+      "stats": {
+        "views": "299K",
+        "likes": "767",
+        "reposts": "47",
+        "bookmarks": "163"
+      }
+    },
+    {
+      "time": "07-30 07:13",
+      "type": "推文",
+      "ticker": "META",
+      "tickers": [
+        "META",
+        "MSFT",
+        "AMD",
+        "NVDA",
+        "IREN",
+        "NBIS",
+        "GOOGL"
+      ],
+      "title": "推文线索 · META",
+      "body": "Just some takeaways from $META | $MSFT earnings calls:\nMicrosoft:\n- Expected to be FCF positive in 2027, despite the increase in capex (extremely positive for AI buildout that it's funded by operating income)\n- \"Free cash flow was $19.6 billion, reflecting higher capital expenditures\"\n- Quartely capex was $41B, roughly 2/3rds were \"short lived assets, primarily CPUs and GPUs\"\n- Expects capex spend will be over $50 billion for next quarter\n- Capex Guidance at ~$175 billion and 2027 capex roughly the same. Spending plans unchanged and in line. \n- \"Extending the estimated useful life of our data centers from 15 to 25 years\"\n- \"We will be among the first cloud providers to deploy next generation rack-scale AI infrastructure based on $AMD Helios and $NVDA Vera Rubin\"\n- \"Customer demand continues to exceed available capacity\"\nMeta:\n- Capex $130-$145 billion (narrowed range), from $125B-$145B. \n- Meta is receiving offers at a \"significant premium\" to what they paid for it (compute scarcity, positive for neoclouds like $IREN / $NBIS )\n- Expects significant portion of compute (like the 1 GW DC in El Paso) to develop internal models. \n- Meta has multiple ROI-positive uses for additional compute across its core business (internally, not Meta Compute)\n- \"Finally, we believe that overall industry capacity is going to remain tight for the foreseeable future\" \n- \"The industry has under-built historically for the wave of AI adoption, making existing capacity, including our own, extremely valuable\" - Susan Li\nTLDR:\n- $MSFT and $GOOGL largely sustaining AI capex buildout while remaining FCF positive or through operating incomes.\n- $META flags available compute materially below demand at least through 2027. And $MSFT also flags compute demand far exceeds supply. \n- All three hyperscaler capex largely in line with Google hiking capex figures.\nAI selloff seems extremely overblown now, hyperscalers continuing capex in line (with Microsoft being FCF positive) or even hiked with $GOOGL. \nCompute scarcity is visible throughout every single hyperscaler ER.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-07-30 07:13",
+      "url": "https://x.com/aleabitoreddit/status/2082605568699871284",
+      "stats": {
+        "views": "580K",
+        "likes": "1,741",
+        "reposts": "114",
+        "bookmarks": "462"
       }
     }
   ],
   "mentions": {
-    "SIVEF": {
-      "h24": 0,
-      "d7": 0
-    },
-    "IQEF": {
-      "h24": 0,
-      "d7": 0
-    },
-    "AEHR": {
-      "h24": 0,
-      "d7": 0
-    },
-    "CIFR": {
-      "h24": 0,
-      "d7": 0
-    },
-    "NBIS": {
-      "h24": 0,
-      "d7": 0
-    },
-    "AAOI": {
-      "h24": 0,
-      "d7": 0
-    },
-    "LPK": {
-      "h24": 0,
-      "d7": 0
-    },
     "AXTI": {
-      "h24": 0,
-      "d7": 0
+      "h24": 1,
+      "d7": 1
+    },
+    "AMZN": {
+      "h24": 1,
+      "d7": 1
     },
     "MU": {
-      "h24": 0,
-      "d7": 0
+      "h24": 1,
+      "d7": 1
     },
-    "SNDK": {
-      "h24": 0,
-      "d7": 0
+    "GOOGL": {
+      "h24": 1,
+      "d7": 2
     },
-    "SOI": {
-      "h24": 0,
-      "d7": 0
+    "META": {
+      "h24": 1,
+      "d7": 2
     },
-    "TSEM": {
-      "h24": 0,
-      "d7": 0
+    "MSFT": {
+      "h24": 1,
+      "d7": 2
+    },
+    "COHR": {
+      "h24": 1,
+      "d7": 1
     },
     "LITE": {
-      "h24": 0,
-      "d7": 0
+      "h24": 1,
+      "d7": 1
+    },
+    "NBIS": {
+      "h24": 1,
+      "d7": 2
+    },
+    "IREN": {
+      "h24": 1,
+      "d7": 2
+    },
+    "SHAZ": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SNDK": {
+      "h24": 2,
+      "d7": 2
+    },
+    "BE": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SKHY": {
+      "h24": 1,
+      "d7": 1
     },
     "INTC": {
-      "h24": 0,
-      "d7": 0
+      "h24": 1,
+      "d7": 1
+    },
+    "FORM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "TSM": {
+      "h24": 1,
+      "d7": 1
+    },
+    "NVDA": {
+      "h24": 1,
+      "d7": 2
     },
     "AMD": {
       "h24": 0,
-      "d7": 0
-    },
-    "MRVL": {
-      "h24": 0,
-      "d7": 0
-    },
-    "NVDA": {
-      "h24": 0,
-      "d7": 0
-    },
-    "SIVE": {
-      "h24": 0,
-      "d7": 0
-    },
-    "GFS": {
-      "h24": 0,
-      "d7": 0
-    },
-    "ALAB": {
-      "h24": 0,
-      "d7": 0
-    },
-    "AVGO": {
-      "h24": 0,
-      "d7": 0
-    },
-    "IREN": {
-      "h24": 0,
-      "d7": 0
+      "d7": 1
     }
   },
   "metrics": [

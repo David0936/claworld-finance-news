@@ -9,6 +9,25 @@
   "fetchedAt": "2026-07-31 21:00",
   "feed": [
     {
+      "time": "08-01 00:18",
+      "type": "推文",
+      "ticker": "RDDT",
+      "tickers": [
+        "RDDT"
+      ],
+      "title": "推文线索 · RDDT",
+      "body": "$RDDT ER in a nutshell:\nRevenue: $804.9M vs. $730.4M (expected).\nEPS: $1.25 vs. ~$0.95.\nNet income: $252.8M vs. $196.5M\nQ3 guidance:\nRevenue: $860–870M vs. 829.1M\nAdjusted EBITDA: $385-395M vs. $369M\nBlowout financials, market always like to explain the drop 22.6% off some new BS narrative. \nLast quarter: \"AI will disrupt Reddit causing revenue loss!\"\nThis quarter: \"See, DAU fell .6%!\" (proceeds to ignore any revenue/profitability growth)",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-01 00:18",
+      "url": "https://x.com/aleabitoreddit/status/2083225872207937687",
+      "stats": {
+        "views": "17K",
+        "likes": "86",
+        "reposts": "3",
+        "bookmarks": "9"
+      }
+    },
+    {
       "time": "07-31 18:10",
       "type": "推文",
       "ticker": "GOOGL",
@@ -97,34 +116,13 @@
         "reposts": "0",
         "bookmarks": "2"
       }
-    },
-    {
-      "time": "07-31 02:31",
-      "type": "推文",
-      "ticker": "NBIS",
-      "tickers": [
-        "NBIS",
-        "IREN",
-        "SHAZ",
-        "SNDK",
-        "BE",
-        "SKHY",
-        "INTC"
-      ],
-      "title": "推文线索 · NBIS",
-      "body": "Did Citadel really just liquidate Situational Awareness…\nThen brought up entire markets the next day?\n$NBIS +26.25%\n$IREN +25.96%\n$SHAZ +22.82%\n$SNDK + 23.98%\n$BE +23.67%\n$SKHY +16.98%\n$INTC +12.16%\nAmid many others. This has gotta be one of the wildest liquidations I’ve seen.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-31 02:31",
-      "url": "https://x.com/aleabitoreddit/status/2082896789880119590",
-      "stats": {
-        "views": "376K",
-        "likes": "3,162",
-        "reposts": "204",
-        "bookmarks": "433"
-      }
     }
   ],
   "mentions": {
+    "RDDT": {
+      "h24": 1,
+      "d7": 1
+    },
     "GOOGL": {
       "h24": 2,
       "d7": 2
@@ -178,34 +176,6 @@
       "d7": 1
     },
     "LITE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "NBIS": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SHAZ": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SNDK": {
-      "h24": 1,
-      "d7": 1
-    },
-    "BE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SKHY": {
-      "h24": 1,
-      "d7": 1
-    },
-    "INTC": {
       "h24": 1,
       "d7": 1
     }

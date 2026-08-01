@@ -9,6 +9,28 @@
   "fetchedAt": "2026-08-01 09:00",
   "feed": [
     {
+      "time": "08-01 14:24",
+      "type": "推文",
+      "ticker": "LITE",
+      "tickers": [
+        "LITE",
+        "AAOI",
+        "SIVE",
+        "COHR"
+      ],
+      "title": "推文线索 · LITE",
+      "body": "$LITE CEO Michael Hurlston at the RAISE Summit warned that the supply gap for InP lasers for AI DCs:\nIs facing a more severe supply chain crisis than memory. \nAnd with Lumentum's 5 InP fabs, shipments would be more than 30%+ below customer demand.\nThis is especially visible with EMLs today but is already expanding to CW, especially as CPO ramps.\nI've always been a fan of the laser chokepoint + bottleneck from $AAOI, $SIVE, $LITE, and $COHR. And glad this thesis is starting to see validation.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-01 14:24",
+      "url": "https://x.com/aleabitoreddit/status/2083438823548293140",
+      "stats": {
+        "views": "716",
+        "likes": "5",
+        "reposts": "0",
+        "bookmarks": "4"
+      }
+    },
+    {
       "time": "08-01 06:52",
       "type": "推文",
       "ticker": "SNDK",
@@ -91,30 +113,25 @@
         "reposts": "0",
         "bookmarks": "1"
       }
-    },
-    {
-      "time": "07-31 16:57",
-      "type": "推文",
-      "ticker": "POET",
-      "tickers": [
-        "POET",
-        "SIVE",
-        "JBL"
-      ],
-      "title": "推文线索 · POET",
-      "body": "Now that I think of it more, $POET optical interposer piece is actually a little more material than I thought with $SIVE. \nOriginally the wording was \"readiness\" for EOY 2026. \nBut $POET upgraded that wording, by stating \"production\" with Sivers lasers projected EOY 2026. \nSo a volume orders from across $JBL to $POET, should hit in H1 2027. Which makes a bit of sense, since Sivers did raise an institutional oversubscribed round for future mass production. \nOn a side note, can't believe it's already August and 5 months left until 2027... Which was my inflection window for glass substrates, CPO, 800v, and new architectures to ramp.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-31 16:57",
-      "url": "https://x.com/aleabitoreddit/status/2083114743729107236",
-      "stats": {
-        "views": "6,821",
-        "likes": "7",
-        "reposts": "2",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
+    "LITE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "AAOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVE": {
+      "h24": 1,
+      "d7": 1
+    },
+    "COHR": {
+      "h24": 1,
+      "d7": 1
+    },
     "SNDK": {
       "h24": 1,
       "d7": 1
@@ -144,18 +161,6 @@
       "d7": 1
     },
     "RDDT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "POET": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "JBL": {
       "h24": 1,
       "d7": 1
     }

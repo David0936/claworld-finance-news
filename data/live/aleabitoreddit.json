@@ -9,6 +9,23 @@
   "fetchedAt": "2026-08-01 21:00",
   "feed": [
     {
+      "time": "08-02 11:42",
+      "type": "推文",
+      "ticker": "",
+      "tickers": [],
+      "title": "推文 · @aleabitoreddit",
+      "body": "Trump announced that US has cancelled its attack on Iran.\nAnd that they’ve agreed to the perimeters of a deal to open the Strait and end the nuclear program.\nAnyone else feel like they’ve aged a few years in the past 6 months?",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-02 11:42",
+      "url": "https://x.com/aleabitoreddit/status/2083760320062083406",
+      "stats": {
+        "views": "338K",
+        "likes": "2,391",
+        "reposts": "88",
+        "bookmarks": "132"
+      }
+    },
+    {
       "time": "08-01 14:24",
       "type": "推文",
       "ticker": "LITE",
@@ -91,45 +108,23 @@
         "reposts": "3",
         "bookmarks": "9"
       }
-    },
-    {
-      "time": "07-31 18:10",
-      "type": "推文",
-      "ticker": "GOOGL",
-      "tickers": [
-        "GOOGL",
-        "MSFT",
-        "META",
-        "AMZN"
-      ],
-      "title": "推文线索 · GOOGL",
-      "body": "Just a TLDR of this week:\nMedia: Hyperscalers overbuilt and are selling excess compute.\n-> $GOOGL, $MSFT, $META, and $AMZN: Demand for compute far exceeds capacity. Capex go brrr.\nInstitutions: Emergency rate hike or 3x rate hikes, it's all over.\n-> Kevin Warsh: No rate Hike.\nRetail/Media: AI is crashing because it's a bubble. \n-> Citadel looking to buy AI leveraged hedge funds positions: 👀\nJim Cramer: Sell all your leveraged DC stocks.\n-> Koreans: SK Hynix +30%, Samsung +26.81%",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-07-31 18:10",
-      "url": "https://x.com/aleabitoreddit/status/2083133191112843575",
-      "stats": {
-        "views": "766",
-        "likes": "11",
-        "reposts": "0",
-        "bookmarks": "1"
-      }
     }
   ],
   "mentions": {
     "LITE": {
-      "h24": 1,
+      "h24": 0,
       "d7": 1
     },
     "AAOI": {
-      "h24": 1,
+      "h24": 0,
       "d7": 1
     },
     "SIVE": {
-      "h24": 1,
+      "h24": 0,
       "d7": 1
     },
     "COHR": {
-      "h24": 1,
+      "h24": 0,
       "d7": 1
     },
     "SNDK": {
@@ -142,19 +137,19 @@
     },
     "AMZN": {
       "h24": 0,
-      "d7": 2
+      "d7": 1
     },
     "META": {
       "h24": 0,
-      "d7": 2
+      "d7": 1
     },
     "GOOGL": {
       "h24": 0,
-      "d7": 2
+      "d7": 1
     },
     "MSFT": {
       "h24": 0,
-      "d7": 2
+      "d7": 1
     },
     "NVDA": {
       "h24": 0,

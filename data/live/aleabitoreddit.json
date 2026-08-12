@@ -3,185 +3,189 @@
   "handle": "aleabitoreddit",
   "source": "analysissite",
   "upstreamUrl": "https://analysissite.vercel.app",
-  "upstreamSnapshotId": "2026-08-04T09-00-04-08-00",
-  "snapshotDate": "2026-08-04",
+  "upstreamSnapshotId": "2026-08-12T09-00-03-08-00",
+  "snapshotDate": "2026-08-12",
   "snapshotTime": "09:00",
-  "fetchedAt": "2026-08-04 09:00",
+  "fetchedAt": "2026-08-12 09:00",
   "feed": [
     {
-      "time": "08-11 11:39",
+      "time": "08-12 09:08",
       "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "We're almost there...",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-11 11:39",
-      "url": "https://x.com/aleabitoreddit/status/2087021031320072235",
-      "stats": {
-        "views": "672K",
-        "likes": "1,022",
-        "reposts": "14",
-        "bookmarks": "39"
-      }
-    },
-    {
-      "time": "08-11 10:19",
-      "type": "推文",
-      "ticker": "NVDA",
+      "ticker": "SMCI",
       "tickers": [
-        "NVDA",
-        "AMZN",
-        "CCXI"
+        "SMCI"
       ],
-      "title": "推文线索 · NVDA",
-      "body": "uhhh... the Unitree IPO is more than 8000 times oversubscribed by retail investors. \nThe demand for pure play humanoid companies is absolutely enormous?\nI'm personally in the US-based Agility Robotics club (Softbank, $NVDA, $AMZN, Foxconn, etc), at $2.5B premoney via $CCXI. \nAnd my take is that Unitree likely opening at $30B+ (from pre-ipo perps), might bring the leading US players some more attention in a week or two. \nRegardless that's just absurd demand.",
+      "title": "推文线索 · SMCI",
+      "body": "Bro Charles the $SMCI CEO needs to become a politician.\nI’ve never seen a guy dodge so many questions on a Q&A earnings transcript before.\n- “what’s your 2027 gross margins”\nA: “we look forward to growing them\n- “do you anticipate margins to improve September?”\nA: September. Which is September?",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-11 10:19",
-      "url": "https://x.com/aleabitoreddit/status/2087000954742927390",
+      "datetime": "2026-08-12 09:08",
+      "url": "https://x.com/aleabitoreddit/status/2087345398130282801",
       "stats": {
-        "views": "243K",
-        "likes": "1,118",
-        "reposts": "68",
-        "bookmarks": "270"
+        "views": "6,539",
+        "likes": "12",
+        "reposts": "0",
+        "bookmarks": "0"
       }
     },
     {
-      "time": "08-11 09:29",
+      "time": "08-12 08:06",
       "type": "推文",
-      "ticker": "RIOT",
+      "ticker": "LITE",
       "tickers": [
-        "RIOT",
-        "AMD",
-        "IREN"
-      ],
-      "title": "推文线索 · RIOT",
-      "body": "Woah, $RIOT announced a $9.1B deal with Anthropic, with a possible contract extending to $16.1B, over 20Y.\n$AMD also exercised its option to expand its existing deal with Riot. (And they still have another 1 GW campus they have LOI with for a tenant)\nIn terms of timelines, seem like most of the Colo basket have their revenue inflections hit H2 2027? \n(Eg. Riot Anthropic deal targets Dec 2027 for first 96 MW, AMD full 50 MW - May 2027)\nIt’s cute to see all the former miners like $IREN and co. grow up.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-11 09:29",
-      "url": "https://x.com/aleabitoreddit/status/2086988264448409739",
-      "stats": {
-        "views": "213K",
-        "likes": "738",
-        "reposts": "34",
-        "bookmarks": "116"
-      }
-    },
-    {
-      "time": "08-10 23:42",
-      "type": "推文",
-      "ticker": "AAOI",
-      "tickers": [
-        "AAOI"
-      ],
-      "title": "推文线索 · AAOI",
-      "body": "Be Barrons:\n- Wants to write about optical supply supply chains like $AAOI\n- Hiring DPT: who needs engineers to write about this something this simple? Let’s find underpaid political philosophy backgrounds.\n- proceeds to find a new hire from nonprofit communication consulting\n- first day on job: gets paid to model revenue ramp/margins projections, CW laser bottlenecks, internal capacity\n- New hire: “I don’t understand this sht”, “looks like a memestock”\nBarrons: “Memestock? looks like our next article, I don’t understand either”.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-10 23:42",
-      "url": "https://x.com/aleabitoreddit/status/2086840511164514742",
-      "stats": {
-        "views": "265K",
-        "likes": "978",
-        "reposts": "41",
-        "bookmarks": "107"
-      }
-    },
-    {
-      "time": "08-10 16:26",
-      "type": "推文",
-      "ticker": "SIVE",
-      "tickers": [
-        "SIVE",
         "LITE",
-        "AAOI"
+        "SIVE",
+        "AAOI",
+        "AXTI"
       ],
-      "title": "推文线索 · SIVE",
-      "body": "Now that markets are hosting a laser party again from $SIVE, OE Solutions, $LITE, Coherent, to $AAOI.\nThere’s a pretty interesting study:\nBoth from Fidelity and a UC Berkeley research paper, that the best investors are the ones who either…\n- Anecdotally forgot about their account (Fidelity)\n- Didn’t actively trade/overtrade (18.5% return from infrequent traders vs. 11.4%).\nNot any advice, but some of these anecdotes might be helpful to retail to read in general…\nSince I witnessed a lot capitulation off memory, photonics, or thematic volatility, just for retail not have positions on a sharp recovery.\nHaving conviction also usually people in that “not overtrading” camp, since it helps to not overtrade in drops or see opportunities to cost average.",
+      "title": "推文线索 · LITE",
+      "body": "$LITE earnings transcript TLDRs:\n- \"Our visibility into the timing of CPO scale-up deployments has also sharpened. We remain confident in a demand ramp for our ultra-high-power laser chips in the second half of calendar 2027\"\nH2 2027 start of CPO scale up ramp confirmed from Lumentum for their lead customer. \n- \"We were recently given our first external light source, or ELS, module purchase for delivery by the second half of calendar 2027\" \nELS industry ramp timelines\n- \"The NPO opportunity is completely additive for us, significantly increasing the optical TAM.\"\nMore TAM for laser chokepoint club\n- \"we expect the 1.6T transceiver uptake to intensify starting in fiscal Q1 and sustain through calendar 2027.\"\n- \"Even in CW, we’ve been surprised at our ability to price up\"\nPositive pricing power for $SIVE and the other CW laser players. \n- \"As a result, we are able to command a nice price premium that we expect to sustain, as these Chinese if these Chinese guys come online. \nI caution people also, I think people are some of these Chinese laser suppliers are not delivering in the market today, so they have there is no recourse when they throw out these big numbers. We have not seen anything like that to date in terms of their output.\"\nChinese players are more behind than markets expect, corroborated by $AAOI and $LITE. \n- \"We are way behind in our shipments, unfortunately, on high-powered lasers\"\n\"The demand signal has increased, and we are very much further behind relative to our ability to supply.\"\nExtreme demand imbalance for UHP CW laser capacity, continued demand imbalance for EML. Shipping roughly +$50M year end -> $100m+ (\"triple digit quarter\") into much larger H2 2027 and 2028 scale up demand,.\n- \"So what we are trying to do, I think, really in the last three months is secure even more substrate supply\" (because of demand imbalance), \"we found additional substrate help from $AXTI They are a great partner.\"\nHello InP substrate bottleneck. \nTLDR:\n- Lumentum CPO scale up H2 2027 shipments got confirmed, dismissed any \"delay\" news as market \"noise\". (one delay report caused so much damage, and it took Nvidia, Lumentum, and all these companies weeks to do damage control). \n- CW lasers demand ramp second half of 2027\n- Extreme demand imbalance for UHP CW laser capacity surprised Lumentum\n- UHP lasers commands very high margins and is able to price up CW laser capacity. \n- China further behind in the laser/capacity angle. \nBasically just validated timelines + demand/pricing for Western CW laser players. \nCW laser scarcity is already happening before the main volume ramp even begins...",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-10 16:26",
-      "url": "https://x.com/aleabitoreddit/status/2086730782425727183",
+      "datetime": "2026-08-12 08:06",
+      "url": "https://x.com/aleabitoreddit/status/2087329770879197549",
       "stats": {
-        "views": "304K",
-        "likes": "1,357",
-        "reposts": "82",
-        "bookmarks": "231"
+        "views": "2",
+        "likes": "1",
+        "reposts": "0",
+        "bookmarks": "0"
+      }
+    },
+    {
+      "time": "08-12 05:09",
+      "type": "推文",
+      "ticker": "CRWV",
+      "tickers": [
+        "CRWV",
+        "SMCI",
+        "LITE"
+      ],
+      "title": "推文线索 · CRWV",
+      "body": "Insane earnings today for the AI theme with $CRWV, $SMCI, and $LITE. \nCoreweave: Absurd ~$104B+ backlog, which doesn't include $25B+ of new customer agreements added in early Q3. \nCompute demand read through for Neoclouds is enormous (For Nebius, Iren and others)\nSupermicro: Absurd $65-72B in revenue guidance, adding $60B+ in new orders... \nAI DC buildout read through is just enormous. \nLumentum: $808M -> $1.01B -> $1.25B revenue ramp, with operating margins growing quarter after quarter. \nPhotonics players just keeps printing. \nTLDR: Every layer of the AI buildout goes brrrrr, and it's showing up in earnings.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-12 05:09",
+      "url": "https://x.com/aleabitoreddit/status/2087285356999958663",
+      "stats": {
+        "views": "7,924",
+        "likes": "7",
+        "reposts": "1",
+        "bookmarks": "4"
+      }
+    },
+    {
+      "time": "08-12 04:51",
+      "type": "推文",
+      "ticker": "SMCI",
+      "tickers": [
+        "SMCI",
+        "SPCX"
+      ],
+      "title": "推文线索 · SMCI",
+      "body": "$SMCI 2027 guidance was actually unholy: $65-$72 billion FY 2027 revenue guidance... \nvs. ~$52.4B expected, a casual +$16.1B above consensus. \nSMCI logged a massive $60B+ in news order from this earnings. \nThat timeline is also interesting when they announced a plan to co-build $SPCX + xAI DCs \"within a year\" back in June..\nBut if SMCI sustain 10-15% gross margins off that ~$70B revenue guidance... I think there's a lot of room for rerating given MC is ~$20B (NFA, I have short term positions in SMCI now from this ER). \nMost important thing is learning about 2027 margins from call today.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-12 04:51",
+      "url": "https://x.com/aleabitoreddit/status/2087280662802026931",
+      "stats": {
+        "views": "12K",
+        "likes": "36",
+        "reposts": "2",
+        "bookmarks": "9"
+      }
+    },
+    {
+      "time": "08-12 04:16",
+      "type": "推文",
+      "ticker": "LITE",
+      "tickers": [
+        "LITE",
+        "SIVEF",
+        "COHR"
+      ],
+      "title": "推文线索 · LITE",
+      "body": "$LITE earnings are out, very strong earnings:\nRevenue: $1.01B, +24.5% Q/Q, +109.3% Y/Y growth\nvs. ~$984.6M\nAdj. EPS: $3.23 vs. ~$2.95\nGross Margin (non-gaap): 50.4% / Operating margin (non-gaap) 36.6%\nQ1 FY2027 guidance is probably more important:\nRevenue: $1.225–1.275B vs. ~$1.16B\nAdj. EPS: $4.05–4.35 vs. ~$3.63\nOperating margin (non-gaap) of 39.5% - 40.5%\nIn terms of notes: \nSees: \"Increasing demand for ultra-high-power CPO lasers, an initial order for ELS modules\" \n- Great read through on other CPO players like $SIVEF, $COHR, and others. (maybe not AAOI since they're missing out on first-gen deployments)\n- \"Breath of NPO engagements are the first signs that optics are starting to penetrate in-rack connectivity, significantly upping our optical TAM\"\n- Revenue projections \"reaching our target model more than a quarter ahead of schedule.\"\nExtremely strong earnings as expected, you have revenue going from:\n$808M -> $1.01B -> $1.25B while operating margin keeps increasing... Just my first impressions. \nMost important thing is the earnings call coming up soon.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-12 04:16",
+      "url": "https://x.com/aleabitoreddit/status/2087271842696593764",
+      "stats": {
+        "views": "15K",
+        "likes": "96",
+        "reposts": "6",
+        "bookmarks": "5"
       }
     }
   ],
   "mentions": {
-    "NVDA": {
-      "h24": 1,
-      "d7": 1
+    "SMCI": {
+      "h24": 3,
+      "d7": 3
     },
-    "AMZN": {
-      "h24": 1,
-      "d7": 1
+    "LITE": {
+      "h24": 3,
+      "d7": 3
     },
-    "CCXI": {
-      "h24": 1,
-      "d7": 1
-    },
-    "RIOT": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AMD": {
-      "h24": 1,
-      "d7": 1
-    },
-    "IREN": {
+    "SIVE": {
       "h24": 1,
       "d7": 1
     },
     "AAOI": {
       "h24": 1,
-      "d7": 2
-    },
-    "SIVE": {
-      "h24": 0,
       "d7": 1
     },
-    "LITE": {
-      "h24": 0,
+    "AXTI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "CRWV": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SPCX": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SIVEF": {
+      "h24": 1,
+      "d7": 1
+    },
+    "COHR": {
+      "h24": 1,
       "d7": 1
     }
   },
   "metrics": [
     {
       "label": "活跃信号",
-      "value": "481",
+      "value": "482",
       "delta": "live",
       "hint": "风险 + AI + 最新事件"
     },
     {
       "label": "股票覆盖",
-      "value": "834",
+      "value": "838",
       "delta": "live",
-      "hint": "较上一快照 持平"
+      "hint": "较上一快照 +4"
     },
     {
       "label": "24h 活跃",
-      "value": "0",
+      "value": "14",
       "delta": "live",
-      "hint": "较上一快照 持平"
+      "hint": "较上一快照 +14"
     },
     {
       "label": "7天活跃",
-      "value": "33",
+      "value": "36",
       "delta": "live",
-      "hint": "较上一快照 持平"
+      "hint": "较上一快照 +3"
     },
     {
       "label": "30天活跃",
-      "value": "106",
+      "value": "98",
       "delta": "live",
-      "hint": "较上一快照 -10"
+      "hint": "较上一快照 -8"
     },
     {
       "label": "新闻驱动",
-      "value": "78",
+      "value": "79",
       "delta": "live",
-      "hint": "较上一快照 +2"
+      "hint": "较上一快照 +1"
     }
   ],
   "priorityHeader": {
@@ -192,45 +196,45 @@
   "priorityQueue": [
     {
       "rank": 1,
-      "ticker": "AXTI",
-      "time": "08-03 12:50",
+      "ticker": "LITE",
+      "time": "08-11 19:05",
       "mentions24h": 0,
-      "mentions7d": 2,
+      "mentions7d": 5,
       "source": "新闻",
-      "sourceCount": 10,
+      "sourceCount": 1,
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "当天 InP/光互连供给缺口线索提高相关上游和器件公司的验证优先级，但未直接构成订单或收入事实。新增 02:39 AI capex 推文，直接点名该标的。近 24 小时仍有新增提及（2 次），7 天累计 7 次、30 天 47 次，注意力保持在高位。",
-      "priority": 346
+      "note": "14:24 推文引用 LITE CEO 在 RAISE Summit 关于 InP 激光器供给缺口的表述，强化 AAOI、COHR、LITE、SIVE 所在光链瓶颈线索。未见本地新增一手公司事实。近 24 小时仍有新增提及（1 次），7 天累计 9 次、30 天 78 次，注意力保持在高位。",
+      "priority": 427
     },
     {
       "rank": 2,
-      "ticker": "NVDA",
-      "time": "08-03 20:00",
+      "ticker": "AAOI",
+      "time": "08-11 14:41",
       "mentions24h": 0,
-      "mentions7d": 3,
+      "mentions7d": 2,
+      "source": "新闻",
+      "sourceCount": 4,
+      "gptLevel": "analysissite",
+      "sentiment": "看多",
+      "riskLabel": "高风险偏多",
+      "note": "14:24 推文引用 LITE CEO 在 RAISE Summit 关于 InP 激光器供给缺口的表述，强化 AAOI、COHR、LITE、SIVE 所在光链瓶颈线索。未见本地新增一手公司事实。近 24 小时仍有新增提及（1 次），7 天累计 5 次、30 天 52 次，注意力保持在高位。",
+      "priority": 398
+    },
+    {
+      "rank": 3,
+      "ticker": "AMD",
+      "time": "08-12 09:00",
+      "mentions24h": 0,
+      "mentions7d": 1,
       "source": "新闻",
       "sourceCount": 10,
       "gptLevel": "analysissite",
       "sentiment": "看多",
       "riskLabel": "高风险偏多",
-      "note": "03:16 推文归纳 AMZN、META、GOOGL、MSFT 的 2026 capex 指引上修，并把上游半导体、存储、光链和能源约束作为验证主线。新增 02:39 AI capex 推文，直接点名该标的。近 24 小时仍有新增提及（2 次），7 天累计 5 次、30 天 53 次，注意力保持在高位。",
-      "priority": 298
-    },
-    {
-      "rank": 3,
-      "ticker": "MSTR",
-      "time": "08-03 15:30",
-      "mentions24h": 0,
-      "mentions7d": 0,
-      "source": "新闻",
-      "sourceCount": 10,
-      "gptLevel": "analysissite",
-      "sentiment": "中性",
-      "riskLabel": "高风险观察",
-      "note": "Strategy Inc filed an 8-K reporting weekly ATM common stock sales, preferred stock repurchases, unchanged bitcoin holdings, and USD reserve balance as of July 26, 2026.",
-      "priority": 298
+      "note": "当天云厂商 capex 叙事提高半导体供应链复核优先级；真正可建模变量仍是订单、库存、ASP、先进封装产能和客户集中度。未见本地新增一手公司事实。 24 小时没有新增提及，但 7 天累计 3 次、30 天 30 次，仍有历史关注度。",
+      "priority": 347
     }
   ],
   "stockPool": [
@@ -16104,7 +16108,7 @@
       },
       {
         "label": "观点变化",
-        "value": "0",
+        "value": "10",
         "hint": "来自 GPT xhigh 历史",
         "tone": "border-amber-200 bg-amber-50"
       },
@@ -16118,15 +16122,15 @@
     "chains": [
       {
         "name": "AI基础设施",
-        "count": 18
+        "count": 19
       },
       {
         "name": "云与软件",
-        "count": 40
+        "count": 39
       },
       {
         "name": "光模块/网络",
-        "count": 24
+        "count": 26
       },
       {
         "name": "数据中心电力",
@@ -16134,25 +16138,25 @@
       },
       {
         "name": "芯片/算力",
-        "count": 110
+        "count": 108
       }
     ],
-    "positiveToDate": 146,
+    "positiveToDate": 150,
     "topGainers": [
       {
         "ticker": "SNDK",
         "chain": "芯片/算力",
-        "gain": "484.1%"
+        "gain": "476.4%"
       },
       {
         "ticker": "MU",
         "chain": "芯片/算力",
-        "gain": "427.4%"
+        "gain": "452.2%"
       },
       {
         "ticker": "AXTI",
         "chain": "芯片/算力",
-        "gain": "351.2%"
+        "gain": "384.8%"
       },
       {
         "ticker": "DOCN",
@@ -16160,39 +16164,69 @@
         "gain": "329.2%"
       },
       {
-        "ticker": "NBIS",
-        "chain": "云与软件",
-        "gain": "305.9%"
+        "ticker": "LITE",
+        "chain": "光模块/网络",
+        "gain": "323.4%"
       }
     ],
     "rows": [
-      {
-        "ticker": "AAOI",
-        "chain": "光模块/网络",
-        "queue": "高风险偏多",
-        "firstMention": "2025-12-12 06:10",
-        "lastMention": "2026-08-01 14:24",
-        "basePrice": "2025-12-12 @ 32",
-        "w1": "-2.3%",
-        "m1": "5.2%",
-        "m6": "427.3%",
-        "y1": "未到期",
-        "toDate": "243.8%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
       {
         "ticker": "LITE",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
         "firstMention": "2025-10-25 14:17",
-        "lastMention": "2026-08-01 14:24",
+        "lastMention": "2026-08-12 08:06",
         "basePrice": "2025-10-27 @ 194",
         "w1": "3.0%",
         "m1": "54.5%",
         "m6": "343.6%",
         "y1": "未到期",
-        "toDate": "302.4%",
+        "toDate": "323.4%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "AAOI",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2025-12-12 06:10",
+        "lastMention": "2026-08-12 08:06",
+        "basePrice": "2025-12-12 @ 32",
+        "w1": "-2.3%",
+        "m1": "5.2%",
+        "m6": "427.3%",
+        "y1": "未到期",
+        "toDate": "319.0%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "AXTI",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-12-22 17:48",
+        "lastMention": "2026-08-12 08:06",
+        "basePrice": "2025-12-22 @ 15",
+        "w1": "-4.1%",
+        "m1": "30.0%",
+        "m6": "507.4%",
+        "y1": "未到期",
+        "toDate": "384.8%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "CRWV",
+        "chain": "云与软件",
+        "queue": "高风险偏多",
+        "firstMention": "2025-07-21 22:13",
+        "lastMention": "2026-08-12 05:09",
+        "basePrice": "2025-07-21 @ 125",
+        "w1": "-11.7%",
+        "m1": "-26.7%",
+        "m6": "-23.8%",
+        "y1": "-36.3%",
+        "toDate": "-27.7%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -16201,28 +16235,283 @@
         "chain": "光模块/网络",
         "queue": "观察",
         "firstMention": "2025-12-02 01:21",
-        "lastMention": "2026-08-01 14:24",
+        "lastMention": "2026-08-12 04:16",
         "basePrice": "2025-12-02 @ 165",
         "w1": "16.9%",
         "m1": "17.9%",
         "m6": "158.9%",
         "y1": "未到期",
-        "toDate": "74.7%",
+        "toDate": "99.3%",
         "view": "中性",
         "recentView": "观察"
+      },
+      {
+        "ticker": "NVDA",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2025-07-28 16:19",
+        "lastMention": "2026-08-11 10:19",
+        "basePrice": "2025-07-28 @ 177",
+        "w1": "1.8%",
+        "m1": "2.7%",
+        "m6": "5.5%",
+        "y1": "11.5%",
+        "toDate": "23.1%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "AMD",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2025-09-12 01:00",
+        "lastMention": "2026-08-11 09:29",
+        "basePrice": "2025-09-12 @ 159",
+        "w1": "-0.7%",
+        "m1": "36.5%",
+        "m6": "22.0%",
+        "y1": "未到期",
+        "toDate": "199.1%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "IREN",
+        "chain": "云与软件",
+        "queue": "谨慎",
+        "firstMention": "2025-08-31 12:51",
+        "lastMention": "2026-08-11 09:29",
+        "basePrice": "2025-09-02 @ 29",
+        "w1": "-10.0%",
+        "m1": "61.2%",
+        "m6": "42.2%",
+        "y1": "未到期",
+        "toDate": "36.6%",
+        "view": "看空",
+        "recentView": "谨慎"
+      },
+      {
+        "ticker": "RIOT",
+        "chain": "芯片/算力",
+        "queue": "高风险观察",
+        "firstMention": "2025-09-03 19:31",
+        "lastMention": "2026-08-11 09:29",
+        "basePrice": "2025-09-03 @ 13",
+        "w1": "21.9%",
+        "m1": "44.5%",
+        "m6": "22.9%",
+        "y1": "未到期",
+        "toDate": "50.5%",
+        "view": "中性",
+        "recentView": "高风险观察"
+      },
+      {
+        "ticker": "NBIS",
+        "chain": "云与软件",
+        "queue": "高风险偏多",
+        "firstMention": "2025-07-21 22:13",
+        "lastMention": "2026-08-10 10:03",
+        "basePrice": "2025-07-21 @ 52",
+        "w1": "0.7%",
+        "m1": "28.8%",
+        "m6": "89.6%",
+        "y1": "314.2%",
+        "toDate": "269.0%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "MTSI",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2026-01-10 23:48",
+        "lastMention": "2026-08-09 08:23",
+        "basePrice": "2026-01-12 @ 198",
+        "w1": "12.2%",
+        "m1": "19.3%",
+        "m6": "48.9%",
+        "y1": "未到期",
+        "toDate": "51.8%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "GOOGL",
+        "chain": "云与软件",
+        "queue": "观察",
+        "firstMention": "2025-07-03 17:57",
+        "lastMention": "2026-08-09 02:27",
+        "basePrice": "2025-07-03 @ 180",
+        "w1": "-1.1%",
+        "m1": "8.6%",
+        "m6": "75.5%",
+        "y1": "104.1%",
+        "toDate": "91.5%",
+        "view": "中性",
+        "recentView": "观察"
+      },
+      {
+        "ticker": "MU",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-09-26 00:25",
+        "lastMention": "2026-08-09 01:52",
+        "basePrice": "2025-09-26 @ 157",
+        "w1": "19.4%",
+        "m1": "40.0%",
+        "m6": "127.1%",
+        "y1": "未到期",
+        "toDate": "452.2%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "MXL",
+        "chain": "芯片/算力",
+        "queue": "高风险观察",
+        "firstMention": "2026-03-17 20:38",
+        "lastMention": "2026-08-07 20:55",
+        "basePrice": "2026-03-17 @ 17",
+        "w1": "4.9%",
+        "m1": "38.9%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "310.6%",
+        "view": "中性",
+        "recentView": "高风险观察"
+      },
+      {
+        "ticker": "SMTC",
+        "chain": "芯片/算力",
+        "queue": "积极观察",
+        "firstMention": "2026-01-23 00:02",
+        "lastMention": "2026-08-07 20:55",
+        "basePrice": "2026-01-23 @ 81",
+        "w1": "-1.0%",
+        "m1": "7.8%",
+        "m6": "56.4%",
+        "y1": "未到期",
+        "toDate": "62.9%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "POET",
+        "chain": "光模块/网络",
+        "queue": "谨慎",
+        "firstMention": "2025-12-12 06:18",
+        "lastMention": "2026-08-07 15:26",
+        "basePrice": "2025-12-12 @ 6",
+        "w1": "4.3%",
+        "m1": "10.9%",
+        "m6": "92.8%",
+        "y1": "未到期",
+        "toDate": "32.2%",
+        "view": "看空",
+        "recentView": "谨慎"
+      },
+      {
+        "ticker": "AVGO",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-09-10 00:26",
+        "lastMention": "2026-08-07 13:46",
+        "basePrice": "2025-09-10 @ 370",
+        "w1": "-6.3%",
+        "m1": "-12.2%",
+        "m6": "-7.6%",
+        "y1": "未到期",
+        "toDate": "12.6%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "JBL",
+        "chain": "芯片/算力",
+        "queue": "积极观察",
+        "firstMention": "2025-12-02 02:25",
+        "lastMention": "2026-08-07 06:54",
+        "basePrice": "2025-12-02 @ 212",
+        "w1": "7.6%",
+        "m1": "13.4%",
+        "m6": "76.0%",
+        "y1": "未到期",
+        "toDate": "68.2%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "TSM",
+        "chain": "芯片/算力",
+        "queue": "积极观察",
+        "firstMention": "2025-09-09 13:43",
+        "lastMention": "2026-08-06 17:56",
+        "basePrice": "2025-09-09 @ 251",
+        "w1": "4.4%",
+        "m1": "19.5%",
+        "m6": "38.3%",
+        "y1": "未到期",
+        "toDate": "68.2%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "AEVA",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2026-02-10 02:24",
+        "lastMention": "2026-08-06 12:12",
+        "basePrice": "2026-02-10 @ 13",
+        "w1": "-0.3%",
+        "m1": "18.2%",
+        "m6": "85.9%",
+        "y1": "未到期",
+        "toDate": "85.9%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "FORM",
+        "chain": "芯片/算力",
+        "queue": "积极观察",
+        "firstMention": "2026-01-23 00:02",
+        "lastMention": "2026-08-06 09:23",
+        "basePrice": "2026-01-23 @ 73",
+        "w1": "-3.7%",
+        "m1": "31.3%",
+        "m6": "42.1%",
+        "y1": "未到期",
+        "toDate": "65.4%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "VIAV",
+        "chain": "光模块/网络",
+        "queue": "积极观察",
+        "firstMention": "2026-03-17 20:38",
+        "lastMention": "2026-08-06 09:23",
+        "basePrice": "2026-03-17 @ 31",
+        "w1": "16.5%",
+        "m1": "33.5%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "24.5%",
+        "view": "看多",
+        "recentView": "积极观察"
       },
       {
         "ticker": "SNDK",
         "chain": "芯片/算力",
         "queue": "高风险偏多",
         "firstMention": "2025-11-25 19:38",
-        "lastMention": "2026-08-01 06:52",
+        "lastMention": "2026-08-04 10:34",
         "basePrice": "2025-11-25 @ 220",
         "w1": "-6.9%",
         "m1": "13.4%",
         "m6": "620.9%",
         "y1": "未到期",
-        "toDate": "484.1%",
+        "toDate": "476.4%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -16237,39 +16526,9 @@
         "m1": "63.7%",
         "m6": "55.2%",
         "y1": "未到期",
-        "toDate": "151.0%",
+        "toDate": "142.9%",
         "view": "中性",
         "recentView": "高风险观察"
-      },
-      {
-        "ticker": "NVDA",
-        "chain": "光模块/网络",
-        "queue": "高风险偏多",
-        "firstMention": "2025-07-28 16:19",
-        "lastMention": "2026-08-01 03:16",
-        "basePrice": "2025-07-28 @ 177",
-        "w1": "1.8%",
-        "m1": "2.7%",
-        "m6": "5.5%",
-        "y1": "11.5%",
-        "toDate": "16.9%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "GOOGL",
-        "chain": "云与软件",
-        "queue": "观察",
-        "firstMention": "2025-07-03 17:57",
-        "lastMention": "2026-08-01 03:16",
-        "basePrice": "2025-07-03 @ 180",
-        "w1": "-1.1%",
-        "m1": "8.6%",
-        "m6": "75.5%",
-        "y1": "104.1%",
-        "toDate": "108.0%",
-        "view": "中性",
-        "recentView": "观察"
       },
       {
         "ticker": "MSFT",
@@ -16282,7 +16541,7 @@
         "m1": "-1.1%",
         "m6": "-8.2%",
         "y1": "-23.2%",
-        "toDate": "-4.8%",
+        "toDate": "-1.7%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16297,37 +16556,7 @@
         "m1": "-25.5%",
         "m6": "-46.9%",
         "y1": "未到期",
-        "toDate": "-41.3%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "POET",
-        "chain": "光模块/网络",
-        "queue": "谨慎",
-        "firstMention": "2025-12-12 06:18",
-        "lastMention": "2026-07-31 16:57",
-        "basePrice": "2025-12-12 @ 6",
-        "w1": "4.3%",
-        "m1": "10.9%",
-        "m6": "92.8%",
-        "y1": "未到期",
-        "toDate": "13.2%",
-        "view": "看空",
-        "recentView": "谨慎"
-      },
-      {
-        "ticker": "JBL",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2025-12-02 02:25",
-        "lastMention": "2026-07-31 16:57",
-        "basePrice": "2025-12-02 @ 212",
-        "w1": "7.6%",
-        "m1": "13.4%",
-        "m6": "76.0%",
-        "y1": "未到期",
-        "toDate": "50.1%",
+        "toDate": "-40.8%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16342,7 +16571,7 @@
         "m1": "154.1%",
         "m6": "36.3%",
         "y1": "未到期",
-        "toDate": "71.2%",
+        "toDate": "102.1%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -16357,114 +16586,9 @@
         "m1": "-8.7%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-30.5%",
+        "toDate": "-27.2%",
         "view": "看多",
         "recentView": "积极观察"
-      },
-      {
-        "ticker": "AXTI",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-12-22 17:48",
-        "lastMention": "2026-07-31 15:14",
-        "basePrice": "2025-12-22 @ 15",
-        "w1": "-4.1%",
-        "m1": "30.0%",
-        "m6": "507.4%",
-        "y1": "未到期",
-        "toDate": "351.2%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "MU",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-09-26 00:25",
-        "lastMention": "2026-07-31 15:14",
-        "basePrice": "2025-09-26 @ 157",
-        "w1": "19.4%",
-        "m1": "40.0%",
-        "m6": "127.1%",
-        "y1": "未到期",
-        "toDate": "427.4%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "IREN",
-        "chain": "云与软件",
-        "queue": "谨慎",
-        "firstMention": "2025-08-31 12:51",
-        "lastMention": "2026-07-31 02:31",
-        "basePrice": "2025-09-02 @ 29",
-        "w1": "-10.0%",
-        "m1": "61.2%",
-        "m6": "42.2%",
-        "y1": "未到期",
-        "toDate": "36.6%",
-        "view": "看空",
-        "recentView": "谨慎"
-      },
-      {
-        "ticker": "NBIS",
-        "chain": "云与软件",
-        "queue": "高风险偏多",
-        "firstMention": "2025-07-21 22:13",
-        "lastMention": "2026-07-31 02:31",
-        "basePrice": "2025-07-21 @ 52",
-        "w1": "0.7%",
-        "m1": "28.8%",
-        "m6": "89.6%",
-        "y1": "314.2%",
-        "toDate": "305.9%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "TSM",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2025-09-09 13:43",
-        "lastMention": "2026-07-30 14:52",
-        "basePrice": "2025-09-09 @ 251",
-        "w1": "4.4%",
-        "m1": "19.5%",
-        "m6": "38.3%",
-        "y1": "未到期",
-        "toDate": "61.8%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "FORM",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2026-01-23 00:02",
-        "lastMention": "2026-07-30 14:52",
-        "basePrice": "2026-01-23 @ 73",
-        "w1": "-3.7%",
-        "m1": "31.3%",
-        "m6": "42.1%",
-        "y1": "未到期",
-        "toDate": "48.6%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "AMD",
-        "chain": "光模块/网络",
-        "queue": "高风险偏多",
-        "firstMention": "2025-09-12 01:00",
-        "lastMention": "2026-07-30 07:13",
-        "basePrice": "2025-09-12 @ 159",
-        "w1": "-0.7%",
-        "m1": "36.5%",
-        "m6": "22.0%",
-        "y1": "未到期",
-        "toDate": "205.6%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "GFS",
@@ -16477,7 +16601,7 @@
         "m1": "4.2%",
         "m6": "36.2%",
         "y1": "未到期",
-        "toDate": "14.6%",
+        "toDate": "16.5%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16492,7 +16616,7 @@
         "m1": "-2.6%",
         "m6": "115.1%",
         "y1": "未到期",
-        "toDate": "57.5%",
+        "toDate": "68.2%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -16507,24 +16631,9 @@
         "m1": "39.0%",
         "m6": "52.7%",
         "y1": "未到期",
-        "toDate": "59.6%",
+        "toDate": "65.6%",
         "view": "看空",
         "recentView": "谨慎"
-      },
-      {
-        "ticker": "AVGO",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-09-10 00:26",
-        "lastMention": "2026-07-27 04:12",
-        "basePrice": "2025-09-10 @ 370",
-        "w1": "-6.3%",
-        "m1": "-12.2%",
-        "m6": "-7.6%",
-        "y1": "未到期",
-        "toDate": "6.1%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "QCOM",
@@ -16537,7 +16646,7 @@
         "m1": "-6.6%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "9.5%",
+        "toDate": "17.5%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -16552,7 +16661,37 @@
         "m1": "12.9%",
         "m6": "5.6%",
         "y1": "未到期",
-        "toDate": "160.9%",
+        "toDate": "185.9%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "TSEM",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2026-02-11 11:05",
+        "lastMention": "2026-07-22 01:41",
+        "basePrice": "2026-02-11 @ 134",
+        "w1": "-4.5%",
+        "m1": "-7.2%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "85.6%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "CIFR",
+        "chain": "AI基础设施",
+        "queue": "高风险偏多",
+        "firstMention": "2025-09-03 19:31",
+        "lastMention": "2026-07-22 01:41",
+        "basePrice": "2025-09-03 @ 8",
+        "w1": "26.4%",
+        "m1": "81.3%",
+        "m6": "97.8%",
+        "y1": "未到期",
+        "toDate": "112.2%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -16567,24 +16706,9 @@
         "m1": "-1.1%",
         "m6": "181.3%",
         "y1": "未到期",
-        "toDate": "218.3%",
+        "toDate": "306.7%",
         "view": "看多",
         "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "TSEM",
-        "chain": "光模块/网络",
-        "queue": "积极观察",
-        "firstMention": "2026-02-11 11:05",
-        "lastMention": "2026-07-22 01:41",
-        "basePrice": "2026-02-11 @ 134",
-        "w1": "-4.5%",
-        "m1": "-7.2%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "74.3%",
-        "view": "看多",
-        "recentView": "积极观察"
       },
       {
         "ticker": "ALAB",
@@ -16597,24 +16721,9 @@
         "m1": "41.5%",
         "m6": "50.8%",
         "y1": "162.4%",
-        "toDate": "163.4%",
+        "toDate": "156.0%",
         "view": "中性",
         "recentView": "高风险观察"
-      },
-      {
-        "ticker": "CRWV",
-        "chain": "云与软件",
-        "queue": "高风险偏多",
-        "firstMention": "2025-07-21 22:13",
-        "lastMention": "2026-07-21 01:18",
-        "basePrice": "2025-07-21 @ 125",
-        "w1": "-11.7%",
-        "m1": "-26.7%",
-        "m6": "-23.8%",
-        "y1": "-36.3%",
-        "toDate": "-31.3%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "CLSK",
@@ -16627,7 +16736,7 @@
         "m1": "68.9%",
         "m6": "12.9%",
         "y1": "未到期",
-        "toDate": "55.2%",
+        "toDate": "22.0%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -16642,7 +16751,7 @@
         "m1": "44.9%",
         "m6": "95.9%",
         "y1": "未到期",
-        "toDate": "305.1%",
+        "toDate": "220.9%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -16657,24 +16766,9 @@
         "m1": "83.5%",
         "m6": "-13.7%",
         "y1": "未到期",
-        "toDate": "41.1%",
+        "toDate": "31.7%",
         "view": "看多",
         "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "VSH",
-        "chain": "芯片/算力",
-        "queue": "观察",
-        "firstMention": "2026-02-06 15:45",
-        "lastMention": "2026-07-20 14:22",
-        "basePrice": "2026-02-06 @ 20",
-        "w1": "-5.4%",
-        "m1": "-15.8%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "77.4%",
-        "view": "中性",
-        "recentView": "观察"
       },
       {
         "ticker": "TTMI",
@@ -16692,6 +16786,21 @@
         "recentView": "观察"
       },
       {
+        "ticker": "VSH",
+        "chain": "芯片/算力",
+        "queue": "观察",
+        "firstMention": "2026-02-06 15:45",
+        "lastMention": "2026-07-20 14:22",
+        "basePrice": "2026-02-06 @ 20",
+        "w1": "-5.4%",
+        "m1": "-15.8%",
+        "m6": "77.5%",
+        "y1": "未到期",
+        "toDate": "66.9%",
+        "view": "中性",
+        "recentView": "观察"
+      },
+      {
         "ticker": "GLW",
         "chain": "光模块/网络",
         "queue": "积极观察",
@@ -16700,9 +16809,9 @@
         "basePrice": "2026-02-05 @ 113",
         "w1": "16.6%",
         "m1": "14.4%",
-        "m6": "未到期",
+        "m6": "39.4%",
         "y1": "未到期",
-        "toDate": "30.0%",
+        "toDate": "41.1%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16717,24 +16826,9 @@
         "m1": "-24.4%",
         "m6": "68.9%",
         "y1": "未到期",
-        "toDate": "65.3%",
+        "toDate": "75.6%",
         "view": "中性",
         "recentView": "高风险观察"
-      },
-      {
-        "ticker": "AEVA",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2026-02-10 02:24",
-        "lastMention": "2026-07-08 03:49",
-        "basePrice": "2026-02-10 @ 13",
-        "w1": "-0.3%",
-        "m1": "18.2%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "42.3%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "FN",
@@ -16747,7 +16841,7 @@
         "m1": "-10.4%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-26.0%",
+        "toDate": "-14.6%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16762,7 +16856,7 @@
         "m1": "-3.9%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "91.5%",
+        "toDate": "70.5%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16777,7 +16871,7 @@
         "m1": "4.2%",
         "m6": "102.6%",
         "y1": "未到期",
-        "toDate": "64.8%",
+        "toDate": "76.6%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -16790,9 +16884,9 @@
         "basePrice": "2026-02-09 @ 377",
         "w1": "3.8%",
         "m1": "-6.2%",
-        "m6": "未到期",
+        "m6": "18.0%",
         "y1": "未到期",
-        "toDate": "16.2%",
+        "toDate": "21.8%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16807,7 +16901,7 @@
         "m1": "-3.1%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "33.7%",
+        "toDate": "56.7%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -16822,7 +16916,7 @@
         "m1": "25.2%",
         "m6": "84.3%",
         "y1": "未到期",
-        "toDate": "85.0%",
+        "toDate": "94.9%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -16837,13 +16931,13 @@
         "m1": "-22.1%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-21.4%",
+        "toDate": "-16.1%",
         "view": "看空",
         "recentView": "谨慎"
       },
       {
         "ticker": "ASML",
-        "chain": "芯片/算力",
+        "chain": "光模块/网络",
         "queue": "高风险观察",
         "firstMention": "2025-10-07 06:29",
         "lastMention": "2026-06-30 18:27",
@@ -16852,24 +16946,9 @@
         "m1": "2.7%",
         "m6": "30.3%",
         "y1": "未到期",
-        "toDate": "63.9%",
+        "toDate": "79.5%",
         "view": "中性",
         "recentView": "高风险观察"
-      },
-      {
-        "ticker": "MTSI",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2026-01-10 23:48",
-        "lastMention": "2026-06-27 10:11",
-        "basePrice": "2026-01-12 @ 198",
-        "w1": "12.2%",
-        "m1": "19.3%",
-        "m6": "48.9%",
-        "y1": "未到期",
-        "toDate": "29.6%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "AOSL",
@@ -16897,24 +16976,9 @@
         "m1": "-0.7%",
         "m6": "6.1%",
         "y1": "-21.8%",
-        "toDate": "-20.4%",
+        "toDate": "10.8%",
         "view": "看空",
         "recentView": "谨慎"
-      },
-      {
-        "ticker": "MXL",
-        "chain": "芯片/算力",
-        "queue": "高风险观察",
-        "firstMention": "2026-03-17 20:38",
-        "lastMention": "2026-06-24 14:52",
-        "basePrice": "2026-03-17 @ 17",
-        "w1": "4.9%",
-        "m1": "38.9%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "299.2%",
-        "view": "中性",
-        "recentView": "高风险观察"
       },
       {
         "ticker": "FLNC",
@@ -16927,9 +16991,24 @@
         "m1": "36.4%",
         "m6": "-13.5%",
         "y1": "未到期",
-        "toDate": "-4.6%",
+        "toDate": "-14.1%",
         "view": "中性",
         "recentView": "高风险观察"
+      },
+      {
+        "ticker": "CAMT",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2026-01-23 00:17",
+        "lastMention": "2026-06-20 11:52",
+        "basePrice": "2026-01-23 @ 144",
+        "w1": "2.0%",
+        "m1": "6.6%",
+        "m6": "2.9%",
+        "y1": "未到期",
+        "toDate": "14.5%",
+        "view": "看多",
+        "recentView": "高风险偏多"
       },
       {
         "ticker": "ACMR",
@@ -16942,24 +17021,9 @@
         "m1": "24.9%",
         "m6": "92.7%",
         "y1": "未到期",
-        "toDate": "53.3%",
+        "toDate": "55.8%",
         "view": "中性",
         "recentView": "观察"
-      },
-      {
-        "ticker": "CAMT",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2026-01-23 00:17",
-        "lastMention": "2026-06-20 11:52",
-        "basePrice": "2026-01-23 @ 144",
-        "w1": "2.0%",
-        "m1": "6.6%",
-        "m6": "2.9%",
-        "y1": "未到期",
-        "toDate": "-2.7%",
-        "view": "看多",
-        "recentView": "积极观察"
       },
       {
         "ticker": "ARM",
@@ -16972,24 +17036,9 @@
         "m1": "21.9%",
         "m6": "-2.0%",
         "y1": "未到期",
-        "toDate": "71.0%",
+        "toDate": "92.4%",
         "view": "看多",
         "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "SNAP",
-        "chain": "云与软件",
-        "queue": "谨慎",
-        "firstMention": "2025-08-23 19:08",
-        "lastMention": "2026-06-19 20:19",
-        "basePrice": "2025-08-25 @ 7",
-        "w1": "4.7%",
-        "m1": "21.9%",
-        "m6": "-29.6%",
-        "y1": "未到期",
-        "toDate": "-28.0%",
-        "view": "看空",
-        "recentView": "谨慎"
       },
       {
         "ticker": "WOLF",
@@ -17002,7 +17051,7 @@
         "m1": "-4.4%",
         "m6": "43.3%",
         "y1": "未到期",
-        "toDate": "18.8%",
+        "toDate": "47.0%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17017,7 +17066,7 @@
         "m1": "4.9%",
         "m6": "58.5%",
         "y1": "未到期",
-        "toDate": "42.5%",
+        "toDate": "40.7%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -17032,7 +17081,7 @@
         "m1": "2.0%",
         "m6": "11.5%",
         "y1": "未到期",
-        "toDate": "1.2%",
+        "toDate": "-8.1%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -17047,7 +17096,7 @@
         "m1": "7.4%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "26.0%",
+        "toDate": "27.1%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17062,9 +17111,24 @@
         "m1": "52.0%",
         "m6": "-52.0%",
         "y1": "未到期",
-        "toDate": "-62.9%",
+        "toDate": "-58.1%",
         "view": "中性",
         "recentView": "高风险观察"
+      },
+      {
+        "ticker": "AMSC",
+        "chain": "数据中心电力",
+        "queue": "积极观察",
+        "firstMention": "2026-04-23 03:12",
+        "lastMention": "2026-06-08 14:22",
+        "basePrice": "2026-04-23 @ 46",
+        "w1": "16.0%",
+        "m1": "15.1%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "-30.4%",
+        "view": "看多",
+        "recentView": "积极观察"
       },
       {
         "ticker": "IFNNY",
@@ -17112,21 +17176,6 @@
         "recentView": "观察"
       },
       {
-        "ticker": "AMSC",
-        "chain": "数据中心电力",
-        "queue": "积极观察",
-        "firstMention": "2026-04-23 03:12",
-        "lastMention": "2026-06-08 14:22",
-        "basePrice": "2026-04-23 @ 46",
-        "w1": "16.0%",
-        "m1": "15.1%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "-32.8%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
         "ticker": "VPG",
         "chain": "芯片/算力",
         "queue": "观察",
@@ -17137,7 +17186,7 @@
         "m1": "2.2%",
         "m6": "135.5%",
         "y1": "未到期",
-        "toDate": "95.7%",
+        "toDate": "43.4%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17152,7 +17201,7 @@
         "m1": "15.5%",
         "m6": "-75.9%",
         "y1": "未到期",
-        "toDate": "-51.6%",
+        "toDate": "-49.6%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17167,7 +17216,7 @@
         "m1": "-48.4%",
         "m6": "-37.9%",
         "y1": "-52.5%",
-        "toDate": "-59.4%",
+        "toDate": "-59.3%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17182,7 +17231,7 @@
         "m1": "7.7%",
         "m6": "95.4%",
         "y1": "未到期",
-        "toDate": "70.0%",
+        "toDate": "72.4%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17212,7 +17261,7 @@
         "m1": "-5.0%",
         "m6": "-4.0%",
         "y1": "未到期",
-        "toDate": "5.0%",
+        "toDate": "7.5%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17257,7 +17306,7 @@
         "m1": "21.2%",
         "m6": "166.1%",
         "y1": "未到期",
-        "toDate": "126.7%",
+        "toDate": "120.8%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17287,7 +17336,7 @@
         "m1": "-39.3%",
         "m6": "4.6%",
         "y1": "未到期",
-        "toDate": "3.8%",
+        "toDate": "14.9%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -17347,7 +17396,7 @@
         "m1": "-24.0%",
         "m6": "6.6%",
         "y1": "未到期",
-        "toDate": "9.2%",
+        "toDate": "16.2%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -17412,36 +17461,6 @@
         "recentView": "观察"
       },
       {
-        "ticker": "NEO",
-        "chain": "AI基础设施",
-        "queue": "积极观察",
-        "firstMention": "2026-03-23 15:37",
-        "lastMention": "2026-05-13 07:00",
-        "basePrice": "2026-03-23 @ 8",
-        "w1": "-11.1%",
-        "m1": "1.0%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "14.0%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
-        "ticker": "AMBA",
-        "chain": "芯片/算力",
-        "queue": "高风险观察",
-        "firstMention": "2026-01-16 02:54",
-        "lastMention": "2026-05-13 07:00",
-        "basePrice": "2026-01-16 @ 69",
-        "w1": "-2.2%",
-        "m1": "-4.3%",
-        "m6": "-10.0%",
-        "y1": "未到期",
-        "toDate": "20.3%",
-        "view": "中性",
-        "recentView": "高风险观察"
-      },
-      {
         "ticker": "INDI",
         "chain": "芯片/算力",
         "queue": "高风险观察",
@@ -17487,17 +17506,32 @@
         "recentView": "观察"
       },
       {
-        "ticker": "ARBE",
-        "chain": "芯片/算力",
-        "queue": "高风险观察",
-        "firstMention": "2026-05-13 07:00",
+        "ticker": "NEO",
+        "chain": "AI基础设施",
+        "queue": "积极观察",
+        "firstMention": "2026-03-23 15:37",
         "lastMention": "2026-05-13 07:00",
-        "basePrice": "2026-05-13 @ 1",
-        "w1": "-0.5%",
-        "m1": "未到期",
+        "basePrice": "2026-03-23 @ 8",
+        "w1": "-11.1%",
+        "m1": "1.0%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-0.5%",
+        "toDate": "14.0%",
+        "view": "看多",
+        "recentView": "积极观察"
+      },
+      {
+        "ticker": "AMBA",
+        "chain": "芯片/算力",
+        "queue": "高风险观察",
+        "firstMention": "2026-01-16 02:54",
+        "lastMention": "2026-05-13 07:00",
+        "basePrice": "2026-01-16 @ 69",
+        "w1": "-2.2%",
+        "m1": "-4.3%",
+        "m6": "-10.0%",
+        "y1": "未到期",
+        "toDate": "20.6%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17515,6 +17549,21 @@
         "toDate": "102.6%",
         "view": "中性",
         "recentView": "观察"
+      },
+      {
+        "ticker": "ARBE",
+        "chain": "芯片/算力",
+        "queue": "高风险观察",
+        "firstMention": "2026-05-13 07:00",
+        "lastMention": "2026-05-13 07:00",
+        "basePrice": "2026-05-13 @ 1",
+        "w1": "-0.5%",
+        "m1": "未到期",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "-0.5%",
+        "view": "中性",
+        "recentView": "高风险观察"
       },
       {
         "ticker": "HLIT",
@@ -17542,7 +17591,7 @@
         "m1": "-1.7%",
         "m6": "39.2%",
         "y1": "未到期",
-        "toDate": "20.8%",
+        "toDate": "32.5%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -17557,9 +17606,24 @@
         "m1": "7.9%",
         "m6": "61.4%",
         "y1": "未到期",
-        "toDate": "37.4%",
+        "toDate": "45.3%",
         "view": "中性",
         "recentView": "高风险观察"
+      },
+      {
+        "ticker": "ONTO",
+        "chain": "芯片/算力",
+        "queue": "积极观察",
+        "firstMention": "2026-01-23 00:02",
+        "lastMention": "2026-05-10 15:30",
+        "basePrice": "2026-01-23 @ 212",
+        "w1": "-4.6%",
+        "m1": "0.6%",
+        "m6": "28.7%",
+        "y1": "未到期",
+        "toDate": "50.9%",
+        "view": "看多",
+        "recentView": "积极观察"
       },
       {
         "ticker": "DSCSY",
@@ -17577,21 +17641,6 @@
         "recentView": "高风险观察"
       },
       {
-        "ticker": "ONTO",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2026-01-23 00:02",
-        "lastMention": "2026-05-10 15:30",
-        "basePrice": "2026-01-23 @ 212",
-        "w1": "-4.6%",
-        "m1": "0.6%",
-        "m6": "28.7%",
-        "y1": "未到期",
-        "toDate": "26.7%",
-        "view": "看多",
-        "recentView": "积极观察"
-      },
-      {
         "ticker": "FISV",
         "chain": "云与软件",
         "queue": "谨慎",
@@ -17602,7 +17651,7 @@
         "m1": "11.1%",
         "m6": "-7.8%",
         "y1": "未到期",
-        "toDate": "-11.1%",
+        "toDate": "-13.8%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17617,7 +17666,7 @@
         "m1": "-32.8%",
         "m6": "-23.6%",
         "y1": "未到期",
-        "toDate": "-22.3%",
+        "toDate": "-15.2%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17647,24 +17696,9 @@
         "m1": "-1.2%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-12.0%",
+        "toDate": "-12.1%",
         "view": "中性",
         "recentView": "观察"
-      },
-      {
-        "ticker": "VIAV",
-        "chain": "光模块/网络",
-        "queue": "积极观察",
-        "firstMention": "2026-03-17 20:38",
-        "lastMention": "2026-04-30 05:54",
-        "basePrice": "2026-03-17 @ 31",
-        "w1": "16.5%",
-        "m1": "33.5%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "22.4%",
-        "view": "看多",
-        "recentView": "积极观察"
       },
       {
         "ticker": "KEYS",
@@ -17677,7 +17711,7 @@
         "m1": "14.8%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "12.0%",
+        "toDate": "19.6%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -17707,7 +17741,7 @@
         "m1": "39.5%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-4.8%",
+        "toDate": "-9.7%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17737,24 +17771,9 @@
         "m1": "-12.9%",
         "m6": "-13.7%",
         "y1": "未到期",
-        "toDate": "-15.5%",
+        "toDate": "-1.1%",
         "view": "看多",
         "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "SMTC",
-        "chain": "芯片/算力",
-        "queue": "积极观察",
-        "firstMention": "2026-01-23 00:02",
-        "lastMention": "2026-04-24 11:38",
-        "basePrice": "2026-01-23 @ 81",
-        "w1": "-1.0%",
-        "m1": "7.8%",
-        "m6": "56.4%",
-        "y1": "未到期",
-        "toDate": "47.9%",
-        "view": "看多",
-        "recentView": "积极观察"
       },
       {
         "ticker": "IBIT",
@@ -17842,7 +17861,7 @@
         "m1": "-11.2%",
         "m6": "59.7%",
         "y1": "未到期",
-        "toDate": "57.6%",
+        "toDate": "55.1%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -17872,7 +17891,7 @@
         "m1": "-6.2%",
         "m6": "-66.0%",
         "y1": "未到期",
-        "toDate": "-61.6%",
+        "toDate": "-56.6%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -17887,7 +17906,7 @@
         "m1": "135.0%",
         "m6": "-4.7%",
         "y1": "未到期",
-        "toDate": "9.1%",
+        "toDate": "10.4%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -17902,24 +17921,9 @@
         "m1": "70.4%",
         "m6": "-22.4%",
         "y1": "未到期",
-        "toDate": "-4.7%",
+        "toDate": "6.6%",
         "view": "看空",
         "recentView": "谨慎"
-      },
-      {
-        "ticker": "TRT",
-        "chain": "芯片/算力",
-        "queue": "高风险观察",
-        "firstMention": "2026-04-03 11:21",
-        "lastMention": "2026-04-12 06:37",
-        "basePrice": "2026-04-06 @ 6",
-        "w1": "5.8%",
-        "m1": "93.9%",
-        "m6": "未到期",
-        "y1": "未到期",
-        "toDate": "100.5%",
-        "view": "中性",
-        "recentView": "高风险观察"
       },
       {
         "ticker": "ENAFF",
@@ -17935,6 +17939,21 @@
         "toDate": "114.4%",
         "view": "看多",
         "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "TRT",
+        "chain": "芯片/算力",
+        "queue": "高风险观察",
+        "firstMention": "2026-04-03 11:21",
+        "lastMention": "2026-04-12 06:37",
+        "basePrice": "2026-04-06 @ 6",
+        "w1": "5.8%",
+        "m1": "93.9%",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "100.5%",
+        "view": "中性",
+        "recentView": "高风险观察"
       },
       {
         "ticker": "WATT",
@@ -17977,7 +17996,7 @@
         "m1": "-38.7%",
         "m6": "-16.1%",
         "y1": "未到期",
-        "toDate": "-34.3%",
+        "toDate": "-32.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18022,9 +18041,24 @@
         "m1": "-60.1%",
         "m6": "-73.8%",
         "y1": "未到期",
-        "toDate": "-86.7%",
+        "toDate": "-82.7%",
         "view": "看多",
         "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "CEG",
+        "chain": "数据中心电力",
+        "queue": "积极观察",
+        "firstMention": "2025-09-18 07:13",
+        "lastMention": "2026-04-09 18:27",
+        "basePrice": "2025-09-18 @ 323",
+        "w1": "1.1%",
+        "m1": "14.7%",
+        "m6": "-1.9%",
+        "y1": "未到期",
+        "toDate": "-13.7%",
+        "view": "看多",
+        "recentView": "积极观察"
       },
       {
         "ticker": "NEE",
@@ -18040,21 +18074,6 @@
         "toDate": "3.0%",
         "view": "看空",
         "recentView": "谨慎"
-      },
-      {
-        "ticker": "CEG",
-        "chain": "数据中心电力",
-        "queue": "积极观察",
-        "firstMention": "2025-09-18 07:13",
-        "lastMention": "2026-04-09 18:27",
-        "basePrice": "2025-09-18 @ 323",
-        "w1": "1.1%",
-        "m1": "14.7%",
-        "m6": "-1.9%",
-        "y1": "未到期",
-        "toDate": "-15.2%",
-        "view": "看多",
-        "recentView": "积极观察"
       },
       {
         "ticker": "AXIA",
@@ -18082,7 +18101,7 @@
         "m1": "-0.5%",
         "m6": "64.8%",
         "y1": "未到期",
-        "toDate": "53.7%",
+        "toDate": "52.5%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -18112,7 +18131,7 @@
         "m1": "6.0%",
         "m6": "48.2%",
         "y1": "未到期",
-        "toDate": "52.4%",
+        "toDate": "58.4%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -18187,7 +18206,7 @@
         "m1": "-17.2%",
         "m6": "-16.9%",
         "y1": "未到期",
-        "toDate": "-9.0%",
+        "toDate": "-10.6%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -18372,21 +18391,6 @@
         "recentView": "观察"
       },
       {
-        "ticker": "RIOT",
-        "chain": "芯片/算力",
-        "queue": "高风险观察",
-        "firstMention": "2025-09-03 19:31",
-        "lastMention": "2026-03-19 09:26",
-        "basePrice": "2025-09-03 @ 13",
-        "w1": "21.9%",
-        "m1": "44.5%",
-        "m6": "22.9%",
-        "y1": "未到期",
-        "toDate": "59.3%",
-        "view": "中性",
-        "recentView": "高风险观察"
-      },
-      {
         "ticker": "INFQ",
         "chain": "芯片/算力",
         "queue": "高风险偏多",
@@ -18397,7 +18401,7 @@
         "m1": "-40.1%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "-25.4%",
+        "toDate": "-19.6%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18412,7 +18416,7 @@
         "m1": "19.6%",
         "m6": "未到期",
         "y1": "未到期",
-        "toDate": "148.1%",
+        "toDate": "176.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18427,7 +18431,7 @@
         "m1": "10.7%",
         "m6": "60.0%",
         "y1": "133.8%",
-        "toDate": "128.1%",
+        "toDate": "158.7%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -18442,7 +18446,7 @@
         "m1": "-10.4%",
         "m6": "16.0%",
         "y1": "未到期",
-        "toDate": "-12.9%",
+        "toDate": "-6.5%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18457,7 +18461,7 @@
         "m1": "-26.6%",
         "m6": "-74.6%",
         "y1": "未到期",
-        "toDate": "-68.3%",
+        "toDate": "-64.0%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -18502,7 +18506,7 @@
         "m1": "-40.2%",
         "m6": "-53.1%",
         "y1": "未到期",
-        "toDate": "-57.4%",
+        "toDate": "-41.1%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -18517,7 +18521,7 @@
         "m1": "17.7%",
         "m6": "62.9%",
         "y1": "未到期",
-        "toDate": "26.8%",
+        "toDate": "47.6%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -18567,6 +18571,21 @@
         "recentView": "观察"
       },
       {
+        "ticker": "NET",
+        "chain": "云与软件",
+        "queue": "高风险偏多",
+        "firstMention": "2025-10-13 23:51",
+        "lastMention": "2026-02-27 22:40",
+        "basePrice": "2025-10-13 @ 223",
+        "w1": "-4.3%",
+        "m1": "1.4%",
+        "m6": "-17.3%",
+        "y1": "未到期",
+        "toDate": "37.9%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
         "ticker": "XYZ",
         "chain": "云与软件",
         "queue": "积极观察",
@@ -18580,21 +18599,6 @@
         "toDate": "17.2%",
         "view": "看多",
         "recentView": "积极观察"
-      },
-      {
-        "ticker": "NET",
-        "chain": "云与软件",
-        "queue": "高风险偏多",
-        "firstMention": "2025-10-13 23:51",
-        "lastMention": "2026-02-27 22:40",
-        "basePrice": "2025-10-13 @ 223",
-        "w1": "-4.3%",
-        "m1": "1.4%",
-        "m6": "-17.3%",
-        "y1": "未到期",
-        "toDate": "27.0%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "TLN",
@@ -18622,7 +18626,7 @@
         "m1": "-7.6%",
         "m6": "-20.4%",
         "y1": "未到期",
-        "toDate": "-25.8%",
+        "toDate": "-31.0%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -18652,14 +18656,14 @@
         "m1": "8.7%",
         "m6": "-50.0%",
         "y1": "未到期",
-        "toDate": "-36.2%",
+        "toDate": "-41.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
       {
         "ticker": "CPSH",
         "chain": "数据中心电力",
-        "queue": "观察",
+        "queue": "高风险观察",
         "firstMention": "2026-01-19 02:38",
         "lastMention": "2026-02-21 15:35",
         "basePrice": "2026-01-20 @ 5",
@@ -18667,9 +18671,9 @@
         "m1": "-12.7%",
         "m6": "-16.4%",
         "y1": "未到期",
-        "toDate": "-23.9%",
+        "toDate": "-17.5%",
         "view": "中性",
-        "recentView": "观察"
+        "recentView": "高风险观察"
       },
       {
         "ticker": "TWLO",
@@ -18712,7 +18716,7 @@
         "m1": "5.4%",
         "m6": "50.1%",
         "y1": "未到期",
-        "toDate": "-3.4%",
+        "toDate": "1.0%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -18847,7 +18851,7 @@
         "m1": "-1.7%",
         "m6": "70.7%",
         "y1": "未到期",
-        "toDate": "41.2%",
+        "toDate": "47.3%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -18937,7 +18941,7 @@
         "m1": "-4.6%",
         "m6": "-27.3%",
         "y1": "未到期",
-        "toDate": "-27.3%",
+        "toDate": "-19.5%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -18952,7 +18956,7 @@
         "m1": "-4.6%",
         "m6": "-25.3%",
         "y1": "-47.4%",
-        "toDate": "-46.7%",
+        "toDate": "-52.6%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -19102,7 +19106,7 @@
         "m1": "80.3%",
         "m6": "34.1%",
         "y1": "未到期",
-        "toDate": "48.1%",
+        "toDate": "49.1%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -19192,7 +19196,7 @@
         "m1": "4.6%",
         "m6": "91.7%",
         "y1": "未到期",
-        "toDate": "31.2%",
+        "toDate": "31.6%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -19237,7 +19241,7 @@
         "m1": "4.2%",
         "m6": "-72.6%",
         "y1": "-58.5%",
-        "toDate": "-61.8%",
+        "toDate": "-59.4%",
         "view": "看多",
         "recentView": "积极观察"
       },
@@ -19282,7 +19286,7 @@
         "m1": "60.3%",
         "m6": "-12.4%",
         "y1": "未到期",
-        "toDate": "-44.5%",
+        "toDate": "-36.7%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -19327,7 +19331,7 @@
         "m1": "-9.2%",
         "m6": "-43.9%",
         "y1": "-26.7%",
-        "toDate": "-33.5%",
+        "toDate": "-45.2%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -19342,7 +19346,7 @@
         "m1": "44.7%",
         "m6": "-54.5%",
         "y1": "未到期",
-        "toDate": "-24.9%",
+        "toDate": "-31.2%",
         "view": "中性",
         "recentView": "高风险观察"
       },
@@ -19357,7 +19361,7 @@
         "m1": "-17.4%",
         "m6": "-47.5%",
         "y1": "未到期",
-        "toDate": "-43.9%",
+        "toDate": "-32.9%",
         "view": "看空",
         "recentView": "谨慎"
       },
@@ -19507,7 +19511,7 @@
         "m1": "-29.7%",
         "m6": "-83.8%",
         "y1": "未到期",
-        "toDate": "-90.6%",
+        "toDate": "-89.7%",
         "view": "中性",
         "recentView": "高风险观察"
       },

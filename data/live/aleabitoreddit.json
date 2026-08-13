@@ -9,6 +9,26 @@
   "fetchedAt": "2026-08-13 09:00",
   "feed": [
     {
+      "time": "08-13 10:52",
+      "type": "推文",
+      "ticker": "SOI",
+      "tickers": [
+        "SOI",
+        "IQE"
+      ],
+      "title": "推文线索 · SOI",
+      "body": "Is it just me, or is the list of 3 letter optical jargon never ending?\nWe have LPO, LRO, NPO, XPO, CPO, OBO, and others for approaches.\nThen InP, EML, ELS, OCS, SOI, and others to add to the random terms.\nEven the industry events with OCP or OFC get their three letter names.\nPeople who have followed me on my optical bottleneck scavenger hunt with $SOI or $IQE might know a lot by now.\nBut wouldn’t new followers might be super confused…",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-13 10:52",
+      "url": "https://x.com/aleabitoreddit/status/2087733927930929435",
+      "stats": {
+        "views": "14K",
+        "likes": "46",
+        "reposts": "5",
+        "bookmarks": "8"
+      }
+    },
+    {
       "time": "08-13 06:59",
       "type": "推文",
       "ticker": "COHR",
@@ -95,26 +115,17 @@
         "reposts": "1",
         "bookmarks": "5"
       }
-    },
-    {
-      "time": "08-12 14:22",
-      "type": "推文",
-      "ticker": "",
-      "tickers": [],
-      "title": "推文 · @aleabitoreddit",
-      "body": "What a legend, Situational Awareness bought 1/6th of the entire company of Taiyo Yuden.\nPretty wild to see this unfolding.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-12 14:22",
-      "url": "https://x.com/aleabitoreddit/status/2087424400811507963",
-      "stats": {
-        "views": "7,015",
-        "likes": "15",
-        "reposts": "3",
-        "bookmarks": "2"
-      }
     }
   ],
   "mentions": {
+    "SOI": {
+      "h24": 1,
+      "d7": 1
+    },
+    "IQE": {
+      "h24": 1,
+      "d7": 1
+    },
     "COHR": {
       "h24": 2,
       "d7": 2

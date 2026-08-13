@@ -9,168 +9,149 @@
   "fetchedAt": "2026-08-13 09:00",
   "feed": [
     {
-      "time": "08-13 10:52",
+      "time": "08-13 19:43",
       "type": "推文",
-      "ticker": "SOI",
+      "ticker": "ORCL",
       "tickers": [
-        "SOI",
-        "IQE"
+        "ORCL",
+        "SPCX"
       ],
-      "title": "推文线索 · SOI",
-      "body": "Is it just me, or is the list of 3 letter optical jargon never ending?\nWe have LPO, LRO, NPO, XPO, CPO, OBO, and others for approaches.\nThen InP, EML, ELS, OCS, SOI, and others to add to the random terms.\nEven the industry events with OCP or OFC get their three letter names.\nPeople who have followed me on my optical bottleneck scavenger hunt with $SOI or $IQE might know a lot by now.\nBut wouldn’t new followers might be super confused…",
+      "title": "推文线索 · ORCL",
+      "body": "In IPO news… Vantage Data Centers is exploring going public at an enormous $100B valuation. \nIf you’re not familiar, $ORCL is their anchor tenant for Stargate (OpenAI end user), and Vantage develops/operates hyperscaler DCs.\nAnthropic IPO is also expected, with investors expecting $2T valuation, eclipsing $SPCX per FT.\nYeah… idk about Anthropic valuations. Jim Cramer defending that valuation is never a good sign. \nOn a side note, Opus 5 is probably the worst consumer LLM I’ve used to date, it’s like a 5 IQ LLM operating off terrible data retrieval. With a Fable-like God complex on top.\nEnterprise is probably having a better time though. \nUnitree IPO is also expected this month and priced it at a $9B valuation. Which is a positive tailwind for Unitree for the humanoid sectors. \nNot really an AI name but SHEIN is going public as soon as the 19th this month.\nGo ask any girl you know and they’re probably familiar with this platform.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-13 10:52",
-      "url": "https://x.com/aleabitoreddit/status/2087733927930929435",
+      "datetime": "2026-08-13 19:43",
+      "url": "https://x.com/aleabitoreddit/status/2087867722784805170",
       "stats": {
-        "views": "14K",
-        "likes": "46",
-        "reposts": "5",
-        "bookmarks": "8"
+        "views": "12K",
+        "likes": "23",
+        "reposts": "3",
+        "bookmarks": "3"
       }
     },
     {
-      "time": "08-13 06:59",
+      "time": "08-13 18:17",
       "type": "推文",
-      "ticker": "COHR",
+      "ticker": "POET",
       "tickers": [
-        "COHR",
-        "AAOI",
-        "MTSI",
         "POET",
-        "LITE"
+        "SIVE",
+        "AAOI"
       ],
-      "title": "推文线索 · COHR",
-      "body": "My main takeaway was that your merchant CW laser suppliers seem to be EXTREMELY IMPORTANT now. \nBut TLDR of $COHR earnings:\n\"given the demand that we see in our DC business with transceivers, I don’t see any time in the near future where we would be selling indium phosphide lasers externally\"\n- Ton more value placed on companies that sell InP lasers externally if $AAOI can't doesn't enough capacity for first gen-CPO deployments, $COHR not selling externally... \nI guess that's why $MTSI said a ton of customers are approaching them with urgency for InP CW DFB lasers (and they dont even have meaningful capacity coming online until EOY 2027)\n$AAOI -> Internal\n$COHR -> Internal\nBuyers -> fewer places to look for capacity. \n\"Our backlog now extends out, fiscal 2027 is basically completely booked out. We are booked really through the end of calendar 2027\" [ Massive massive demand visibility]\n- Coherent also mentioned LTAs spanning end of decade. So this kinda reinforces what $POET CEO said at their AGM that the \"big 3\" are fully sold out next 2 years.\n\"we’re not constrained in the assembly and test capacity right now. We’re really just constrained by the ramp of the indium phosphide production\"\n- Just for the bottleneck bros in terms of assembly/test not a bottleneck. \n\"absolutely no push-out of CPO demand. In fact, it has been the opposite. We have seen demand increase and request from customers’ demand getting pulled in\"\n\"we continue to expect revenue from CPO for scale-up applications to start to flow in the second half of calendar 2027\" \n- Big read through on other CPO players for scale up if $LITE, $COHR reaffirm revenue from CPO scale up coming h2027. \n- \"quarterly revenue exceeding $3 billion by the end of fiscal 2027\" \n- $COHR revenue go brrr\nSo for regular numbers it's:\n- $2.046B revenue (+13.3% Q/Q, +33.8% Y/Y), main revenue ramp looks to be happening entering Q4 into 2027\n- Non-GAAP gross margins: 40.2%\nNext quarter guide is:\n- Revenue: $2.2–$2.4B revenue\n- Non-GAAP gross margins: 39.5-41.5%\nBasically:\n$1.69B -> $1.81B -> $2.05B -> ~$2.30B -> $3.0B (end of FY 2027) \n~39% -> 39.6% -> 40.2% -> ~40.5% (gross margins)\nFor operating margins:\n18.0% -> 19.5% -> 19.9% -> 20.3% -> 21.8%\nLittle less impressed compared to $LITE margin growth in terms of profitability, but revenue scale for $COHR growing rapidly.",
+      "title": "推文线索 · POET",
+      "body": "Okay here's my take on $POET, since apparently people are celebrating on the subreddit that I took small positions. \n- I have 0 idea. ZERO. How they convinced shareholders to allow them dilute SO MUCH to the point:\nThey have an absurd ~$830m cash on hand now. \nAnd my guess is that they're close to done, since I would be in disbelief if they needed more. \nSo now... they have ~$830m to grow their business like M&A, and EV actually dropped really low recently (eg. $1.25B MC vs. $830m cash on hand), that I thought it was compelling to take a risk. \n- Annualized production capacity target is 12M optical engines/year for 2027, which is pretty absurd ramp. \nNeed to do more research into ASP for Poet's products, but maybe $125-$200? So at ~$150 ASP, $1.8B revenue ceiling. \nBut they're like inverse AAOI right now: no visible demand to fill all that capacity. Aside from Lumilens, which is now a highly valued hyperscaler supplier (probably Amazon or Microsoft), with billions in customer agreements. \nThe interesting thing is if Poet signed prepayment EML agreements with players like Mitsubishi, or CW agreements with Sivers behind the scenes with that balance sheet. \nAnd given the current bottleneck, players might use Poet as a workaround for supply procurement. \nBut basically, you have a super cash-rich company with a ton of capacity coming online. And they're not really disappearing anytime soon with their financials. \nI don't quite think it's as technically defensible compared to upstream laser chokepoints with something like $SIVE around the same valuation in terms of technical moat for CW lasers vs. OE packaging side. As you've seen recently with Celestial and Poet. \nBut maybe... there's a chance some hyperscaler or downstream company announces a volume agreement sometime in the future. and $POET takes off. And they do have the supply chain setup for ramp with that. \nThat's the risk I ended up taking, but it's not exactly a clear as day long for me like $AAOI.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-13 06:59",
-      "url": "https://x.com/aleabitoreddit/status/2087675367595380783",
+      "datetime": "2026-08-13 18:17",
+      "url": "https://x.com/aleabitoreddit/status/2087846074027295020",
       "stats": {
-        "views": "9,146",
+        "views": "8,731",
+        "likes": "12",
+        "reposts": "4",
+        "bookmarks": "3"
+      }
+    },
+    {
+      "time": "08-13 18:16",
+      "type": "推文",
+      "ticker": "POET",
+      "tickers": [
+        "POET",
+        "SIVE",
+        "AAOI"
+      ],
+      "title": "推文线索 · POET",
+      "body": "Okay here's my take on $POET, since apparently people are celebrating on the subreddit that I took small positions. \n- I have 0 idea. ZERO. How they convinced shareholders to allow them dilute SO MUCH to the point:\nThey have an absurd ~$830m cash on hand now. \nAnd my guess is that they're done, since I would be in disbelief if they needed more. \nSo now... they have ~$830m to grow their business like M&A, and EV actually dropped really low recently (eg. $1.25B MC vs. $830m cash on hand), that I thought it was compelling to take a risk. \n- Annualized production capacity target is 12M optical engines/year for 2027, which is pretty absurd ramp. \nNeed to do more research into ASP for Poet's products, but maybe $125-$200? So at ~$150 ASP, $1.8B revenue ceiling. \nBut they're like inverse AAOI right now: no visible demand to fill all that capacity. Aside from Lumilens, which is now a highly valued hyperscaler supplier (probably Amazon or Microsoft), with billions in customer agreements. \nThe interesting thing is Poet signed prepayment EML agreements with players like Mitsubishi, or CW agreements with Sivers behind the scenes with that balance sheet. \nAnd given the current bottleneck, players might use Poet as a workaround for supply procurement. \nBut basically, you have a super cash-rich company with a ton of capacity coming online. And they're not really disappearing anytime soon with their financials. \nI don't quite think it's as technically defensible compared to upstream laser chokepoints with something like $SIVE around the same valuation in terms of technical moat for CW lasers vs. OE packaging side. As you've seen recently with Celestial and Poet. \nBut maybe... there's a chance some hyperscaler or downstream company announces a volume agreement sometime in the future. and $POET takes off. And they do have the supply chain setup for ramp with that. \nThat's the risk I ended up taking, but it's not exactly a clear as day long for me like $AAOI.",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-13 18:16",
+      "url": "https://x.com/aleabitoreddit/status/2087845820020457894",
+      "stats": {
+        "views": "75",
         "likes": "0",
         "reposts": "0",
         "bookmarks": "0"
       }
     },
     {
-      "time": "08-12 20:23",
+      "time": "08-13 17:46",
       "type": "推文",
-      "ticker": "NBIS",
+      "ticker": "IQE",
       "tickers": [
-        "NBIS",
-        "IREN",
-        "CRWV"
+        "IQE",
+        "AXTI",
+        "LITE",
+        "MTSI",
+        "TSEM"
       ],
-      "title": "推文线索 · NBIS",
-      "body": "$NBIS outlook is pretty insane yet again.\n$582.3M revenue (+454% Y/Y, +46% Q/Q) off ~50% adjusted EBITDA margin (AI Cloud). $8.04B cash on hand. \nReiterates financial guide (2026 revenue: $3.0–$3.4B\n2026 EoY ARR: $7–$9B), I was hoping for a raise, but it's already massive growth. \nNot really about this quarter financials, but these signals:\n- \"We could sell our entire 2027 capacity on these terms today.\" massive visibility on demand\n- \"4 customer agreements averaging over $1B+ each in contract value\"\n- Around 70% of Q2 deals included customer prepayments\n- Contracted power guidance was raised again, from more ~4+ GW to 5 GW. (this used to be a concern vs. $IREN debate, but Nebius power guidance keeps going through the roof). \n- Expects $9B+ of prepayments in 2026 and says it has $40B+ of commitments.\n- annual contract value per MW keeps going brrr (>$40M/mw for Q3 short term capacity deals) \nSame bear story will always be there (eg. large $5.66B of capex with current GAAP net loss), but demand is extreme with massive visibility, with increasing AI Cloud adjusted EBITDA margins ( 24% -> 45% -> 50% progression)\nWe kinda got this read through from all your hyperscaler cloud earnings and $CRWV backlog yesterday, but glad it's showing up in Weebius's earnings.",
+      "title": "推文线索 · IQE",
+      "body": "Feels like my $IQE thesis Feb this year got validated alongside $AXTI and others. (I still long on both) \nSo I stopped covering them as much. But TLDR on updates:\nEarly this year, IQE was a distressed but critical chokepoint in the optical supply chain with links to $LITE and others when I published my thesis on it.\nSince then:\n- $MTSI signed long term epiwafer supply agreements, took a stake in the company, now IQE is bank debt free (Macom has convertibles, but that's positive)\n- $TSEM signed agreements for InP epiwafers. \n- Management explicitly said its IQE agreement was signed to secure the \"strategic III-V epiwafer supply required for that roadmap\"\n- IQE signed another ~$14M mysterious AI DC contract. \nThe only part that's still playing out with my earlier thesis is IQE converting their latent/underutilized capacity toward AI DC segment, to match peers like Landmark in the space (which takes time, like slightly over a year if I remember correctly). \nThere's some national security implications that I'll avoid talking about that makes them more important.\nBut basically:\nFY2025 revenue: £97.3m\nFY2026 guidance: over £126.5m\nThey're rapidly growing again in the optical sector, out of bank debt/distressed liquidation state, and remains a critical chokepoint in Western optical supply chains. \nNow... with new agreements with your leading photonics companies for revenue growth, and players like Macom serving as a soft backstop. \nAfter a thesis gets validated, typically I just sit back and enjoy growth of a business.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-12 20:23",
-      "url": "https://x.com/aleabitoreddit/status/2087515371750490383",
+      "datetime": "2026-08-13 17:46",
+      "url": "https://x.com/aleabitoreddit/status/2087838176677376186",
       "stats": {
-        "views": "17K",
-        "likes": "115",
-        "reposts": "11",
-        "bookmarks": "15"
+        "views": "11K",
+        "likes": "16",
+        "reposts": "3",
+        "bookmarks": "4"
       }
     },
     {
-      "time": "08-12 19:44",
-      "type": "推文",
-      "ticker": "AEHR",
-      "tickers": [
-        "AEHR"
-      ],
-      "title": "推文线索 · AEHR",
-      "body": "$AEHR receives another $22M follow on order for AI processor wafer level burn in systems.\nBy their lead AI processor company.\nIt’s cool to see this tiny company grow up so fast across so many verticals (memory, silicon photonics, etc).\nUp +5.39% premarket off the news.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-12 19:44",
-      "url": "https://x.com/aleabitoreddit/status/2087505570941239683",
-      "stats": {
-        "views": "10K",
-        "likes": "21",
-        "reposts": "4",
-        "bookmarks": "2"
-      }
-    },
-    {
-      "time": "08-12 15:54",
+      "time": "08-13 15:44",
       "type": "推文",
       "ticker": "SIVE",
       "tickers": [
         "SIVE",
-        "LITE",
-        "AAOI",
-        "MTSI",
-        "SMTC",
-        "COHR",
-        "AVGO"
+        "SPCX"
       ],
       "title": "推文线索 · SIVE",
-      "body": "So this is just what I'm seeing with $SIVE and the CW DFB laser chokepoint right now. \nFrom optical earnings: \n1. $LITE: unexpected demand and imbalance for UHP CW lasers. \n- Had ability to price up ASP for lasers. \n- Scale up CPO on track for H2 2027 shipments, called out any CPO scale up delay rumors as noise. \nLumentum confirmed timelines (that CPO players like Sivers sold off of misleading reports from), high margins, and extreme demand for qualified CW lasers. \n2. $AAOI: doesn’t have enough CW laser capacity because of too much optical transceiver demand.\n- Not meaningfully participating in first-gen CPO deployments, with $MTSI not looking like they're in it either but focusing on NPO. Haven't seen much with $SMTC after their HieFo acqusition. \n- Called lasers as the bottleneck within a 20-40% demand imbalance for transceivers. \n- Says customers approaching them every week asking them for supply + to move faster.\nAOI confirmed demand imbalances + bottlenecks for lasers. And we got an even smaller pool for first-gen CPO players. \n3. Both $AAOI and $LITE claimed Chinese players were years behind for CPO lasers and far behind stated claims in qualified capacity. \n- $AAOI said 2-3 years+ behind with CPO lasers. \n- $LITE said they haven't seen anything like Chinese claims in terms of outputs (and no recourse if it's false). \nReaffirms moat for CPO related lasers, and no flooding from some shortseller claims on the optical sector. \n4. $MTSI said that many customers are approaching them with urgency due to the general supply shortage of indium phosphide DFB lasers. \nAgain, puts Sivers in the that bottleneck, giving them likely more customer demand .\nAmong $COHR ($72.54B), $LITE ($66.57B), $AVGO ($2.13T): \nIt's very special you get one of the public 4 Western CPO leaders at a ~$1.5B MC with $SIVE. \nFeels like my thesis with both:\n- The CW bottleneck that I predicted\n- CW laser chokepoint (where there's only a few CPO players, at least for gen-1)\nGot validated from earnings, now it's just waiting for the inflection points of next optical architecture shifts.",
+      "body": "$SIVE announces a $3.4M development program with SemiNex!\nFor CPO, DFB laser arrays, and optical amplifiers. \nEarly production is targeted H2 2027 (in line with early scale up CPO timelines)\nSeemed weird to me at first given product overlap, since SemiNex is a much smaller Series B company... \nBut then I got reminded of a less explicit version of $SPCX + Cursor relationship (derisking by working together first). \nThere's probably something interesting Sivers found in this company.",
       "author": "@aleabitoreddit",
-      "datetime": "2026-08-12 15:54",
-      "url": "https://x.com/aleabitoreddit/status/2087447527595692180",
+      "datetime": "2026-08-13 15:44",
+      "url": "https://x.com/aleabitoreddit/status/2087807614172488131",
       "stats": {
-        "views": "9,083",
-        "likes": "26",
-        "reposts": "1",
+        "views": "11K",
+        "likes": "55",
+        "reposts": "3",
         "bookmarks": "5"
       }
     }
   ],
   "mentions": {
-    "SOI": {
+    "ORCL": {
       "h24": 1,
       "d7": 1
     },
-    "IQE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "COHR": {
+    "SPCX": {
       "h24": 2,
       "d7": 2
+    },
+    "POET": {
+      "h24": 2,
+      "d7": 2
+    },
+    "SIVE": {
+      "h24": 3,
+      "d7": 3
     },
     "AAOI": {
       "h24": 2,
       "d7": 2
     },
-    "MTSI": {
-      "h24": 2,
-      "d7": 2
+    "IQE": {
+      "h24": 1,
+      "d7": 1
     },
-    "POET": {
+    "AXTI": {
       "h24": 1,
       "d7": 1
     },
     "LITE": {
-      "h24": 2,
-      "d7": 2
-    },
-    "NBIS": {
       "h24": 1,
       "d7": 1
     },
-    "IREN": {
+    "MTSI": {
       "h24": 1,
       "d7": 1
     },
-    "CRWV": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AEHR": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SIVE": {
-      "h24": 1,
-      "d7": 1
-    },
-    "SMTC": {
-      "h24": 1,
-      "d7": 1
-    },
-    "AVGO": {
+    "TSEM": {
       "h24": 1,
       "d7": 1
     }
@@ -16191,7 +16172,7 @@
     "stats": [
       {
         "label": "可跟踪AI",
-        "value": "228",
+        "value": "229",
         "hint": "美股 + 有价格",
         "tone": "border-blue-200 bg-blue-50"
       },
@@ -16203,7 +16184,7 @@
       },
       {
         "label": "已匹配价格",
-        "value": "228",
+        "value": "229",
         "hint": "可计算前瞻收益",
         "tone": "border-emerald-200 bg-emerald-50"
       },
@@ -16223,7 +16204,7 @@
     "chains": [
       {
         "name": "AI基础设施",
-        "count": 19
+        "count": 20
       },
       {
         "name": "云与软件",
@@ -16231,7 +16212,7 @@
       },
       {
         "name": "光模块/网络",
-        "count": 25
+        "count": 24
       },
       {
         "name": "数据中心电力",
@@ -16239,7 +16220,7 @@
       },
       {
         "name": "芯片/算力",
-        "count": 109
+        "count": 110
       }
     ],
     "positiveToDate": 152,
@@ -16272,11 +16253,41 @@
     ],
     "rows": [
       {
+        "ticker": "AAOI",
+        "chain": "光模块/网络",
+        "queue": "高风险偏多",
+        "firstMention": "2025-12-12 06:10",
+        "lastMention": "2026-08-13 18:17",
+        "basePrice": "2025-12-12 @ 32",
+        "w1": "-2.3%",
+        "m1": "5.2%",
+        "m6": "427.3%",
+        "y1": "未到期",
+        "toDate": "330.7%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "POET",
+        "chain": "光模块/网络",
+        "queue": "谨慎",
+        "firstMention": "2025-12-12 06:18",
+        "lastMention": "2026-08-13 18:17",
+        "basePrice": "2025-12-12 @ 6",
+        "w1": "4.3%",
+        "m1": "10.9%",
+        "m6": "92.8%",
+        "y1": "未到期",
+        "toDate": "36.5%",
+        "view": "看空",
+        "recentView": "谨慎"
+      },
+      {
         "ticker": "LITE",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
         "firstMention": "2025-10-25 14:17",
-        "lastMention": "2026-08-13 06:59",
+        "lastMention": "2026-08-13 17:46",
         "basePrice": "2025-10-27 @ 194",
         "w1": "3.0%",
         "m1": "54.5%",
@@ -16287,17 +16298,47 @@
         "recentView": "高风险偏多"
       },
       {
-        "ticker": "AAOI",
+        "ticker": "AXTI",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2025-12-22 17:48",
+        "lastMention": "2026-08-13 17:46",
+        "basePrice": "2025-12-22 @ 15",
+        "w1": "-4.1%",
+        "m1": "30.0%",
+        "m6": "507.4%",
+        "y1": "未到期",
+        "toDate": "415.6%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "MTSI",
         "chain": "光模块/网络",
         "queue": "高风险偏多",
-        "firstMention": "2025-12-12 06:10",
-        "lastMention": "2026-08-13 06:59",
-        "basePrice": "2025-12-12 @ 32",
-        "w1": "-2.3%",
-        "m1": "5.2%",
-        "m6": "427.3%",
+        "firstMention": "2026-01-10 23:48",
+        "lastMention": "2026-08-13 17:46",
+        "basePrice": "2026-01-12 @ 198",
+        "w1": "12.2%",
+        "m1": "19.3%",
+        "m6": "48.9%",
         "y1": "未到期",
-        "toDate": "330.7%",
+        "toDate": "57.3%",
+        "view": "看多",
+        "recentView": "高风险偏多"
+      },
+      {
+        "ticker": "TSEM",
+        "chain": "芯片/算力",
+        "queue": "高风险偏多",
+        "firstMention": "2026-02-11 11:05",
+        "lastMention": "2026-08-13 17:46",
+        "basePrice": "2026-02-11 @ 134",
+        "w1": "-4.5%",
+        "m1": "-7.2%",
+        "m6": "93.6%",
+        "y1": "未到期",
+        "toDate": "93.6%",
         "view": "看多",
         "recentView": "高风险偏多"
       },
@@ -16315,36 +16356,6 @@
         "toDate": "115.7%",
         "view": "中性",
         "recentView": "观察"
-      },
-      {
-        "ticker": "MTSI",
-        "chain": "光模块/网络",
-        "queue": "高风险偏多",
-        "firstMention": "2026-01-10 23:48",
-        "lastMention": "2026-08-13 06:59",
-        "basePrice": "2026-01-12 @ 198",
-        "w1": "12.2%",
-        "m1": "19.3%",
-        "m6": "48.9%",
-        "y1": "未到期",
-        "toDate": "57.3%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
-        "ticker": "POET",
-        "chain": "光模块/网络",
-        "queue": "谨慎",
-        "firstMention": "2025-12-12 06:18",
-        "lastMention": "2026-08-13 06:59",
-        "basePrice": "2025-12-12 @ 6",
-        "w1": "4.3%",
-        "m1": "10.9%",
-        "m6": "92.8%",
-        "y1": "未到期",
-        "toDate": "36.5%",
-        "view": "看空",
-        "recentView": "谨慎"
       },
       {
         "ticker": "IREN",
@@ -16435,21 +16446,6 @@
         "toDate": "73.9%",
         "view": "看多",
         "recentView": "积极观察"
-      },
-      {
-        "ticker": "AXTI",
-        "chain": "芯片/算力",
-        "queue": "高风险偏多",
-        "firstMention": "2025-12-22 17:48",
-        "lastMention": "2026-08-12 08:06",
-        "basePrice": "2025-12-22 @ 15",
-        "w1": "-4.1%",
-        "m1": "30.0%",
-        "m6": "507.4%",
-        "y1": "未到期",
-        "toDate": "415.6%",
-        "view": "看多",
-        "recentView": "高风险偏多"
       },
       {
         "ticker": "NVDA",
@@ -16782,21 +16778,6 @@
         "recentView": "高风险偏多"
       },
       {
-        "ticker": "TSEM",
-        "chain": "光模块/网络",
-        "queue": "高风险偏多",
-        "firstMention": "2026-02-11 11:05",
-        "lastMention": "2026-07-22 01:41",
-        "basePrice": "2026-02-11 @ 134",
-        "w1": "-4.5%",
-        "m1": "-7.2%",
-        "m6": "93.6%",
-        "y1": "未到期",
-        "toDate": "93.6%",
-        "view": "看多",
-        "recentView": "高风险偏多"
-      },
-      {
         "ticker": "CIFR",
         "chain": "AI基础设施",
         "queue": "高风险偏多",
@@ -16872,21 +16853,6 @@
         "recentView": "谨慎"
       },
       {
-        "ticker": "TTMI",
-        "chain": "芯片/算力",
-        "queue": "观察",
-        "firstMention": "2025-12-02 01:21",
-        "lastMention": "2026-07-20 14:22",
-        "basePrice": "2025-12-02 @ 67",
-        "w1": "15.0%",
-        "m1": "5.8%",
-        "m6": "169.1%",
-        "y1": "未到期",
-        "toDate": "72.9%",
-        "view": "中性",
-        "recentView": "观察"
-      },
-      {
         "ticker": "VSH",
         "chain": "芯片/算力",
         "queue": "观察",
@@ -16898,6 +16864,21 @@
         "m6": "77.5%",
         "y1": "未到期",
         "toDate": "68.2%",
+        "view": "中性",
+        "recentView": "观察"
+      },
+      {
+        "ticker": "TTMI",
+        "chain": "芯片/算力",
+        "queue": "观察",
+        "firstMention": "2025-12-02 01:21",
+        "lastMention": "2026-07-20 14:22",
+        "basePrice": "2025-12-02 @ 67",
+        "w1": "15.0%",
+        "m1": "5.8%",
+        "m6": "169.1%",
+        "y1": "未到期",
+        "toDate": "72.9%",
         "view": "中性",
         "recentView": "观察"
       },
@@ -17515,6 +17496,21 @@
         "toDate": "39.1%",
         "view": "看多",
         "recentView": "积极观察"
+      },
+      {
+        "ticker": "IMSR",
+        "chain": "AI基础设施",
+        "queue": "观察",
+        "firstMention": "2026-05-13 07:00",
+        "lastMention": "2026-05-13 07:00",
+        "basePrice": "2026-05-13 @ 7",
+        "w1": "-7.3%",
+        "m1": "未到期",
+        "m6": "未到期",
+        "y1": "未到期",
+        "toDate": "-7.3%",
+        "view": "中性",
+        "recentView": "观察"
       },
       {
         "ticker": "AUR",
@@ -18547,7 +18543,7 @@
         "m1": "-10.4%",
         "m6": "16.0%",
         "y1": "未到期",
-        "toDate": "-0.8%",
+        "toDate": "-0.6%",
         "view": "看多",
         "recentView": "高风险偏多"
       },

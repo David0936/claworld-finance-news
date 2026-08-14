@@ -9,6 +9,48 @@
   "fetchedAt": "2026-08-14 09:00",
   "feed": [
     {
+      "time": "08-14 19:29",
+      "type": "推文",
+      "ticker": "SHKY",
+      "tickers": [
+        "SHKY",
+        "SNDK",
+        "MU"
+      ],
+      "title": "推文线索 · SHKY",
+      "body": "The $SHKY, Samsung, $SNDK, $MU memory bottleneck never changed anon",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-14 19:29",
+      "url": "https://x.com/aleabitoreddit/status/2088226398708338889",
+      "stats": {
+        "views": "14K",
+        "likes": "56",
+        "reposts": "5",
+        "bookmarks": "8"
+      }
+    },
+    {
+      "time": "08-14 16:30",
+      "type": "推文",
+      "ticker": "UMAC",
+      "tickers": [
+        "UMAC",
+        "ONDS",
+        "RCAT"
+      ],
+      "title": "推文线索 · UMAC",
+      "body": "Donald Trump signs a proclamation to strengthen US supply chains for drones.\nBenefiting U.S. drone component suppliers like $UMAC to UAS manufacturers like $ONDS + $RCAT. \nTLDR, 100% tariffs on:\n- UAS docking stations + certain critical components\n- certain parts for >25 kg drones\n- Drones >25 kg\n25% tariffs on: \n- broader components \nUAS = Unmanned Aircraft System (don't have any positions in any above)",
+      "author": "@aleabitoreddit",
+      "datetime": "2026-08-14 16:30",
+      "url": "https://x.com/aleabitoreddit/status/2088181416148562017",
+      "stats": {
+        "views": "11K",
+        "likes": "23",
+        "reposts": "6",
+        "bookmarks": "6"
+      }
+    },
+    {
       "time": "08-14 12:06",
       "type": "推文",
       "ticker": "LPK",
@@ -67,51 +109,33 @@
         "reposts": "3",
         "bookmarks": "3"
       }
-    },
-    {
-      "time": "08-13 18:17",
-      "type": "推文",
-      "ticker": "POET",
-      "tickers": [
-        "POET",
-        "SIVE",
-        "AAOI"
-      ],
-      "title": "推文线索 · POET",
-      "body": "Okay here's my take on $POET, since apparently people are celebrating on the subreddit that I took small positions. \n- I have 0 idea. ZERO. How they convinced shareholders to allow them dilute SO MUCH to the point:\nThey have an absurd ~$830m cash on hand now. \nAnd my guess is that they're close to done, since I would be in disbelief if they needed more. \nSo now... they have ~$830m to grow their business like M&A, and EV actually dropped really low recently (eg. $1.25B MC vs. $830m cash on hand), that I thought it was compelling to take a risk. \n- Annualized production capacity target is 12M optical engines/year for 2027, which is pretty absurd ramp. \nNeed to do more research into ASP for Poet's products, but maybe $125-$200? So at ~$150 ASP, $1.8B revenue ceiling. \nBut they're like inverse AAOI right now: no visible demand to fill all that capacity. Aside from Lumilens, which is now a highly valued hyperscaler supplier (probably Amazon or Microsoft), with billions in customer agreements. \nThe interesting thing is if Poet signed prepayment EML agreements with players like Mitsubishi, or CW agreements with Sivers behind the scenes with that balance sheet. \nAnd given the current bottleneck, players might use Poet as a workaround for supply procurement. \nBut basically, you have a super cash-rich company with a ton of capacity coming online. And they're not really disappearing anytime soon with their financials. \nI don't quite think it's as technically defensible compared to upstream laser chokepoints with something like $SIVE around the same valuation in terms of technical moat for CW lasers vs. OE packaging side. As you've seen recently with Celestial and Poet. \nBut maybe... there's a chance some hyperscaler or downstream company announces a volume agreement sometime in the future. and $POET takes off. And they do have the supply chain setup for ramp with that. \nThat's the risk I ended up taking, but it's not exactly a clear as day long for me like $AAOI.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-13 18:17",
-      "url": "https://x.com/aleabitoreddit/status/2087846074027295020",
-      "stats": {
-        "views": "8,731",
-        "likes": "12",
-        "reposts": "4",
-        "bookmarks": "3"
-      }
-    },
-    {
-      "time": "08-13 18:16",
-      "type": "推文",
-      "ticker": "POET",
-      "tickers": [
-        "POET",
-        "SIVE",
-        "AAOI"
-      ],
-      "title": "推文线索 · POET",
-      "body": "Okay here's my take on $POET, since apparently people are celebrating on the subreddit that I took small positions. \n- I have 0 idea. ZERO. How they convinced shareholders to allow them dilute SO MUCH to the point:\nThey have an absurd ~$830m cash on hand now. \nAnd my guess is that they're done, since I would be in disbelief if they needed more. \nSo now... they have ~$830m to grow their business like M&A, and EV actually dropped really low recently (eg. $1.25B MC vs. $830m cash on hand), that I thought it was compelling to take a risk. \n- Annualized production capacity target is 12M optical engines/year for 2027, which is pretty absurd ramp. \nNeed to do more research into ASP for Poet's products, but maybe $125-$200? So at ~$150 ASP, $1.8B revenue ceiling. \nBut they're like inverse AAOI right now: no visible demand to fill all that capacity. Aside from Lumilens, which is now a highly valued hyperscaler supplier (probably Amazon or Microsoft), with billions in customer agreements. \nThe interesting thing is Poet signed prepayment EML agreements with players like Mitsubishi, or CW agreements with Sivers behind the scenes with that balance sheet. \nAnd given the current bottleneck, players might use Poet as a workaround for supply procurement. \nBut basically, you have a super cash-rich company with a ton of capacity coming online. And they're not really disappearing anytime soon with their financials. \nI don't quite think it's as technically defensible compared to upstream laser chokepoints with something like $SIVE around the same valuation in terms of technical moat for CW lasers vs. OE packaging side. As you've seen recently with Celestial and Poet. \nBut maybe... there's a chance some hyperscaler or downstream company announces a volume agreement sometime in the future. and $POET takes off. And they do have the supply chain setup for ramp with that. \nThat's the risk I ended up taking, but it's not exactly a clear as day long for me like $AAOI.",
-      "author": "@aleabitoreddit",
-      "datetime": "2026-08-13 18:16",
-      "url": "https://x.com/aleabitoreddit/status/2087845820020457894",
-      "stats": {
-        "views": "75",
-        "likes": "0",
-        "reposts": "0",
-        "bookmarks": "0"
-      }
     }
   ],
   "mentions": {
+    "SHKY": {
+      "h24": 1,
+      "d7": 1
+    },
+    "SNDK": {
+      "h24": 1,
+      "d7": 1
+    },
+    "MU": {
+      "h24": 1,
+      "d7": 1
+    },
+    "UMAC": {
+      "h24": 1,
+      "d7": 1
+    },
+    "ONDS": {
+      "h24": 1,
+      "d7": 1
+    },
+    "RCAT": {
+      "h24": 1,
+      "d7": 1
+    },
     "LPK": {
       "h24": 1,
       "d7": 1
@@ -135,18 +159,6 @@
     "SPCX": {
       "h24": 1,
       "d7": 1
-    },
-    "POET": {
-      "h24": 2,
-      "d7": 2
-    },
-    "SIVE": {
-      "h24": 2,
-      "d7": 2
-    },
-    "AAOI": {
-      "h24": 2,
-      "d7": 2
     }
   },
   "metrics": [
